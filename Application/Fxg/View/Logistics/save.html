@@ -1,0 +1,70 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <style type="text/css">
+        .layui-input-inline {
+            width: 60% !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <!-- 右侧内容框架，更改从这里开始 -->
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+                <span class="x-red">*</span>快递名称
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" name="name"
+                <notEmpty name="info">value="{$info['name']}"</notEmpty>
+                class="layui-input" placeholder="请输入快递名称">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+                <span class="x-red">*</span>快递拼音
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" name="english_name"
+                <notEmpty name="info">value="{$info['english_name']}"</notEmpty>
+                class="layui-input" placeholder="请输入快递拼音">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+            </label>
+            <notEmpty name="info">
+                <input type="hidden" name="id" value="{$info['id']}">
+            </notEmpty>
+            <button class="layui-btn" lay-filter="save" lay-submit="save" type="submit">
+                <eq name="type" value="add">
+                    添加
+                    <else/>
+                    编辑
+                </eq>
+            </button>
+        </div>
+    </form>
+    <!-- 右侧内容框架，更改从这里结束 -->
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        //监听提交
+        form.on('submit(save)', function (data) {
+            var _this = $(this);
+            _this.attr('disabled', true);
+            var url = "{:U('save')}";
+            $.post(url, data.field, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        window.parent.location.reload();
+                    });
+                } else {
+                    _this.removeAttr('disabled');
+                    layer.msg(res.info);
+                }
+            });
+            return false;
+        });
+    </script>
+</block>

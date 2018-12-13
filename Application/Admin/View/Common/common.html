@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特卖管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/font.css">
+    <link rel="stylesheet" href="__CSS_PATH__/xadmin.css?v={:C('CSS_VER')}">
+    <link rel="stylesheet" href="__CSS_PATH__/swiper.min.css">
+    <block name="css"></block>
+    <script src="__LAYUI_PATH__/layui.all.js" charset="utf-8"></script>
+    <script type="text/javascript" src="__JS_PATH__/jquery.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/swiper.jquery.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/xadmin.js?v={:C('JS_VER')}"></script>
+</head>
+<body>
+<!-- 顶部开始 -->
+<div class="container" style="position: fixed;top: 0;height: 70px;z-index:10;">
+    <div class="logo"><a href="{:U('Index/index')}" style="color: #fff">特卖管理</a></div>
+    <div class="open-nav"><i class="iconfont">&#xe699;</i></div>
+    <ul class="layui-nav right" style="padding: 5px 20px;background:none">
+        <li class="layui-nav-item" style="line-height: 65px">
+            <a href="javascript:;">{:session('admin_user_info')['name']}<span class="layui-nav-more"></span></a>
+            <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                <dd><a href="javascript:;"
+                       data-title="修改密码"
+                       data-url="{:U('User/updatePass')}"
+                       onclick="x_admin_show($(this).data('title'),$(this).data('url'),'40%','35%')">修改密码</a>
+                </dd>
+                <eq name="group_id" value="1">
+                    <a data-url="{:U('Item/updateItemId')}" class="get-last-id" style="cursor: pointer">更新商品ID</a>
+                </eq>
+                <dd><a href="{:U('Login/logout')}">退出</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item" style="line-height: 65px;padding: 0 30px;cursor: pointer"
+            id="full-screen" data-status="0">
+            <i class="icon iconfont" style="font-size: 20px;color: #fff;">&#xe6fd;</i>
+        </li>
+    </ul>
+</div>
+<!-- 顶部结束 -->
+<!-- 中部开始 -->
+<div class="wrapper" style="position: relative;margin-top:70px;margin-bottom: 50px">
+    <!-- 左侧菜单开始 -->
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <volist name="menu_list" id="row">
+                    <if condition="$row['son_menu']">
+                        <li class="list">
+                            <a href="javascript:;">
+                                <i class="iconfont">&#xe70b;</i>
+                                {$row.menu_name}
+                                <i class="iconfont nav_right">&#xe697;</i>
+                            </a>
+                            <ul class="sub-menu">
+                                <volist name="row.son_menu" id="son">
+                                    <li>
+                                        <a href="{:U($son['url'])}"
+                                        <if condition="($son['url'] eq 'Article/index') OR ($son['url'] eq 'Article/articleInfo')">target="_blank"</if>
+                                        data-type="2">
+                                        <i class="iconfont">&#xe6a7;</i>
+                                        {$son.menu_name}
+                                        </a>
+                                    </li>
+                                </volist>
+                            </ul>
+                        </li>
+                        <else/>
+                        <li class="list">
+                            <a href="{:U($row['url'])}"
+                               data-type="1"
+                                <i class="iconfont">&#xe70b;</i>
+                                {$row.menu_name}
+                            </a>
+                        </li>
+                    </if>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="content">
+            <block name="body"></block>
+        </div>
+    </div>
+    <!-- 右侧主体结束 -->
+</div>
+<!-- 中部结束 -->
+<!-- 底部开始 -->
+<div class="footer" style="position: fixed;bottom: 0;line-height: 50px;text-align: center;height: 50px;z-index:10;">
+    <div class="copyright">Copyright ©2017-2018 dps v1.0 All Rights Reserved. 本后台系统由dps提供技术支持</div>
+</div>
+
+<div id="back-to-top"
+     style="position: fixed;bottom: 0; right:0;line-height: 50px;text-align: center;height: 50px;z-index:12;width: 50px;cursor: pointer;display: none">
+    <i class="layui-icon" style="font-size: 30px; color: #fff;">&#xe604;</i>
+</div>
+<!-- 底部结束 -->
+<!-- 背景切换开始 -->
+<div class="bg-changer" style="position: fixed;z-index:11">
+    <div class="swiper-container changer-list">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/a.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/b.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/c.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/d.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/e.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/f.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/g.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/h.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/i.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/j.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="item" src="__IMAGE_PATH__/k.jpg" alt=""></div>
+            <div class="swiper-slide"><span class="reset">初始化</span></div>
+        </div>
+    </div>
+    <div class="bg-out"></div>
+    <div id="changer-set"><i class="iconfont">&#xe696;</i></div>
+</div>
+<block name="box"></block>
+<script type="text/javascript">
+    var layer = layui.layer,
+        element = layui.element,
+        form = layui.form,
+        laydate = layui.laydate,
+        upload = layui.upload,
+        carousel = layui.carousel,
+        flow = layui.flow,
+        util = layui.util,
+        table = layui.table,
+        laypage = layui.laypage,
+        laytpl = layui.laytpl,
+        layedit = layui.layedit;
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 100) {
+                $("#back-to-top").fadeIn(1500);
+            } else {
+                $("#back-to-top").fadeOut(1500);
+            }
+        });
+        //当点击跳转链接后，回到页面顶部位置
+        $("#back-to-top").click(function () {
+            $('body,html').animate({scrollTop: 0}, 500);
+            return false;
+        });
+        var location_url = window.location.href;
+        $('#nav a').each(function () {
+            if ($(this).attr('href') != 'javascript:;') {
+                var url_arr = $(this).attr('href').split('.');
+                if (location_url.indexOf(url_arr[0]) != -1) {
+                    if ($(this).data('type') == 1) {
+                        $(this).parent().addClass('current');
+                    } else {
+                        $(this).parents('li.list').addClass('open');
+                        $(this).parents('ul.sub-menu').addClass('opened');
+                        $(this).parent().addClass('current');
+                    }
+                }
+            }
+        });
+        $('.get-last-id').click(function () {
+            $.get($(this).data('url'));
+            layer.msg('更新成功');
+        })
+    });
+</script>
+<!-- 背景切换结束 -->
+<block name="js"></block>
+</body>
+</html>

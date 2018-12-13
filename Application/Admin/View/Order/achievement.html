@@ -1,0 +1,248 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>总业绩</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th style="text-align: center">当月预估总业绩</th>
+                    <th style="text-align: center">当月完成总业绩</th>
+                    <th style="text-align: center">当月结算总业绩</th>
+                    <th style="text-align: center">上月预估总业绩</th>
+                    <th style="text-align: center">上月完成总业绩</th>
+                    <th style="text-align: center">上月结算总业绩</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr style="text-align: center">
+                    <td>¥{$month_money}</td>
+                    <td>¥{$month_complete_money}</td>
+                    <td>¥{$month_settle_money}</td>
+                    <td>¥{$pro_month_money}</td>
+                    <td>¥{$pro_month_complete_money}</td>
+                    <td>¥{$pro_month_settle_money}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <fieldset class="layui-elem-field">
+        <legend>当月预估业绩排行</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <volist name="month_data" id="row">
+                        <col>
+                    </volist>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <volist name="month_data" id="vo">
+                        <th>{$vo.name}</th>
+                    </volist>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>订单量</td>
+                    <volist name="month_data" id="vo">
+                        <td>{$vo.num}</td>
+                    </volist>
+                </tr>
+                <tr>
+                    <td>总业绩</td>
+                    <volist name="month_data" id="vo">
+                        <td>{$vo.money}</td>
+                    </volist>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <eq name="group_id" value="1">
+        <fieldset class="layui-elem-field">
+            <legend>当月完成业绩排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="month_complete_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <volist name="month_complete_data" id="vo">
+                            <th>{$vo.name}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>订单量</td>
+                        <volist name="month_complete_data" id="vo">
+                            <td>{$vo.num}</td>
+                        </volist>
+                    </tr>
+                    <tr>
+                        <td>总业绩</td>
+                        <volist name="month_complete_data" id="vo">
+                            <td>{$vo.money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>当月结算业绩排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="month_settle_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <volist name="month_settle_data" id="vo">
+                            <th>{$vo.name}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>订单量</td>
+                        <volist name="month_settle_data" id="vo">
+                            <td>{$vo.num}</td>
+                        </volist>
+                    </tr>
+                    <tr>
+                        <td>总业绩</td>
+                        <volist name="month_settle_data" id="vo">
+                            <td>{$vo.money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </eq>
+    <fieldset class="layui-elem-field">
+        <legend>上月预估业绩排行</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <volist name="pro_month_data" id="row">
+                        <col>
+                    </volist>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <volist name="pro_month_data" id="vo">
+                        <th>{$vo.name}</th>
+                    </volist>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>订单量</td>
+                    <volist name="pro_month_data" id="vo">
+                        <td>{$vo.num}</td>
+                    </volist>
+                </tr>
+                <tr>
+                    <td>总业绩</td>
+                    <volist name="pro_month_data" id="vo">
+                        <td>{$vo.money}</td>
+                    </volist>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <eq name="group_id" value="1">
+        <fieldset class="layui-elem-field">
+            <legend>上月完成业绩排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="pro_month_complete_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <volist name="pro_month_complete_data" id="vo">
+                            <th>{$vo.name}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>订单量</td>
+                        <volist name="pro_month_complete_data" id="vo">
+                            <td>{$vo.num}</td>
+                        </volist>
+                    </tr>
+                    <tr>
+                        <td>总业绩</td>
+                        <volist name="pro_month_complete_data" id="vo">
+                            <td>{$vo.money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>上月结算业绩排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="pro_month_settle_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <volist name="pro_month_settle_data" id="vo">
+                            <th>{$vo.name}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>订单量</td>
+                        <volist name="pro_month_settle_data" id="vo">
+                            <td>{$vo.num}</td>
+                        </volist>
+                    </tr>
+                    <tr>
+                        <td>总业绩</td>
+                        <volist name="pro_month_settle_data" id="vo">
+                            <td>{$vo.money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </eq>
+</block>

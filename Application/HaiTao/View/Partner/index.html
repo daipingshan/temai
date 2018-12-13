@@ -1,0 +1,98 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="name" value="" placeholder="请输入供货商名称" class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="keyword" value="" placeholder="请输入电话/微信/QQ/旺旺" class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+                <a class="layui-btn layui-btn-danger" href="{:U('add')}"><i class="layui-icon">
+                    &#xe654;</i>添加供货商
+                </a>
+            </div>
+        </div>
+    </form>
+
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="js">
+    <script type="text/html" id="table-edit">
+        <a class="layui-btn layui-btn-xs" href="{:U('update')}?id={{d.id}}">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs check-item" data-id="{{d.id}}">查看供货商品</a>
+        <a class="layui-btn layui-btn-warm layui-btn-xs check-courier" data-id="{{d.id}}">查看快递员</a>
+    </script>
+    <script type="text/html" id="status">
+        <!-- 这里的 checked 的状态只是演示 -->
+        <input type="checkbox" value="{{d.id}}" lay-skin="switch" lay-text="合作|解除" lay-filter="status"
+               {{ d.status== 1 ? 'checked' : '' }}>
+    </script>
+    <script>
+        $(function () {
+            var tipindex;
+            var url = "{:U('index')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+            //监听性别操作
+            form.on('switch(status)', function (obj) {
+                console.log(obj);
+                var status_url = "{:U('setStatus')}";
+                $.get(status_url, {id: this.value}, function (res) {
+                    layer.tips(res.info, obj.othis);
+                })
+            });
+
+            $('body').on('click', '.check-item', function (e) {
+                var _this = $(this);
+                var id = _this.attr('data-id');
+                var get_item_url = "{:U('getItem')}";
+                $.get(get_item_url, {id: id}, function (res) {
+                    tipindex = layer.tips(res.info, _this, {area: ['50%', 'auto'], time: 8000})
+                })
+            })
+
+            $('body').on('click', '.check-courier', function (e) {
+                var _this = $(this);
+                var id = _this.attr('data-id');
+                var get_item_url = "{:U('getCourier')}";
+                $.get(get_item_url, {id: id}, function (res) {
+                    tipindex = layer.tips(res.info, _this, {area: ['35%', 'auto'], time: 8000})
+                })
+            })
+
+            function getData(url) {
+                table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                        layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                        , groups: 5 //只显示 1 个连续页码
+                    }
+                    , cellMinWidth: 80
+                    , cols: [[
+                        {field: 'id', title: 'ID', sort: true}
+                        , {field: 'name', width: 200, title: '名称'}
+                        , {field: 'address', width: '20%', title: '地址'}
+                        , {field: 'mobile', title: '电话'}
+                        , {field: 'wang_wang', title: '旺旺'}
+                        , {field: 'wei_xin', title: '微信'}
+                        , {field: 'qq', title: 'QQ'}
+                        , {field: 'create_time', title: '合作时间'}
+                        , {field: 'status', title: '合作状态', templet: '#status', unresize: true}
+                        , {fixed: 'right', title: '操作', toolbar: '#table-edit', width: '20%'}
+                    ]]
+                });
+            }
+        })
+    </script>
+</block>

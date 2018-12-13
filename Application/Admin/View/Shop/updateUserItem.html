@@ -1,0 +1,89 @@
+<extend name="Common/layer"/>
+</block>
+<block name="body">
+    <notEmpty name="error_info">
+        <div class="layui-row">
+            {$error_info}
+        </div>
+        <else/>
+        <form class="layui-form" action="">
+            <div class="layui-form-item" style="margin-top: 20px;">
+                <label class="layui-form-label">主信息</label>
+                <div style="float: left;width: 20%">
+                    <img src="{$info.img}" style="width: 90%"/>
+                </div>
+                <div style="float: right;width: 60%">
+                    <input type="hidden" name="img"/>
+                    <textarea placeholder="请输入主图推荐语" class="layui-textarea"
+                              name="description">{$info.description}</textarea>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">副信息</label>
+                <div style="float: left;width: 20%">
+                    <img src="{$info.img_vice}" style="width: 90%"/>
+                </div>
+                <div style="float: right;width: 60%">
+                    <input type="hidden" name="img_vice"/>
+                    <textarea placeholder="请输入副图推荐语" class="layui-textarea" name="description_vice">{$info.description_vice}</textarea>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="hidden" name="id" value="{$info['id']}">
+                    <button class="layui-btn" lay-submit lay-filter="save" type="submit">保存</button>
+                </div>
+            </div>
+        </form>
+    </notEmpty>
+</block>
+<block name="js">
+    <script>
+        form.render()
+        $('.add-img').click(function () {
+            $('input[name=img]').val($(this).data('val'));
+            $('#covers-img').attr('src', $(this).data('val'));
+        })
+        $('.add-img-vice').click(function () {
+            $('input[name=img_vice]').val($(this).data('val'));
+            $('#covers-img-vice').attr('src', $(this).data('val'));
+        })
+        form.on('submit(save)', function (data) {
+            var _this = $(this);
+            if (!data.field.description) {
+                layer.msg('请输入商品主图推荐语！');
+                return false;
+            }
+            if (data.field.description.length < 15 || data.field.description.length > 100) {
+                layer.msg('商品主图推荐语必须在15-100个字符之间！');
+                return false;
+            }
+            if (!data.field.description_vice) {
+                layer.msg('请输入商品副图推荐语！');
+                return false;
+            }
+            if (data.field.description_vice.length < 15 || data.field.description_vice.length > 100) {
+                layer.msg('商品副图推荐语必须在15-100个字符之间！');
+                return false;
+            }
+            _this.addClass('layui-disabled');
+            var url = "{:U('Shop/saveUserItem')}";
+            _this.text('正在保存中...');
+            $.post(url, data.field, function (res) {
+                layer.msg(res.info);
+                if (res.status == 1) {
+                    setTimeout(function () {
+                        window.parent.location.href = "{:U('Shop/userItems')}";
+                    }, 3000)
+                } else {
+                    _this.text('保存');
+                    _this.removeClass('layui-disabled');
+                }
+            })
+            return false
+        });
+    </script>
+</block>

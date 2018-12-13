@@ -1,0 +1,98 @@
+<extend name="Common/layer"/>
+<block name="body">
+    <form class="layui-form" action="">
+        <foreach name="info.content" item="row" key="k">
+            <div class="layui-form-item new-input">
+                <label class="layui-form-label">规格-价格</label>
+                <div class="layui-input-inline" style="width: 40%">
+                    <input type="text" name="name[]" value="{$row.name}" placeholder="请输入规格"
+                           autocomplete="off"
+                           class="layui-input">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="price[]" value="{$row.price}" placeholder="请输入价格"
+                           autocomplete="off"
+                           class="layui-input price">
+                </div>
+                <div class="layui-input-inline">
+                    <eq name="k" value="0">
+                        <button class="layui-btn add-input" type="button">新增规格
+                        </button>
+                        <else/>
+                        <button class="layui-btn layui-btn-danger del-input" type="button">删除规格
+                        </button>
+                    </eq>
+                </div>
+            </div>
+        </foreach>
+        <div class="layui-form-item input-before">
+            <label class="layui-form-label">下单地址</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入下单地址" name="buy_url" value="{$info.buy_url}" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <input type="hidden" name="id" value="{$info.id}">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="submit" type="submit">提交</button>
+            </div>
+        </div>
+    </form>
+</block>
+<block name="box">
+    <div class="hide" id="input-after">
+        <div class="layui-form-item new-input">
+            <label class="layui-form-label">规格-价格</label>
+            <div class="layui-input-inline" style="width: 40%">
+                <input type="text" name="name[]" value="" placeholder="请输入规格"
+                       autocomplete="off"
+                       class="layui-input name">
+            </div>
+            <div class="layui-input-inline">
+                <input type="text" name="price[]" value="" placeholder="请输入价格"
+                       autocomplete="off"
+                       class="layui-input price">
+            </div>
+            <div class="layui-input-inline">
+                <button class="layui-btn layui-btn-danger del-input" type="button">删除规格
+                </button>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            $('body').on('click', '.add-input', function () {
+                $('.input-before').before($('#input-after').html());
+            });
+
+            $('body').on('click', '.del-input', function () {
+                $(this).parents('.new-input').remove();
+            });
+
+            /**
+             * 设置操作备注
+             */
+            form.on('submit(submit)', function (data) {
+                var _this = this;
+                if (!data.field.buy_url) {
+                    layer.msg('请输入下单地址！');
+                    return false;
+                }
+                _this.disabled = true;
+                $.post("{:U('saveItemPartner')}", data.field, function (res) {
+                    _this.disabled = false;
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            window.parent.location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+</block>

@@ -1,0 +1,78 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <style type="text/css">
+        .layui-layer-page {
+            background-color: #fff !important;
+            background-size: cover;
+            color: #333 !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">登录密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入登录密码" name="password" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">确认密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入确认密码" name="pass" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="update">修改</button>
+            </div>
+        </div>
+    </form>
+</block>
+<block name="js">
+    <script src="__JS_PATH__/swipe.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script>
+        $(function () {
+            var upload_url = "{:U('TopLine/uploadTopImg')}";
+            if ($('#gallery').find('.swipe-wrap').children().length) {
+                window.mySwipe = $('#gallery').Swipe({
+                    startSlide: 0,
+                    continuous: false,
+                    disableScroll: false,
+                    stopPropagation: false,
+                    callback: function (index, elem) {
+                    },
+                    transitionEnd: function (index, elem) {
+                    }
+                }).data('Swipe');
+            }
+            form.render();
+            //监听提交
+            form.on('submit(update)', function (data) {
+                if (!data.field.password) {
+                    layer.msg('请输入登录密码！');
+                    return false;
+                }
+                if (!data.field.pass) {
+                    layer.msg('请输入确认密码！');
+                    return false;
+                }
+                if (data.field.password != data.field.pass) {
+                    layer.msg('两次密码不一致！');
+                    return false;
+                }
+                $.post("{:U('User/savePass')}", data.field, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            parent.layer.closeAll();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+</block>

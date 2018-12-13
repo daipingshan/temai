@@ -1,0 +1,109 @@
+<extend name="Common/layer"/>
+<block name="body">
+    <table class="layui-table" lay-skin="line">
+        <colgroup>
+            <col style="width: 10%">
+            <col style="width: 20%">
+            <col style="width: 10%">
+            <col style="width: 30%">
+            <col style="width: 10%">
+            <col style="width: 20%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th>名称</th>
+            <th>地址</th>
+            <th>电话</th>
+            <th>供货价</th>
+            <th>下单地址</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="row">
+            <tr>
+                <td>{$row.name}</td>
+                <td>{$row.address}</td>
+                <td>{$row.mobile}</td>
+                <td>
+                    <volist name="row.content_view" id="val">
+                        规格名称：{$val['name']}，价格：{$val['price']}<br>
+                    </volist>
+                </td>
+                <td><a href="{$row.buy_url}" target="_blank">{$row.buy_url}</a></td>
+                <td>
+                    <a class="layui-btn layui-btn-xs layui-btn-warm update-item-partner"
+                       data-url="{:U('updateItemPartner',array('id'=>$row['id']))}">编辑</a>
+                    <if condition="$row['status'] eq 1">
+                        <a class="layui-btn layui-btn-danger layui-btn-xs status-partner" data-id="{$row.id}">停止合作</a>
+                        <else/>
+                        <a class="layui-btn layui-btn-xs status-partner" data-id="{$row.id}">继续合作</a>
+                    </if>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            var index;
+            $('body').on('click', '.status-partner', function () {
+                var _this = $(this);
+                layer.confirm('你确定要 ' + _this.text() + ' 该商品对应的供货商信息吗？', function () {
+                    var url = "{:U('setPartnerStatus')}?id=" + _this.data('id');
+                    $.get(url, {}, function (res) {
+                        layer.msg(res.info);
+                        if (res.status == 1) {
+                            if (_this.text() == '停止合作') {
+                                _this.removeClass('layui-btn-danger').text('继续合作');
+                            } else {
+                                _this.addClass('layui-btn-danger').text('停止合作');
+                            }
+
+                        }
+                    })
+                })
+            })
+
+            $('body').on('click', '.update-item-partner', function () {
+                var url = $(this).data('url');
+                index = layer.open({
+                    type: 2,
+                    title: '编辑供货商',
+                    area: ['80%', '80%'],
+                    content: url
+                })
+            })
+
+            /**
+             * 设置操作备注
+             */
+            form.on('submit(submit)', function (data) {
+                var _this = this;
+                if (!data.field.price) {
+                    layer.msg('请输入供货价！');
+                    return false;
+                }
+                if (!data.field.buy_url) {
+                    layer.msg('请输入下单地址！');
+                    return false;
+                }
+                _this.disabled = true;
+                $.post("{:U('updateItemPartner')}", data.field, function (res) {
+                    _this.disabled = false;
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            layer.close(index);
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+
+    </script>
+</block>

@@ -1,0 +1,123 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('Sale/tuijianList')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-input-inline">
+                <p style="color: red;">注意推荐商品经常变动不要直接从下面选品选择，最好在特卖后台先选中商品，然后在根据商品id选择。</p>
+            </div>
+            <div class="layui-form-item" style="display: inline-block;">
+
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入商品关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品编号" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_goods_id')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="time" class="layui-input" placeholder="请选择时间范围" id="time"
+                           value="{$time}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_name" placeholder="请输入店铺名称" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_name')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <php>$cate = C('ARTICLE_CATE');</php>
+        <button data-id=""
+        <if condition="I('get.media_id')">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+            <else/>
+            class="layui-btn layui-btn-sm item-cate"
+        </if>
+        >全部</button>
+        <foreach name="cate" item="row" key="k">
+            <button data-id="{$k}"
+            <if condition="I('get.media_id') neq $k">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+                <else/>
+                class="layui-btn layui-btn-sm item-cate"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/sale_item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <include file="Common/footer_box"/>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/sale_item.js"></script>
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+        });
+        flow.lazyimg();
+        $('.item-cate').click(function () {
+            $('#media_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+        $(".img").hover(function () {
+            $(this).find('.img-vice').show();
+        }, function () {
+            $(this).find('.img-vice').hide();
+        });
+        var ClipboardSupport = 0;
+        if (typeof Clipboard != "undefined") {
+            ClipboardSupport = 1;
+        } else {
+            ClipboardSupport = 0;
+        }
+        $('.copy-item-id').click(function () {
+            var obj = $(this);
+            if (ClipboardSupport == 0) {
+                layer.msg('浏览器版本过低，请升级或更换浏览器后重新复制');
+                obj.removeClass('default-bgcolor');
+                setTimeout(function () {
+                    obj.addClass('default-bgcolor')
+                }, 5000)
+            } else {
+                var clipboard = new Clipboard('.copy-item-id');
+                clipboard.on('success', function (e) {
+                    obj.removeClass('default-bgcolor').text('复制成功');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor').text('复制商品编号')
+                    }, 5000)
+                    e.clearSelection();
+                });
+                clipboard.on('error', function (e) {
+                    layer.msg('复制失败，请升级或更换浏览器后重新复制');
+                    obj.removeClass('default-bgcolor');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor');
+                    }, 5000);
+                    e.clearSelection();
+                });
+            }
+        });
+    </script>
+</block>

@@ -1,0 +1,65 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field w80">
+        <legend>店铺信息</legend>
+        <div class="layui-field-box">
+            <form class="layui-form layui-form-pane" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">店铺名称</label>
+                    <div class="layui-input-block w50">
+                        <input type="text" name="shop_name" value="{$info.shop_name}" autocomplete="off"
+                               placeholder="请输入店铺名称"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">APP_KEY</label>
+                    <div class="layui-input-block w50">
+                        <input type="text" name="app_key" value="{$info.app_key}" placeholder="请输入APP_KEY"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">APP_SECRET</label>
+                    <div class="layui-input-block w50">
+                        <input type="text" name="app_secret" value="{$info.app_secret}" placeholder="请输入APP_SECRET"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <notEmpty name="info"><input type="hidden" name="id" value="{$info.id}"></notEmpty>
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="submit" type="submit">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            laydate.render({
+                elem: '#time'
+                , value: new Date()
+            });
+            form.on('submit(submit)', function (data) {
+                var _this = this;
+                _this.disabled = true;
+                $.post("{:U('save')}", data.field, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.href = "{:U('index')}"
+                        });
+                    } else {
+                        _this.disabled = false;
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+</block>

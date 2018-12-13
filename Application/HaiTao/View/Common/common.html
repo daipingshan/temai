@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>海淘管理后台</title>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/common.css">
+    <block name="css"></block>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <ul class="layui-nav layui-layout-left" style="left: 0">
+            <li class="layui-nav-item <eq name='controller_name' value='Index'>active</eq>"><a
+                    href="{:U('Index/index')}" class="first">控制台</a></li>
+            <li class="layui-nav-item <eq name='controller_name' value='Partner'>active</eq>">
+                <a href="javascript:" class="first">供货商管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:U('Partner/index')}">供货商列表</a></dd>
+                    <dd><a href="{:U('Partner/add')}">添加供货商</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Courier'>active</eq>">
+                <a href="javascript:" class="first">快递员管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:U('Courier/index')}">快递员列表</a></dd>
+                    <dd><a href="{:U('Courier/add')}">添加快递员</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Item'>active</eq>"><a class="first"
+                                                                                              href="{:U('Item/index')}">商品管理</a>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Order'>active</eq>"><a class="first"
+                                                                                               href="{:U('Order/index')}">订单管理</a>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Logistic'>active</eq>"><a class="first"
+                                                                                                  href="{:U('Logistic/index')}">顺丰快递</a>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Finance'>active</eq>"><a class="first"
+                                                                                                 href="{:U('Finance/index')}">财务管理</a>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    {:session('ht_user_info')['username']}
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" onclick="updateAccount()">修改账号信息</a></dd>
+                    <dd><a href="javascript:;" onclick="updatePass()">修改密码</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="{:U('Login/logout')}">退了</a></li>
+        </ul>
+    </div>
+    <div class="layui-body" style="left: 0;padding: 20px">
+        <block name="body"></block>
+    </div>
+    <div class="layui-footer" style="left: 0; text-align: center">
+        © Copyright ©2017-2018 dps v1.0 All Rights Reserved. 本后台系统由dps提供技术支持
+    </div>
+</div>
+<div class="hide" style="padding: 20px" id="update-pass">
+    <form class="layui-form" action="" name="update-pass">
+        <div class="layui-form-item">
+            <label class="layui-form-label">登录密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入登录密码" name="password" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">确认密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入确认密码" name="pass" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="update-pass">修改</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="hide" style="padding: 20px" id="update-account">
+    <form class="layui-form" action="" name="update-account">
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号cookie</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入账号cookie" name="cookie" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号token</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入账号token" name="token" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="update-account">修改</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__LAYUI_PATH__/layui.all.js"></script>
+<script>
+    var layer = layui.layer,
+        element = layui.element,
+        form = layui.form,
+        laydate = layui.laydate,
+        upload = layui.upload,
+        carousel = layui.carousel,
+        flow = layui.flow,
+        util = layui.util,
+        table = layui.table,
+        laypage = layui.laypage,
+        laytpl = layui.laytpl,
+        layedit = layui.layedit,
+        $ = layui.jquery;
+
+    function updatePass() {
+        $('#update-pass input').val('');
+        layer.open({
+            type: 1,
+            title: '修改密码',
+            area: ['500px', '260px'],
+            content: $('#update-pass')
+        })
+    }
+
+    function updateAccount() {
+        $('#update-account input').val('');
+        layer.open({
+            type: 1,
+            title: '修改账号信息',
+            area: ['500px', '260px'],
+            content: $('#update-account')
+        })
+    }
+
+    //监听提交
+    form.on('submit(update-pass)', function (data) {
+        if (!data.field.password) {
+            layer.msg('请输入登录密码！');
+            return false;
+        }
+        if (!data.field.pass) {
+            layer.msg('请输入确认密码！');
+            return false;
+        }
+        if (data.field.password != data.field.pass) {
+            layer.msg('两次密码不一致！');
+            return false;
+        }
+        $.post("{:U('Index/updatePass')}", data.field, function (res) {
+            if (res.status == 1) {
+                layer.msg(res.info, function () {
+                    parent.layer.closeAll();
+                });
+            } else {
+                layer.msg(res.info);
+            }
+        });
+        return false;
+    });
+
+    //监听提交
+    form.on('submit(update-account)', function (data) {
+        if (!data.field.cookie && !data.field.token) {
+            layer.msg('请输入cookie或token！');
+            return false;
+        }
+        $.post("{:U('Index/updateAccount')}", data.field, function (res) {
+            if (res.status == 1) {
+                layer.msg(res.info, function () {
+                    parent.layer.closeAll();
+                });
+            } else {
+                layer.msg(res.info);
+            }
+        });
+        return false;
+    });
+</script>
+<block name="box"></block>
+<block name="js"></block>
+</body>
+</html>

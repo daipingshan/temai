@@ -1,0 +1,252 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <link rel="stylesheet" type="text/css" href="__CSS_PATH__/previewgallery.css?v={:C('CSS_VER')}">
+    <style type="text/css">
+        .layui-layer-page {
+            background-color: #fff !important;
+            background-size: cover;
+            color: #333 !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-md5">
+            <div id="simulator">
+                <div id="main">
+                    <div id="gallery" class="swipe" style="visibility: visible;">
+                        <div class="swipe-wrap">
+                            <!--figcaption为图片描述，控制在200字以内-->
+                            <!--img标签width和height属性须事先给出，由于懒加载的需要，必须把"src"改写为"alt-src" -->
+                            <volist name="data" id="vo">
+                                <div class="swiper-slide" data-id="{$vo.id}" data-sort="{$key+1}">
+                                    <figure>
+                                        <div class="img-wrap">
+                                            <img src="{$vo.img}">
+                                            <div class="pswp__price_tag position_left" style="top:20%;left:60%;">
+                                                <span>¥{$vo.price}</span>
+                                                <i class="dot-con">
+                                                    <i class="dot-animate"></i>
+                                                    <i class="dot"></i>
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-bar">
+                                            <h2>
+                                                {$vo.title}
+                                                <a class="direct-link"
+                                                   href="{$vo.tmall_url}"
+                                                   target="_blank">直达链接</a>
+                                            </h2>
+                                            <figcaption>
+                                                <strong>{$key+1}/{:count($data)}</strong> {$vo.describe_info}
+                                            </figcaption>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </volist>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <span class="prevBtn" onclick="mySwipe.prev();"></span>
+                        <span class="nextBtn" onclick="mySwipe.next();"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-xs12 layui-col-md7" style="margin-top: 50px">
+            <fieldset class="layui-elem-field">
+                <legend>保存文章</legend>
+                <div class="layui-field-box">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">发布账号</label>
+                            <div class="layui-input-inline">
+                                <select name="account_id" id="account">
+                                    <option value="0">请选择发布账号</option>
+                                    <volist name="account" id="row">
+                                        <option value='{$row.id}'>{$row.username}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文章标题</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" id="title" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文章封面</label>
+                            <div class="layui-input-block">
+                                <input type="radio" lay-filter="img-type" name="img_type" value="3" title="三图" checked>
+                                <input type="radio" lay-filter="img-type" name="img_type" value="1" title="单图">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"></label>
+                            <div class="layui-input-block">
+                                <div class="layui-row">
+                                    <div class="layui-col-xs4 img-covers select-img">
+                                        <img src="__IMAGE_PATH__/add.jpg" class="add-logo"/>
+                                    </div>
+                                    <div class="layui-col-xs4 img-covers select-img more-img">
+                                        <img src="__IMAGE_PATH__/add.jpg" class="add-logo"/>
+                                    </div>
+                                    <div class="layui-col-xs4 img-covers select-img more-img">
+                                        <img src="__IMAGE_PATH__/add.jpg" class="add-logo"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">定时发表</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="send_time" id="send-time" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">文章类型</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="news_type" value="1" title="图集">
+                                <input type="radio" name="news_type" value="2" title="专辑" checked>
+                            </div>
+                        </div>
+                        <eq name="group_id" value="1">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">ID</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="source_id" value="{$source_id}" autocomplete="off"
+                                           class="layui-input">
+                                </div>
+                            </div>
+                        </eq>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label"></label>
+                            <div class="layui-input-inline">
+                                <button class="layui-btn" lay-submit lay-filter="save" type="button">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+</block>
+<block name="box">
+    <div id="select-top-img" style="display: none;padding: 20px">
+        <div class="layui-row">
+            <volist name="data" id="row">
+                <div class="layui-col-xs4 img-covers modal-img">
+                    <img src="{$row.img}" data-id="{$row.id}" style="width: 100%">
+                </div>
+            </volist>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS_PATH__/swipe.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script>
+        $(function () {
+            var img_index = 0;
+            var img_id = [];
+            var layer_index = 0;
+            laydate.render({
+                elem: '#send-time'
+                , type: 'datetime'
+            });
+            form.on('radio(img-type)', function (data) {
+                if (data.value == 1) {
+                    $('.more-img').hide();
+                } else {
+                    $('.more-img').show();
+                }
+            });
+            form.render();
+            if ($('#gallery').find('.swipe-wrap').children().length) {
+                window.mySwipe = $('#gallery').Swipe({
+                    startSlide: 0,
+                    continuous: false,
+                    disableScroll: false,
+                    stopPropagation: false,
+                    callback: function (index, elem) {
+                    },
+                    transitionEnd: function (index, elem) {
+                    }
+                }).data('Swipe');
+            }
+            $('.select-img').click(function () {
+                img_index = $(this).index();
+                layer_index = layer.open({
+                    type: 1,
+                    area: ['50%', '50%'],
+                    fix: false, //不固定
+                    maxmin: true,
+                    shadeClose: true,
+                    shade: 0.4,
+                    title: '选择封面图',
+                    content: $('#select-top-img'),
+                    cancel: function () {
+                        $('#select-top-img').hide();
+                    }
+                });
+            });
+
+            $('.modal-img').click(function () {
+                var id = $(this).find('img').data('id');
+                var img = $(this).find('img').attr('src');
+                img_id[img_index] = id;
+                $('.select-img:eq(' + img_index + ')').html("<img src='" + img + "' style='width: 100%'>");
+                $('#select-top-img').hide();
+                layer.close(layer_index);
+            });
+            form.on('submit(save)', function (data) {
+                var _this = $(this);
+                var img_type = data.field.img_type;
+                var img = [];
+                if (data.field.account_id == 0) {
+                    layer.msg('请选择文章发布账号！');
+                    return false;
+                }
+                if (!data.field.title) {
+                    layer.msg('请输入文章标题！');
+                    return false;
+                }
+                var img_len = img_id.length;
+                if (img_len == 0) {
+                    layer.msg('请选择封面图！');
+                    return false;
+                }
+                if (img_type == 3) {
+                    if (img_len != 3) {
+                        var n = 3 - img_len;
+                        layer.msg('您的封面图已选择' + img_len + '张，还差' + n + '张');
+                        return false;
+                    }
+                    img = img_id;
+                } else {
+                    img[0] = img_id[0];
+                }
+                data.field.img = img;
+                _this.addClass('layui-disabled');
+                var url = "{:U('TopLine/saveNews')}";
+                _this.text('正在保存中...');
+                $.post(url, data.field, function (res) {
+                    layer.msg(res.info);
+                    if (res.status == 1) {
+                        setTimeout(function () {
+                            window.parent.location.href = "{:U('TopLine/newsList')}";
+                        }, 3000)
+                    } else {
+                        _this.text('保存');
+                        _this.removeClass('layui-disabled');
+                    }
+                })
+
+            });
+        });
+    </script>
+</block>

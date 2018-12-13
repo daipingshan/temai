@@ -1,0 +1,99 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        a {
+            color: #fff;
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        img {
+            text-align: center;
+        }
+    </style>
+</block>
+<block name="body">
+    <notEmpty name="error_info">
+        <fieldset class="layui-elem-field">
+            <legend>错误信息</legend>
+            <div class="layui-field-box">
+                {$error_info}
+            </div>
+        </fieldset>
+        <else/>
+        <fieldset class="layui-elem-field">
+            <legend>专辑信息编辑</legend>
+            <form class="layui-form" action="">
+                <div class="layui-field-box">
+                    <volist name="data" id="row">
+                        <if condition="($info['is_send'] eq 1) OR ($info['is_save'] eq 1)">
+                            <p>{$row.description}</p>
+                            <else/>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">商品描述</label>
+                                <div class="layui-input-block">
+                                <textarea name="{$row.shop_goods_id}"
+                                          class="layui-textarea">{$row.description}</textarea>
+                                </div>
+                            </div>
+                        </if>
+                        <div style="width: 200px;margin: 10px auto">
+                            <img src="{$row.img}" style="width: 200px"/>
+                        </div>
+                        <hr class="layui-bg-green">
+                    </volist>
+                    <if condition="($info['is_send'] eq 0) and ($info['is_save'] eq 0)">
+                        <div class="layui-form-item" style="position: relative">
+                            <label class="layui-form-label"></label>
+                            <div class="layui-input-inline">
+                                <input type="hidden" name="id" value="{$info.id}">
+                                <button class="layui-btn" lay-submit lay-filter="save" type="button">编辑</button>
+                            </div>
+                        </div>
+                        <div style="position: fixed;bottom: 100px;right: 100px;color: red;z-index: 9999">
+                            总文字数量【<span id="num"></span>】
+                        </div>
+                    </if>
+                </div>
+            </form>
+        </fieldset>
+    </notEmpty>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            countLen();
+            form.on('submit(save)', function (data) {
+                var _this = $(this);
+                _this.addClass('layui-disabled');
+                var url = "{:U('Sale/saveArticleTitle')}";
+                _this.text('正在保存中...');
+                $.post(url, data.field, function (res) {
+                    layer.msg(res.info);
+                    if (res.status == 1) {
+                        setTimeout(function () {
+                            location.href = "{:U('Sale/newsList')}";
+                        }, 3000)
+                    } else {
+                        _this.text('编辑');
+                        _this.removeClass('layui-disabled');
+                    }
+                });
+                return false
+            });
+            $('textarea').keyup(function () {
+                countLen();
+            });
+
+            function countLen() {
+                var num = 0;
+                $('textarea').each(function () {
+                    num = num + parseInt($(this).val().length);
+                })
+                $('#num').text(num);
+            }
+        })
+    </script>
+</block>

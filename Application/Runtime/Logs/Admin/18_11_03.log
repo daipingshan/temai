@@ -1,0 +1,312 @@
+[ 2018-11-03T08:54:06+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001954s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002274s ]
+
+[ 2018-11-03T08:54:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-11-03T08:54:09+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0603s ]
+
+[ 2018-11-03T08:54:12+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0603s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2018-11-03T08:54:20+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-03T08:54:46+08:00 ] 127.0.0.1 /TopLine/itemsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2018-11-03T08:54:46+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-03T08:54:59+08:00 ] 127.0.0.1 /TopLine/addItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-11-03T08:55:04+08:00 ] 127.0.0.1 /TopLine/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2018-11-03T08:55:22+08:00 ] 127.0.0.1 /Sale/selectItems/type/top_line.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000490s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000828s ]
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+NOTIC: [8] Undefined index: sku_url D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\40966e22a6cc233ef1d83680141691cf.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2018-11-03T08:55:45+08:00 ] 127.0.0.1 /TopLine/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2018-11-03T08:56:05+08:00 ] 127.0.0.1 /TopLine/itemsList.html?keyword=&shop_goods_id=&time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+

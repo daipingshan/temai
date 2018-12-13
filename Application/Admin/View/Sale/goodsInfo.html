@@ -1,0 +1,141 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <input type="hidden" name="id" value="{:I('get.id')}">
+                <div class="layui-input-inline" style="width: 400px">
+                    <input type="text" name="time" placeholder="请选择时间范围" autocomplete="off"
+                           class="layui-input" id="time" value="{$time}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="data">
+        <fieldset class="layui-elem-field">
+            <legend>文章标题</legend>
+            <div class="layui-field-box">
+                {$article_title}<span style="color: #4bffe8">【总业绩：{$money}】</span>
+            </div>
+        </fieldset>
+        <xblock>
+            <div class="layui-row">
+                <volist name="data" id="vo">
+                    <div class="layui-row">
+                        <volist name="vo" id="row">
+                            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                                <div class="item-box">
+                                    <div class="img">
+                                        <img lay-src="{$row.img}">
+                                        <div class="img-vice">
+                                            <img lay-src="{$row.img_vice}">
+                                        </div>
+                                        <div class="intro">
+                                            <a href="https://haohuo.snssdk.com/views/product/item?id={$row.shop_goods_id}"
+                                               target="_blank" style="color: #fff"><p>{$row.description}</p></a>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <a href="https://haohuo.snssdk.com/views/product/item?id={$row.shop_goods_id}"
+                                           target="_blank">
+                                            <p class="article-title"
+                                               style="height: 50px;line-height: 25px;font-size: 14px">
+                                                {$row.description_vice}</p>
+                                        </a>
+                                        <div class="layui-row float-box">
+                                            <div class="layui-col-xs5">
+                                                <div class="price">
+                                                    <b>￥{$row.price}</b>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-xs7">
+                                                <div class="right commission-detail" style="cursor: pointer">
+                                                    订单收益详情？
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layui-row float-box">
+                                            <div class="layui-col-xs6">
+                                                <div class="center">
+                                                    成交笔数:{$row.goods_num}
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-xs6">
+                                                <div class="center">
+                                                    总收益：{$row.goods_fee}元
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <if condition="$group_id eq 1">
+                                            <div class="layui-row float-box">
+                                                <eq name="row.is_add" value="1">
+                                                    <button class="layui-btn">已添加至选品库</button>
+                                                    <else/>
+                                                    <div class="layui-col-xs6">
+                                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                                data-id="{$row.shop_goods_id}"
+                                                                data-url="{:U('Sale/addItemCache')}"
+                                                                data-val='{$row.post_data}'
+                                                                data-type="0">
+                                                            一键添加
+                                                        </button>
+                                                    </div>
+                                                    <div class="layui-col-xs6">
+                                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                                data-id="{$row.shop_goods_id}"
+                                                                data-url="{:U('Sale/addItemCache')}"
+                                                                data-val='{$row.post_data}'
+                                                                data-type="1">
+                                                            伪原创
+                                                        </button>
+                                                    </div>
+                                                </eq>
+                                            </div>
+                                        </if>
+                                    </div>
+                                    <div class="commission-info">
+                                        <div class="layui-row" style="margin: 10px">{$row.data_content}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    </div>
+                </volist>
+            </div>
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <include file="Common/footer_box"/>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/top_line_item.js"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+        });
+        flow.lazyimg();
+        $(".commission-detail").hover(function () {
+            $(this).parents('.item-box').find('.commission-info').show();
+        }, function () {
+            $(this).parents('.item-box').find('.commission-info').hide();
+        });
+        $(".img").hover(function () {
+            $(this).find('.img-vice').show();
+        }, function () {
+            $(this).find('.img-vice').hide();
+        });
+    </script>
+</block>

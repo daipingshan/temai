@@ -1,0 +1,423 @@
+[ 2018-11-27T09:53:14+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+
+[ 2018-11-27T09:53:15+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.1525s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0599s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001956s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002015s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2018-11-27T09:53:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+
+[ 2018-11-27T09:53:38+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0653s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tmuser` LIMIT 1   [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_tmuser` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0658s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-11-27T09:53:39+08:00 ] 127.0.0.1 /User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: info D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\d0ef4506432a4cae58808434504837b9.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001046s ]
+
+[ 2018-11-27T09:53:49+08:00 ] 127.0.0.1 /User/auth/id/64/type/sale.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0930s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 64 LIMIT 1   [ RunTime:0.1083s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_account` [ RunTime:0.1201s ]
+SQL: SELECT * FROM `ytt_sale_account` WHERE `id` <> 1  [ RunTime:0.1042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2018-11-27T09:53:53+08:00 ] 127.0.0.1 /User/auth/id/64/type/top_line.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0854s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` <> 1  [ RunTime:0.2912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2018-11-27T09:54:02+08:00 ] 127.0.0.1 /User/auth/id/64/type/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0971s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 64 LIMIT 1   [ RunTime:0.0847s ]
+SQL: SHOW COLUMNS FROM `ytt_shop` [ RunTime:0.1004s ]
+SQL: SELECT *,name as username FROM `ytt_shop`  [ RunTime:0.0806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-11-27T09:54:13+08:00 ] 127.0.0.1 /User/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0793s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tmuser` LIMIT 1   [ RunTime:0.0830s ]
+SQL: SELECT * FROM `ytt_tmuser` ORDER BY id desc LIMIT 20,20   [ RunTime:0.0923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2018-11-27T09:54:18+08:00 ] 127.0.0.1 /User/auth/id/63/type/sale.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.1076s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 63 LIMIT 1   [ RunTime:0.1148s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_account` [ RunTime:0.1182s ]
+SQL: SELECT * FROM `ytt_sale_account` WHERE `id` <> 1  [ RunTime:0.1172s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2018-11-27T09:54:27+08:00 ] 127.0.0.1 /User/auth/id/63/type/top_line.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0887s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0875s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.1007s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` <> 1  [ RunTime:0.8578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2018-11-27T09:54:34+08:00 ] 127.0.0.1 /User/auth/id/63/type/shop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0747s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 63 LIMIT 1   [ RunTime:0.0749s ]
+SQL: SHOW COLUMNS FROM `ytt_shop` [ RunTime:0.0876s ]
+SQL: SELECT *,name as username FROM `ytt_shop`  [ RunTime:0.1217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2018-11-27T15:34:08+08:00 ] 127.0.0.1 /SaleArticle/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0618s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ytt_temai_article` LIMIT 1   [ RunTime:0.6587s ]
+SQL: SELECT * FROM `ytt_temai_article` ORDER BY behot_time desc LIMIT 0,20   [ RunTime:0.0624s ]
+SQL: SELECT count(id) as num,`create_user_id` FROM `ytt_temai_article` WHERE `create_user_id` IN ('3963','28064','33920','2785','3019','32796','3177','3019','28518','1145','26864','28069','1002','284','26453','28768','30791','28768','38090','29404') GROUP BY create_user_id  [ RunTime:1.1805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000415s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\049520d767170d7c6119f2fe484649a3.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\049520d767170d7c6119f2fe484649a3.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2018-11-27T15:34:44+08:00 ] 127.0.0.1 /TopLine/openArticleDetail/id/11514160.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_temai_article` WHERE `id` = 11514160 LIMIT 1   [ RunTime:0.0614s ]
+
+[ 2018-11-27T15:35:44+08:00 ] 127.0.0.1 /SaleArticle/count.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0614s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ytt_temai_article` LIMIT 1   [ RunTime:0.6886s ]
+SQL: SELECT * FROM `ytt_temai_article` ORDER BY behot_time desc LIMIT 0,20   [ RunTime:0.0629s ]
+SQL: SELECT count(id) as num,`create_user_id` FROM `ytt_temai_article` WHERE `create_user_id` IN ('3963','28064','33920','2785','3019','32796','3177','3019','28518','1145','26864','28069','1002','284','26453','28768','30791','28768','38090','29404') GROUP BY create_user_id  [ RunTime:1.1888s ]
+SQL: SELECT count(id) as total,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `behot_time` BETWEEN 1542643200 AND 1543334399 GROUP BY time  [ RunTime:0.3574s ]
+SQL: SELECT `go_detail_count`,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `behot_time` BETWEEN 1542643200 AND 1543334399 AND `go_detail_count` >= 10000  [ RunTime:0.2809s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002477s ]
+
+[ 2018-11-27T19:29:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+
+[ 2018-11-27T19:29:13+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001522s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2018-11-27T19:29:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-11-27T19:29:28+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:24+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:29+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-27T19:30:34+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:34+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:35+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:36+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+
+[ 2018-11-27T19:30:36+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+ERR: SQLSTATE[28000] [1045] ip not in whitelist or in blacklist, client ip is 1.86.247.23
+

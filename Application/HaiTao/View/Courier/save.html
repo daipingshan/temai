@@ -1,0 +1,74 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field w80">
+        <legend>快递员信息</legend>
+        <div class="layui-field-box">
+            <form class="layui-form layui-form-pane" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">真实姓名</label>
+                    <div class="layui-input-block w50">
+                        <input type="text" name="username" value="{$info.username}" autocomplete="off"
+                               placeholder="请输入真实姓名"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">支付宝账号</label>
+                    <div class="layui-input-block w50">
+                        <input type="text" name="alipay_account" value="{$info.alipay_account}" placeholder="请输入支付宝账号"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">联系电话</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="mobile" value="{$info.mobile}" placeholder="请输入联系电话"
+                               autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <empty name="info">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">合作时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="create_time" id="time" value="{$info.create_time}"
+                                   placeholder="请选择合作时间" class="layui-input">
+                        </div>
+                    </div>
+                </empty>
+                <div class="layui-form-item">
+                    <notEmpty name="info"><input type="hidden" name="id" value="{$info.id}"></notEmpty>
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="submit" type="submit">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            laydate.render({
+                elem: '#time'
+                , value: new Date()
+            });
+            form.on('submit(submit)', function (data) {
+                var _this = this;
+                _this.disabled = true;
+                $.post("{:U('save')}", data.field, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.href = "{:U('Partner/index')}"
+                        });
+                    } else {
+                        _this.disabled = false;
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+</block>

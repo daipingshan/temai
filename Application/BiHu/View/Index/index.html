@@ -1,0 +1,20 @@
+<extend name="Common/common"/>
+<block name="body">
+</block>
+<block name="js">
+    <script type="text/javascript">
+        //拖拽上传
+        upload.render({
+            elem: '#upload'
+            , url: "{:U('Index/addIllegalArticle')}"
+            , accept: 'file'
+            , exts: 'xlsx|xls|docx'
+            , field: 'filename'
+            , done: function (res) {
+                layer.msg(res.info, function () {
+                    location.reload();
+                });
+            }
+        });
+    </script>
+</block>

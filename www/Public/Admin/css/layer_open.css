@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    background-color: #fff !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+/*layer弹出层背景设置*/
+
+.layui-layer {
+    background-color: rgba(0, 0, 0, .6) !important;
+    background-size: cover;
+    color: #fff !important;
+}
+
+.layui-layer-msg {
+    border: none !important;
+}
+
+.layui-table {
+    width: 100%;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.layui-table thead tr {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layui-table tbody tr:hover, .layui-table thead tr, .layui-table-click, .layui-table-header, .layui-table-hover, .layui-table-mend, .layui-table-patch, .layui-table-tool, .layui-table[lay-even] tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layui-table[lay-even] tr:nth-child(even), .layui-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.layui-table th, .layui-table td {
+    padding: 9px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}
+
+.layui-table th {
+    font-weight: 600;
+}
+
+.img-covers {
+    width: 30%;
+    margin-right: 3%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #999;
+    float: left;
+}
+
+.img-covers img.add-logo {
+    width: 50px;
+    height: 50px;
+    margin: 25px auto;
+    display: block;
+}

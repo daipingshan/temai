@@ -1,0 +1,43 @@
+<div class="layui-col-xs12 layui-col-sm6 layui-col-md3 shop-item">
+    <div class="item-box">
+        <div class="img">
+            <img src="{$item.img}">
+            <div class="img-vice">
+                <img src="{$item.img_vice}">
+            </div>
+            <div class="intro">
+                <a href="https://haohuo.snssdk.com/views/product/item?id={$item.shop_goods_id}"
+                   target="_blank" style="color: #fff"><p>{$item.description}</p></a>
+            </div>
+            <if condition="$num gt 3">
+                <div class="reward">
+                    <button class="layui-btn layui-btn-sm layui-btn-danger del-item" type="button">
+                        删除
+                    </button>
+                </div>
+            </if>
+        </div>
+        <div class="item-content">
+            <p class="item-title">{$item.top_line_article_title}</p>
+            <p class="article-title">{$item.description_vice}</p>
+            <div class="layui-row">
+                <div class="layui-col-xs12">
+                    店铺名称：{$item.shop_name}
+                </div>
+            </div>
+            <div class="layui-row float-box">
+                <div class="layui-col-xs5">
+                    <div class="price">
+                        <b>￥{$item.price}</b>
+                    </div>
+                </div>
+                <div class="layui-col-xs7">
+                    <div class="time">
+                        {$item.top_line_article_behot_time|date="Y-m-d H:i",###}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="goods_info[]" value='{$item_info}'>
+</div>

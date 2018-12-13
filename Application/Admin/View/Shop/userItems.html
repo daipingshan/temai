@@ -1,0 +1,47 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Shop/product')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品编号" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_goods_id')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+
+                <div class="layui-input-inline" style="width:180px">
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/shop_item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        flow.lazyimg();
+        $(".img").hover(function () {
+            $(this).find('.img-vice').show();
+        }, function () {
+            $(this).find('.img-vice').hide();
+        });
+        $('.update-user-items').click(function () {
+            x_admin_show('编辑推荐语', $(this).data('url'), "80%", "80%");
+        })
+    </script>
+</block>

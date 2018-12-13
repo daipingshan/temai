@@ -1,0 +1,91 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('Author/index')}">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="author_name" placeholder="请输入作者名称" autocomplete="off"
+                           class="layui-input" value="{:I('get.author_name')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"
+                onclick="x_admin_show('添加作者','{:U(\'Author/add\')}','600','350')"><i
+                class="layui-icon">&#xe608;</i>添加
+        </button>
+    </xblock>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>作者ID</th>
+            <th>作者名称</th>
+            <th>作者网址</th>
+            <th>是否点赞</th>
+            <th>添加时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.author_id}</td>
+                <td>{$vo.author_name}</td>
+                <td><a href="{$vo.author_url}" target="_blank" style="color: #fff">{$vo.author_url}</a></td>
+                <td>
+                    <eq name="vo.is_up" value="1">
+                        点赞
+                        <else/>
+                        不点赞
+                    </eq>
+                </td>
+                <td>{$vo.create_time|date="Y-m-d H:i",###}</td>
+                <td>
+                    <a title="编辑" href="javascript:;" data-url="{:U('Author/update',array('id'=>$vo['id']))}"
+                       onclick="x_admin_show('编辑',$(this).data('url'),'600','350')"
+                       class="ml-5" style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe642;</i>
+                    </a>
+                    <a title="删除" href="javascript:;" onclick="member_del({$vo['id']})"
+                       style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe640;</i>
+                    </a>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    {$page}
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        /*用户-删除*/
+        function member_del(id) {
+            layer.confirm('确认要删除该作者吗？', {title: "删除确认"}, function (index) {
+                $.post("{:U('Author/deleteAccount')}", {id: id}, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+            });
+        }
+    </script>
+</block>

@@ -1,0 +1,498 @@
+[ 2018-10-15T11:10:19+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001590s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001675s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2018-10-15T11:10:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-10-15T11:10:22+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0650s ]
+
+[ 2018-10-15T11:10:25+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0643s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0637s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2018-10-15T11:12:37+08:00 ] 127.0.0.1 /TopLine/daTaoKeItemsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0647s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `add_time` = 20181015 ORDER BY is_send,id desc  [ RunTime:0.2562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000433s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2018-10-15T11:12:45+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004155s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-10-15T11:12:48+08:00 ] 127.0.0.1 /TopLine/sendGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0651s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `id` = 399 LIMIT 1   [ RunTime:0.0651s ]
+NOTIC: [8] Undefined index: result D:\www\online_team\www.sale.com\Application\Admin\Controller\TopLineController.class.php 第 1443 行.
+
+[ 2018-10-15T11:17:03+08:00 ] 127.0.0.1 /TopLine/sendGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0673s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `id` = 399 LIMIT 1   [ RunTime:0.0675s ]
+SQL: UPDATE `ytt_dtk_goods` SET `is_auto`='1' WHERE `id` = 399 [ RunTime:0.0680s ]
+
+[ 2018-10-15T11:17:13+08:00 ] 127.0.0.1 /TopLine/daTaoKeItemsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `add_time` = 20181015 ORDER BY is_send,id desc  [ RunTime:0.2449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2018-10-15T11:17:58+08:00 ] 127.0.0.1 /TopLine/daTaoKeItemsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `add_time` = 20181015 ORDER BY is_send,id desc  [ RunTime:0.2581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2018-10-15T13:40:23+08:00 ] 127.0.0.1 /TopLine/daTaoKeItemsList.html?keyword=&sort=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `add_time` = 20181015 ORDER BY is_send,id desc  [ RunTime:0.2555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\15169856edbee16cde6f30be4d64140d.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2018-10-15T15:40:40+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0637s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1740s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.0649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002309s ]
+
+[ 2018-10-15T15:40:47+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0644s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1566s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.0655s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2018-10-15T15:40:57+08:00 ] 127.0.0.1 /TopLine/addShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `id` = 103767 LIMIT 1   [ RunTime:0.0617s ]
+
+[ 2018-10-15T15:41:03+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0619s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1526s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.1223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000581s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2018-10-15T16:32:44+08:00 ] 127.0.0.1 /TopLine/cartShopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2018-10-15T16:32:51+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-10-15T16:33:45+08:00 ] 127.0.0.1 /TopLine/cartShopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2018-10-15T16:33:46+08:00 ] 127.0.0.1 /TopLine/delShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-10-15T16:33:49+08:00 ] 127.0.0.1 /TopLine/delShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-10-15T16:33:50+08:00 ] 127.0.0.1 /TopLine/delShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-10-15T16:33:55+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0648s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1530s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.1277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2018-10-15T16:33:55+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-10-15T16:34:01+08:00 ] 127.0.0.1 /TopLine/addShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0707s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `id` = 103777 LIMIT 1   [ RunTime:0.0715s ]
+
+[ 2018-10-15T16:34:04+08:00 ] 127.0.0.1 /TopLine/addShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0608s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `id` = 103776 LIMIT 1   [ RunTime:0.0610s ]
+
+[ 2018-10-15T16:34:07+08:00 ] 127.0.0.1 /TopLine/cartShopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2018-10-15T16:34:11+08:00 ] 127.0.0.1 /TopLine/delShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2018-10-15T16:34:13+08:00 ] 127.0.0.1 /TopLine/delShopItemCache.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+
+[ 2018-10-15T16:34:16+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0618s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1535s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.1220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-10-15T16:34:16+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-10-15T16:34:33+08:00 ] 127.0.0.1 /TopLine/shopList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `ytt_shop_items` [ RunTime:0.0616s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') LIMIT 1   [ RunTime:0.1516s ]
+SQL: SELECT * FROM `ytt_shop_items` WHERE `status` = 1 AND `shop_id` IN ('1','2','3','4') ORDER BY top_line_article_behot_time desc LIMIT 0,20   [ RunTime:0.1207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6368984b0fbb6170de09a30e7c1cc72b.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+

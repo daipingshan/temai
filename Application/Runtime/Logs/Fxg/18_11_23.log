@@ -1,0 +1,304 @@
+[ 2018-11-23T11:46:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+
+[ 2018-11-23T11:46:05+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2018-11-23T11:46:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-11-23T11:46:09+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `fxg_admin` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `fxg_admin` WHERE `username` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0667s ]
+
+[ 2018-11-23T11:46:12+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2018-11-23T11:46:15+08:00 ] 127.0.0.1 /Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0671s ]
+SQL: SELECT * FROM `fxg_shop` WHERE `id` IN ('1','2','3','4','6')  [ RunTime:0.0668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2018-11-23T11:46:16+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=0&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0690s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0704s ]
+SQL: SELECT * FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1400s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-23T11:46:34+08:00 ] 127.0.0.1 /Order/setProductAmount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+
+[ 2018-11-23T11:47:08+08:00 ] 127.0.0.1 /Order/setProductAmount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+
+[ 2018-11-23T11:48:47+08:00 ] 127.0.0.1 /Order/setProductAmount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+NOTIC: [8] Undefined variable: options D:\www\online_team\www.sale.com\Application\Common\Org\PHPExcel\Settings.php 第 343 行.
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0681s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_id` IN ('3313422610439771621','3313419027782754347','3313418931791909658','3313414535892874128','3313411699075367936','3313409127883127213','3313406049037460758','3313388656575825227','3313384612855694287','3313374663572367107','3313370160299116357','3313369123056153510','3313350619691097422','3313350130719138467','3313349879463558547','3313347500051709706','3313346761308899773','3313344708314549431','3313344008243302130','3313343890131674310','3313343806379789008','3313343331785945810','3313341963184555474','3313340429881200416','3313340380489064026','3313340080487303992','3313339905895188111','3313339353991885253','3313338134867122139','3313337298850049710','3313336626687691934','3313336419027697136','3313334759031201038','3313334466973463409','3313334399747152429','3313332892867887977','3313332263655200903','3313331078235854854','3313330560692284652','3313328305188504006','3313328199961857723','3313325238581860571','3313321742478505392','3313321655077622974','3313321257801486265','3313320683769050151','3313319247748434063','3313316271344463985','3313315342977254783','3313313370085658422','3313306911956408915','3313300747176820667','3313298301192930303','3313292405704360351','3313291345501775231') AND `product_pay_amount` = 0  [ RunTime:0.2021s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273274690309100921',`income`='13.54',`product_pay_amount`='10.38' WHERE `id` = 3669 [ RunTime:0.0758s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273211842249100921',`income`='85.4',`product_pay_amount`='65' WHERE `id` = 3670 [ RunTime:0.0741s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273228801825100921',`income`='60.2',`product_pay_amount`='99' WHERE `id` = 3674 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273267394995100921',`income`='10.8',`product_pay_amount`='8.32' WHERE `id` = 3676 [ RunTime:0.0747s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273297730481100921',`income`='81.2',`product_pay_amount`='398' WHERE `id` = 3681 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273640707632100921',`income`='21.21',`product_pay_amount`='26.4' WHERE `id` = 3683 [ RunTime:0.0683s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273284930273100921',`income`='43.6',`product_pay_amount`='65.9' WHERE `id` = 3686 [ RunTime:0.0679s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='3313316271344463985',`income`='-0.15',`product_pay_amount`='1' WHERE `id` = 3688 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273043808270100921',`income`='35.59',`product_pay_amount`='67.22' WHERE `id` = 3689 [ RunTime:0.0736s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273173473423100921',`income`='21.73',`product_pay_amount`='16.49' WHERE `id` = 3690 [ RunTime:0.0683s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273263298167100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3693 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273037920966100921',`income`='13.96',`product_pay_amount`='19.36' WHERE `id` = 3695 [ RunTime:0.0753s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273552227676100921',`income`='54.4',`product_pay_amount`='65' WHERE `id` = 3694 [ RunTime:0.0677s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273627011265100921',`income`='44.6',`product_pay_amount`='64.9' WHERE `id` = 3697 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272969568046100921',`income`='7.83',`product_pay_amount`='6.99' WHERE `id` = 3705 [ RunTime:0.0804s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273336066980100921',`income`='186',`product_pay_amount`='80' WHERE `id` = 3706 [ RunTime:0.0674s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273001728049100921',`income`='9.21',`product_pay_amount`='5.99' WHERE `id` = 3712 [ RunTime:0.0677s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273028192687100921',`income`='60.2',`product_pay_amount`='99' WHERE `id` = 3713 [ RunTime:0.0690s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273168481310100921',`income`='10.79',`product_pay_amount`='9.49' WHERE `id` = 3717 [ RunTime:0.0672s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273077056693100921',`income`='4.1',`product_pay_amount`='75.1' WHERE `id` = 3720 [ RunTime:0.0683s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272992384770100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3725 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273193473643100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3726 [ RunTime:0.0677s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273597091415100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3728 [ RunTime:0.0672s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272964544299100921',`income`='9.29',`product_pay_amount`='10.99' WHERE `id` = 3737 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273217570691100921',`income`='18.2',`product_pay_amount`='37' WHERE `id` = 3739 [ RunTime:0.0680s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273193633307100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3741 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273193377174100921',`income`='2.3',`product_pay_amount`='12.9' WHERE `id` = 3743 [ RunTime:0.0700s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273223138472100921',`income`='7.83',`product_pay_amount`='6.99' WHERE `id` = 3750 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273252578143100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3753 [ RunTime:0.0682s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273328066985100921',`income`='11.25',`product_pay_amount`='22.5' WHERE `id` = 3754 [ RunTime:0.0704s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272985376457100921',`income`='19.9',`product_pay_amount`='12.9' WHERE `id` = 3757 [ RunTime:0.0689s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273591171139100921',`income`='9.21',`product_pay_amount`='5.99' WHERE `id` = 3758 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272980992308100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3761 [ RunTime:0.0677s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273584643633100921',`income`='10.3',`product_pay_amount`='12.9' WHERE `id` = 3768 [ RunTime:0.0683s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272975584839100921',`income`='19.9',`product_pay_amount`='12.9' WHERE `id` = 3769 [ RunTime:0.0679s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272977056380100921',`income`='9.6',`product_pay_amount`='13.6' WHERE `id` = 3770 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272977472159100921',`income`='9.6',`product_pay_amount`='13.6' WHERE `id` = 3771 [ RunTime:0.0682s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273284738878100921',`income`='60.2',`product_pay_amount`='99' WHERE `id` = 3772 [ RunTime:0.0679s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273204770657100921',`income`='85.4',`product_pay_amount`='65' WHERE `id` = 3781 [ RunTime:0.0672s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273043008894100921',`income`='18.33',`product_pay_amount`='8.58' WHERE `id` = 3782 [ RunTime:0.0682s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273580387365100921',`income`='9.5',`product_pay_amount`='13.7' WHERE `id` = 3783 [ RunTime:0.0740s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273023328019100921',`income`='29.17',`product_pay_amount`='50.33' WHERE `id` = 3784 [ RunTime:0.0737s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273251521542100921',`income`='32.55',`product_pay_amount`='168.45' WHERE `id` = 3785 [ RunTime:0.0743s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273057664479100921',`income`='56.81',`product_pay_amount`='46' WHERE `id` = 3792 [ RunTime:0.0676s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273222945116100921',`income`='39.45',`product_pay_amount`='55.05' WHERE `id` = 3793 [ RunTime:0.0680s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273217538444100921',`income`='19',`product_pay_amount`='37' WHERE `id` = 3795 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273275970362100921',`income`='40.17',`product_pay_amount`='54.33' WHERE `id` = 3798 [ RunTime:0.0679s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273659427901100921',`income`='46.75',`product_pay_amount`='125' WHERE `id` = 3803 [ RunTime:0.0753s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273062304949100921',`income`='31.46',`product_pay_amount`='295.74' WHERE `id` = 3810 [ RunTime:0.0676s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272956512201100921',`income`='12.7',`product_pay_amount`='8.9' WHERE `id` = 3814 [ RunTime:0.0682s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273210529874100921',`income`='29.17',`product_pay_amount`='50.33' WHERE `id` = 3816 [ RunTime:0.0680s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273323778975100921',`income`='33.3',`product_pay_amount`='69.9' WHERE `id` = 3820 [ RunTime:0.0682s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='272955328239100921',`income`='7.2',`product_pay_amount`='12' WHERE `id` = 3830 [ RunTime:0.0678s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273274177228100921',`income`='56.86',`product_pay_amount`='268' WHERE `id` = 3831 [ RunTime:0.0681s ]
+SQL: UPDATE `fxg_order` SET `ali_order_id`='273325090990100921',`income`='50',`product_pay_amount`='42.4' WHERE `id` = 3839 [ RunTime:0.0680s ]
+
+[ 2018-11-23T11:48:52+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=0&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.1341s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0694s ]
+SQL: SELECT * FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0721s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-23T17:35:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+

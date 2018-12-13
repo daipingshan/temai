@@ -1,0 +1,144 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="username" value="{:I('get.username')}" placeholder="请输入真实姓名"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="alipay_account" value="{:I('get.username')}" placeholder="请输入支付宝账号"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="mobile" value="{:I('get.mobile')}" placeholder="请输入手机号码" class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+                <a class="layui-btn layui-btn-danger" href="{:U('add')}"><i class="layui-icon">
+                    &#xe654;</i>添加快递员
+                </a>
+            </div>
+        </div>
+    </form>
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="box">
+    <div id="bind-partner" class="hide">
+        <form class="layui-form layui-form-pane m20" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">供货商</label>
+                <div class="layui-input-block">
+                    <select name="partner_id">
+                        <option value="">请选择供货商</option>
+                        <foreach name="partner" item="row" key="k">
+                            <option value="{$k}">{$row}</option>
+                        </foreach>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <input type="hidden" name="courier_id" id="courier_id" value="">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="submit" type="submit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</block>
+<block name="js">
+    <script type="text/html" id="table-edit">
+        <a class="layui-btn layui-btn-xs" href="{:U('update')}?id={{d.id}}">编辑</a>
+        <a class="layui-btn layui-btn-warm layui-btn-xs bind-partner" data-id="{{d.id}}">绑定供货商</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs check-partner" data-id="{{d.id}}">查看供货商</a>
+    </script>
+    <script type="text/html" id="status">
+        <!-- 这里的 checked 的状态只是演示 -->
+        <input type="checkbox" value="{{d.id}}" lay-skin="switch" lay-text="合作|解除" lay-filter="status"
+               {{ d.status== 1 ? 'checked' : '' }}>
+    </script>
+    <script>
+        $(function () {
+            var index;
+            var url = "{:U('index')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+            //监听性别操作
+            form.on('switch(status)', function (obj) {
+                console.log(obj);
+                var status_url = "{:U('setStatus')}";
+                $.get(status_url, {id: this.value}, function (res) {
+                    layer.tips(res.info, obj.othis);
+                })
+            });
+
+            $('body').on('click', '.bind-partner', function () {
+                var item_id = $(this).data('id');
+                $('#bind-partner #courier_id').val(item_id);
+                $('#bind-partner select option').attr('selected', false);
+                form.render('select');
+                index = layer.open({
+                    type: 1,
+                    title: '绑定供货商',
+                    area: ['50%', '200px'],
+                    content: $('#bind-partner')
+                })
+            });
+
+            form.on('submit(submit)', function (data) {
+                var _this = this;
+                _this.disabled = true;
+                $.post("{:U('bindPartner')}", data.field, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            _this.disabled = false;
+                            layer.close(index);
+                        });
+                    } else {
+                        _this.disabled = false;
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+
+            $('body').on('click', '.check-partner', function () {
+                var get_url = "{:U('checkPartner')}?courier_id=" + $(this).data('id');
+                index = layer.open({
+                    type: 2,
+                    title: '查看供货商',
+                    area: ['80%', '80%'],
+                    content: get_url
+                })
+            });
+
+            function getData(url) {
+                table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                        layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                        , groups: 5 //只显示 1 个连续页码
+                    }
+                    , cellMinWidth: 80
+                    , cols: [[
+                        {field: 'id', title: 'ID', sort: true}
+                        , {field: 'username', width: 200, title: '真实姓名'}
+                        , {field: 'alipay_account', width: 200, title: '支付宝账号'}
+                        , {field: 'mobile', title: '电话'}
+                        , {field: 'create_time', title: '添加时间'}
+                        , {field: 'status', title: '合作状态', templet: '#status', unresize: true}
+                        , {fixed: 'right', title: '操作', toolbar: '#table-edit', width: '20%'}
+                    ]]
+                });
+            }
+        })
+    </script>
+</block>

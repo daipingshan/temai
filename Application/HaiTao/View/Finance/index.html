@@ -1,0 +1,112 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        .layui-form-select .layui-edge {
+            right: 25%;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="pay_time" value="{:I('get.pay_time')}" id="pay_time" placeholder="请选择下单时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="finish_time" value="{:I('get.finish_time')}" id="finish_time"
+                       placeholder="请选择完成时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+                <button class="layui-btn layui-btn-danger down" type="button">下载
+                </button>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2" style="line-height: 50px">
+                总利润：<span id="money" style="color: red">0</span>元
+            </div>
+        </div>
+    </form>
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="js">
+    <script type="text/html" id="order">
+        <a target="_blank"
+           href="{:U('Order/index')}?order_id={{d.order_id}}">{{d.order_id}}</a>
+    </script>
+    <script>
+        $(function () {
+            form.render();
+            laydate.render({
+                elem: '#pay_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            laydate.render({
+                elem: '#finish_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            var url = "{:U('index')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var finish_time = $('input[name=finish_time]').val();
+                if (pay_time == '' && finish_time == '') {
+                    layer.msg('请选择下单时间或完成时间后再查询！');
+                    return false;
+                }
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+            $('form.search').on('click', 'button.down', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var finish_time = $('input[name=finish_time]').val();
+                if (pay_time == '' && finish_time == '') {
+                    layer.msg('请选择下单时间或完成时间后再下载！');
+                    return false;
+                }
+                var down_url = "{:U('downData')}";
+                var param = $('form.search').serialize();
+                var down_url = down_url + '?' + param;
+                location.href = down_url;
+            });
+
+            function getData(url) {
+                table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: false
+                    , height: 'full-230'
+                    , cellMinWidth: 100
+                    , cols: [[
+                        {field: 'order_id', width: 180, title: '订单编号', sort: true, templet: '#order'}
+                        , {field: 'product_name', title: '商品信息', width: 200}
+                        , {field: 'buy_num', title: '数量', width: 60}
+                        , {field: 'total_amount', title: '付款金额'}
+                        , {field: 'pay_time', title: '下单时间', width: 200, sort: true}
+                        , {field: 'finish_time', title: '完成时间', width: 200, sort: true}
+                        , {field: 'order_status_view', title: '订单状态'}
+                        , {field: 'order_status_remark', title: '数据状态'}
+                        , {field: 'supple_price', title: '供货价'}
+                        , {field: 'commission', title: '达人服务费'}
+                        , {field: 'tmp_money', title: '快递代收手续费'}
+                        , {field: 'out_logistics_money', title: '寄件运费'}
+                        , {field: 'get_logistics_money', title: '退件运费'}
+                        , {fixed: 'right', field: 'money', title: '利润'}
+                    ]]
+                    , done: function (res, curr, count) {
+                        $('#money').text(count);
+                    }
+                });
+            }
+        })
+    </script>
+</block>

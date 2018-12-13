@@ -1,0 +1,145 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        .layui-form-select .layui-edge {
+            right: 25%;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <select name="shop_id">
+                    <option value="">请选择店铺</option>
+                    <foreach name="shop_data" item="row">
+                        <option value="{$row.id}">{$row.shop_name}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <input type="text" name="pay_time" value="{:I('get.pay_time')}" id="pay_time" placeholder="请选择下单时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <input type="text" name="receipt_time" value="{:I('get.receipt_time')}" id="receipt_time"
+                       placeholder="请选择收货时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <input type="checkbox" name="data_status" title="异常" class="layui-input">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+                <button type="button" class="layui-btn layui-btn-danger" id="upload-amount"><i class="layui-icon"></i>批量设置结算金额
+                </button>
+                <button class="layui-btn layui-btn-normal down" type="button">下载
+                </button>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2" style="line-height: 50px">
+                总利润：<span id="money" style="color: red">0</span>元
+            </div>
+        </div>
+    </form>
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="js">
+    <script type="text/html" id="table-edit">
+        {{d.income}}|{{d.money}}
+    </script>
+    <script type="text/html" id="order">
+        <a target="_blank"
+           href="{:U('Order/index')}?order_id={{d.order_id}}">{{d.order_id}}</a>
+    </script>
+    <script>
+        $(function () {
+            var tableObj;
+            form.render();
+            laydate.render({
+                elem: '#pay_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            laydate.render({
+                elem: '#receipt_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            var url = "{:U('settle')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var receipt_time = $('input[name=receipt_time]').val();
+                if (pay_time == '' && receipt_time == '') {
+                    layer.msg('请选择下单时间或收货时间后再查询！');
+                    return false;
+                }
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+            $('form.search').on('click', 'button.down', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var receipt_time = $('input[name=receipt_time]').val();
+                if (pay_time == '' && receipt_time == '') {
+                    layer.msg('请选择下单时间或收货时间后再下载！');
+                    return false;
+                }
+                var down_url = "{:U('settleDownData')}";
+                var param = $('form.search').serialize();
+                down_url = down_url + '?' + param;
+                location.href = down_url;
+            });
+
+            upload.render({
+                elem: '#upload-amount'
+                , url: "{:U('Finance/setSettleAmount')}"
+                , accept: 'file'
+                , exts: 'xlsx|xls|docx|csv'
+                , field: 'filename'
+                , before: function () {
+                    layer.msg('处理中，请稍候', {icon: 16, time: false, shade: 0.8});
+                }
+                , done: function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            tableObj.reload();
+                        })
+                    } else {
+                        layer.msg(res.info);
+                    }
+                }
+            });
+
+            function getData(url) {
+                tableObj = table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: false
+                    , height: 'full-230'
+                    , cellMinWidth: 100
+                    , cols: [[
+                        {field: 'order_id', width: 180, title: '订单编号', sort: true, templet: '#order'}
+                        , {field: 'shop_name', title: '店铺名称'}
+                        , {field: 'product_name', title: '商品信息', width: 200}
+                        , {field: 'total_amount', title: '付款金额'}
+                        , {field: 'create_time_view', title: '下单时间', width: 170, sort: true}
+                        , {field: 'receipt_time', title: '收货时间', width: 170, sort: true}
+                        , {field: 'order_status_view', title: '订单状态',width: 80}
+                        , {field: 'order_status_remark', title: '数据状态',width: 80}
+                        , {field: 'product_pay_amount', title: '拍单价',width: 80}
+                        , {field: 'commission', title: '达人服务费',width: 80}
+                        , {field: 'settle_amount', title: '结算金额',width: 80}
+                        , {fixed: 'right', field: 'money', toolbar: '#table-edit', title: '利润', width: 120}
+                    ]]
+                    , done: function (res, curr, count) {
+                        $('#money').text(count);
+                    }
+                });
+            }
+        })
+    </script>
+</block>

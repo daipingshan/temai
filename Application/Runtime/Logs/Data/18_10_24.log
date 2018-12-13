@@ -1,0 +1,68 @@
+[ 2018-10-24T17:31:06+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.1110s ]
+ERR: 1054:Unknown column 'go_detail' in 'order clause'
+ [ SQL语句 ] : select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail desc) as temp_article group by article_id
+ERR: 1054:Unknown column 'go_detail' in 'order clause'
+ [ SQL语句 ] : select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail desc) as temp_article group by article_id
+
+[ 2018-10-24T17:31:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+
+[ 2018-10-24T17:31:32+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.0949s ]
+SQL: select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail_count desc) as temp_article group by article_id [ RunTime:4.2554s ]
+
+[ 2018-10-24T17:31:51+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.0913s ]
+SQL: select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail_count desc) as temp_article group by article_id [ RunTime:4.5202s ]
+
+[ 2018-10-24T17:36:13+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.0917s ]
+SQL: select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by comments_count desc) as temp_article group by article_id order by comments_count [ RunTime:4.6213s ]
+
+[ 2018-10-24T17:36:54+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.0904s ]
+SQL: select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail_count desc) as temp_article group by article_id order by go_detail_count [ RunTime:4.2785s ]
+
+[ 2018-10-24T17:37:08+08:00 ] 127.0.0.1 /Article/updateRead
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: truncate ytt_temai_article_temp [ RunTime:0.1174s ]
+SQL: select * from (select article_id,go_detail_count,title,comments_count from ytt_temai_article_read where behot_time > 1540310400 order by go_detail_count desc) as temp_article group by article_id order by go_detail_count desc [ RunTime:4.4848s ]
+

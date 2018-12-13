@@ -1,0 +1,946 @@
+[ 2018-10-16T08:55:17+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001785s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001894s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2018-10-16T08:55:21+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0701s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0630s ]
+
+[ 2018-10-16T08:55:25+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.1075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0988s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.1146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2018-10-16T08:55:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-10-16T08:55:30+08:00 ] 127.0.0.1 /Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0928s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539619200 GROUP BY article_id ORDER BY count desc  [ RunTime:0.3024s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612629586352013837','6612630358078784007','6612656641357644295','6612624458031038979','6612615562226827789','6612631131609104909','6612633449335357959','6612644526785823245','6612655096578703885','6612631130392756743','6612619529195356679','6612655095748231683','6612652003891872269','6612636540906504707','6612627621815517699','6612633448412611079','6612639635388498445','6612631138483569165','6612650400321372686','6612629585202774536','6612618293545009667','6612623899504935438','6612631133324575239','6612660507423801860','6612652003711517192','6612633448886567438','6612639634415419908','6612625619194741262','6612631137959281166','6612631137346912782','6612631138219328014','6612631904069878276','6612631903960826382','6612631904086655495','6612636540285747719','6612631132502491662','6612634994022023694','6612636541602759172','6612633448987230724','6612639635313000964','6612640406368682500','6612631905294615047','6612644272640360973','6612644273076568583','6612631130543751688','6612642725126734350','6612630358221406728','6612648908612960781','6612692977091346952','6612630358284304904') AND `create_time` BETWEEN 1539637199 AND 1539644401 ORDER BY go_detail_count desc  [ RunTime:0.1853s ]
+NOTIC: [8] Undefined index: 05 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2018-10-16T08:55:32+08:00 ] 127.0.0.1 /Article/articleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+
+[ 2018-10-16T08:55:58+08:00 ] 127.0.0.1 /Article/articleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0942s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539619200 GROUP BY article_id ORDER BY count desc  [ RunTime:0.3416s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612629586352013837','6612630358078784007','6612656641357644295','6612624458031038979','6612615562226827789','6612631131609104909','6612633449335357959','6612644526785823245','6612655096578703885','6612631130392756743','6612619529195356679','6612655095748231683','6612652003891872269','6612636540906504707','6612627621815517699','6612633448412611079','6612639635388498445','6612631138483569165','6612650400321372686','6612629585202774536','6612618293545009667','6612623899504935438','6612631133324575239','6612660507423801860','6612652003711517192','6612633448886567438','6612639634415419908','6612625619194741262','6612631137959281166','6612631137346912782','6612631138219328014','6612631904069878276','6612631903960826382','6612631904086655495','6612636540285747719','6612631132502491662','6612634994022023694','6612636541602759172','6612633448987230724','6612639635313000964','6612640406368682500','6612631905294615047','6612644272640360973','6612644273076568583','6612631130543751688','6612642725126734350','6612630358221406728','6612648908612960781','6612692977091346952','6612630358284304904') AND `create_time` BETWEEN 1539637199 AND 1539644401 ORDER BY go_detail_count desc  [ RunTime:0.2099s ]
+NOTIC: [8] Undefined index: 05 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2018-10-16T08:56:06+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.1183s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:1.4887s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') AND `create_time` BETWEEN 1539637199 AND 1539644401 ORDER BY go_detail_count desc  [ RunTime:0.1140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003355s ]
+
+[ 2018-10-16T08:57:30+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0611s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.6876s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') AND `create_time` BETWEEN 1539637199 AND 1539644401 ORDER BY go_detail_count desc  [ RunTime:0.0628s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2018-10-16T08:58:06+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2018-10-16T08:59:15+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0678s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8189s ]
+
+[ 2018-10-16T09:00:20+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0672s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.9531s ]
+
+[ 2018-10-16T09:00:59+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0642s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8332s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') AND `create_time` BETWEEN 1539640799 AND 1539648001 ORDER BY go_detail_count desc  [ RunTime:0.0666s ]
+
+[ 2018-10-16T09:02:29+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0613s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8233s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') ORDER BY go_detail_count desc  [ RunTime:0.1273s ]
+
+[ 2018-10-16T09:02:38+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0621s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.7545s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') ORDER BY go_detail_count desc  [ RunTime:0.1265s ]
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 06 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 07 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001822s ]
+
+[ 2018-10-16T16:43:41+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+
+[ 2018-10-16T16:43:42+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2018-10-16T16:43:47+08:00 ] 127.0.0.1 /Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0614s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539619200 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5141s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612779505796776462','6612630358078784007','6612714623009292804','6612732406006809092','6612741310417732110','6612656641357644295','6612629586352013837','6612693264485057027','6612813579332616712','6612795041683341838','6612617735505445389','6612631131609104909','6612766795403100686','6612726994033443331','6612780502677979651','6612795346353390084','6612738591162368525','6612799072522732040','6612750773312815630','6612771124566557191','6612624458031038979','6612774192158867971','6612809716915503620','6612793511664157197','6612797269395636750','6612764919412556291','6612737818806452743','6612655095748231683','6612805084721971716','6612741980495544839','6612730085545869828','6612767652358128132','6612615562226827789','6612639634558026243','6612736147275645448','6612790386546967048','6612763890897912333','6612771436643746312','6612727274191979011','6612760593432576525','6612727766414524932','6612737041199268355','6612735614611620360','6612644526785823245','6612619529195356679','6612749111957389827','6612734968613306884','6612799666297766403','6612652003891872269','6612633449335357959') AND `create_time` BETWEEN 1539665999 AND 1539673201 ORDER BY go_detail_count desc  [ RunTime:0.0764s ]
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2018-10-16T16:43:50+08:00 ] 127.0.0.1 /Article/articleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0604s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539619200 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5658s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612779505796776462','6612630358078784007','6612714623009292804','6612732406006809092','6612741310417732110','6612656641357644295','6612629586352013837','6612693264485057027','6612813579332616712','6612795041683341838','6612617735505445389','6612631131609104909','6612766795403100686','6612726994033443331','6612780502677979651','6612795346353390084','6612738591162368525','6612799072522732040','6612750773312815630','6612771124566557191','6612624458031038979','6612774192158867971','6612809716915503620','6612793511664157197','6612797269395636750','6612764919412556291','6612737818806452743','6612655095748231683','6612805084721971716','6612741980495544839','6612730085545869828','6612767652358128132','6612615562226827789','6612639634558026243','6612736147275645448','6612790386546967048','6612763890897912333','6612771436643746312','6612727274191979011','6612760593432576525','6612727766414524932','6612737041199268355','6612735614611620360','6612644526785823245','6612619529195356679','6612749111957389827','6612734968613306884','6612799666297766403','6612652003891872269','6612633449335357959') ORDER BY go_detail_count desc  [ RunTime:0.1267s ]
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 15 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2018-10-16T16:44:13+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0607s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:1.2301s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612418529423524365','6612461709464437251','6612504428505203207','6612525341103620611','6612277054220009988','6612384315068121607','6612490442493657603','6612409252432577037','6612304108604883470','6612397745556685325','6612476509586194948','6612382194801312259','6612421501712859662','6612461994517725704','6612452542968234503','6612435536365748749','6612480012920553997','6612381417395454471','6612497387036344836','6612464886758769165','6612408009572237837','6612441914572538371','6612492088342741518','6612320346232062477','6612400825656410628','6612277055478301192','6612427812479435277','6612498933010661896','6612368276758462979','6612482723464348173','6612469790038557197','6612418685678125582','6612422395699397133','6612399679181160974','6612497386101015053','6612480603046543886','6612499596054626819','6612412706106376707','6612496615221494285','6612409833238823438','6612383669329854979','6612502981017338371','6612505888013943309','6612413629356573188','6612457185106461191','6612512747168989700','6612396846750892557','6612320346848625155','6612452911236514307','6612258500175200771') ORDER BY go_detail_count desc  [ RunTime:0.1358s ]
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 11 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 141 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2018-10-16T17:10:51+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0658s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8528s ]
+
+[ 2018-10-16T17:11:11+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0617s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8901s ]
+
+[ 2018-10-16T17:12:10+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0613s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.7664s ]
+
+[ 2018-10-16T17:12:33+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0602s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.7460s ]
+
+[ 2018-10-16T17:12:48+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0625s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 GROUP BY article_id ORDER BY count desc  [ RunTime:0.7896s ]
+
+[ 2018-10-16T17:13:55+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0611s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 AND `create_time` BETWEEN 1539647999 AND 1539662401 GROUP BY article_id ORDER BY count desc  [ RunTime:0.0817s ]
+
+[ 2018-10-16T17:14:12+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0611s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 AND `create_time` BETWEEN 1539647999 AND 1539662401 GROUP BY article_id ORDER BY count desc  [ RunTime:0.0838s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612598659773104647','6612557381404459523','6612556678422331917','6612569284994400775','6612567734628647428','6612597112209146375','6612566960129442311','6612568909704856077','6612583968518701581','6612587061687878157','6612583197773398541','6612591699547914765','6612593982549524995','6612569688234787341','6612568980248855048') ORDER BY go_detail_count desc  [ RunTime:0.1242s ]
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-10-16T17:14:34+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0615s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 AND `create_time` BETWEEN 1539647999 AND 1539662401 GROUP BY article_id ORDER BY count desc  [ RunTime:0.0816s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612598659773104647','6612557381404459523','6612556678422331917','6612569284994400775','6612567734628647428','6612597112209146375','6612566960129442311','6612568909704856077','6612583968518701581','6612587061687878157','6612583197773398541','6612591699547914765','6612593982549524995','6612569688234787341','6612568980248855048') ORDER BY go_detail_count desc  [ RunTime:0.1251s ]
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2018-10-16T17:15:53+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-16+00%3A00%3A00+%7E+2018-10-16+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0616s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539619200 AND 1539702000 AND `create_time` BETWEEN 1539647999 AND 1539662401 GROUP BY article_id ORDER BY count desc  [ RunTime:0.3435s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612714623009292804','6612630358078784007','6612629586352013837','6612656641357644295','6612631131609104909','6612693264485057027','6612617735505445389','6612624458031038979','6612741310417732110','6612726994033443331','6612655095748231683','6612615562226827789','6612639634558026243','6612736147275645448','6612727274191979011','6612737041199268355','6612727766414524932','6612737818806452743','6612738591162368525','6612644526785823245','6612619529195356679','6612631138483569165','6612737041408983556','6612633448412611079','6612636540906504707','6612633449335357959','6612700707088761351','6612652003891872269','6612735614611620360','6612735728797352462','6612736160869384711','6612738590826824205','6612736506165461507','6612627621815517699','6612753707773723144','6612630358221406728','6612738590768103944','6612713850678542851','6612625619194741262','6612623899504935438','6612735690415276551','6612734724785832462','6612655096578703885','6612631130392756743','6612738590642274824','6612631135715328520','6612643726252573197','6612669009609359885','6612660507423801860','6612732407227351555') ORDER BY go_detail_count desc  [ RunTime:0.1917s ]
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2018-10-16T17:18:20+08:00 ] 127.0.0.1 /Article/articleList.html?title=&article_id=&send_time=2018-10-15+00%3A00%3A00+%7E+2018-10-15+23%3A00%3A00&create_time=2018-10-16+08%3A00%3A00+%7E+2018-10-16+12%3A00%3A00&media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0604s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1539532800 AND 1539615600 AND `create_time` BETWEEN 1539647999 AND 1539662401 GROUP BY article_id ORDER BY count desc  [ RunTime:0.0803s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6612598659773104647','6612557381404459523','6612556678422331917','6612569284994400775','6612567734628647428','6612597112209146375','6612566960129442311','6612568909704856077','6612583968518701581','6612587061687878157','6612583197773398541','6612591699547914765','6612593982549524995','6612569688234787341','6612568980248855048') ORDER BY go_detail_count desc  [ RunTime:0.1270s ]
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 08 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined index: 09 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 10 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+

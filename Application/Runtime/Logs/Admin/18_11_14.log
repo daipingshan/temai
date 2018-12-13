@@ -1,0 +1,226 @@
+[ 2018-11-14T11:09:33+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001406s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001508s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2018-11-14T11:09:33+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+
+[ 2018-11-14T11:09:42+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = '小秦' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0615s ]
+
+[ 2018-11-14T11:09:42+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0744s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = '小秦' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0681s ]
+
+[ 2018-11-14T11:09:43+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0602s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000371s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002623s ]
+
+[ 2018-11-14T11:10:50+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+
+[ 2018-11-14T11:11:40+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0646s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.0812s ]
+
+[ 2018-11-14T11:12:26+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.0783s ]
+
+[ 2018-11-14T11:13:02+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0654s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.0811s ]
+SQL: SELECT * FROM `ytt_sale_news` WHERE `user_id` = 81 ORDER BY id desc LIMIT 0,20   [ RunTime:19.7765s ]
+
+[ 2018-11-14T11:13:50+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.1132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.1108s ]
+SQL: SELECT * FROM `ytt_sale_news` WHERE `user_id` = 81 ORDER BY id desc LIMIT 0,20   [ RunTime:0.4518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\173999717cae02d2226c67ea2e6666b0.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2018-11-14T11:13:54+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0817s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.0825s ]
+SQL: SELECT * FROM `ytt_sale_news` WHERE `user_id` = 81 ORDER BY id desc LIMIT 0,20   [ RunTime:0.3107s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\173999717cae02d2226c67ea2e6666b0.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2018-11-14T11:13:55+08:00 ] 127.0.0.1 /Sale/itemsUrlList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\0463367ec2566c9b30353fe86d493cac.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2018-11-14T11:13:58+08:00 ] 127.0.0.1 /Sale/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0617s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_sale_news` WHERE `user_id` = 81 LIMIT 1   [ RunTime:0.0607s ]
+SQL: SELECT * FROM `ytt_sale_news` WHERE `user_id` = 81 ORDER BY id desc LIMIT 0,20   [ RunTime:0.1854s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_account` [ RunTime:0.0608s ]
+SQL: SELECT * FROM `ytt_sale_account` WHERE `id` <> 1  [ RunTime:0.0622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000409s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\173999717cae02d2226c67ea2e6666b0.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2018-11-14T11:15:12+08:00 ] 127.0.0.1 /Sale/newsInfo/id/48320.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_news` [ RunTime:0.0626s ]
+SQL: SELECT * FROM `ytt_sale_news` WHERE `id` = 48320 LIMIT 1   [ RunTime:0.0612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\0480176489093b583ffee1ad14d7870d.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003009s ]
+

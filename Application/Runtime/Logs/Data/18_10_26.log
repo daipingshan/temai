@@ -1,0 +1,51 @@
+[ 2018-10-26T11:32:54+08:00 ] 127.0.0.1 /Article/autoSendWeiTop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006725s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0647s ]
+SQL: SELECT max(go_detail_count) as count,`news_id`,`title` FROM `ytt_temai_article_read` WHERE `behot_time` BETWEEN 1540508400 AND 1540515599 AND `media_id` = 5500358214 AND `create_user_id` NOT IN (3227,8363) GROUP BY news_id ORDER BY count desc LIMIT 10   [ RunTime:0.0701s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 933 行.
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0640s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0658s ]
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined index: img D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1052 行.
+NOTIC: [2] file_get_contents(http:): failed to open stream: Invalid argument D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1125 行.
+
+[ 2018-10-26T11:32:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+

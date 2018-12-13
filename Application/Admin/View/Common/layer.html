@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特卖管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/font.css?v={:C('CSS_VER')}">
+    <link rel="stylesheet" href="__CSS_PATH__/layer_open.css?v={:C('CSS_VER')}">
+    <block name="css"></block>
+    <script src="__LAYUI_PATH__/layui.all.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script type="text/javascript" src="__JS_PATH__/jquery.min.js"></script>
+</head>
+<body>
+<!-- 中部开始 -->
+<div class="layui-container" style="margin: 15px">
+    <block name="body"></block>
+</div>
+<script type="text/javascript">
+    var layer = layui.layer,
+            element = layui.element,
+            form = layui.form,
+            laydate = layui.laydate,
+            upload = layui.upload,
+            carousel = layui.carousel,
+            flow = layui.flow,
+            util = layui.util,
+            table = layui.table,
+            laypage = layui.laypage,
+            laytpl = layui.laytpl,
+            layedit = layui.layedit;
+</script>
+<!-- 中部结束 -->
+<block name="box"></block>
+<block name="js"></block>
+</body>
+</html>

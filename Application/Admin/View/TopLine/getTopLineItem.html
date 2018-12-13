@@ -1,0 +1,45 @@
+<div class="layui-col-xs12 layui-col-sm6 layui-col-md3 shop-item">
+    <div class="item-box">
+        <div class="img">
+            <img src="{$item.img}">
+            <div class="intro">
+                <a href="https://haohuo.snssdk.com/views/product/item?id={$item.shop_goods_id}"
+                   target="_blank" style="color: #fff"><p>{$item.description}</p></a>
+            </div>
+            <if condition="$num gt 3">
+                <div class="reward">
+                    <button class="layui-btn layui-btn-sm layui-btn-danger del-item" type="button">
+                        删除
+                    </button>
+                </div>
+            </if>
+        </div>
+        <div class="item-content">
+            <a href="{$item.product_url}" target="_blank"><p class="item-title">{$item.name}</p></a>
+
+            <a href="http://www.toutiao.com/a{$item.article_id}" target="_blank">
+                <p class="article-title">{$item.article_title}</p>
+            </a>
+            <div class="layui-row float-box">
+                <div class="layui-col-xs5">
+                    <div class="price">
+                        <b>￥{$item.price}</b>
+                    </div>
+                </div>
+                <div class="layui-col-xs7">
+                    <div class="time">
+                        {$item.behot_time|date="Y-m-d H:i",###}
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row float-box">
+                <volist name="label" id="row">
+                    <button class="layui-btn layui-btn-sm default-bgcolor" type="button">
+                        {$row}
+                    </button>
+                </volist>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="goods_info[]" value='{$item_info}'>
+</div>

@@ -1,0 +1,111 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <style type="text/css">
+        .layui-layer-page {
+            background-color: #fff !important;
+            background-size: cover;
+            color: #333 !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">请选择分类</label>
+            <div class="layui-input-inline">
+                <select name="cate_id">
+                    <option value="0">请选择图集分类</option>
+                    <foreach name="img_cate" item="row" key="k">
+                        <option value="{$k}">{$row}</option>
+                    </foreach>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图集封面</label>
+            <div style="float: left;width: 20%">
+                <img id="covers-img" style="width: 90%"/>
+            </div>
+            <div class="layui-upload-drag" id="upload" style="float: right;">
+                <i class="layui-icon"></i>
+                <p>点击上传，或将文件拖拽到此处</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图集文案</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入内容" name="info" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <input type="hidden" name="img" id="img"/>
+                <button class="layui-btn" lay-submit lay-filter="add">添加</button>
+            </div>
+        </div>
+    </form>
+</block>
+<block name="js">
+    <script src="__JS_PATH__/swipe.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script>
+        $(function () {
+            var upload_url = "{:U('TopLine/uploadTopImg')}";
+            if ($('#gallery').find('.swipe-wrap').children().length) {
+                window.mySwipe = $('#gallery').Swipe({
+                    startSlide: 0,
+                    continuous: false,
+                    disableScroll: false,
+                    stopPropagation: false,
+                    callback: function (index, elem) {
+                    },
+                    transitionEnd: function (index, elem) {
+                    }
+                }).data('Swipe');
+            }
+            form.render();
+            upload.render({
+                elem: '#upload'
+                , size: 5 * 1024 * 1024 //限制文件大小，单位 KB
+                , url: upload_url
+                , accept: 'file' //普通文件
+                , exts: 'jpg|png|jpeg|gif' //只允许上传压缩文件
+                , done: function (res) {
+                    if (res.status == 1) {
+                        $('#covers-img').attr('src', res.info.url);
+                        $('#img').val(res.info.url);
+                        layer.msg('上传成功！');
+                    } else {
+                        layer.msg(res.info);
+                    }
+                }
+            });
+            //监听提交
+            form.on('submit(add)', function (data) {
+                if (data.field.cate_id == 0) {
+                    layer.msg('请选择图集分类！');
+                    return false;
+                }
+                if (!data.field.img) {
+                    layer.msg('请上传图片！');
+                    return false;
+                }
+                if (!data.field.info) {
+                    layer.msg('请输入图集文案！');
+                    return false;
+                }
+                $.post("{:U('Sale/insertImg')}", data.field, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            parent.location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+                return false;
+            });
+        })
+    </script>
+</block>

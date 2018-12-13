@@ -1,0 +1,102 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('User/index')}">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="username" placeholder="请输入用户名" autocomplete="off"
+                           class="layui-input" value="{:I('get.username')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"
+                onclick="x_admin_show('添加用户','{:U(\'User/add\')}','600','550')"><i
+                class="layui-icon">&#xe608;</i>添加
+        </button>
+    </xblock>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>账号名称</th>
+            <th>联盟ID</th>
+            <th>头条ID</th>
+            <th>权限设置</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.name}</td>
+                <td>{$vo.pid}</td>
+                <td>{$vo.source_id}</td>
+                <td>
+                    <button class="layui-btn layui-btn-sm update-auth" style="background-color: rgba(0,0,0,0.4)"
+                            data-url="{:U('User/auth',array('id'=>$vo['id'],'type'=>'sale'))}"
+                            onclick="x_admin_show('特卖授权',$(this).data('url'),'600','350')"
+                            title="特卖授权">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe631;</i>特卖授权
+                    </button>
+                    <button class="layui-btn layui-btn-sm update-auth" style="background-color: rgba(0,0,0,0.4)"
+                            data-url="{:U('User/auth',array('id'=>$vo['id'],'type'=>'top_line'))}"
+                            onclick="x_admin_show('头条授权',$(this).data('url'),'600','230')"
+                            title="头条授权">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe631;</i>头条授权
+                    </button>
+                    <button class="layui-btn layui-btn-sm update-auth" style="background-color: rgba(0,0,0,0.4)"
+                            data-url="{:U('User/auth',array('id'=>$vo['id'],'type'=>'shop'))}"
+                            onclick="x_admin_show('小店授权',$(this).data('url'),'600','230')"
+                            title="小店授权">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe631;</i>小店授权
+                    </button>
+                </td>
+                <td>
+                    <a title="编辑" href="javascript:;" data-url="{:U('User/update',array('id'=>$vo['id']))}"
+                       onclick="x_admin_show('编辑',$(this).data('url'),'600','550')"
+                       class="ml-5" style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe642;</i>
+                    </a>
+                    <a title="删除" href="javascript:;" onclick="member_del({$vo['id']})"
+                       style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe640;</i>
+                    </a>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    {$page}
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+
+        /*用户-删除*/
+        function member_del(id) {
+            layer.confirm('确认要删除该用户吗？', {title: "删除确认"}, function (index) {
+                $.post("{:U('User/deleteAccount')}", {id: id}, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+            });
+        }
+    </script>
+</block>

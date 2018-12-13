@@ -1,0 +1,83 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <style type="text/css">
+        .hide {
+            display: none;
+        }
+    </style>
+</block>
+<block name="body">
+    <notEmpty name="error_info">
+        <fieldset class="layui-elem-field">
+            <legend>错误信息</legend>
+            <div class="layui-field-box">
+                {$error_info}
+            </div>
+        </fieldset>
+        <else/>
+        <div class="layui-row">
+            <form class="layui-form mt20" action="">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品封面</label>
+                    <div class="layui-input-block">
+                        <img id="img" src="{$data.img}" style="height: 100px"/>
+                        <input type="hidden" name="img_url" value="{$data.img}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品分类</label>
+                    <div class="layui-input-inline">
+                        <select name="type_id">
+                            <option value="0">请选择商品分类</option>
+                            <option value="1">居家</option>
+                            <option value="2">五金</option>
+                            <option value="3">车品</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品标签</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="label" placeholder="请输入商品标签【多个请用、隔开】" value="" class="layui-input"/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品文案</label>
+                    <div class="layui-input-block" style="position: relative;">
+                    <textarea placeholder="请输入内容" name="desc" id="desc"
+                              class="layui-textarea">{$data['desc']}</textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <input type="hidden" name="id" value="{$data.id}"/>
+                        <button class="layui-btn" lay-filter="save" lay-submit="save" type="submit">保存</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </notEmpty>
+
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        form.on('submit(save)', function (data) {
+            var _this = $(this);
+            _this.addClass('layui-disabled');
+            var url = "{:U('TopLine/addTopLineItems')}";
+            $.post(url, data.field, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        window.parent.location.href = "{:U('TopLine/goodsList')}"
+                    });
+                } else {
+                    _this.removeClass('layui-disabled');
+                    layer.msg(res.info);
+                }
+            });
+            return false;
+        });
+    </script>
+</block>

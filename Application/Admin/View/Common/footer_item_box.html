@@ -1,0 +1,31 @@
+<div class="layui-row"
+     style="position: fixed;bottom: 0;z-index:11;background: rgba(0,0,0,0.6);height: 50px;width: 100%">
+    <div class="layui-col-xs2">
+        <div id="cart" style="position: relative;width: 50px;height: 40px;line-height: 40px;margin: 5px auto">
+            <i class="layui-icon temai-preview" style="color: #fff;font-size: 40px;cursor: pointer"
+               data-url="{:U('cartList')}" data-title="预览文章" data-width="50%" data-height="95%">&#xe657;</i>
+            <span class="layui-badge cart-num" style="position: absolute;top:5px;right: 0">{$cart_count}</span>
+        </div>
+    </div>
+    <div class=" layui-col-xs2" style="text-align: center;line-height: 50px">
+        <div style="position: relative;width: 50px;height: 40px;line-height: 40px;margin: 5px auto">
+            <i class="layui-icon temai-preview" style="color: #fff;font-size: 30px;cursor: pointer"
+               data-url="{:U('cartSortList')}" data-title="预览文章" data-width="85%" data-height="95%">&#xe653;</i>
+        </div>
+    </div>
+    <div class=" layui-col-xs3" style="text-align: center;line-height: 50px">
+        <button class="layui-btn temai-preview" data-title="保存文章" data-width="80%" data-height="95%"
+                data-url="{:U('Sale/saveCart')}">
+            一键保存
+        </button>
+    </div>
+    <div class="layui-col-xs3" style="text-align: center;line-height: 50px">
+        <button class="layui-btn layui-btn-danger temai-preview" data-title="预览文章" data-width="50%"
+                data-height="95%"
+                data-url="{:U('Sale/cartList')}">
+            一键预览
+        </button>
+    </div>
+    <div class="layui-col-xs3" style="text-align: center;line-height: 50px">
+    </div>
+</div>

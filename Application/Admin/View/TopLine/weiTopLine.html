@@ -1,0 +1,94 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('TopLine/weiTopLine')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品编号" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_goods_id')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="img_data">
+        <xblock>
+            <form class="layui-form xbs">
+                <volist name="img_data" id="vo">
+                    <div style="float: left;width: 15%;margin-right: 5%;position: relative;margin-top: 10px">
+                        <img src="{$vo}" alt="" style="width: 100%;border:1px solid red">
+                        <div style="position: absolute;top: 10px;right: 10px">
+                            <input type="checkbox" name="img[]" title="选择图片" value="{$vo}">
+                        </div>
+                    </div>
+                </volist>
+                <div style="clear: both;margin-bottom: 20px"></div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <select lay-filter="content">
+                            <option value="0">请选择内容</option>
+                            <volist name="desc_data" id="desc">
+                                <option value="{$desc}">{$desc}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">内容</label>
+                    <div class="layui-input-block">
+                        <textarea placeholder="请输入内容" class="layui-textarea" name="content"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">发布账号</label>
+                    <div class="layui-input-inline">
+                        <select name="account_id" id="account">
+                            <option value="0">请选择发布账号</option>
+                            <volist name="account" id="row">
+                                <option value='{$row.id}'>{$row.username}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="save" type="submit">一键发送</button>
+                    </div>
+                </div>
+            </form>
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        var index;
+        form.render();
+        var shop_goods_id = "{:I('get.shop_goods_id')}";
+        var source_id = "{$source_id}";
+        var url = "https://haohuo.snssdk.com/views/product/item?id=" + shop_goods_id + "&source_type=4&source_id=" + source_id + "&origin_type=4&origin_id=" + source_id + "_" + shop_goods_id + "&tt_project_id=6#tt_daymode=1&tt_font=m"
+        form.on('select(content)', function (data) {
+            $('textarea').val(data.value + ' 商品链接【' + url + '】');
+        });
+        form.on('submit(save)', function (data) {
+            index = layer.msg('正在发送请稍侯......', {icon: 16, time: false, shade: 0.8});
+            $.post("{:U('sendWeiTopLine')}", data.field, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        location.href = "{:U('weiTopLine')}";
+                    })
+                } else {
+                    layer.msg(res.info);
+                }
+            })
+            return false;
+        })
+    </script>
+</block>

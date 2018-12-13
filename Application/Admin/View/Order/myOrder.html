@@ -1,0 +1,94 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>我的业绩</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>预估业绩</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{$money}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <notempty name="user_data">
+        <fieldset class="layui-elem-field">
+            <legend>组员业绩</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="user_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <volist name="user_data" id="row">
+                            <th>{$row.name}</th>
+                        </volist>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>业绩</td>
+                        <volist name="user_data" id="row">
+                            <td>{$row.money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </notempty>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th width="15%">付款时间</th>
+            <th>文章来源</th>
+            <th>商品信息</th>
+            <th width="8%">订单状态</th>
+            <th width="8%">收入比率</th>
+            <th width="8%">付款金额</th>
+            <th width="8%">预估收入</th>
+            <th width="8%">订单来源</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.pay_time}</td>
+                <td><a href="{$vo.order_source}" target="_blank" style="color: #fff">{$vo.article_title}</a></td>
+                <td><a href="{$vo.commodity_info}" target="_blank" style="color: #fff">{$vo.commodity_name}</a></td>
+                <td>{$vo.order_status}</td>
+                <td>{$vo.profit_percent}</td>
+                <td>¥{$vo.order_money}</td>
+                <td><span style="color: #FFB800">¥{$vo.income}</span></td>
+                <td>{$vo.name}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    {$page}
+</block>

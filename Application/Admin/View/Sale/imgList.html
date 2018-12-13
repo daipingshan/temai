@@ -1,0 +1,147 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('Sale/imgList')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <button class="layui-btn layui-btn-danger"
+                            type="button"
+                            data-title="添加图集"
+                            data-url="{:U('Sale/addImg')}"
+                            onclick="x_admin_show($(this).data('title'),$(this).data('url'),'40%','70%')">
+                        <i class="layui-icon">&#xe608;</i>添加图集
+                    </button>
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入商品关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+                <eq name="group_id" value="1">
+                    <div class="layui-input-inline">
+                        <select name="user_id">
+                            <option value="0">请选择用户</option>
+                            <foreach name="user_data" item="row">
+                                <option value="{$row.id}"
+                                <if condition="I('get.user_id') eq $row['id']">selected</if>
+                                >{$row.name}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                </eq>
+                <div class="layui-input-inline" style="width:80px">
+                    <input type="hidden" name="cate_id" id="cate_id" value="{:I('get.cate_id')}">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <button data-id=""
+        <if condition="I('get.cate_id')">class="layui-btn item-cate default-bgcolor"
+            <else/>
+            class="layui-btn item-cate"
+        </if>
+        >全部</button>
+        <foreach name="img_cate" item="row" key="k">
+            <button data-id="{$k}"
+            <if condition="I('get.cate_id') neq $k">class="layui-btn item-cate default-bgcolor"
+                <else/>
+                class="layui-btn item-cate"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <volist name="data" id="vo">
+                    <div class="layui-row">
+                        <volist name="vo" id="row">
+                            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                                <div class="item-box">
+                                    <div class="img">
+                                        <img lay-src="{$row.img}">
+                                        <div class="intro">
+                                            <p>{$row.description}</p>
+                                        </div>
+                                        <div style="position: absolute;top: 10px;right: 10px">
+                                            <button class="layui-btn layui-btn-sm layui-btn-danger" data-id="{$vo.id}"
+                                                    onclick="delImg($(this))"
+                                                    data-url="{:U('Sale/delImg')}">
+                                                删除
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="layui-row float-box">
+                                            <eq name="row.is_add" value="1">
+                                                <button class="layui-btn">已添加至选品库</button>
+                                                <else/>
+                                                <div class="layui-col-xs6">
+                                                    <button class="layui-btn default-bgcolor addItemCache"
+                                                            data-id="{$row.id}"
+                                                            data-url="{:U('Sale/addImgCache')}"
+                                                            data-val='{$row.post_data}'
+                                                            data-type="0">
+                                                        一键添加
+                                                    </button>
+                                                </div>
+                                                <div class="layui-col-xs6">
+                                                    <button class="layui-btn default-bgcolor addItemCache"
+                                                            data-id="{$row.id}"
+                                                            data-url="{:U('Sale/addImgCache')}"
+                                                            data-val='{$row.post_data}'
+                                                            data-type="1">
+                                                        伪原创
+                                                    </button>
+                                                </div>
+                                            </eq>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    </div>
+                </volist>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <include file="Common/footer_box"/>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/top_line_item.js"></script>
+    <script type="text/javascript">
+        form.render();
+        flow.lazyimg();
+        $('.item-cate').click(function () {
+            $('#cate_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+        /**
+         * 删除图集
+         * @param obj
+         */
+        function delImg(obj) {
+            var id = obj.data('id');
+            var url = obj.data('url');
+            $.get(url, {id: id}, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        location.reload();
+                    });
+                } else {
+                    layer.msg(res.info);
+                }
+            })
+        }
+    </script>
+</block>

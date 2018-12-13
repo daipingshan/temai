@@ -1,0 +1,35 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        a {
+            color: #fff;
+        }
+
+        a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</block>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>文章详情</legend>
+        <div class="layui-field-box">
+            <h3>商品标题：{$info.title}</h3>
+            <p style="margin: 20px 0">发布时间：{$info.add_time}</p>
+            <if condition="$info['is_normal'] eq 1">
+                {$info.send_content}
+                <else/>
+                {$info.content}
+            </if>
+        </div>
+    </fieldset>
+</block>

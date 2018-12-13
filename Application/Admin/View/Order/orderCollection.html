@@ -1,0 +1,124 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>订单抓取</legend>
+        <div class="layui-field-box">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        特卖账号
+                    </label>
+                    <div class="layui-input-inline">
+                        <select name='cookie'>
+                            <option value=" ">请选择账号</option>
+                            <foreach name="user_data" item="row" key="k">
+                                <option value='{$row}'>{$k}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">订单状态</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="type" value="1" title="下单时间" checked>
+                        <input type="radio" name="type" value="2" title="完成时间">
+                        <input type="radio" name="type" value="3" title="结算时间">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        时间范围
+                    </label>
+                    <div class="layui-input-inline" style="width:300px;">
+                        <input type="text" id="time" name="time" class="layui-input"/>
+                    </div>
+                </div>
+                <div class="layui-row"
+                     style="width: 500px;height: 260px;overflow-y: scroll;border: 1px solid #ccc;margin-left: 40px;color:#fff;padding: 5px 10px"
+                     id="ajax-content">
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                    </label>
+                    <button class="layui-btn layui-btn-danger" id="stop" type="button">
+                        停止
+                    </button>
+                    <button class="layui-btn" lay-submit lay-filter="collection" id="start" type="submit">
+                        立即采集
+                    </button>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 0
+        });
+        var status = 0;
+        var url = "{:U('order/ajaxOrderCollection')}";
+        var page = 1;
+        //监听提交
+        form.on('submit(collection)', function (data) {
+            if (!$.trim(data.field.cookie)) {
+                layer.msg('请选择特卖账号！');
+                return false;
+            }
+            if (!data.field.time) {
+                layer.msg('请选择时间范围！');
+                return false;
+            }
+            var account = $('select[name=cookie] option:selected').text();
+            var type = $('input[name=type]:checked').attr('title');
+            $('#ajax-content').html("<p>" + account + "-" + type + "-" + data.field.time + "<p><p>订单抓取开始</p>");
+            $(this).addClass('layui-disabled').text('正在采集中……');
+            status = 1;
+            data.field.user_name=account;
+            getOrder(data.field);
+
+            return false;
+        });
+
+        function getOrder(param) {
+            if (status == 1) {
+                param.page = page;
+                $.post(url, param, function (res) {
+                    if (res.info == 'success') {
+                        $('#ajax-content').append("<p>订单已采集完成<p>");
+                        $('#ajax-content').scrollTop($('#ajax-content')[0].scrollHeight);
+                    } else {
+                        $('#ajax-content').append("<p>" + res.info + "<p>");
+                    }
+                    if (res.status == 1) {
+                        $('#ajax-content').scrollTop($('#ajax-content')[0].scrollHeight);
+                        page++;
+                        getOrder(param);
+                    } else {
+                        if (res.info != 'success') {
+                            layer.msg(res.info);
+                        } else {
+                            page = 1;
+                        }
+                        $('#start').removeClass('layui-disabled').text('立即采集');
+                    }
+                });
+            } else {
+                $('#ajax-content').append("<br>已停止<br>");
+                $('#ajax-content').scrollTop($('#ajax-content')[0].scrollHeight);
+            }
+        }
+
+        $('#stop').click(function () {
+            if (status == 1) {
+                status = 0;
+                $('#start').removeClass('layui-disabled').text('立即采集');
+            }
+        });
+    </script>
+</block>

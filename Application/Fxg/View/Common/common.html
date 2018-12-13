@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>放心购管理后台</title>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/common.css">
+    <block name="css"></block>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <ul class="layui-nav layui-layout-left" style="left: 0">
+            <li class="layui-nav-item <eq name='controller_name' value='Index'>active</eq>"><a
+                    href="{:U('Index/index')}" class="first">控制台</a></li>
+            <if condition="session('fxg_user_info')['is_super'] eq 1">
+                <li class="layui-nav-item <eq name='controller_name' value='User'>active</eq>"><a class="first"
+                                                                                                  href="{:U('User/index')}">管理员管理</a>
+                </li>
+                <li class="layui-nav-item <eq name='controller_name' value='Shop'>active</eq>">
+                    <a href="javascript:" class="first">店铺管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="{:U('Shop/index')}">店铺列表</a></dd>
+                        <dd><a href="{:U('Shop/add')}">添加店铺</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item <eq name='controller_name' value='Logistic'>active</eq>"><a class="first"
+                                                                                                      href="{:U('Logistics/index')}">快递管理</a>
+                </li>
+                <li class="layui-nav-item <eq name='controller_name' value='OrderError'>active</eq>"><a class="first"
+                                                                                                        href="{:U('OrderError/index')}">订单失败原因</a>
+                </li>
+            </if>
+            <li class="layui-nav-item <eq name='controller_name' value='Item'>active</eq>"><a class="first"
+                                                                                              href="{:U('Item/index')}">商品管理</a>
+            </li>
+            <li class="layui-nav-item <eq name='controller_name' value='Order'>active</eq>"><a class="first"
+                                                                                               href="{:U('Order/index')}">订单管理</a>
+            </li>
+
+            <if condition="session('fxg_user_info')['is_super'] eq 1">
+                <li class="layui-nav-item <eq name='controller_name' value='Finance'>active</eq>">
+                    <a href="javascript:" class="first">财务管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="{:U('Finance/index')}">预估收入</a></dd>
+                        <dd><a href="{:U('Finance/settle')}">结算收入</a></dd>
+                    </dl>
+                </li>
+            </if>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    {:session('fxg_user_info')['username']}
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" onclick="updatePass()">修改密码</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="{:U('Login/logout')}">退了</a></li>
+        </ul>
+    </div>
+    <div class="layui-body" style="left: 0;padding: 20px">
+        <block name="body"></block>
+    </div>
+    <div class="layui-footer" style="left: 0; text-align: center">
+        © Copyright ©2017-2018 dps v1.0 All Rights Reserved. 本后台系统由dps提供技术支持
+    </div>
+</div>
+<div class="hide" style="padding: 20px" id="update-pass">
+    <form class="layui-form" action="" name="update-pass">
+        <div class="layui-form-item">
+            <label class="layui-form-label">登录密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入登录密码" name="password" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">确认密码</label>
+            <div class="layui-input-block">
+                <input type="text" placeholder="请输入确认密码" name="pass" class="layui-input"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="update-pass">修改</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="__LAYUI_PATH__/layui.all.js"></script>
+<script>
+    var layer = layui.layer,
+        element = layui.element,
+        form = layui.form,
+        laydate = layui.laydate,
+        upload = layui.upload,
+        carousel = layui.carousel,
+        flow = layui.flow,
+        util = layui.util,
+        table = layui.table,
+        laypage = layui.laypage,
+        laytpl = layui.laytpl,
+        layedit = layui.layedit,
+        $ = layui.jquery;
+
+    function updatePass() {
+        $('#update-pass input').val('');
+        layer.open({
+            type: 1,
+            title: '修改密码',
+            area: ['500px', '260px'],
+            content: $('#update-pass')
+        })
+    }
+
+    //监听提交
+    form.on('submit(update-pass)', function (data) {
+        if (!data.field.password) {
+            layer.msg('请输入登录密码！');
+            return false;
+        }
+        if (!data.field.pass) {
+            layer.msg('请输入确认密码！');
+            return false;
+        }
+        if (data.field.password != data.field.pass) {
+            layer.msg('两次密码不一致！');
+            return false;
+        }
+        $.post("{:U('Index/updatePass')}", data.field, function (res) {
+            if (res.status == 1) {
+                layer.msg(res.info, function () {
+                    parent.layer.closeAll();
+                });
+            } else {
+                layer.msg(res.info);
+            }
+        });
+        return false;
+    });
+
+</script>
+<block name="box"></block>
+<block name="js"></block>
+</body>
+</html>

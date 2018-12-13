@@ -1,0 +1,73 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <link rel="stylesheet" type="text/css" href="__CSS_PATH__/previewgallery.css?v={:C('CSS_VER')}">
+    <style type="text/css">
+        .layui-layer-page {
+            background-color: #fff !important;
+            background-size: cover;
+            color: #333 !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <div id="simulator">
+        <div id="main">
+            <div id="gallery" class="swipe" style="visibility: visible;">
+                <div class="swipe-wrap">
+                    <!--figcaption为图片描述，控制在200字以内-->
+                    <!--img标签width和height属性须事先给出，由于懒加载的需要，必须把"src"改写为"alt-src" -->
+                    <volist name="data" id="vo">
+                        <div class="swiper-slide" data-id="{$vo.id}" data-sort="{$key+1}">
+                            <figure>
+                                <div class="img-wrap">
+                                    <img src="{$vo.img}">
+                                    <div class="pswp__price_tag position_left" style="top:20%;left:60%;">
+                                        <span>¥{$vo.price}</span>
+                                        <i class="dot-con">
+                                            <i class="dot-animate"></i>
+                                            <i class="dot"></i>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="bottom-bar">
+                                    <h2>
+                                        {$vo.title}
+                                        <a class="direct-link"
+                                           href="{$vo.tmall_url}"
+                                           target="_blank">直达链接</a>
+                                    </h2>
+                                    <figcaption>
+                                        <strong>{$key+1}/{:count($data)}</strong> {$vo.describe_info}
+                                    </figcaption>
+                                </div>
+                            </figure>
+                        </div>
+                    </volist>
+                </div>
+            </div>
+            <div class="btn-container">
+                <span class="prevBtn" onclick="mySwipe.prev();"></span>
+                <span class="nextBtn" onclick="mySwipe.next();"></span>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script src="__JS_PATH__/swipe.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script>
+        $(function () {
+            if ($('#gallery').find('.swipe-wrap').children().length) {
+                window.mySwipe = $('#gallery').Swipe({
+                    startSlide: 0,
+                    continuous: false,
+                    disableScroll: false,
+                    stopPropagation: false,
+                    callback: function (index, elem) {
+                    },
+                    transitionEnd: function (index, elem) {
+                    }
+                }).data('Swipe');
+            }
+        });
+    </script>
+</block>

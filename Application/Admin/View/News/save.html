@@ -1,0 +1,95 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>登记文章</legend>
+        <div class="layui-field-box">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        文章标题
+                    </label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title"
+                        <notEmpty name="info">value="{$info['title']}"</notEmpty>
+                        class="layui-input" placeholder="请输入文章标题" style="width: 80%">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文章类型</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="newstype" value="专辑" title="专辑" checked>
+                        <input type="radio" name="newstype" value="图集" title="图集"
+                        <if condition="$info['newstype'] eq '图集'">checked</if>
+                        >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">写作平台</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="platform" value="特卖" title="特卖" checked>
+                        <input type="radio" name="platform" value="头条" title="头条"
+                        <if condition="$info['platform'] eq '头条'">checked</if>
+                        >
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">审核状态</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="shenhe" value="审核中" title="审核中" checked>
+                        <input type="radio" name="shenhe" value="已审核" title="已审核"
+                        <if condition="$info['shenhe'] eq '已审核'">checked</if>
+                        >
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        所属领域
+                    </label>
+                    <div class="layui-input-inline">
+                        <php>$cate = C('ARTICLE_CATE');</php>
+                        <select name='lingyu'>
+                            <volist name="cate" id="row">
+                                <option value='{$row}'
+                                <if condition="$info['lingyu'] eq $row">selected</if>
+                                >{$row}</option>
+                            </volist>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                    </label>
+                    <notEmpty name="info">
+                        <input type="hidden" name="id" value="{$info['id']}">
+                    </notEmpty>
+                    <button class="layui-btn" lay-filter="save" lay-submit="save" type="submit">
+                        提交
+                    </button>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        //监听提交
+        form.on('submit(save)', function (data) {
+            var _this = $(this);
+            _this.attr('disabled', true);
+            var url = "{:U('News/saveNews')}";
+            $.post(url, data.field, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        window.parent.location.href = "{:U('News/index')}"
+                    });
+                } else {
+                    _this.removeAttr('disabled');
+                    layer.msg(res.info);
+                }
+            });
+            return false;
+        });
+    </script>
+</block>

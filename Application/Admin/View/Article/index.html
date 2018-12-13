@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特卖管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/font.css?v={:C('CSS_VER')}">
+    <block name="css"></block>
+    <script src="__LAYUI_PATH__/layui.all.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script type="text/javascript" src="__JS_PATH__/jquery.min.js"></script>
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</head>
+<body>
+<!-- 中部开始 -->
+<div class="layui-container" style="margin: 15px;width: 98%">
+    <div class="layui-tab">
+        <ul class="layui-tab-title get-url">
+            <li
+            <eq name="type" value="one">class="layui-this"</eq>
+            data-url="{:U('Article/index')}">近3小时文章走势</li>
+            <li
+            <eq name="type" value="two">class="layui-this"</eq>
+            data-url="{:U('Article/articleList')}">文章走势筛选</li>
+            <li
+            <eq name="type" value="three">class="layui-this"</eq>
+            data-url="{:U('Article/numList')}">文章增长量筛选</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <if condition="$type neq 'one'">
+                    <form class="layui-form" name="search">
+                        <div class="layui-form-pane">
+                            <div class="layui-form-item">
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" placeholder="请输入文章关键字" autocomplete="off"
+                                           class="layui-input" value="{:I('get.title')}">
+                                </div>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="article_id" placeholder="请输入文章编号" autocomplete="off"
+                                           class="layui-input" value="{:I('get.article_id')}">
+                                </div>
+                                <div class="layui-input-inline" style="width: 300px">
+                                    <input type="text" name="send_time" class="layui-input" placeholder="请选择发文时间范围"
+                                           id="send-time"
+                                           value="{:I('get.send_time','','trim,urldecode')}">
+                                </div>
+                                <div class="layui-input-inline" style="width: 300px;">
+                                    <input type="text" name="create_time" class="layui-input" placeholder="请选择采集时间范围"
+                                           id="create-time"
+                                           value="{:I('get.create_time','','trim,urldecode')}">
+                                </div>
+                                <div class="layui-input-inline" style="width:80px">
+                                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                                    <button class="layui-btn"><i
+                                            class="layui-icon">
+                                        &#xe615;</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </if>
+                <xblock>
+                    <button data-id=""
+                    <if condition="I('get.media_id')">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+                        <else/>
+                        class="layui-btn layui-btn-sm item-cate"
+                    </if>
+                    >全部</button>
+                    <foreach name="media_id" item="row" key="k">
+                        <button data-id="{$k}"
+                        <if condition="I('get.media_id') neq $k">class="layui-btn layui-btn-sm item-cate
+                            default-bgcolor"
+                            <else/>
+                            class="layui-btn layui-btn-sm item-cate"
+                        </if>
+                        >{$row}</button>
+                    </foreach>
+                </xblock>
+                <notEmpty name="error_info">
+                    <fieldset class="layui-elem-field">
+                        <legend>错误信息</legend>
+                        <div class="layui-field-box">
+                            {$error_info}
+                        </div>
+                    </fieldset>
+                </notEmpty>
+                <notEmpty name="data">
+                    <xblock>
+                        <div class="layui-row" style="height: 500px; overflow-y:scroll;">
+                            <table class="layui-table">
+                                <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>分类</th>
+                                    <th>发文时间</th>
+                                    <volist name="key_data" id="row">
+                                        <th>{$row}</th>
+                                    </volist>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="data" id="row">
+                                    <tr>
+                                        <td><a href="http://www.toutiao.com/a{$row.article_id}" target="_blank">{$row.title}<if condition="$row['is_refresh'] eq 1"><span style="color: red">【刷阅读量】</span></if></a>
+                                        </td>
+                                        <td>{$row.type_name}</td>
+                                        <td>{$row.send_time}</td>
+                                        <volist name="key_data" id="val">
+                                            <td>{$row[$val]}</td>
+                                        </volist>
+                                        <td><a href="{:U('Article/detail',array('article_id'=>$row['article_id']))}"
+                                               class="layui-btn layui-btn-xs" target="_blank">查看走势</a></td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        {$page}
+                    </xblock>
+                </notEmpty>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var layer = layui.layer,
+        element = layui.element,
+        form = layui.form,
+        laydate = layui.laydate,
+        upload = layui.upload,
+        carousel = layui.carousel,
+        flow = layui.flow,
+        util = layui.util,
+        table = layui.table,
+        laypage = layui.laypage,
+        laytpl = layui.laytpl,
+        layedit = layui.layedit;
+    //日期时间范围
+    laydate.render({
+        elem: '#send-time'
+        , type: 'datetime'
+        , range: '~'
+    });
+    //日期时间范围
+    laydate.render({
+        elem: '#create-time'
+        , type: 'datetime'
+        , range: '~'
+    });
+    $('.item-cate').click(function () {
+        var media_id = $(this).data('id');
+        var type = "{$type}";
+        if (type == 'one') {
+            location.href = "{:U('Article/index')}?media_id=" + media_id;
+        } else {
+            $('#media_id').val(media_id)
+            $('form[name=search]').submit();
+        }
+    });
+    $('.get-url li').on('click', function () {
+        location.href = $(this).data('url');
+    })
+</script>
+<!-- 中部结束 -->
+</body>
+</html>

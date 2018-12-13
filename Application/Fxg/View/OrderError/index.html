@@ -1,0 +1,66 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        .layui-form-select .layui-edge {
+            right: 25%;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+                <input type="text" name="order_id" value="{:I('get.order_id')}" placeholder="请输入订单编号"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <select class="form-control layui-select" name="type">
+                    <option value="">请选择操作类型</option>
+                    <option value="1">订单发货</option>
+                    <option value="2">订单确认</option>
+                    <option value="3">重新发货</option>
+                </select>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            form.render();
+            var url = "{:U('index')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+
+            function getData(url) {
+                table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: { //支持传入 laypage 组件的所有参数（某些参数除外，如：jump/elem） - 详见文档
+                        layout: ['limit', 'count', 'prev', 'page', 'next', 'skip'] //自定义分页布局
+                        , groups: 5 //只显示 1 个连续页码
+                    }
+                    , cellMinWidth: 100
+                    , cols: [[
+                        {field: 'order_id', width: '30%', title: '订单编号', sort: true}
+                        , {field: 'type_name', title: '操作类型'}
+                        , {field: 'error_info', title: '错误信息'}
+                        , {field: 'create_time', title: '时间'}
+                    ]]
+                });
+            }
+        })
+    </script>
+</block>

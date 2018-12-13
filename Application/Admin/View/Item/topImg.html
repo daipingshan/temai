@@ -1,0 +1,89 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Item/topImg')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入商品名称" autocomplete="off"
+                           class="layui-input" value="{$param['title']}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品ID" autocomplete="off"
+                           class="layui-input" value="{$param['shop_goods_id']}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="time" id="time" placeholder="请选择上线时间" autocomplete="off"
+                           class="layui-input" value="{:I('get.time','','trim,urldecode')}">
+                </div>
+                <div class="layui-input-inline" style="width:180px">
+                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <php>$cate = C('ARTICLE_CATE');</php>
+        <button data-id=""
+        <if condition="I('get.media_id')">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+            <else/>
+            class="layui-btn layui-btn-sm item-cate"
+        </if>
+        >全部</button>
+        <foreach name="cate" item="row" key="k">
+            <button data-id="{$k}"
+            <if condition="I('get.media_id') neq $k">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+                <else/>
+                class="layui-btn layui-btn-sm item-cate"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <xblock>
+        <div class="layui-row">
+            <volist name="data" id="vo">
+                <div class="layui-row">
+                    <volist name="vo" id="row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img lay-src="{$row.img}">
+                                    <a href="{$row.url}" target="_blank">
+                                        <div class="intro">
+                                            <p style="color: #fff;font-size: 14px;line-height: 20px">
+                                                {$row.title}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </volist>
+        </div>
+        {$page}
+    </xblock>
+</block>
+<block name="js">
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 1
+        });
+        flow.lazyimg();
+        $('.item-cate').click(function () {
+            $('#media_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+    </script>
+</block>

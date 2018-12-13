@@ -1,0 +1,153 @@
+<extend name="Common/common"/>
+<block name="body">
+    <div class="layui-tab">
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+                <li
+                <eq name="type" value="day">class="layui-this"</eq>
+                ><a style="color: #fff" href="{:U('Order/index',array('type'=>'day'))}">今日订单</a></li>
+                <li
+                <eq name="type" value="yesterday">class="layui-this"</eq>
+                ><a style="color: #fff" href="{:U('Order/index',array('type'=>'yesterday'))}">昨日订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <blockquote class="layui-elem-quote layui-quote-nm">总业绩：¥{$money}</blockquote>
+    <php>$num=$user_money=$user_num=$pro_money=$next_money=0;$count_num=count($user_data);</php>
+    <foreach name="user_data" item="row">
+        <php>$num++;</php>
+        <if condition="$row['name'] eq session('admin_user_info')['name']">
+            <php>$user_num = $num;$user_money = $row['money'];</php>
+        </if>
+    </foreach>
+    <if condition="isset($user_data[$user_num-2]) and $user_num gt 0">
+        <php>$pro_money = $user_data[$user_num-2]['money'];</php>
+    </if>
+    <if condition="isset($user_data[$user_num]) and $user_num gt 0">
+        <php>$next_money = $user_data[$user_num]['money'];</php>
+    </if>
+    <fieldset class="layui-elem-field">
+        <legend>业绩排行榜</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <volist name="user_count" id="row" offset="1" length='3'>
+                        <col>
+                    </volist>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>状元</th>
+                    <th>榜眼</th>
+                    <th>探花</th>
+                    <th>个人业绩说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <php>$t=0;</php>
+                    <foreach name="user_count" item="row" key="k">
+                        <php>$t++</php>
+                        <if condition="$t lt 4">
+                            <td>{$k}</td>
+                        </if>
+                    </foreach>
+                    <td rowspan="2">
+                        {:session('admin_user_info')['name']}今天订单金额:{$day_user_money}<br>
+                        本月预估业绩：{$user_money}，预估排名第{$user_num}名<br>
+                        <if condition="$pro_money gt 0">
+                            你比第{$user_num-1}少{:intval($pro_money-$user_money)}<br>
+                        </if>
+                        <if condition="$next_money gt 0">
+                            比第{$user_num+1}多{:intval($user_money-$next_money)}<br>
+                        </if>
+                    </td>
+                </tr>
+                <tr>
+                    <php>$t=0;</php>
+                    <foreach name="user_count" item="row" key="k">
+                        <php>$t++</php>
+                        <if condition="$t lt 4">
+                            <td>{$row.money}</td>
+                        </if>
+                    </foreach>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <fieldset class="layui-elem-field">
+        <legend>业绩排行</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <volist name="user_count" id="row">
+                        <col>
+                    </volist>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>姓名</th>
+                    <foreach name="user_count" item="row" key="k">
+                        <th>{$k}</th>
+                    </foreach>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>订单量</td>
+                    <volist name="user_count" id="vo">
+                        <td>{$vo.num}</td>
+                    </volist>
+                </tr>
+                <tr>
+                    <td>总业绩</td>
+                    <volist name="user_count" id="vo">
+                        <td>{$vo.money}</td>
+                    </volist>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th width="15%">付款时间</th>
+            <th>文章来源</th>
+            <th>商品信息</th>
+            <th width="8%">订单状态</th>
+            <th width="8%">收入比率</th>
+            <th width="8%">付款金额</th>
+            <th width="8%">预估收入</th>
+            <th width="8%">订单来源</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.pay_time}</td>
+                <td><a href="{$vo.order_source}" target="_blank" style="color: #fff">{$vo.article_title}</a></td>
+                <td><a href="{$vo.commodity_info}" target="_blank" style="color: #fff">{$vo.commodity_name}</a></td>
+                <td>{$vo.order_status}</td>
+                <td>{$vo.profit_percent}</td>
+                <td>¥{$vo.order_money}</td>
+                <td><span style="color: #FFB800">¥{$vo.income}</span></td>
+                <td>{$vo.name}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>

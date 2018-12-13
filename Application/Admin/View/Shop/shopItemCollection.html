@@ -1,0 +1,119 @@
+<extend name="Common/common"/>
+<block name="body">
+    <fieldset class="layui-elem-field">
+        <legend>选品同步</legend>
+        <div class="layui-field-box">
+            <form class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        小店账号
+                    </label>
+                    <div class="layui-input-inline">
+                        <select name='shop_id'>
+                            <option value=" ">请选择小店</option>
+                            <foreach name="name" item="row" key="k">
+                                <option value='{$k}'>{$row}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">同步条件</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="type" value="1" lay-filter="type" title="时间同步" checked>
+                        <input type="radio" name="type" value="2" lay-filter="type" title="全部同步">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                        时间范围
+                    </label>
+                    <div class="layui-input-inline" style="width:300px;">
+                        <input type="text" id="time" name="time" class="layui-input"/>
+                    </div>
+                </div>
+                <div class="layui-row"
+                     style="width: 500px;height: 260px;overflow-y: scroll;border: 1px solid #ccc;margin-left: 40px;color:#fff;padding: 5px 10px"
+                     id="ajax-content">
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                    </label>
+                    <button class="layui-btn layui-btn-danger" id="stop" type="button">
+                        停止
+                    </button>
+                    <button class="layui-btn" lay-submit lay-filter="collection" id="start" type="submit">
+                        立即同步
+                    </button>
+                    <button class="layui-btn layui-btn-warm" id="cache" type="button">
+                        更新商品缓存
+                    </button>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 0
+        });
+        var status = 0;
+        var url = "{:U('Shop/ajaxShopItemCollection')}";
+        //监听提交
+        form.on('submit(collection)', function (data) {
+            if (!$.trim(data.field.shop_id)) {
+                layer.msg('请选择小店账号！');
+                return false;
+            }
+            if (data.field.type == 1) {
+                if (!data.field.time) {
+                    layer.msg('请选择时间范围！');
+                    return false;
+                }
+            }
+            var shop_name = $('select[name=shop_id] option:selected').text();
+            $('#ajax-content').html("<p>" + shop_name + "<p><p>商品同步开始</p>");
+            $(this).addClass('layui-disabled').text('正在同步中……');
+            status = 1;
+            getOrder(data.field);
+            return false;
+        });
+
+        function getOrder(param) {
+            if (status == 1) {
+                $.post(url, param, function (res) {
+                    if (res.status == 1) {
+                        $('#ajax-content').append("<p>" + res.info + "<p>");
+                        $('#start').removeClass('layui-disabled').text('立即同步');
+                    } else {
+                        if (res.info != 'success') {
+                            layer.msg(res.info);
+                        }
+                        $('#start').removeClass('layui-disabled').text('立即同步');
+                    }
+                });
+            } else {
+                $('#ajax-content').append("<br>已停止<br>");
+            }
+        }
+
+        $('#stop').click(function () {
+            if (status == 1) {
+                status = 0;
+                $('#start').removeClass('layui-disabled').text('立即同步');
+            }
+        });
+
+        $('#cache').click(function () {
+            $.get("{:U('shop/updateShopItemCache')}", {}, function (res) {
+                layer.msg(res.info);
+            })
+        })
+    </script>
+</block>

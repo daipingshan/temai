@@ -1,0 +1,118 @@
+<extend name="Common/common"/>
+<block name="css">
+    <style>
+        .layui-form-select .layui-edge {
+            right: 25%;
+        }
+    </style>
+</block>
+<block name="body">
+    <form class="layui-form search" action="" name="search">
+        <div class="layui-row">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <select name="shop_id">
+                    <option value="">请选择店铺</option>
+                    <foreach name="shop_data" item="row">
+                        <option value="{$row.id}">{$row.shop_name}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <input type="text" name="pay_time" value="{:I('get.pay_time')}" id="pay_time" placeholder="请选择下单时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <input type="text" name="receipt_time" value="{:I('get.receipt_time')}" id="receipt_time"
+                       placeholder="请选择收货时间"
+                       class="layui-input">
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                <input type="checkbox" name="data_status" title="异常" class="layui-input">
+                <button class="layui-btn search" type="button"><i class="layui-icon">
+                    &#xe615;</i>查询
+                </button>
+                <button class="layui-btn layui-btn-normal down" type="button">下载
+                </button>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md2" style="line-height: 50px">
+                总利润：<span id="money" style="color: red">0</span>元
+            </div>
+        </div>
+    </form>
+    <table class="layui-hide" id="table" lay-filter="table"></table>
+</block>
+<block name="js">
+    <script type="text/html" id="order">
+        <a target="_blank"
+           href="{:U('Order/index')}?order_id={{d.order_id}}">{{d.order_id}}</a>
+    </script>
+    <script>
+        $(function () {
+            form.render();
+            laydate.render({
+                elem: '#pay_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            laydate.render({
+                elem: '#receipt_time'
+                , type: 'date'
+                , range:
+                    '~'
+            });
+            var url = "{:U('index')}";
+            getData(url);
+            $('form.search').on('click', 'button.search', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var receipt_time = $('input[name=receipt_time]').val();
+                if (pay_time == '' && receipt_time == '') {
+                    layer.msg('请选择下单时间或收货时间后再查询！');
+                    return false;
+                }
+                var param = $('form.search').serialize();
+                var get_url = url + '?' + param;
+                getData(get_url);
+            });
+
+            $('form.search').on('click', 'button.down', function () {
+                var pay_time = $('input[name=pay_time]').val();
+                var receipt_time = $('input[name=receipt_time]').val();
+                if (pay_time == '' && receipt_time == '') {
+                    layer.msg('请选择下单时间或收货时间后再下载！');
+                    return false;
+                }
+                var down_url = "{:U('downData')}";
+                var param = $('form.search').serialize();
+                var down_url = down_url + '?' + param;
+                location.href = down_url;
+            });
+
+            function getData(url) {
+                table.render({
+                    elem: '#table'
+                    , url: url
+                    , page: false
+                    , height: 'full-230'
+                    , cellMinWidth: 100
+                    , cols: [[
+                        {field: 'order_id', width: 180, title: '订单编号', sort: true, templet: '#order'}
+                        , {field: 'shop_name', title: '店铺名称'}
+                        , {field: 'product_name', title: '商品信息', width: 200}
+                        , {field: 'total_amount', title: '付款金额'}
+                        , {field: 'create_time_view', title: '下单时间', width: 200, sort: true}
+                        , {field: 'receipt_time', title: '收货时间', width: 200, sort: true}
+                        , {field: 'order_status_view', title: '订单状态'}
+                        , {field: 'order_status_remark', title: '数据状态'}
+                        , {field: 'product_pay_amount', title: '拍单价'}
+                        , {field: 'commission', title: '达人服务费'}
+                        , {fixed: 'right', field: 'money', title: '利润'}
+                    ]]
+                    , done: function (res, curr, count) {
+                        $('#money').text(count);
+                    }
+                });
+            }
+        })
+    </script>
+</block>

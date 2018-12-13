@@ -1,0 +1,215 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('News/count')}" style="margin-bottom: 20px">
+        <div class="layui-form-pane">
+            <div class="layui-input-inline">
+                <input type="text" name="time" class="layui-input" placeholder="请选择时间范围" id="time"
+                       value="{:I('get.time','','urldecode')}">
+            </div>
+            <div class="layui-input-inline" style="width:80px">
+                <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                    &#xe615;</i></button>
+            </div>
+        </div>
+    </form>
+    <fieldset class="layui-elem-field">
+        <legend>文章统计报表</legend>
+        <div class="layui-field-box">
+            <div id="chart" style="height:400px; width:94%;margin: 0 3%"></div>
+        </div>
+    </fieldset>
+    <fieldset class="layui-elem-field">
+        <legend>文章统计</legend>
+        <div class="layui-field-box">
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>文章作者</th>
+                    <th>文章数量</th>
+                    <th>订单数量</th>
+                    <th>总佣金</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="data" id="vo">
+                    <tr>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.news_num}</td>
+                        <td>{$vo.order_num}</td>
+                        <td>{$vo.order_fee}</td>
+                        <td>
+                            <button class="layui-btn layui-btn-sm claim" style="background-color: rgba(0,0,0,0.4)"
+                                    title="查看详情"
+                                    data-url="{:U('Order/articleOrder',array('user_id'=>$vo['user_id'],'time'=>$time))}"
+                                    onclick="location.href=$(this).data('url')">
+                                <i class="icon iconfont" style="font-size:10px !important;color: #fff;margin: 0 5px">&#xe6fa</i>查看详情
+                            </button>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+</block>
+<block name="js">
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script>
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('chart'));
+
+        var option = {
+            title: {
+                text: '当月发文数量、订单数量及总佣金数据',
+                x: 'center',
+                textStyle: {
+                    "color": "#ffffff"
+                }
+                ,
+                subtextStyle: {
+                    "color": "#ffffff"
+                }
+            }
+            ,
+            tooltip: {
+                trigger: 'axis',
+                formatter: function (params) {
+                    return params[0].name + '<br/>'
+                            + params[0].seriesName + ' : ' + params[0].value + '<br/>'
+                            + params[1].seriesName + ' : ' + params[1].value + '<br/>'
+                            + params[2].seriesName + ' : ' + params[2].value;
+                }
+            }
+            ,
+            legend: {
+                data: ['发文数量', '订单数量', '总佣金'],
+                x: 'center',
+                y: 30,
+                textStyle: {
+                    "color": "#ffffff"
+                }
+                ,
+                subtextStyle: {
+                    "color": "#ffffff"
+                }
+            }
+            ,
+            toolbox: {
+                show: true,
+                feature: {
+                    mark: {
+                        show: true
+                    }
+                    ,
+                    dataView: {
+                        show: true, readOnly: false
+                    }
+                    ,
+                    magicType: {
+                        show: true, type: ['line', 'bar']
+                    }
+                    ,
+                    restore: {
+                        show: true
+                    }
+                    ,
+                    saveAsImage: {
+                        show: true
+                    }
+                }
+                ,
+            }
+            ,
+            dataZoom: {
+                show: true,
+                realtime: true,
+                start: 0,
+                end: 100,
+            }
+            ,
+            xAxis: [
+                {
+                    type: 'category',
+                    boundaryGap: false,
+                    axisLine: {onZero: false},
+                    data: {$user_data},
+                    axisLabel: {
+                        show: true,
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    name: '发文数量',
+                    type: 'value',
+                    axisLabel: {
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    }
+                },
+                {
+                    name: '订单数量',
+                    type: 'value',
+                    axisLabel: {
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    }
+                }, {
+                    name: '总佣金',
+                    type: 'value',
+                    axisLabel: {
+                        textStyle: {
+                            color: '#fff'
+                        }
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '发文数量',
+                    type: 'line',
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data: {$news_num}
+                },
+                {
+                    name: '订单数量',
+                    type: 'line',
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data: {$order_num}
+                },
+                {
+                    name: '总佣金',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data: {$total_fee}
+                }
+            ]
+        };
+        // 为echarts对象加载数据
+        myChart.setOption(option);
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 1
+        });
+
+    </script>
+</block>

@@ -1,0 +1,95 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('Order/count')}">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;text-align: center">
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入文章关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.title')}">
+                </div>
+                <div class="layui-input-inline">
+                    <select name="time">
+                        <option value="1">今天</option>
+                        <option value="2"
+                        <if condition="I('get.time') eq $k">selected</if>
+                        >昨天</option>
+                        <option value="3"
+                        <if condition="I('get.time') eq $k">selected</if>
+                        >前天</option>
+                    </select>
+                </div>
+                <eq name="group_id" value="1">
+                    <div class="layui-input-inline">
+                        <select name="user_id">
+                            <option>请选择用户</option>
+                            <foreach name="user" item="row" key="k">
+                                <option value="{$k}"
+                                <if condition="I('get.user_id') eq $k">selected</if>
+                                >{$row}</option>
+                            </foreach>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <input type="text" name="times" class="layui-input" placeholder="请选择时间范围" id="time"
+                               value="{:I('get.times','','urldecode')}">
+                    </div>
+                </eq>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>文章标题</th>
+            <th width="8%">出单数量</th>
+            <th width="8%">总佣金</th>
+            <th width="10%">订单日期</th>
+            <th width="8%">订单来源</th>
+            <th width="8%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td><a href="{$vo.order_source}" target="_blank" style="color: #fff">{$vo.article_title}</a></td>
+                <td>{$vo.news_num}</td>
+                <td>{$vo.income}</td>
+                <td>{$vo.time}</td>
+                <td>{$vo.name}</td>
+                <td>
+                    <button class="layui-btn layui-btn-sm claim" style="background-color: rgba(0,0,0,0.4)"
+                            title="查看商品" data-id="{$vo.id}"  data-url="{:U('Sale/goodsInfo')}?id={$vo['id']}&time={$time}" onclick="location.href=$(this).data('url')">
+                        <i class="icon iconfont" style="font-size:10px !important;color: #fff;margin: 0 5px">&#xe6fa</i>查看商品
+                    </button>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="js">
+    <script>
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , min: -30
+            , max: 1
+        });
+
+    </script>
+</block>

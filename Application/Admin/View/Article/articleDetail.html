@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特卖管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="__LAYUI_PATH__/css/layui.css">
+    <link rel="stylesheet" href="__CSS_PATH__/font.css?v={:C('CSS_VER')}">
+    <block name="css"></block>
+    <script src="__LAYUI_PATH__/layui.all.js?v={:C('JS_VER')}" charset="utf-8"></script>
+    <script type="text/javascript" src="__JS_PATH__/jquery.min.js"></script>
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</head>
+<body>
+<!-- 中部开始 -->
+<div class="layui-container" style="margin: 15px;width: 98%">
+    <div class="layui-tab">
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <notEmpty name="error_info">
+                    <fieldset class="layui-elem-field">
+                        <legend>错误信息</legend>
+                        <div class="layui-field-box">
+                            {$error_info}
+                        </div>
+                    </fieldset>
+                </notEmpty>
+                <notEmpty name="data">
+                    <xblock>
+                        <div class="layui-row">
+                            <table class="layui-table" lay-size="sm">
+                                <colgroup>
+                                    <col width="300">
+                                    <col width="150">
+                                    <volist name="time_data" id="row">
+                                        <col>
+                                    </volist>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>标题</th>
+                                    <th>发文时间</th>
+                                    <volist name="time_data" id="row">
+                                        <th>{$row}</th>
+                                    </volist>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="data" id="row">
+                                    <tr>
+                                        <td><a href="http://www.toutiao.com/a{$row.article_id}" target="_blank">{$row.title}</if></a>
+                                        </td>
+                                        <td>{$row.behot_time}</td>
+                                        <volist name="time_data" id="val">
+                                            <td>{$row[$val]}</td>
+                                        </volist>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                        </div>
+                        {$page}
+                    </xblock>
+                </notEmpty>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 中部结束 -->
+</body>
+</html>

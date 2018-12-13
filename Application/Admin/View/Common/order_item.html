@@ -1,0 +1,52 @@
+<volist name="data" id="vo">
+    <div class="layui-row">
+        <volist name="vo" id="row">
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                <div class="item-box">
+                    <div class="img">
+                        <img lay-src="{$row.img}">
+                        <a href="{$row.commodity_info}" target="_blank">
+                            <div class="intro">
+                                <p style="color: #fff;font-size: 14px;line-height: 20px">{$row.commodity_name}</p>
+                            </div>
+                        </a>
+                        <div class="new">
+                            <button class="layui-btn layui-btn-sm layui-btn-danger" type="button">
+                                {$row.num}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs12">
+                                <div class="price">
+                                    <b>￥{$row.order_money}</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs5">
+                                <div class="time" style="text-align: left">
+                                    佣金比率：<span>{$row['profit_percent']*100}%</span>
+                                </div>
+                            </div>
+                            <div class="layui-col-xs7">
+                                <div class="time" style="text-align: right">
+                                    预估：<span>￥{$row['income']}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-row float-box">
+                            <button class="layui-btn default-bgcolor copy-item-id copy-{$row.goods_id}"
+                                    data-class=".copy-{$row.goods_id}"
+                                    data-clipboard-text="{$row.goods_id}"
+                                    type="button">
+                                复制商品编号
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>

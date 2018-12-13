@@ -1,0 +1,126 @@
+<volist name="data" id="vo">
+    <div class="layui-row">
+        <volist name="vo" id="row">
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                <div class="item-box">
+                    <div class="img">
+                        <img lay-src="{$row.figure}">
+                        <a href="{$row.sku_url}" target="_blank">
+                            <div class="intro">
+                                <p style="color: #fff;font-size: 14px;line-height: 20px">{$row.sku_title}</p>
+                            </div>
+                        </a>
+                        <if condition="$type eq 'sale'">
+                            <if condition="($group_id eq 1) and ($row['is_have'] eq 0)">
+                                <div class="reward reward-{$row.platform_sku_id}">
+                                    <button class="layui-btn layui-btn-sm layui-btn-warm item-reward" type="button"
+                                            data-id="{$row.platform_sku_id}">
+                                        添加奖励库
+                                    </button>
+                                </div>
+                            </if>
+                            <if condition="$group_id eq 1">
+                                <if condition="$row['is_shop'] eq 0">
+                                    <div class="shop shop-{$row.platform_sku_id}">
+                                        <button class="layui-btn layui-btn-sm layui-btn-normal item-shop" type="button"
+                                                data-id="{$row.platform_sku_id}" data-val="1">
+                                            添加小店商品
+                                        </button>
+                                    </div>
+                                    <else/>
+                                    <div class="shop shop-{$row.platform_sku_id}">
+                                        <button class="layui-btn layui-btn-sm layui-btn-danger item-shop" type="button"
+                                                data-id="{$row.platform_sku_id}" data-val="0">
+                                            删除小店商品
+                                        </button>
+                                    </div>
+                                </if>
+                            </if>
+                            <if condition="$row['is_new'] eq 1">
+                                <div class="new">
+                                    <button class="layui-btn layui-btn-sm layui-btn-danger" type="button">
+                                        新品
+                                    </button>
+                                </div>
+                            </if>
+                            <elseif condition="$type eq 'reward'"/>
+                            <if condition="($group_id eq 1)">
+                                <div class="reward">
+                                    <button class="layui-btn layui-btn-sm layui-btn-warm del-item-reward"
+                                            type="button"
+                                            data-id="{$row.platform_sku_id}">
+                                        删除奖励商品
+                                    </button>
+                                </div>
+                                <div class="new">
+                                    <button class="layui-btn layui-btn-sm layui-btn-danger" type="button">
+                                        奖励：{$row.reward_money}
+                                    </button>
+                                </div>
+                            </if>
+                        </if>
+                    </div>
+                    <div class="item-content">
+                        <a href="{$row.sku_url}" target="_blank">
+                            <p class="item-title">{$row['shop_name']}</p>
+                        </a>
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs5">
+                                <div class="price">
+                                    <b>￥{$row.sku_price}</b>
+                                </div>
+                            </div>
+                            <div class="layui-col-xs7">
+                                <div class="time" style="text-align: right">
+                                    热度： <span>{$row['hotrank']}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs5">
+                                <div class="time" style="text-align: left">
+                                    佣金比率：<span>{$row['cos_ratio']*100}%</span>
+                                </div>
+                            </div>
+                            <div class="layui-col-xs7">
+                                <div class="time" style="text-align: right">
+                                    预估：<span>￥{$row['cos_fee']}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <if condition="$type eq 'shop'">
+                            <div class="layui-row">
+                                店铺名称：{$row.shop_name}
+                            </div>
+                            <div class="layui-row float-box">
+                                <button class="layui-btn default-bgcolor add-item"
+                                        data-url="{:U('Shop/addUserItem',array('shop_goods_id'=>$row['platform_sku_id']))}"
+                                        type="button">
+                                    手工添加推荐语
+                                </button>
+                            </div>
+                            <else/>
+                            <div class="layui-row float-box">
+                                商品上线时间：{$row.create_time|date="Y-m-d H:i:s",###}
+                            </div>
+                            <div class="layui-row float-box">
+                                <a href="{:U('Sale/itemsList')}?shop_goods_id={$row['platform_sku_id']}"><p
+                                        style="color: #fff">
+                                    商品编号：{$row.platform_sku_id}</p></a>
+                            </div>
+                            <div class="layui-row float-box">
+                                <button class="layui-btn default-bgcolor copy-item-id copy-{$row.platform_sku_id}"
+                                        data-class=".copy-{$row.platform_sku_id}"
+                                        data-clipboard-text="{$row.platform_sku_id}"
+                                        type="button">
+                                    复制商品编号
+                                </button>
+                            </div>
+                        </if>
+
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>

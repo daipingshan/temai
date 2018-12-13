@@ -1,0 +1,130 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入商品关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+                <div class="layui-input-inline">
+                    <select name="sort">
+                        <option value="0">请选择排序方式</option>
+                        <option value="1"
+                        <if condition="I('get.sort') eq 1">selected</if>
+                        >按照价格从高到低</option>
+                        <option value="2"
+                        <if condition="I('get.sort') eq 2">selected</if>
+                        >按照价格从低到高</option>
+                        <option value="3"
+                        <if condition="I('get.sort') eq 3">selected</if>
+                        >按照佣金比率从高到低</option>
+                        <option value="4"
+                        <if condition="I('get.sort') eq 4">selected</if>
+                        >按照佣金比率从低到高</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <div class="layui-row">
+            <volist name="data" id="vo">
+                <div class="layui-row">
+                    <volist name="vo" id="row">
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img lay-src="{$row.pic}">
+                                    <div class="intro">
+                                        <p>{$row.desc}</p>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <a href="{$row.coupon_url}" target="_blank"><p class="item-title">
+                                        {$row.short_title}</p></a>
+                                    <a href="{$row.coupon_url}" target="_blank">
+                                        <p class="article-title">{$row.title}</p>
+                                    </a>
+
+                                    <div class="layui-row float-box">
+                                        <div class="layui-col-xs5">
+                                            <div class="price">
+                                                <b>￥{$row.price}</b>
+                                            </div>
+                                        </div>
+                                        <div class="layui-col-xs3">
+                                            <div class="time">
+                                                <i>￥{$row.price}</i>
+                                            </div>
+                                        </div>
+                                        <div class="layui-col-xs4">
+                                            <div class="time">
+                                                <b>{$row.commission_rate}%</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-row float-box">
+                                        <div class="layui-col-xs6">
+                                            <eq name="row['is_send']" value="Y">
+                                                <button class="layui-btn">已发送微头条</button>
+                                                <else/>
+                                                <button class="layui-btn default-bgcolor sendItem"
+                                                        data-id="{$row.id}" data-type="wei_top">
+                                                    微头条
+                                                </button>
+                                            </eq>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <eq name="row['is_auto']" value="1">
+                                                <button class="layui-btn">已发送头条</button>
+                                                <else/>
+                                                <button class="layui-btn default-bgcolor sendItem"
+                                                        data-id="{$row.id}" data-type="top">
+                                                    头条
+                                                </button>
+                                            </eq>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+            </volist>
+        </div>
+    </xblock>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        flow.lazyimg();
+        var is_add = true;
+        $('.sendItem').click(function () {
+            if (is_add === false) {
+                layer.msg('正在请求中...，操作太频繁，请稍后再试！');
+                return false;
+            }
+            var _this = $(this);
+            var id = $(this).data('id');
+            var type = $(this).data('type');
+            var url = "{:U('TopLine/sendGoods')}";
+            is_add = false;
+            $.post(url, {id: id, type: type}, function (res) {
+                if (res.status == 1) {
+                    _this.removeClass('default-bgcolor sendItem').text('已发送');
+                } else {
+                    layer.msg(res.info)
+                }
+                is_add = true;
+            });
+        });
+    </script>
+</block>

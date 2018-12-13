@@ -1,0 +1,98 @@
+[ 2018-11-30T14:00:55+08:00 ] 127.0.0.1 /Article/taoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0635s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ytt_tao_jin_ge_article` WHERE `article_id` = '2fe98d9ac7f04d80be3d17a1758351af' LIMIT 1   [ RunTime:0.0629s ]
+
+[ 2018-11-30T14:00:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-11-30T14:02:49+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0683s ]
+
+[ 2018-11-30T14:03:26+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0658s ]
+
+[ 2018-11-30T14:03:52+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0622s ]
+
+[ 2018-11-30T14:20:06+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0637s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0644s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `covers`='[{\"id\":\"195899727575\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/1b28696743074f13a0f4edbc3e19c273\",\"uri\":\"pgc-image\\/1b28696743074f13a0f4edbc3e19c273\",\"origin_uri\":\"pgc-image\\/1b28696743074f13a0f4edbc3e19c273\",\"ic_uri\":\"pgc-image\\/1b28696743074f13a0f4edbc3e19c273\",\"thumb_width\":600,\"thumb_height\":426},{\"id\":\"486780934406\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/7965c4d0161746ee8c83124a53c9f80e\",\"uri\":\"pgc-image\\/7965c4d0161746ee8c83124a53c9f80e\",\"origin_uri\":\"pgc-image\\/7965c4d0161746ee8c83124a53c9f80e\",\"ic_uri\":\"pgc-image\\/7965c4d0161746ee8c83124a53c9f80e\",\"thumb_width\":1023,\"thumb_height\":384},{\"id\":\"111027201271\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/f2247870691047e2ae6e237b450ef211\",\"uri\":\"pgc-image\\/f2247870691047e2ae6e237b450ef211\",\"origin_uri\":\"pgc-image\\/f2247870691047e2ae6e237b450ef211\",\"ic_uri\":\"pgc-image\\/f2247870691047e2ae6e237b450ef211\",\"thumb_width\":640,\"thumb_height\":411}]',`is_normal`='1' WHERE `id` = 584 [ RunTime:0.0656s ]
+
+[ 2018-11-30T14:20:54+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0623s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+NOTIC: [8] Undefined index: img_key D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1545 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `send_content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 在前几年的b级汽车市场圈子里，本田凯美瑞可是当之无愧的老大哥，本田凯美瑞不仅在颜值上相当惊人而且它还拥有十分卓越的性能，从各方各面来讲本田凯美瑞都找不到任何的瑕疵和污点，所以它在汽车消费者人群当中拥有非常好的口碑。然而在去年丰田公司推出的第八次改良版凯美瑞，在中国市场上却没有立足之地，不仅遭到网友的辱骂而且也没有吸引到消费者。为了弥补损失本田又推出了新款的雅阁。面对现在的形势大众也推出了大众cc，最美合资运动风轿车来了，配无框车门2.0T224马力，18万。</span><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/109ada4344e242c2a06d52fb0f3855c9\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"\" img_width=\"600\" img_height=\"426\"><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/8d7e92a6fda842be8fb3c49b5c98c257\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"\" img_width=\"1023\" img_height=\"384\"><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">全新的一代一汽大众采用了所有车辆综合起来的独特造型设计，车头的中间部分采用了大面积的镀铬横幅装饰。使这辆车变得惟妙惟俏。其中上面两根镀铬装饰两侧延伸巧妙的与大灯中间保持连接效果十分凸显。全款大众cc车采用了mq币平台之后，该车的尺寸也进行了一定的调整。使这辆车深受大众的欢迎和喜爱。车的长宽高深深地融入了大众们的生活，车的侧身则和老款车大众保持一样的造型，而车尾部位的设计和奥迪a6的车尾是有点相似。更有跑车独特的气息和氛围，使这辆车深受大众们的喜爱。</span><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/0b08faa36a964a0aac1ab77e5adfd765\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"\" img_width=\"640\" img_height=\"411\"><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">大众CC的外观想必能够惊艳到绝大多数的消费者，而他的内饰空间的配置，则绝对让消费者大吃一惊。总的黑色系的搭配，显得有一种神秘感，而木纹装饰板的点缀则是一大妙笔，能够进一步提升其视觉效果，也能够减轻黑色系带来的稍微的沉重感。9.2英寸的中控台显得豪华大气，而里面的科技感也是十足的，比如数字化的仪表盘和行车配置系统等等，都让这辆车拥有其他车所不拥有的其他车。整体的内饰感和优美的外观，都让消费者与豪车进行对比。</span><br/><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/6cd190a9113841b290640f6716f156bf\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"\" img_width=\"628\" img_height=\"561\"><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">这款车除了在车身设计上和内饰设计上，对我们有很大的吸引力外，它在配置方面也是非常强悍的。他拥有者可以调节的2.0t引擎，同时他还装配了七速dgs变速系统，这样的配置，使这款车能达到二百二十四马力，这样的行驶它能满足我们在城市的一切需求。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>',`covers`='[{\"id\":\"132110161032\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/109ada4344e242c2a06d52fb0f3855c9\",\"uri\":\"pgc-image\\/109ada4344e242c2a06d52fb0f3855c9\",\"origin_uri\":\"pgc-image\\/109ada4344e242c2a06d52fb0f3855c9\",\"ic_uri\":\"pgc-image\\/109ada4344e242c2a06d52fb0f3855c9\",\"thumb_width\":600,\"thumb_height\":426},{\"id\":\"325645478947\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/8d7e92a6fda842be8fb3c49b5c98c257\",\"uri\":\"pgc-image\\/8d7e92a6fda842be8fb3c49b5c98c257\",\"origin_uri\":\"pgc-image\\/8d7e92a6fda842be8fb3c49b5c98c257\",\"ic_uri\":\"pgc-image\\/8d7e92a6fda842be8fb3c49b5c98c257\",\"thumb_width\":1023,\"thumb_height\":384},{\"id\":\"494088533524\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/0b08faa36a964a0aac1ab77e5adfd765\",\"uri\":\"pgc-image\\/0b08faa36a964a0aac1ab77e5adfd765\",\"origin_uri\":\"pgc-image\\/0b08faa36a964a0aac1ab77e5adfd765\",\"ic_uri\":\"pgc-image\\/0b08faa36a964a0aac1ab77e5adfd765\",\"thumb_width\":640,\"thumb_height\":411}]',`is_normal`='1' WHERE `id` = 584 [ RunTime:0.0666s ]
+
+[ 2018-11-30T14:24:00+08:00 ] 127.0.0.1 /Article/updateTaoJinGeArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `is_normal` = 0 ORDER BY add_time desc LIMIT 1   [ RunTime:0.0692s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1572 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `send_content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 今天让我们一起来看看这款合资车，它是来自于上汽通用集团的雪佛兰科沃兹。目前在国内，汽车行业合资车的压力倍增。因为经过十年的快速发展，国内汽车自主品牌已经在稳步增长。而各大豪华品牌汽车的销售额仍旧很大，所以使得合资汽车的竞争力降低。因此，在这种两难的状况下，要想提高竞争力，最好的办法就是提升汽车本身的性价比。所以对于雪佛兰科沃兹也不例外。这款汽车，外观比朗逸还要漂亮，蚝油量也很低，并且在多数地区都给了大幅度的降价，性价比超高，是一款值得入手的汽车。它比捷达好用，月销两万台，配6AT，油耗5.4L，6万。</span><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/b6cbe8b182a1432e97f0da7fce7c2470\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"pgc-image/b6cbe8b182a1432e97f0da7fce7c2470\" img_width=\"500\" img_height=\"336\"></p><p><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/f8ce91fc39ba4c83adc018bf02ec82b8\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"pgc-image/f8ce91fc39ba4c83adc018bf02ec82b8\" img_width=\"1600\" img_height=\"1200\"><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">科沃兹的外观设计更偏向于大气时尚。高颜值的外型对于一款车的销量来说影响是很大的。在年轻化设计的趋势下，科沃兹采用分体式的进气格栅，让两侧鹰眼式的大灯与上格栅有机的融合在一起，运动化设计的雾灯使得前脸看起来棱角分明，运动气息中又不失年轻和时尚。科沃兹的外部轮廓看起来很粗壮，这赋予了科尔沃更多的力量感，一体式的尾灯造型不仅让人觉得很简洁大方，更让人一眼就能看出科尔沃与其他车外型的不同，相比朗逸和捷达来说，科沃兹的颜值要更胜一筹。</span><br/><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/1d76197ed5424be4b8b146731c2e06f6\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"pgc-image/1d76197ed5424be4b8b146731c2e06f6\" img_width=\"1500\" img_height=\"1000\"><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">为了增加自身竞争力，各种汽车的设计，是一个非常值得参考的数据。这款科沃兹长4544mm，宽1779mm，高1467mm。轴距2600mm。虽然不是很大，但相比与捷达与桑塔纳，它有着更加宽敞的内饰空间。采用皮质包覆的座椅，非常柔软适中，可以有效的缓解驾驶的疲劳感。展翼式的中控仪表台也非常实用美观。镀铬亮条的使用增加了车内饰的档次，非常的有层次感。此外中控部位还有娱乐大屏，并且配备了ESC，电动天窗，还有PM2.5过滤装置等一系列实用性的配置功能，使得整体非常的协调，内饰也非常的实用舒适。</span><br/><br/><img class=\"\" src=\"http://p2.pstatp.com/large/pgc-image/f1e37275e51745c6abe1dc04a2d04039\" data-ic=\"false\" data-ic-uri=\"\" data-height=\"0\" data-width=\"0\" image_type=\"1\" web_uri=\"pgc-image/f1e37275e51745c6abe1dc04a2d04039\" img_width=\"630\" img_height=\"350\"><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">新上市的科沃兹在用油方面有了很大的改进，科沃兹搭载了1.5L和1.0T两款发动机，最大功率分别为113和120马力，该车匹配了5挡手动，6挡手自一体和6挡双离合变速器，最重要的是该车在发动机的启停技术上进行了优化，百公里综合油耗仅为5.4L，从油耗来看非常的经济。这款车采用的是经济节能的动力系统，随着物价的不断上涨，油价也进行了高涨，用车的成本高成为了许多普通工薪阶级买车时的顾虑，这款科沃兹是普通工薪阶级不错的选择。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>',`covers`='[{\"id\":\"453421839446\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/b6cbe8b182a1432e97f0da7fce7c2470\",\"uri\":\"pgc-image\\/b6cbe8b182a1432e97f0da7fce7c2470\",\"origin_uri\":\"pgc-image\\/b6cbe8b182a1432e97f0da7fce7c2470\",\"ic_uri\":\"pgc-image\\/b6cbe8b182a1432e97f0da7fce7c2470\",\"thumb_width\":500,\"thumb_height\":336},{\"id\":\"279165625702\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/f8ce91fc39ba4c83adc018bf02ec82b8\",\"uri\":\"pgc-image\\/f8ce91fc39ba4c83adc018bf02ec82b8\",\"origin_uri\":\"pgc-image\\/f8ce91fc39ba4c83adc018bf02ec82b8\",\"ic_uri\":\"pgc-image\\/f8ce91fc39ba4c83adc018bf02ec82b8\",\"thumb_width\":1600,\"thumb_height\":1200},{\"id\":\"581526891479\",\"url\":\"http:\\/\\/p2.pstatp.com\\/large\\/pgc-image\\/1d76197ed5424be4b8b146731c2e06f6\",\"uri\":\"pgc-image\\/1d76197ed5424be4b8b146731c2e06f6\",\"origin_uri\":\"pgc-image\\/1d76197ed5424be4b8b146731c2e06f6\",\"ic_uri\":\"pgc-image\\/1d76197ed5424be4b8b146731c2e06f6\",\"thumb_width\":1500,\"thumb_height\":1000}]',`is_normal`='1' WHERE `id` = 585 [ RunTime:0.0701s ]
+

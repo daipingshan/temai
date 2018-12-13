@@ -1,0 +1,1121 @@
+[ 2018-11-21T13:46:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002498s ]
+
+[ 2018-11-21T13:46:13+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2018-11-21T13:46:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-11-21T13:46:15+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `fxg_admin` [ RunTime:0.0641s ]
+SQL: SELECT * FROM `fxg_admin` WHERE `username` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0645s ]
+
+[ 2018-11-21T13:46:18+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2018-11-21T13:46:33+08:00 ] 127.0.0.1 /Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0651s ]
+SQL: SELECT * FROM `fxg_shop` WHERE `id` IN ('1','2','3','4','6')  [ RunTime:0.0633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000794s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000956s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001772s ]
+
+[ 2018-11-21T13:46:34+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=0&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0608s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0611s ]
+SQL: SELECT * FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1228s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T13:46:45+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=0&page=4&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0623s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0618s ]
+SQL: SELECT * FROM `fxg_order` WHERE `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 30,10   [ RunTime:0.0648s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T13:48:16+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0676s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1331s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:15:31+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=3&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0653s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 3 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0648s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 3 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1295s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:15:33+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0628s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0643s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:15:35+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=4&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0621s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 30,10   [ RunTime:0.0644s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:15:41+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=5&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0614s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0615s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 40,10   [ RunTime:0.1227s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:17+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=5&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0614s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 5 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0616s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 5 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0638s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:21+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=3&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0652s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 3 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0653s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 3 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0680s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:22+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0644s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0644s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0655s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:30+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=2&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0612s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.0629s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:32+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=3&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0624s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 20,10   [ RunTime:0.0647s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:34+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=4&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0609s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0615s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 30,10   [ RunTime:0.0632s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:37+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=5&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0620s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0623s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 40,10   [ RunTime:0.0647s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:41+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=10&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0613s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0616s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 90,10   [ RunTime:0.1227s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:44+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=9&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0622s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0622s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 80,10   [ RunTime:0.0663s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:45+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=8&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0609s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0612s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 70,10   [ RunTime:0.0643s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:47+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=7&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0622s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 60,10   [ RunTime:0.0669s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:49+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0635s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0636s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0659s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:23:54+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=2&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0618s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.0649s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:24:15+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=3&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0650s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0647s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 20,10   [ RunTime:0.0674s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:24:18+08:00 ] 127.0.0.1 /Order/index.html?shop_id=&order_id=&product_keyword=&order_source=&post_data=&logistics_id=&logistics_code=&pay_type=&pay_time=&order_status=2&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `fxg_order` [ RunTime:0.0598s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') LIMIT 1   [ RunTime:0.0617s ]
+SQL: SELECT * FROM `fxg_order` WHERE `order_status` = 2 AND `shop_id` IN ('1','2','3','4','6') ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1218s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 189 行.
+NOTIC: [8] Undefined index: order_source D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+NOTIC: [8] Undefined index:  D:\www\online_team\www.sale.com\Application\Fxg\Controller\OrderController.class.php 第 192 行.
+
+[ 2018-11-21T14:25:07+08:00 ] 127.0.0.1 /Data/getOrders
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0622s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0607s ]
+

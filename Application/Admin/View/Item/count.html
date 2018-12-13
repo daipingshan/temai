@@ -1,0 +1,117 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('Item/count')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="start_time" id="start_time" placeholder="请选择开始时间" autocomplete="off"
+                           class="layui-input" value="{:I('get.start_time')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="end_time" id="end_time" placeholder="请选择结束时间" autocomplete="off"
+                           class="layui-input" value="{:I('get.end_time')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <php>$cate = C('ARTICLE_CATE');</php>
+        <button data-id=""
+        <if condition="I('get.media_id')">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+            <else/>
+            class="layui-btn layui-btn-sm item-cate"
+        </if>
+        >全部</button>
+        <foreach name="cate" item="row" key="k">
+            <button data-id="{$k}"
+            <if condition="I('get.media_id') neq $k">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+                <else/>
+                class="layui-btn layui-btn-sm item-cate"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <notEmpty name="info">
+        <fieldset class="layui-elem-field">
+            <legend>错误</legend>
+            <div class="layui-field-box">
+                {$info}
+            </div>
+        </fieldset>
+    </notEmpty>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/sale_item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <include file="Common/footer_item_box"/>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/top_line_item.js"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        var start_time = laydate.render({
+            elem: '#start_time'
+            , type: 'date'
+            , max: -7
+            , done: function (value, date) {
+                if (value) {
+                    var end_min = {};
+                    end_min.year = date.year;
+                    end_min.month = date.month - 1;
+                    end_min.date = date.date + 1;
+                    var end_max = {};
+                    end_max.year = date.year;
+                    end_max.month = date.month - 1;
+                    end_max.date = date.date + 6;
+                    end_time.config.min = end_min;
+                    end_time.config.max = end_max;
+                }
+            }
+        });
+        var end_time = laydate.render({
+            elem: '#end_time'
+            , type: 'date'
+            , max: 0
+            , done: function (value, date) {
+                if (value) {
+                    var start_min = {};
+                    start_min.year = date.year;
+                    start_min.month = date.month - 1;
+                    start_min.date = date.date - 1;
+                    var start_max = {};
+                    start_max.year = date.year;
+                    start_max.month = date.month - 1;
+                    start_max.date = date.date - 6;
+                    start_time.config.max = start_min;
+                    start_time.config.min = start_max;
+                }
+            }
+        });
+        flow.lazyimg();
+        $('.item-cate').click(function () {
+            $('#media_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+        $(".img").hover(function () {
+            $(this).find('.img-vice').show();
+        }, function () {
+            $(this).find('.img-vice').hide();
+        });
+    </script>
+</block>

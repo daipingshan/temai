@@ -1,0 +1,141 @@
+<volist name="data" id="vo">
+    <div class="layui-row">
+        <volist name="vo" id="row">
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                <div class="item-box">
+                    <div class="img">
+                        <img lay-src="{$row.img}">
+                        <div class="img-vice">
+                            <img lay-src="{$row.img_vice}">
+                        </div>
+                        <div class="intro">
+                            <a href="https://haohuo.snssdk.com/views/product/item?id={$row.shop_goods_id}"
+                               target="_blank" style="color: #fff"><p>{$row.description}</p></a>
+                        </div>
+                        <if condition="$row['num'] gt 0">
+                            <div class="new">
+                                <button class="layui-btn layui-btn-sm layui-btn-danger" type="button">
+                                    {$row.num}
+                                </button>
+                            </div>
+                        </if>
+                        <if condition="$row['reward_money'] gt 0">
+                            <div class="reward">
+                                <button class="layui-btn layui-btn-sm layui-btn-danger" type="button">
+                                    奖励：{$row.reward_money}
+                                </button>
+                            </div>
+                        </if>
+                    </div>
+                    <div class="item-content">
+                        <if condition="$row['top_line_article_title'] neq ''">
+                            <a href="https://www.toutiao.com/a{$row.top_line_article_id}" target="_blank">
+                                <p class="item-title">{$row.top_line_article_title}</p>
+                            </a>
+                        </if>
+                        <a href="https://haohuo.snssdk.com/views/product/item?id={$row.shop_goods_id}" target="_blank">
+                            <p class="article-title">{$row.description_vice}</p>
+                        </a>
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs5">
+                                <div class="price">
+                                    <b>￥{$row.price}</b>
+                                </div>
+                            </div>
+                            <if condition="$row['top_line_article_behot_time'] neq ''">
+                                <div class="layui-col-xs7">
+                                    <div class="time">
+                                        {$row.top_line_article_behot_time|date="Y-m-d H:i",###}
+                                    </div>
+                                </div>
+                            </if>
+                        </div>
+                        <if condition="$row['cos_fee'] gt 0">
+                            <div class="layui-row float-box">
+                                <div class="layui-col-xs6">
+                                    <div class="left">
+                                        佣金比率：{$row['cos_ratio']*100}%
+                                    </div>
+                                </div>
+                                <div class="layui-col-xs6">
+                                    <div class="right">
+                                        预估：{$row.cos_fee}
+                                    </div>
+                                </div>
+                            </div>
+                        </if>
+                        <if condition="$row['shop_name']">
+                            <div class="layui-row">
+                                <div class="layui-col-xs12">
+                                    店铺名称：{$row.shop_name}
+                                </div>
+                            </div>
+                        </if>
+                        <div class="json-callback">
+
+                        </div>
+                        <div class="layui-row float-box">
+                            <eq name="row.is_add" value="1">
+                                <div class="layui-row add-box layui-hide">
+                                    <div class="layui-col-xs6">
+                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                data-id="{$row.shop_goods_id}"
+                                                data-url="{:U('Sale/addItemCache')}"
+                                                data-val='{$row.post_data}'
+                                                data-shopp="{$shopp}"
+                                                data-type="0">
+                                            一键添加
+                                        </button>
+                                    </div>
+                                    <div class="layui-col-xs6">
+                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                data-id="{$row.shop_goods_id}"
+                                                data-url="{:U('Sale/addItemCache')}"
+                                                data-val='{$row.post_data}'
+                                                data-shopp="{$shopp}"
+                                                data-type="1">
+                                            伪原创
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="layui-row del-box">
+                                    <button class="layui-btn layui-btn-danger del-item" data-id="{$row.shop_goods_id}"
+                                            data-url="{:U('Sale/delItemCache')}">删除选品
+                                    </button>
+                                </div>
+                                <else/>
+                                <div class="layui-row add-box">
+                                    <div class="layui-col-xs6">
+                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                data-id="{$row.shop_goods_id}"
+                                                data-url="{:U('Sale/addItemCache')}"
+                                                data-val='{$row.post_data}'
+                                                data-shopp="{$shopp}"
+                                                data-type="0">
+                                            一键添加
+                                        </button>
+                                    </div>
+                                    <div class="layui-col-xs6">
+                                        <button class="layui-btn default-bgcolor addItemCache"
+                                                data-id="{$row.shop_goods_id}"
+                                                data-url="{:U('Sale/addItemCache')}"
+                                                data-val='{$row.post_data}'
+                                                data-shopp="{$shopp}"
+                                                data-type="1">
+                                            伪原创
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="layui-row del-box layui-hide">
+                                    <button class="layui-btn layui-btn-danger del-item" data-id="{$row.shop_goods_id}"
+                                            data-url="{:U('Sale/delItemCache')}">删除选品
+                                    </button>
+                                </div>
+                            </eq>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>

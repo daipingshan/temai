@@ -1,0 +1,2477 @@
+[ 2018-11-30T08:44:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+
+[ 2018-11-30T08:44:14+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2018-11-30T08:44:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+
+[ 2018-11-30T08:44:15+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+
+[ 2018-11-30T08:44:17+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0649s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0643s ]
+
+[ 2018-11-30T08:44:21+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0646s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0647s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0677s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-11-30T08:45:51+08:00 ] 127.0.0.1 /TopLine/itemsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 51 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+NOTIC: [8] Undefined variable: type D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\6cb73ff4e88fcdc2fa9623f330bc0e43.php 第 159 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2018-11-30T08:45:56+08:00 ] 127.0.0.1 /TopLine/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-11-30T08:46:01+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:12:36+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0634s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0630s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2018-11-30T09:12:36+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:12:38+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/524.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0623s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 524 LIMIT 1   [ RunTime:0.0621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002200s ]
+
+[ 2018-11-30T09:15:57+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003650s ]
+
+[ 2018-11-30T09:16:33+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004197s ]
+
+[ 2018-11-30T09:21:54+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 432 行.
+NOTIC: [8] Undefined index: image D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 435 行.
+
+[ 2018-11-30T09:22:13+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 432 行.
+
+[ 2018-11-30T09:22:47+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 433 行.
+NOTIC: [8] Undefined index: image D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 439 行.
+
+[ 2018-11-30T09:23:02+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 433 行.
+
+[ 2018-11-30T09:26:08+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/522.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 522 LIMIT 1   [ RunTime:0.0653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-11-30T09:26:14+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0603s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2018-11-30T09:26:15+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:26:16+08:00 ] 127.0.0.1 /Article/sendArticle/id/522.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 522 LIMIT 1   [ RunTime:0.0615s ]
+
+[ 2018-11-30T09:42:49+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0648s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0644s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2018-11-30T09:42:50+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:48:31+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0702s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0689s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001649s ]
+
+[ 2018-11-30T09:48:31+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:48:33+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0609s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0597s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.0597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2018-11-30T09:48:33+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:51:49+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0672s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0674s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-11-30T09:51:49+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T09:52:55+08:00 ] 127.0.0.1 /Article/sendArticle/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0648s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0645s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 449 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 449 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 449 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 449 行.
+
+[ 2018-11-30T09:54:04+08:00 ] 127.0.0.1 /Article/sendArticle/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0653s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 451 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 451 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 451 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 451 行.
+
+[ 2018-11-30T09:54:38+08:00 ] 127.0.0.1 /Article/sendArticle/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0613s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 452 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 452 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 452 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 452 行.
+
+[ 2018-11-30T10:00:54+08:00 ] 127.0.0.1 /TopLine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0616s ]
+SQL: SELECT * FROM `ytt_top_line_account`  [ RunTime:0.1820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2018-11-30T10:12:20+08:00 ] 127.0.0.1 /TopLine/updateAccount/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0611s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` = 24 LIMIT 1   [ RunTime:0.0618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-11-30T10:12:57+08:00 ] 127.0.0.1 /TopLine/saveAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.1526s ]
+SQL: UPDATE `ytt_top_line_account` SET `username`='代山',`cookie`='uuid=\"w:924101e7d96c4df1ae5dbde67f6ea728\"; _ba=BA0.2-20171204-5110e-GEq7I8JrxH3rSL2cBlZt; _ga=GA1.3.1492392855.1512368709; __tea_sdk__user_unique_id=52106961505; __tea_sdk__ssid=d3988223-72ec-4581-9e73-78f0679f406d; _ga=GA1.2.1492392855.1512368709; tt_webid=6495574129696736782; __utmz=24953151.1526464826.2.2.utmcsr=sale.biuzs.com|utmccn=(referral)|utmcmd=referral|utmcct=/Sale/itemsList.html; UM_distinctid=163ceb537c5105e-01fbea36a2ff39-b34356b-144000-163ceb537c6459; __utma=24953151.1492392855.1512368709.1533568031.1533572247.4; ccid=65627f04647c80e37b08205b483475be; toutiao_sso_user=8caa4e51889a122ee635fb8cef71d3c7; login_flag=5c18d4aa13745a351d5a106fda2ff247; sid_guard=\"e15b30646d783a9252b5d2aae7b22380|1541581804|15552000|Mon\\054 06-May-2019 09:10:04 GMT\"; sso_uid_tt=c528d33ecea987b24887e460aa96e283; sso_login_status=1; sessionid=9c9d909c5bf4c9a1121e89a3a9352e92; _mp_test_key_1=5dd119019d0e56ea0b6d3044ac715d2c; uid_tt=efebb8e987c863eee2e2ac34c7b31116; tt_im_token=1543477199231968106131620512949100637104517530563221574379715740; ptcn_no=f7d2f7875404574da4796992f06e2b00',`update_time`='1543543976' WHERE `id` = 24 [ RunTime:0.0657s ]
+
+[ 2018-11-30T10:13:01+08:00 ] 127.0.0.1 /TopLine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0634s ]
+SQL: SELECT * FROM `ytt_top_line_account`  [ RunTime:0.1892s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2018-11-30T10:13:10+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0613s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-11-30T10:13:34+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0647s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0655s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` <> 1  [ RunTime:0.1914s ]
+
+[ 2018-11-30T10:13:34+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T10:13:35+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0641s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2985s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003349s ]
+
+[ 2018-11-30T10:13:35+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T10:13:40+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0636s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000449s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2018-11-30T10:13:41+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T10:13:53+08:00 ] 127.0.0.1 /Article/sendArticle/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0624s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+
+[ 2018-11-30T10:14:09+08:00 ] 127.0.0.1 /Article/sendArticle/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0658s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+
+[ 2018-11-30T10:14:24+08:00 ] 127.0.0.1 /Article/sendArticle/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0613s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 471 行.
+
+[ 2018-11-30T10:15:50+08:00 ] 127.0.0.1 /Article/sendArticle/id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0610s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+
+[ 2018-11-30T10:16:21+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0651s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 大多数人可能都知道埃尔法车型，自从这款车型现世后，就霸占了MPV领域，那些中低端品牌根本不是它的对手，在MPV市场上，中低端品牌一次次挑战，又一次次落败，丝毫撼动不了它的地位。高端品牌，像国内的BBA，它不在乎那些细分市场，能拿的出手的车型也几乎没有。宝马和奥迪似乎对埃尔法不屑一顾，只有奔驰尚可一较，它的R级是被大众所熟悉的，只不过这个车系也是好久没有更新了。向上跨一级的话，奔驰V级倒是战力很强劲的一款车。</span>最豪华的MPV！长5米3，奢华内饰独立真皮座椅比埃尔法高档<img src=\"http://p2.pstatp.com/large/pgc-image/a46e91da83ec47678cc1cb0bc96ac51b\" title=\"1543485210627004194.jpg\" alt=\"dealer_default_7b10b76571e8494f857ce68d887a2c45.jpg\" width=\"821\" height=\"560\"/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰V级是最完美的MPV，比埃尔法高级十倍还民的全系头等舱座位，真是抢眼。首先我们说说它的价格，虽然是奔驰款的汽车，但是相比之下它比任何一款奔驰车系的车要亲民廉价的多了。虽然是V级的奔驰车但是一款E级的车价就可以拿下它，和同品牌的同级车相比要贵，但是人家毕竟是奔驰车，自然是不能相提并论。它和埃尔法相比是便宜好多，毕竟是要和可以竞争的对手相比，不然和奥德赛、GL8比较就没多大意义，品牌名气不一样，没有可比性。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/30ad46a797d34a8cadee5db12e1264ee\" title=\"1543485221389094044.jpg\" alt=\"dealer_default_d4be28acbc1e4856bb0f3ecb99428d04.jpg\" width=\"818\" height=\"545\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰新出的奔驰V级车型是一款商务接待型的车，从品牌外观来看，奔驰的大logo绝对是奔驰最具有代表性的标志了，为该车一贴这个大logo让这款奔驰V级单单从其整体格局来看就超过了埃尔法；除此之外，该车拥有着接近5.4米的车身长度为这款车大大加分，不仅让该款车从外观是看上去更加宽敞大气，而且从商务气质和贵气更加够格更加的有豪华感。虽然不能定义为一款家用的MPV车型，但这款车的高端大气的外观是成功人士的身份及地位的象征。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/371cf18e137c40238065a430b160a245\" title=\"1543485238104066930.jpg\" alt=\"dealer_default_dea4abebb9194f0289d3641dc3436df1.jpg\" width=\"820\" height=\"466\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">这款奔驰车在外观上更像是一款保姆车，与普通的奔驰V级有所不同，在其他的奔驰车面前就是一个小老弟，在尺寸上面这款车比较小，这款车的在外形的设计方面就是稳重，厚实的感觉绝对不是一般的车能表现出来的，所以这款车不用更多的语言来描述他。当你近距离去看他的时候感觉平淡无奇，但是他在动力方面绝对是一般车所没有的驾驶感觉，这款车搭配的是2.0的的发动机和最高211的马力所以这点表现得非常不友好。与同级相比它仅仅是一个四缸机。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/cd8490ec677c42ab998a05ae04d39bca\" title=\"1543485251141019587.jpg\" alt=\"dealer_default_1170eb9786e34db18b4806ceec6448bd.jpg\" width=\"828\" height=\"525\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰在内饰这一部分最厉害的不是它的设计，也不是它的动力操控，而是对内饰的整体把控以及它在豪华感的营造方面，这是很多人都没有想到的，更让人没想到的是，这种高水平的功力也呈现在奔驰V级当中。中控依然沿用了以往的设计，虽然这款车仍然是为了乘客而设计的，但是在油耗设计上它做的也相当不错，可以说是十分为驾驶员着想。同时，全息双侧电滑门加上分段式电动双天窗，以及它拥有可以支持16向的独立真皮座椅，它甚至还可以选择2+2+2的布局，这样堪比飞机头等舱的待遇，给人带来的犹如贵族般的享受真是无与伦比的。可以说它在豪华感的营造方面无人能及了，简直是美貌与实力并重。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/59d36c446cc241918820cd7267f914ab\" title=\"1543485264705053390.jpg\" alt=\"dealer_default_362278e772cd4974908b7c419e0bcd18.jpg\" width=\"816\" height=\"601\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">综合各方面情况来说，奔驰V级完全可以配得上“完美”这个用词，普通版的车型即5.1米的车长的那款市场定价在48万左右，类似于奔驰E的价格但是可以入手这样一款车在市场上还是非常有竞争优势的。奔驰V级的性价比非常的高，与此同时，这款车的豪华性和氛围感显露无疑，彰显了奔驰的设计功底和设计风格，在这一方面将埃尔法远远甩在身后。并且从整体的设计风格和价格优势这些方面来看，用最完美的一款MPV称呼奔驰V级一点也不为过。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>' WHERE `id` = 1 [ RunTime:0.0685s ]
+
+[ 2018-11-30T10:16:26+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2018-11-30T10:16:28+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001733s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T10:18:28+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0671s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.1610s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+
+[ 2018-11-30T10:18:40+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0618s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0623s ]
+
+[ 2018-11-30T10:18:49+08:00 ] 127.0.0.1 /Article/sendArticle/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0616s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0624s ]
+
+[ 2018-11-30T10:19:07+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2018-11-30T10:21:10+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0609s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 473 行.
+
+[ 2018-11-30T10:22:00+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0619s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 472 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 大多数人可能都知道埃尔法车型，自从这款车型现世后，就霸占了MPV领域，那些中低端品牌根本不是它的对手，在MPV市场上，中低端品牌一次次挑战，又一次次落败，丝毫撼动不了它的地位。高端品牌，像国内的BBA，它不在乎那些细分市场，能拿的出手的车型也几乎没有。宝马和奥迪似乎对埃尔法不屑一顾，只有奔驰尚可一较，它的R级是被大众所熟悉的，只不过这个车系也是好久没有更新了。向上跨一级的话，奔驰V级倒是战力很强劲的一款车。</span>最豪华的MPV！长5米3，奢华内饰独立真皮座椅比埃尔法高档<img src=\"http://p2.pstatp.com/large/pgc-image/a46e91da83ec47678cc1cb0bc96ac51b\" title=\"1543485210627004194.jpg\" alt=\"dealer_default_7b10b76571e8494f857ce68d887a2c45.jpg\" width=\"821\" height=\"560\"/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰V级是最完美的MPV，比埃尔法高级十倍还民的全系头等舱座位，真是抢眼。首先我们说说它的价格，虽然是奔驰款的汽车，但是相比之下它比任何一款奔驰车系的车要亲民廉价的多了。虽然是V级的奔驰车但是一款E级的车价就可以拿下它，和同品牌的同级车相比要贵，但是人家毕竟是奔驰车，自然是不能相提并论。它和埃尔法相比是便宜好多，毕竟是要和可以竞争的对手相比，不然和奥德赛、GL8比较就没多大意义，品牌名气不一样，没有可比性。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/30ad46a797d34a8cadee5db12e1264ee\" title=\"1543485221389094044.jpg\" alt=\"dealer_default_d4be28acbc1e4856bb0f3ecb99428d04.jpg\" width=\"818\" height=\"545\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰新出的奔驰V级车型是一款商务接待型的车，从品牌外观来看，奔驰的大logo绝对是奔驰最具有代表性的标志了，为该车一贴这个大logo让这款奔驰V级单单从其整体格局来看就超过了埃尔法；除此之外，该车拥有着接近5.4米的车身长度为这款车大大加分，不仅让该款车从外观是看上去更加宽敞大气，而且从商务气质和贵气更加够格更加的有豪华感。虽然不能定义为一款家用的MPV车型，但这款车的高端大气的外观是成功人士的身份及地位的象征。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/371cf18e137c40238065a430b160a245\" title=\"1543485238104066930.jpg\" alt=\"dealer_default_dea4abebb9194f0289d3641dc3436df1.jpg\" width=\"820\" height=\"466\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">这款奔驰车在外观上更像是一款保姆车，与普通的奔驰V级有所不同，在其他的奔驰车面前就是一个小老弟，在尺寸上面这款车比较小，这款车的在外形的设计方面就是稳重，厚实的感觉绝对不是一般的车能表现出来的，所以这款车不用更多的语言来描述他。当你近距离去看他的时候感觉平淡无奇，但是他在动力方面绝对是一般车所没有的驾驶感觉，这款车搭配的是2.0的的发动机和最高211的马力所以这点表现得非常不友好。与同级相比它仅仅是一个四缸机。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/cd8490ec677c42ab998a05ae04d39bca\" title=\"1543485251141019587.jpg\" alt=\"dealer_default_1170eb9786e34db18b4806ceec6448bd.jpg\" width=\"828\" height=\"525\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰在内饰这一部分最厉害的不是它的设计，也不是它的动力操控，而是对内饰的整体把控以及它在豪华感的营造方面，这是很多人都没有想到的，更让人没想到的是，这种高水平的功力也呈现在奔驰V级当中。中控依然沿用了以往的设计，虽然这款车仍然是为了乘客而设计的，但是在油耗设计上它做的也相当不错，可以说是十分为驾驶员着想。同时，全息双侧电滑门加上分段式电动双天窗，以及它拥有可以支持16向的独立真皮座椅，它甚至还可以选择2+2+2的布局，这样堪比飞机头等舱的待遇，给人带来的犹如贵族般的享受真是无与伦比的。可以说它在豪华感的营造方面无人能及了，简直是美貌与实力并重。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/59d36c446cc241918820cd7267f914ab\" title=\"1543485264705053390.jpg\" alt=\"dealer_default_362278e772cd4974908b7c419e0bcd18.jpg\" width=\"816\" height=\"601\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">综合各方面情况来说，奔驰V级完全可以配得上“完美”这个用词，普通版的车型即5.1米的车长的那款市场定价在48万左右，类似于奔驰E的价格但是可以入手这样一款车在市场上还是非常有竞争优势的。奔驰V级的性价比非常的高，与此同时，这款车的豪华性和氛围感显露无疑，彰显了奔驰的设计功底和设计风格，在这一方面将埃尔法远远甩在身后。并且从整体的设计风格和价格优势这些方面来看，用最完美的一款MPV称呼奔驰V级一点也不为过。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>' WHERE `id` = 1 [ RunTime:0.0615s ]
+
+[ 2018-11-30T10:22:05+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0814s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2018-11-30T10:26:00+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0641s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0639s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2972s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2018-11-30T11:36:01+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2018-11-30T11:36:02+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0642s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0636s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001472s ]
+
+[ 2018-11-30T11:36:13+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0613s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2018-11-30T11:36:22+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003547s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T11:36:32+08:00 ] 127.0.0.1 /Article/sendArticle/id/526.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0653s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 526 LIMIT 1   [ RunTime:0.0647s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T11:36:45+08:00 ] 127.0.0.1 /Article/sendArticle/id/526.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 526 LIMIT 1   [ RunTime:0.0653s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T11:37:23+08:00 ] 127.0.0.1 /Article/sendArticle/id/526.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0642s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 526 LIMIT 1   [ RunTime:0.0645s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T11:38:05+08:00 ] 127.0.0.1 /Article/sendArticle/id/525.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0693s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 525 LIMIT 1   [ RunTime:0.0676s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T11:38:36+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0682s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0692s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 大多数人可能都知道埃尔法车型，自从这款车型现世后，就霸占了MPV领域，那些中低端品牌根本不是它的对手，在MPV市场上，中低端品牌一次次挑战，又一次次落败，丝毫撼动不了它的地位。高端品牌，像国内的BBA，它不在乎那些细分市场，能拿的出手的车型也几乎没有。宝马和奥迪似乎对埃尔法不屑一顾，只有奔驰尚可一较，它的R级是被大众所熟悉的，只不过这个车系也是好久没有更新了。向上跨一级的话，奔驰V级倒是战力很强劲的一款车。</span>最豪华的MPV！长5米3，奢华内饰独立真皮座椅比埃尔法高档<img src=\"http://p2.pstatp.com/large/pgc-image/a46e91da83ec47678cc1cb0bc96ac51b\" title=\"1543485210627004194.jpg\" alt=\"dealer_default_7b10b76571e8494f857ce68d887a2c45.jpg\" width=\"821\" height=\"560\"/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰V级是最完美的MPV，比埃尔法高级十倍还民的全系头等舱座位，真是抢眼。首先我们说说它的价格，虽然是奔驰款的汽车，但是相比之下它比任何一款奔驰车系的车要亲民廉价的多了。虽然是V级的奔驰车但是一款E级的车价就可以拿下它，和同品牌的同级车相比要贵，但是人家毕竟是奔驰车，自然是不能相提并论。它和埃尔法相比是便宜好多，毕竟是要和可以竞争的对手相比，不然和奥德赛、GL8比较就没多大意义，品牌名气不一样，没有可比性。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/30ad46a797d34a8cadee5db12e1264ee\" title=\"1543485221389094044.jpg\" alt=\"dealer_default_d4be28acbc1e4856bb0f3ecb99428d04.jpg\" width=\"818\" height=\"545\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰新出的奔驰V级车型是一款商务接待型的车，从品牌外观来看，奔驰的大logo绝对是奔驰最具有代表性的标志了，为该车一贴这个大logo让这款奔驰V级单单从其整体格局来看就超过了埃尔法；除此之外，该车拥有着接近5.4米的车身长度为这款车大大加分，不仅让该款车从外观是看上去更加宽敞大气，而且从商务气质和贵气更加够格更加的有豪华感。虽然不能定义为一款家用的MPV车型，但这款车的高端大气的外观是成功人士的身份及地位的象征。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/371cf18e137c40238065a430b160a245\" title=\"1543485238104066930.jpg\" alt=\"dealer_default_dea4abebb9194f0289d3641dc3436df1.jpg\" width=\"820\" height=\"466\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">这款奔驰车在外观上更像是一款保姆车，与普通的奔驰V级有所不同，在其他的奔驰车面前就是一个小老弟，在尺寸上面这款车比较小，这款车的在外形的设计方面就是稳重，厚实的感觉绝对不是一般的车能表现出来的，所以这款车不用更多的语言来描述他。当你近距离去看他的时候感觉平淡无奇，但是他在动力方面绝对是一般车所没有的驾驶感觉，这款车搭配的是2.0的的发动机和最高211的马力所以这点表现得非常不友好。与同级相比它仅仅是一个四缸机。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/cd8490ec677c42ab998a05ae04d39bca\" title=\"1543485251141019587.jpg\" alt=\"dealer_default_1170eb9786e34db18b4806ceec6448bd.jpg\" width=\"828\" height=\"525\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰在内饰这一部分最厉害的不是它的设计，也不是它的动力操控，而是对内饰的整体把控以及它在豪华感的营造方面，这是很多人都没有想到的，更让人没想到的是，这种高水平的功力也呈现在奔驰V级当中。中控依然沿用了以往的设计，虽然这款车仍然是为了乘客而设计的，但是在油耗设计上它做的也相当不错，可以说是十分为驾驶员着想。同时，全息双侧电滑门加上分段式电动双天窗，以及它拥有可以支持16向的独立真皮座椅，它甚至还可以选择2+2+2的布局，这样堪比飞机头等舱的待遇，给人带来的犹如贵族般的享受真是无与伦比的。可以说它在豪华感的营造方面无人能及了，简直是美貌与实力并重。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/59d36c446cc241918820cd7267f914ab\" title=\"1543485264705053390.jpg\" alt=\"dealer_default_362278e772cd4974908b7c419e0bcd18.jpg\" width=\"816\" height=\"601\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">综合各方面情况来说，奔驰V级完全可以配得上“完美”这个用词，普通版的车型即5.1米的车长的那款市场定价在48万左右，类似于奔驰E的价格但是可以入手这样一款车在市场上还是非常有竞争优势的。奔驰V级的性价比非常的高，与此同时，这款车的豪华性和氛围感显露无疑，彰显了奔驰的设计功底和设计风格，在这一方面将埃尔法远远甩在身后。并且从整体的设计风格和价格优势这些方面来看，用最完美的一款MPV称呼奔驰V级一点也不为过。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>' WHERE `id` = 1 [ RunTime:0.0694s ]
+
+[ 2018-11-30T11:38:42+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0673s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0674s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2018-11-30T11:38:46+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T11:39:06+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2018-11-30T11:39:12+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T11:46:06+08:00 ] 127.0.0.1 /Article/sendArticle/id/526.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 526 LIMIT 1   [ RunTime:0.0643s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T11:54:10+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0653s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0655s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `content`='<p><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp; &nbsp; &nbsp; 大多数人可能都知道埃尔法车型，自从这款车型现世后，就霸占了MPV领域，那些中低端品牌根本不是它的对手，在MPV市场上，中低端品牌一次次挑战，又一次次落败，丝毫撼动不了它的地位。高端品牌，像国内的BBA，它不在乎那些细分市场，能拿的出手的车型也几乎没有。宝马和奥迪似乎对埃尔法不屑一顾，只有奔驰尚可一较，它的R级是被大众所熟悉的，只不过这个车系也是好久没有更新了。向上跨一级的话，奔驰V级倒是战力很强劲的一款车。</span>最豪华的MPV！长5米3，奢华内饰独立真皮座椅比埃尔法高档<img src=\"http://p2.pstatp.com/large/pgc-image/a46e91da83ec47678cc1cb0bc96ac51b\" title=\"1543485210627004194.jpg\" alt=\"dealer_default_7b10b76571e8494f857ce68d887a2c45.jpg\" width=\"821\" height=\"560\"/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰V级是最完美的MPV，比埃尔法高级十倍还民的全系头等舱座位，真是抢眼。首先我们说说它的价格，虽然是奔驰款的汽车，但是相比之下它比任何一款奔驰车系的车要亲民廉价的多了。虽然是V级的奔驰车但是一款E级的车价就可以拿下它，和同品牌的同级车相比要贵，但是人家毕竟是奔驰车，自然是不能相提并论。它和埃尔法相比是便宜好多，毕竟是要和可以竞争的对手相比，不然和奥德赛、GL8比较就没多大意义，品牌名气不一样，没有可比性。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/30ad46a797d34a8cadee5db12e1264ee\" title=\"1543485221389094044.jpg\" alt=\"dealer_default_d4be28acbc1e4856bb0f3ecb99428d04.jpg\" width=\"818\" height=\"545\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰新出的奔驰V级车型是一款商务接待型的车，从品牌外观来看，奔驰的大logo绝对是奔驰最具有代表性的标志了，为该车一贴这个大logo让这款奔驰V级单单从其整体格局来看就超过了埃尔法；除此之外，该车拥有着接近5.4米的车身长度为这款车大大加分，不仅让该款车从外观是看上去更加宽敞大气，而且从商务气质和贵气更加够格更加的有豪华感。虽然不能定义为一款家用的MPV车型，但这款车的高端大气的外观是成功人士的身份及地位的象征。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/371cf18e137c40238065a430b160a245\" title=\"1543485238104066930.jpg\" alt=\"dealer_default_dea4abebb9194f0289d3641dc3436df1.jpg\" width=\"820\" height=\"466\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">这款奔驰车在外观上更像是一款保姆车，与普通的奔驰V级有所不同，在其他的奔驰车面前就是一个小老弟，在尺寸上面这款车比较小，这款车的在外形的设计方面就是稳重，厚实的感觉绝对不是一般的车能表现出来的，所以这款车不用更多的语言来描述他。当你近距离去看他的时候感觉平淡无奇，但是他在动力方面绝对是一般车所没有的驾驶感觉，这款车搭配的是2.0的的发动机和最高211的马力所以这点表现得非常不友好。与同级相比它仅仅是一个四缸机。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/cd8490ec677c42ab998a05ae04d39bca\" title=\"1543485251141019587.jpg\" alt=\"dealer_default_1170eb9786e34db18b4806ceec6448bd.jpg\" width=\"828\" height=\"525\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">奔驰在内饰这一部分最厉害的不是它的设计，也不是它的动力操控，而是对内饰的整体把控以及它在豪华感的营造方面，这是很多人都没有想到的，更让人没想到的是，这种高水平的功力也呈现在奔驰V级当中。中控依然沿用了以往的设计，虽然这款车仍然是为了乘客而设计的，但是在油耗设计上它做的也相当不错，可以说是十分为驾驶员着想。同时，全息双侧电滑门加上分段式电动双天窗，以及它拥有可以支持16向的独立真皮座椅，它甚至还可以选择2+2+2的布局，这样堪比飞机头等舱的待遇，给人带来的犹如贵族般的享受真是无与伦比的。可以说它在豪华感的营造方面无人能及了，简直是美貌与实力并重。</span><br/><br/><img src=\"http://p2.pstatp.com/large/pgc-image/59d36c446cc241918820cd7267f914ab\" title=\"1543485264705053390.jpg\" alt=\"dealer_default_362278e772cd4974908b7c419e0bcd18.jpg\" width=\"816\" height=\"601\"/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">综合各方面情况来说，奔驰V级完全可以配得上“完美”这个用词，普通版的车型即5.1米的车长的那款市场定价在48万左右，类似于奔驰E的价格但是可以入手这样一款车在市场上还是非常有竞争优势的。奔驰V级的性价比非常的高，与此同时，这款车的豪华性和氛围感显露无疑，彰显了奔驰的设计功底和设计风格，在这一方面将埃尔法远远甩在身后。并且从整体的设计风格和价格优势这些方面来看，用最完美的一款MPV称呼奔驰V级一点也不为过。</span><br/><br/><br/><br/><span style=\"font-size: 17.1429px; font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; widows: 1;\">&nbsp; &nbsp;</span></p>' WHERE `id` = 1 [ RunTime:0.0668s ]
+
+[ 2018-11-30T11:54:13+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0618s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2018-11-30T11:54:15+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T12:00:12+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0611s ]
+
+[ 2018-11-30T12:01:38+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2018-11-30T12:01:38+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T12:01:56+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014911s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0643s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0628s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.2944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2018-11-30T12:01:56+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T12:02:20+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0619s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T12:02:59+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0614s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+
+[ 2018-11-30T12:03:23+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0616s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 480 行.
+
+[ 2018-11-30T12:04:28+08:00 ] 127.0.0.1 /Article/sendArticle/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0608s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0620s ]
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+NOTIC: [8] Undefined index: message D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 479 行.
+
+[ 2018-11-30T13:40:31+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002443s ]
+
+[ 2018-11-30T14:25:14+08:00 ] 127.0.0.1 /Article/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003487s ]
+
+[ 2018-11-30T14:29:46+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0606s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0597s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2018-11-30T14:29:51+08:00 ] 127.0.0.1 /Article/sendArticle/id/585.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0644s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 585 LIMIT 1   [ RunTime:0.0646s ]
+SQL: UPDATE `ytt_tao_jin_ge_article` SET `is_send`='1' WHERE `id` = 585 [ RunTime:0.0674s ]
+
+[ 2018-11-30T14:29:55+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0624s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0616s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-11-30T14:38:21+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0677s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0674s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.4040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2018-11-30T14:38:25+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/584.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0666s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 584 LIMIT 1   [ RunTime:0.0680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-11-30T14:38:30+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:39:02+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/584.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 584 LIMIT 1   [ RunTime:0.0659s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-11-30T14:39:02+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:39:08+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0607s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000513s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000712s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2018-11-30T14:39:12+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:39:40+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0633s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0638s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2018-11-30T14:39:40+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:39:44+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0613s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2018-11-30T14:39:44+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:40:11+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0637s ]
+
+[ 2018-11-30T14:41:11+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0618s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined variable: vo D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001337s ]
+
+[ 2018-11-30T14:41:12+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:41:34+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0656s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2018-11-30T14:41:34+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:41:53+08:00 ] 127.0.0.1 /Article/taoJinGeArticleInfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0669s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b07e0ad8bf426acf9e84495b9f738f6c.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2018-11-30T14:41:54+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:51:20+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined variable: account D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2018-11-30T14:51:28+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:51:53+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0611s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.4263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined variable: account D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2018-11-30T14:51:54+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:52:59+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined variable: account D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001928s ]
+
+[ 2018-11-30T14:53:00+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:53:03+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0617s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3671s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined variable: account D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2018-11-30T14:53:03+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001463s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:53:23+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0629s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-11-30T14:53:23+08:00 ] 127.0.0.1 /Public/Admin/js/maps/swiper.jquery.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+NOTIC: [8] Undefined offset: 0 D:\www\online_team\www.sale.com\Application\Admin\Controller\CommonController.class.php 第 85 行.
+ERR: 非法操作:Admin
+
+[ 2018-11-30T14:55:56+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tmuser` LIMIT 1   [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_tmuser` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\42a85c9b522012822978e575afa3a19a.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2018-11-30T14:55:58+08:00 ] 127.0.0.1 /User/auth/id/86/type/sale.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `id` = 86 LIMIT 1   [ RunTime:0.0607s ]
+SQL: SHOW COLUMNS FROM `ytt_sale_account` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_sale_account` WHERE `id` <> 1  [ RunTime:0.0608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-11-30T15:02:09+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0631s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0629s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3808s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-30T15:02:12+08:00 ] 127.0.0.1 /Article/selectAccount/id/587.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2018-11-30T15:02:42+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0599s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-11-30T15:02:44+08:00 ] 127.0.0.1 /Article/selectAccount/id/587.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+NOTIC: [8] Undefined index: name D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\c1287ecba945a662853a12277d480eb1.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-11-30T15:03:47+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0615s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0611s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3678s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2018-11-30T15:03:51+08:00 ] 127.0.0.1 /Article/selectAccount/id/587.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-11-30T15:04:51+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0637s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-11-30T15:04:52+08:00 ] 127.0.0.1 /Article/selectAccount/id/584.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-11-30T15:05:08+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0635s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0633s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3802s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2018-11-30T15:05:11+08:00 ] 127.0.0.1 /Article/selectAccount/id/584.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-11-30T15:05:19+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0665s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0644s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-11-30T15:05:21+08:00 ] 127.0.0.1 /Article/selectAccount/id/584.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-11-30T15:05:32+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0597s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3671s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2018-11-30T15:05:34+08:00 ] 127.0.0.1 /Article/selectAccount/id/587.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-11-30T15:09:43+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0604s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001914s ]
+
+[ 2018-11-30T15:09:47+08:00 ] 127.0.0.1 /Article/taoJinGeArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `ytt_tao_jin_ge_article` [ RunTime:0.0607s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_tao_jin_ge_article` LIMIT 1   [ RunTime:0.0603s ]
+SQL: SELECT * FROM `ytt_tao_jin_ge_article` ORDER BY add_time desc LIMIT 0,20   [ RunTime:0.3625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000963s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001173s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\4f0354694505eeb794093f7122e72b1d.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+

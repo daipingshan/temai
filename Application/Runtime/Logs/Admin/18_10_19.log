@@ -1,0 +1,877 @@
+[ 2018-10-19T14:56:56+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001522s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001604s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2018-10-19T14:56:56+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+
+[ 2018-10-19T14:56:58+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `ytt_tmuser` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `ytt_tmuser` WHERE `name` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0653s ]
+
+[ 2018-10-19T14:57:02+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `ytt_illegal_article` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_illegal_article` LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `ytt_illegal_article` ORDER BY id desc LIMIT 0,50   [ RunTime:0.0648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\f61872648bf90e754b75e1a98e6cbf1b.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-10-19T15:01:01+08:00 ] 127.0.0.1 /SaleArticle/count.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0650s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ytt_temai_article` LIMIT 1   [ RunTime:0.5503s ]
+SQL: SELECT * FROM `ytt_temai_article` ORDER BY behot_time desc LIMIT 0,20   [ RunTime:0.0663s ]
+SQL: SELECT count(id) as num,`create_user_id` FROM `ytt_temai_article` WHERE `create_user_id` IN ('6447','4063','7665','1628','6038','4990','5506','5506','610','2847','2000','8398','6652','7991','5400','7783','5506','7665','7665','8169') GROUP BY create_user_id  [ RunTime:0.9758s ]
+SQL: SELECT count(id) as total,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `behot_time` BETWEEN 1539273600 AND 1539964799 GROUP BY time  [ RunTime:0.1895s ]
+SQL: SELECT `go_detail_count`,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `behot_time` BETWEEN 1539273600 AND 1539964799 AND `go_detail_count` >= 10000  [ RunTime:0.2426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2018-10-19T15:01:12+08:00 ] 127.0.0.1 /SaleArticle/count.html?keyword=&read_num=&time=&sort=0&article_genre=0&media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0613s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `ytt_temai_article` WHERE `media_id` = '5500950648' LIMIT 1   [ RunTime:0.1144s ]
+SQL: SELECT * FROM `ytt_temai_article` WHERE `media_id` = '5500950648' ORDER BY behot_time desc LIMIT 0,20   [ RunTime:0.0621s ]
+SQL: SELECT count(id) as num,`create_user_id` FROM `ytt_temai_article` WHERE `create_user_id` IN ('4063','7665','5506','5506','7991','5400','7783','5506','7665','7665','8169','6164','5506','7665','834','5867','4294','5506','5506','4063') AND `media_id` = '5500950648' GROUP BY create_user_id  [ RunTime:0.2654s ]
+SQL: SELECT count(id) as total,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `media_id` = '5500950648' AND `behot_time` BETWEEN 1539273600 AND 1539964799 GROUP BY time  [ RunTime:0.2911s ]
+SQL: SELECT `go_detail_count`,FROM_UNIXTIME(behot_time,"%Y-%m-%d") as time FROM `ytt_temai_article` WHERE `media_id` = '5500950648' AND `behot_time` BETWEEN 1539273600 AND 1539964799 AND `go_detail_count` >= 10000  [ RunTime:0.2476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000450s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\b847a871539f3261e4ca07b63e6726f1.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2018-10-19T15:08:27+08:00 ] 127.0.0.1 /TopLine/openArticleDetail/id/6613958530661614083.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\d20b57d955a4d463c8e0c8dd5762c69f.php 第 63 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\d20b57d955a4d463c8e0c8dd5762c69f.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+
+[ 2018-10-19T15:08:36+08:00 ] 127.0.0.1 /Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.1184s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.8391s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613891272656552461','6613728150079668744','6613820150682485251','6613844115496894979','6613796180730053124','6613895394160017934','6613890501542150669','6613858955347100167','6613867832755094020','6613841164233605645','6613875258380255752','6613820148908294664','6613885767842267651','6613848753809916430','6613737485564379652','6613848754015437316','6613838701174718990','6613814735412396547','6613825556859322893','6613867824819470855','6613909992640610823','6613863506989023758','6613855305895772675','6613728334624850445','6613847535809200644','6613847169940062728','6613825898175005188','6613742839543104014','6613743610569425421','6613830201388302861','6613846791760642573','6613743613429940744','6613752889955320324','6613825303405920772','6613846959365030407','6613743613727736333','6613847208011760142','6613830200142594564','6613824500066681352','6613830201103090183','6613879310128251395','6613732770428486158','6613830201245696525','6613742839761207816','6613745932716474888','6613854535209189901','6613848753981882893','6613848753671504387','6613833289192964622','6613847624288043524') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.1070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2018-10-19T15:08:38+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.1111s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500950648' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1221s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613929154851111432','6613940503035511309','6613929155241181710','6613935337150349827','6613935340757451271','6613933791519965700','6613935341109772814','6613935340946194948','6613930701660094980','6613939627755569667','6613933018719453704','6613941707148886532','6613940753607426567','6613940750642053636','6613947711219565069','6613947708904309251','6613938433297482254','6613941154750661123','6613947709164356103','6613941525170618887','6613944487741751822','6613941937340678659','6613939980119048712','6613944096371245582','6613944661297857028','6613944480510771716','6613940148822344196','6613944369584013832','6613938357745484295','6613937953192280589','6613948480975012355','6613947528259830276','6613947372743426573','6613937659704246797','6613930645859074568','6613938431191941635','6613943450515538435','6613948390495486478','6613933018136445453','6613930683196768772','6613943845895799300','6613937657888113159','6613943867962032644','6613943843312108040','6613948514349089283','6613939531999609358','6613949185974616589','6613949253490311693','6613945821102604804','6613949089983758852') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.1226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-10-19T15:08:42+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500311915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.1118s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500311915' GROUP BY article_id ORDER BY count desc  [ RunTime:0.8503s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613743612075180547','6613753186836546061','6613759072120340995','6613765258127344132','6613810096801579528','6613831746611839495','6613843340133663239','6613919107311993347','6613918410889757187','6613913694919197187','6613913693711237645','6613919097795117581','6613847207470694915','6613913336784355847','6613915815139869198','6613918331697103367','6613922198627287566','6613912923402142221','6613852832690864653','6613924958252827150','6613852052797784590','6613923743393645064','6613925289716089347','6613851073507492356','6613929155476062728','6613926477157106190','6613929930105291278','6613928380339323406','6613927609552077326','6613932247445668355','6613929153706066446','6613858225827611149','6613858747217347079','6613912921984467463','6613858432267059725','6613912148089242126','6613867145090564616','6613911619359474184','6613911380057653767','6613939978189668878','6613910632695595523','6613860853282243076','6613910600072299016','6613939978294526472','6613865340168307208','6613909827640885763','6613864131059515918','6613866533640733188','6613938431863030279','6613865208915952142') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.2340s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2018-10-19T15:11:27+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0616s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500950648' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1218s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613851972460085774','6613841022986224132','6613825556800602637','6613895136998851079','6613907508203356686','6613827878092014093','6613892830026793475','6613750689170457095','6613851074421850628','6613744386238841352','6613754437120819725','6613742838997844483','6613745157172888068','6613742837114601992','6613744386012348942','6613752582143738371','6613757527999906308','6613743612683354627','6613753720188436999','6613755166090854915','6613750119424590339','6613868502673523214','6613741572955570691','6613743614994416132','6613769316435231235','6613740898243052036','6613867472179167748','6613836366868382222','6613830201677709838','6613834837620949518','6613879566354088462','6613849526492987907','6613929154851111432','6613837320221098500','6613904416464437768','6613828587600478734','6613870530237825540','6613865711238382094','6613829424611590664','6613821694836474372','6613831746603450893','6613818601772155400','6613827877882298883','6613823241775481357','6613835613391028739','6613876328405926408','6613828730093568526','6613866534857097736','6613904420251894286','6613825557345862157') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001358s ]
+
+[ 2018-10-19T15:11:30+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0642s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500950648' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1289s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613851972460085774','6613841022986224132','6613825556800602637','6613895136998851079','6613907508203356686','6613827878092014093','6613892830026793475','6613750689170457095','6613851074421850628','6613744386238841352','6613754437120819725','6613742838997844483','6613745157172888068','6613742837114601992','6613744386012348942','6613752582143738371','6613757527999906308','6613743612683354627','6613753720188436999','6613755166090854915','6613750119424590339','6613868502673523214','6613741572955570691','6613743614994416132','6613769316435231235','6613740898243052036','6613867472179167748','6613836366868382222','6613830201677709838','6613834837620949518','6613879566354088462','6613849526492987907','6613929154851111432','6613837320221098500','6613904416464437768','6613828587600478734','6613870530237825540','6613865711238382094','6613829424611590664','6613821694836474372','6613831746603450893','6613818601772155400','6613827877882298883','6613823241775481357','6613835613391028739','6613876328405926408','6613828730093568526','6613866534857097736','6613904420251894286','6613825557345862157') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0645s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000531s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003049s ]
+
+[ 2018-10-19T15:11:31+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0613s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500950648' GROUP BY article_id ORDER BY count desc  [ RunTime:0.0641s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613851972460085774','6613841022986224132','6613825556800602637','6613895136998851079','6613907508203356686','6613827878092014093','6613892830026793475','6613750689170457095','6613851074421850628','6613744386238841352','6613754437120819725','6613742838997844483','6613745157172888068','6613742837114601992','6613744386012348942','6613752582143738371','6613757527999906308','6613743612683354627','6613753720188436999','6613755166090854915','6613750119424590339','6613868502673523214','6613741572955570691','6613743614994416132','6613769316435231235','6613740898243052036','6613867472179167748','6613836366868382222','6613830201677709838','6613834837620949518','6613879566354088462','6613849526492987907','6613929154851111432','6613837320221098500','6613904416464437768','6613828587600478734','6613870530237825540','6613865711238382094','6613829424611590664','6613821694836474372','6613831746603450893','6613818601772155400','6613827877882298883','6613823241775481357','6613835613391028739','6613876328405926408','6613828730093568526','6613866534857097736','6613904420251894286','6613825557345862157') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2018-10-19T15:45:20+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500311915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0642s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500311915' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1072s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613743612075180547','6613753186836546061','6613759072120340995','6613765258127344132','6613810096801579528','6613831746611839495','6613843340133663239','6613919107311993347','6613918410889757187','6613913694919197187','6613913693711237645','6613919097795117581','6613847207470694915','6613913336784355847','6613915815139869198','6613918331697103367','6613922198627287566','6613912923402142221','6613852832690864653','6613924958252827150','6613852052797784590','6613923743393645064','6613925289716089347','6613851073507492356','6613929155476062728','6613926477157106190','6613929930105291278','6613928380339323406','6613927609552077326','6613932247445668355','6613929153706066446','6613858225827611149','6613858747217347079','6613912921984467463','6613858432267059725','6613912148089242126','6613867145090564616','6613911619359474184','6613911380057653767','6613939978189668878','6613910632695595523','6613860853282243076','6613910600072299016','6613939978294526472','6613865340168307208','6613909827640885763','6613864131059515918','6613866533640733188','6613938431863030279','6613865208915952142') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.1292s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2018-10-19T15:45:23+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500903267
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0604s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500903267' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1631s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613892748531466755','6613847535809200644','6613848753981882893','6613877524172636679','6613830201535103495','6613857893772952078','6613901324272534020','6613872447286411784','6613839476395344398','6613882330782106115','6613893974849487363','6613861892483973645','6613878903893131790','6613897459322061325','6613860472724652551','6613920630548988420','6613893184755859972','6613848753050747396','6613861895684227588','6613750740286439940','6613870212615766541','6613728953574097415','6613890500984308232','6613872020125909518','6613742837164933635','6613922595353920013','6613853392332653063','6613864215805428227','6613837930538467844','6613790771252298248','6613760369091412487','6613880872087060995','6613895914232742413','6613844115643695623','6613910332505063949','6613892710178750990','6613757528150901252','6613745932548702727','6613905465996739080','6613856403608044036','6613909056107053582','6613744425979871747','6613884794348503559','6613868980736098819','6613758343469072904','6613757527869882893','6613760776500937220','6613754436902715911','6613762812143469059','6613858329707938308') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.1227s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2018-10-19T15:45:31+08:00 ] 127.0.0.1 /TopLine/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT * FROM `ytt_top_line_account`  [ RunTime:0.1245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\426c33a264d6f3acce84a03956edbeb5.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2018-10-19T15:46:47+08:00 ] 127.0.0.1 /TopLine/updateAccount/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2018-10-19T15:48:46+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500358214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0612s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500358214' GROUP BY article_id ORDER BY count desc  [ RunTime:0.3486s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613891272656552461','6613728150079668744','6613820150682485251','6613844115496894979','6613890501542150669','6613909992640610823','6613820148908294664','6613737485564379652','6613867824819470855','6613905190519046659','6613894081120567811','6613904540745859587','6613728334624850445','6613892818387599885','6613847169940062728','6613825898175005188','6613742839543104014','6613830201388302861','6613752889955320324','6613891314066915844','6613896296518386183','6613896685682688515','6613905192142242312','6613830200142594564','6613899778898002446','6613732770428486158','6613830201245696525','6613742839761207816','6613854535209189901','6613745932716474888','6613901684722631176','6613864216153555470','6613848753671504387','6613833289192964622','6613847127925719555','6613744421391303171','6613824014676656644','6613876320784876036','6613891290150994439','6613848753495343620','6613869931115053581','6613896687515599368','6613838485570716167','6613863505869144579','6613841022927503875','6613893357494075918','6613851074027586051','6613742840633623053','6613903475921125896','6613925607128433155') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0653s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2018-10-19T15:51:47+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500950648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0657s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500950648' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1316s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613851972460085774','6613841022986224132','6613825556800602637','6613895136998851079','6613907508203356686','6613827878092014093','6613892830026793475','6613750689170457095','6613851074421850628','6613744386238841352','6613754437120819725','6613742838997844483','6613745157172888068','6613742837114601992','6613744386012348942','6613752582143738371','6613757527999906308','6613743612683354627','6613753720188436999','6613755166090854915','6613750119424590339','6613868502673523214','6613741572955570691','6613743614994416132','6613769316435231235','6613740898243052036','6613867472179167748','6613836366868382222','6613830201677709838','6613834837620949518','6613879566354088462','6613849526492987907','6613929154851111432','6613837320221098500','6613904416464437768','6613828587600478734','6613870530237825540','6613865711238382094','6613829424611590664','6613821694836474372','6613831746603450893','6613818601772155400','6613827877882298883','6613823241775481357','6613835613391028739','6613876328405926408','6613828730093568526','6613866534857097736','6613904420251894286','6613825557345862157') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2018-10-19T15:51:50+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500311915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0611s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500311915' GROUP BY article_id ORDER BY count desc  [ RunTime:0.1036s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613743612075180547','6613753186836546061','6613759072120340995','6613765258127344132','6613810096801579528','6613831746611839495','6613843340133663239','6613919107311993347','6613918410889757187','6613913694919197187','6613913693711237645','6613919097795117581','6613847207470694915','6613913336784355847','6613915815139869198','6613918331697103367','6613922198627287566','6613912923402142221','6613852832690864653','6613924958252827150','6613852052797784590','6613923743393645064','6613925289716089347','6613851073507492356','6613929155476062728','6613926477157106190','6613929930105291278','6613928380339323406','6613927609552077326','6613932247445668355','6613929153706066446','6613858225827611149','6613858747217347079','6613912921984467463','6613858432267059725','6613912148089242126','6613867145090564616','6613911619359474184','6613911380057653767','6613939978189668878','6613910632695595523','6613860853282243076','6613910600072299016','6613939978294526472','6613865340168307208','6613909827640885763','6613864131059515918','6613866533640733188','6613938431863030279','6613865208915952142') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.1235s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2018-10-19T15:51:57+08:00 ] 127.0.0.1 /Article/index.html?media_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0644s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5751s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613891272656552461','6613796180730053124','6613728150079668744','6613820150682485251','6613844115496894979','6613895394160017934','6613890501542150669','6613895138169061892','6613858955347100167','6613867832755094020','6613841164233605645','6613909992640610823','6613875258380255752','6613848754015437316','6613820148908294664','6613885767842267651','6613848753809916430','6613846791760642573','6613737485564379652','6613906734396211716','6613867824819470855','6613846959365030407','6613838701174718990','6613743613727736333','6613847169940062728','6613892748531466755','6613905190519046659','6613855305895772675','6613814735412396547','6613825556859322893','6613894081120567811','6613895914815750669','6613904540745859587','6613863506989023758','6613728334624850445','6613892818387599885','6613847535809200644','6613825898175005188','6613743610569425421','6613742839543104014','6613743613429940744','6613830201388302861','6613752889955320324','6613891314066915844','6613896296518386183','6613825303405920772','6613879310128251395','6613896685682688515','6613876591376204302','6613857713002643972') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2018-10-19T15:52:01+08:00 ] 127.0.0.1 /Article/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0608s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.4792s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613746835829817863','6613748248823726606','6613877157657575943','6613909058896265742','6613913694248108552','6613889384708047374','6613748248836309508','6613882268567994884','6613854158845903363','6613751925911323150','6613905269132886541','6613879676857221640','6613887047797047815','6613888883039928839','6613850298769211917','6613899781448139278','6613895840626901512','6613868078675526152','6613727657987146244','6613869627472609806','6613857893772952078','6613872689830429197','6613895138357805581','6613872585824272899','6613896684097241608','6613919622297027076','6613901324272534020','6613890502779470349','6613860258148254222','6613911378962940429','6613880812020433412','6613886872370283022','6613876713329787405','6613858401153712648','6613871509054161412','6613742838683271684','6613905963386667527','6613830199916102147','6613898233615745544','6613743610577814019','6613867370219831821','6613848578559312391','6613743613266362894','6613755980754715150','6613899335753007629','6613916070099026436','6613857279148032519','6613886455238361614','6613909059386999310','6613739895259136520') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0651s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001750s ]
+
+[ 2018-10-19T15:52:04+08:00 ] 127.0.0.1 /Article/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0609s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.4861s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613905192142242312','6613847208011760142','6613830200142594564','6613899778898002446','6613833289192964622','6613824500066681352','6613830201103090183','6613732770428486158','6613830201245696525','6613742839761207816','6613854535209189901','6613745932716474888','6613901684722631176','6613848753981882893','6613864216153555470','6613848753671504387','6613847624288043524','6613848753218519560','6613847127925719555','6613744421391303171','6613851972460085774','6613874295531635203','6613876241785160200','6613824014676656644','6613744349043753480','6613876320784876036','6613891290150994439','6613877018649952772','6613848753495343620','6613877524172636679','6613845657977356808','6613820150414049805','6613869931115053581','6613896687515599368','6613838485570716167','6613841022986224132','6613863505869144579','6613841022927503875','6613851074027586051','6613893357494075918','6613841023464374787','6613742840633623053','6613903475921125896','6613830201535103495','6613925607128433155','6613839476730888707','6613748248693703175','6613839475929776648','6613825556800602637','6613838701178913284') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0657s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001674s ]
+
+[ 2018-10-19T15:52:06+08:00 ] 127.0.0.1 /Article/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0652s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5023s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613872447286411784','6613890406495027720','6613898698843750919','6613743616462422531','6613830199786078733','6613858802896732680','6613860560884728323','6613740436106248708','6613919483130020360','6613825557039677960','6613839476395344398','6613870764175131139','6613899462928499208','6613878195231916547','6613831970528952835','6613905327534375432','6613895136826884616','6613830199626695172','6613882330782106115','6613889833762816526','6613920651830886919','6613872449555530244','6613883763782844932','6613887087873622542','6613882754117403140','6613911380493861379','6613908280202756611','6613905191022363150','6613911379378176526','6613875236867670536','6613891274221027843','6613881994457645582','6613917054829330952','6613879578806977038','6613898734625358350','6613893974849487363','6613911379466256910','6613880830756389379','6613906527524749828','6613918331386724871','6613898234114867716','6613831746041414158','6613897458730664452','6613885575759921667','6613895136998851079','6613865354152116743','6613866533166776839','6613744730578616835','6613927607152935431','6613869854992630280') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0683s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2018-10-19T15:52:08+08:00 ] 127.0.0.1 /Article/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0662s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5147s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613880890730742280','6613744385634861581','6613916783004877316','6613729010054595080','6613895917474939400','6613937359920562695','6613731810503295495','6613870482968019469','6613892322553758221','6613879388012282375','6613869727699698179','6613890502628475395','6613743614084252168','6613940753796170243','6613822173746299400','6613889728812941827','6613867016761639437','6613896685120651783','6613815509169209860','6613907508203356686','6613878047391089155','6613887844584784397','6613747005673964045','6613861892483973645','6613827878092014093','6613883541618950670','6613878903893131790','6613888957480436228','6613913697033126408','6613731324165358088','6613886397973529091','6613911378052776461','6613887739051901443','6613888208331604494','6613897459322061325','6613854167154819588','6613912946626003470','6613896686475411975','6613737235638387213','6613911633137762819','6613753925214405127','6613929156407198216','6613865969947247117','6613892818668618254','6613892830026793475','6613869627267088903','6613921422869791240','6613883162508395021','6613893710490894862','6613904419593388552') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0682s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2018-10-19T15:52:11+08:00 ] 127.0.0.1 /Article/index/p/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0643s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5061s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613878035412156936','6613896686584463876','6613900617909797390','6613907063137370632','6613892046887322115','6613895139263775236','6613913694009033230','6613863505818812936','6613750740286439940','6613910164166672900','6613869833085780487','6613743614281384451','6613743612234564110','6613899917704299011','6613871659822612996','6613870212615766541','6613894364923953672','6613913794487779844','6613744386238841352','6613868890843775496','6613884933561647629','6613859929868468743','6613844114142134788','6613890503375061512','6613743614520459783','6613889339849966094','6613892820484751879','6613912150773596676','6613754437120819725','6613889727785337352','6613847207676215816','6613864627061129741','6613928379546599943','6613902870519480845','6613728953574097415','6613827104729465348','6613883856934142467','6613742838997844483','6613919878560612872','6613897456834839047','6613907563450728967','6613914464615924231','6613894366136107533','6613880660434092551','6613754664070414861','6613917387181785613','6613872682419094024','6613880194258174468','6613890500984308232','6613911375515222542') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0684s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2018-10-19T15:52:14+08:00 ] 127.0.0.1 /Article/index/p/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0613s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5580s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613750119424590339','6613820102712230407','6613868502673523214','6613885507862528516','6613904420050567687','6613888768757727752','6613741572955570691','6613743614994416132','6613893591687234056','6613877874283774471','6613901325027508749','6613865838216757774','6613769316435231235','6613738700868157959','6613884912023896583','6613932245314961923','6613810096801579528','6613920976906224132','6613740898243052036','6613869140237091331','6613753608129217027','6613891476071907844','6613831929802260999','6613893595466301959','6613862064723067399','6613902116920492547','6613919105734935044','6613871785840476675','6613909533393682958','6613815508762362376','6613894096069067278','6613853392332653063','6613842928672440845','6613864893164552717','6613868978408260100','6613752531388465671','6613864215805428227','6613762602042409479','6613871078798262787','6613898236505621006','6613851844722557447','6613876002508505607','6613861126083969543','6613893592064721412','6613855730208342532','6613890913577992707','6613896685602996739','6613867472179167748','6613791541485896195','6613899003484439044') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0644s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 13 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2018-10-19T15:52:17+08:00 ] 127.0.0.1 /Article/index/p/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0643s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 GROUP BY article_id ORDER BY count desc  [ RunTime:0.5280s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613873191716651524','6613908281662374414','6613892047210283534','6613895915407147523','6613862805592343043','6613860145220813315','6613743614310744590','6613878587676164612','6613916288567738887','6613876301524632078','6613760369091412487','6613924517024629255','6613880872087060995','6613885883017855492','6613895914232742413','6613866534156632579','6613743615850054148','6613893593037799940','6613900420458742280','6613831746611839495','6613895138450080270','6613898163839304199','6613844115643695623','6613877456455598595','6613912546678145550','6613851844663837198','6613887408033235463','6613868754914787843','6613910332505063949','6613898235029225998','6613835613319725576','6613926234361430536','6613864206506656270','6613875419466695181','6613904420121870851','6613912808356577799','6613892710178750990','6613780361446949390','6613885859668165124','6613904417773060622','6613830201677709838','6613752486048039428','6613866582508569095','6613904416816759309','6613894366933025287','6613909057218544131','6613864995442655752','6613742838414836228','6613742840444879364','6613882729933046280') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0718s ]
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined offset: 12 D:\www\online_team\www.sale.com\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2018-10-19T15:52:52+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500358214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0680s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500358214' GROUP BY article_id ORDER BY count desc  [ RunTime:0.3909s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613891272656552461','6613728150079668744','6613820150682485251','6613844115496894979','6613890501542150669','6613909992640610823','6613820148908294664','6613737485564379652','6613867824819470855','6613847169940062728','6613905190519046659','6613894081120567811','6613904540745859587','6613752889955320324','6613728334624850445','6613892818387599885','6613825898175005188','6613742839543104014','6613830201388302861','6613891314066915844','6613896296518386183','6613896685682688515','6613905192142242312','6613830200142594564','6613899778898002446','6613833289192964622','6613732770428486158','6613830201245696525','6613742839761207816','6613854535209189901','6613745932716474888','6613901684722631176','6613864216153555470','6613848753671504387','6613847127925719555','6613744421391303171','6613824014676656644','6613876320784876036','6613891290150994439','6613848753495343620','6613820150414049805','6613869931115053581','6613896687515599368','6613838485570716167','6613863505869144579','6613841022927503875','6613851074027586051','6613893357494075918','6613742840633623053','6613903475921125896') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000447s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2018-10-19T15:52:56+08:00 ] 127.0.0.1 /Article/index.html?media_id=5500358214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article_read` [ RunTime:0.0604s ]
+SQL: SELECT `article_id`,max(go_detail_count) as count FROM `ytt_temai_article_read` WHERE `behot_time` > 1539878400 AND `media_id` = '5500358214' GROUP BY article_id ORDER BY count desc  [ RunTime:0.4070s ]
+SQL: SELECT * FROM `ytt_temai_article_read` WHERE `article_id` IN ('6613891272656552461','6613728150079668744','6613820150682485251','6613844115496894979','6613890501542150669','6613909992640610823','6613820148908294664','6613737485564379652','6613867824819470855','6613847169940062728','6613905190519046659','6613894081120567811','6613904540745859587','6613752889955320324','6613728334624850445','6613892818387599885','6613825898175005188','6613742839543104014','6613830201388302861','6613891314066915844','6613896296518386183','6613896685682688515','6613905192142242312','6613830200142594564','6613899778898002446','6613833289192964622','6613732770428486158','6613830201245696525','6613742839761207816','6613854535209189901','6613745932716474888','6613901684722631176','6613864216153555470','6613848753671504387','6613847127925719555','6613744421391303171','6613824014676656644','6613876320784876036','6613891290150994439','6613848753495343620','6613820150414049805','6613869931115053581','6613896687515599368','6613838485570716167','6613863505869144579','6613841022927503875','6613851074027586051','6613893357494075918','6613742840633623053','6613903475921125896') AND `create_time` BETWEEN 1539921599 AND 1539928801 ORDER BY go_detail_count desc  [ RunTime:0.0654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2018-10-19T16:04:32+08:00 ] 127.0.0.1 /TopLine/shopNewsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_shop_news` [ RunTime:0.0645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_top_line_shop_news` LIMIT 1   [ RunTime:0.0648s ]
+SQL: SELECT * FROM `ytt_top_line_shop_news` ORDER BY id desc LIMIT 0,20   [ RunTime:0.2560s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0638s ]
+SQL: SELECT * FROM `ytt_top_line_account` WHERE `id` <> 1  [ RunTime:0.0665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\d654df9e76a0b9ec9fe4bed9d023a0e9.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\d654df9e76a0b9ec9fe4bed9d023a0e9.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2018-10-19T16:04:45+08:00 ] 127.0.0.1 /TopLine/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_news` [ RunTime:0.0644s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_top_line_news` LIMIT 1   [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_top_line_news` ORDER BY id desc LIMIT 0,20   [ RunTime:0.7038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\e05057456dd710e26a15bc53604086a1.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\e05057456dd710e26a15bc53604086a1.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2018-10-19T16:08:05+08:00 ] 127.0.0.1 /TopLine/albumList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_album` [ RunTime:0.0650s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ytt_top_line_album` LIMIT 1   [ RunTime:0.0642s ]
+SQL: SELECT * FROM `ytt_top_line_album` ORDER BY id desc LIMIT 0,20   [ RunTime:0.3201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000332s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\45b764ae0f46c74bd9496b2e5d199d49.php 第 49 行.
+NOTIC: [8] Undefined index: son_menu D:\www\online_team\www.sale.com\Application\Runtime\Cache\Admin\45b764ae0f46c74bd9496b2e5d199d49.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001529s ]
+

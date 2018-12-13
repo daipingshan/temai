@@ -1,0 +1,84 @@
+<extend name="Common/layer"/>
+<block name="css">
+    <style type="text/css">
+        .layui-input-inline {
+            width: 60% !important;
+        }
+    </style>
+</block>
+<block name="body">
+    <!-- 右侧内容框架，更改从这里开始 -->
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号ID</label>
+            <div class="layui-input-inline">
+                <input type="number" name="user_id"
+                <notEmpty name="info">value="{$info['user_id']}"</notEmpty>
+                class="layui-input" placeholder="请输入账号ID">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="username"
+                <notEmpty name="info">value="{$info['username']}"</notEmpty>
+                class="layui-input" placeholder="请输入账号名称">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号token</label>
+            <div class="layui-input-block">
+                <input type="text" name="access_token"
+                <notEmpty name="info">value="{$info['access_token']}"</notEmpty>
+                class="layui-input" placeholder="请输入账号token">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号cookie</label>
+            <div class="layui-input-block">
+                <textarea type="text" name="cookie" class="layui-textarea" placeholder="请输入账号cookie"><notEmpty
+                        name="info">
+                    {$info['cookie']}
+                </notEmpty></textarea>
+
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+            </label>
+            <notEmpty name="info">
+                <input type="hidden" name="id" value="{$info['id']}">
+            </notEmpty>
+            <button class="layui-btn" lay-filter="save" lay-submit="save" type="submit">
+                <empty name="info">
+                    添加
+                    <else/>
+                    编辑
+                </empty>
+            </button>
+        </div>
+    </form>
+    <!-- 右侧内容框架，更改从这里结束 -->
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        //监听提交
+        form.on('submit(save)', function (data) {
+            var _this = $(this);
+            _this.attr('disabled', true);
+            var url = "{:U('Account/saveData')}";
+            $.post(url, data.field, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        window.parent.location.href = "{:U('Account/index')}"
+                    });
+                } else {
+                    _this.removeAttr('disabled');
+                    layer.msg(res.info);
+                }
+            });
+            return false;
+        });
+    </script>
+</block>

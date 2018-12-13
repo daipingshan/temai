@@ -1,0 +1,58 @@
+<extend name="Common/layer"/>
+<block name="body">
+    <table class="layui-table" lay-skin="line">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>名称</th>
+            <th>地址</th>
+            <th>电话</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="row">
+            <tr>
+                <td>{$row.name}</td>
+                <td>{$row.address}</td>
+                <td>{$row.mobile}</td>
+                <td>
+                    <if condition="$row['status'] eq 1">
+                        <a class="layui-btn layui-btn-danger layui-btn-xs status-partner" data-id="{$row.id}">停止合作</a>
+                        <else/>
+                        <a class="layui-btn layui-btn-xs status-partner" data-id="{$row.id}">继续合作</a>
+                    </if>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="js">
+    <script>
+        $(function () {
+            $('table').on('click', '.status-partner', function () {
+                var _this = $(this);
+                layer.confirm('你确定要 ' + _this.text() + ' 该快递员对应的供货商信息吗？', function () {
+                    var url = "{:U('setPartnerStatus')}?id=" + _this.data('id');
+                    $.get(url, {}, function (res) {
+                        layer.msg(res.info);
+                        if (res.status == 1) {
+                            if (_this.text() == '停止合作') {
+                                _this.removeClass('layui-btn-danger').text('继续合作');
+                            } else {
+                                _this.addClass('layui-btn-danger').text('停止合作');
+                            }
+
+                        }
+                    })
+                })
+            })
+        })
+    </script>
+</block>

@@ -1,0 +1,64 @@
+<extend name="Common/common"/>
+<block name="body">
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th width="15%">付款时间</th>
+            <th>文章来源</th>
+            <th>商品信息</th>
+            <th width="8%">订单状态</th>
+            <th width="8%">收入比率</th>
+            <th width="8%">付款金额</th>
+            <th width="8%">预估收入</th>
+            <th width="15%">所属账号</th>
+            <th width="5%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.pay_time}</td>
+                <td><a href="{$vo.order_source}" target="_blank" style="color: #fff">{$vo.article_title}</a></td>
+                <td><a href="{$vo.commodity_info}" target="_blank" style="color: #fff">{$vo.commodity_name}</a></td>
+                <td>{$vo.order_status}</td>
+                <td>{$vo.profit_percent}</td>
+                <td>¥{$vo.order_money}</td>
+                <td><span style="color: #FFB800">¥{$vo.income}</span></td>
+                <td>{$vo.author_name}</td>
+                <td>
+                    <button class="layui-btn layui-btn-sm claim" style="background-color: rgba(0,0,0,0.4)"
+                            title="立即认领" data-id="{$vo.id}">
+                        <i class="iconfont" style="font-size:10px !important;color: #fff;margin: 0 5px">&#xe718;</i>立即认领
+                    </button>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        $('.claim').click(function () {
+            $.post("{:U('Order/doClaim')}", {id: $(this).data('id')}, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        location.reload();
+                    })
+                } else {
+                    layer.msg(res.info);
+                }
+            });
+        });
+    </script>
+</block>

@@ -1,0 +1,319 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Item/saleList')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入商品名称" autocomplete="off"
+                           class="layui-input" value="{$param['title']}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品ID" autocomplete="off"
+                           class="layui-input" value="{$param['shop_goods_id']}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_name" placeholder="请输入店铺名称" autocomplete="off"
+                           class="layui-input" value="{$param['shop_name']}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="time" id="time" placeholder="请选择上线时间" autocomplete="off"
+                           class="layui-input" value="{$param['time']}">
+                </div>
+                <div class="layui-input-inline" style="width:180px">
+                    <input type="hidden" name="order" id="order" value="{$param['order']}"/>
+                    <input type="hidden" name="sort" id="sort" value="{$param['sort']}"/>
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i></button>
+                    <eq name="group_id" value="1">
+                        <button class="layui-btn open-item" type="button">采集商品</button>
+                    </eq>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-inline" style="width: 600px">
+                    <button type="button" class="layui-btn btn-sort btn-null" value="">
+                        综合排序
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-primary btn-sort btn-hotrank" data-type="desc"
+                            value="hotrank">
+                        热度<b>↓</b>
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-primary btn-sort btn-month_sell_num"
+                            data-type="desc"
+                            value="month_sell_num">
+                        销量<b>↓</b>
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-primary btn-sort btn-sku_price" data-type="desc"
+                            value="sku_price">
+                        价格<b>↓</b>
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-primary btn-sort btn-cos_ratio" data-type="desc"
+                            value="cos_ratio">
+                        佣金比例<b>↓</b>
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-primary btn-sort btn-cos_fee" data-type="desc"
+                            value="cos_fee">
+                        预估<b>↓</b>
+                    </button>
+                </div>
+                <label class="layui-form-label">佣金比例</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="cos_ratio_down" placeholder="请输入" autocomplete="off"
+                           class="layui-input" value="{$param['cos_ratio_down']}"
+                           style="width: 40%;display: inline-block">&nbsp;&nbsp;-
+                    <input type="text" name="cos_ratio_up" placeholder="请输入" autocomplete="off"
+                           class="layui-input" value="{$param['cos_ratio_up']}"
+                           style="width: 40%;display: inline-block">
+                </div>
+                <label class="layui-form-label">价格</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="sku_price_down" placeholder="请输入" autocomplete="off"
+                           class="layui-input" value="{$param['sku_price_down']}"
+                           style="width: 40%;display: inline-block">&nbsp;&nbsp;-
+                    <input type="text" name="sku_price_up" placeholder="请输入" autocomplete="off"
+                           class="layui-input" value="{$param['sku_price_up']}"
+                           style="width: 40%;display: inline-block">
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <div class="layui-row"
+         style="display: none;position: relative;width: 90%;height: 400px;background: #fff;padding: 2% 5%"
+         id="item-row">
+        <div class="layui-row item-row"
+             style="height: 350px;overflow-y: scroll;width:90%;margin:0 auto;border: 1px solid #ccc;color: #333;padding: 5px 10px">
+        </div>
+        <div class="layui-row" style="position: absolute;bottom: 10px;right: 10px">
+            <button class="layui-btn layui-btn-danger" id="stop" type="button">停止
+            </button>
+            <button class="layui-btn" id="start" type="button">采集商品
+            </button>
+        </div>
+    </div>
+    <div id="reward-box" style="display: none;padding:20px;">
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">奖励金额</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="reward_money" id="reward-money" value="" class="layui-input"
+                           placeholder="请输入奖励金额"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="hidden" name="shop_goods_id" id="shop-goods-id"/>
+                    <button class="layui-btn" id="save-reward" type="button">添加</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</block>
+<block name="js">
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 1
+        });
+        flow.lazyimg();
+        var sort = "{$param['sort']}";
+        var order = "{$param['order']}";
+        if (sort) {
+            $('.btn-null').addClass('layui-btn-primary');
+            $('.btn-' + sort).removeClass('layui-btn-primary');
+            if (order == 'asc') {
+                $('.btn-' + sort).attr('data-type', 'desc');
+                $('.btn-' + sort + ' b').text('↑');
+            } else {
+                $('.btn-' + sort).attr('data-type', 'asc');
+                $('.btn-' + sort + ' b').text('↓');
+            }
+        }
+        $('.btn-sort').click(function () {
+            $('#order').val($(this).data('type'));
+            $('#sort').val($(this).val());
+            $('form').submit();
+        });
+
+        $('.open-item').click(function () {
+            layer.open({
+                type: 1,
+                area: ['40%', '480px'],
+                fix: false, //不固定
+                maxmin: true,
+                shadeClose: true,
+                shade: 0.4,
+                title: '采集商品',
+                content: $('#item-row'),
+                cancel: function () {
+                    $('#item-row').hide();
+                }
+            });
+        });
+        var status = 0;
+        var num = 0;
+        var url = "{:U('Item/ajaxCollectionItem')}";
+        var page = 1;
+        $('#start').click(function () {
+            status = 1;
+            $(this).addClass('layui-disabled').text('正在采集中……');
+            getItems();
+        });
+
+        function getItems() {
+            if (status == 1) {
+                $.get(url, {page: page}, function (res) {
+                    if (page == 1 && num == 0) {
+                        $('#item-row .item-row').html("<p>" + res.info.info + "<p>");
+                    } else {
+                        $('#item-row .item-row').append("<p>" + res.info.info + "<p>");
+                        $('#item-row .item-row').scrollTop($('#item-row .item-row')[0].scrollHeight);
+                    }
+                    if (res.info.code == 1) {
+                        page++;
+                        getItems();
+                    } else {
+                        if (res.info.code == 0 && num < 3) {
+                            num++;
+                            getItems();
+                        } else {
+                            status = 0;
+                            $('#start').removeClass('layui-disabled').text('立即采集');
+                        }
+                    }
+                });
+            } else {
+                $('#item-row .item-row').append("<br>已停止");
+                $('#item-row .item-row').scrollTop($('#item-row .item-row')[0].scrollHeight);
+            }
+        }
+
+        $('#stop').click(function () {
+            if (status == 1) {
+                status = 0;
+                $('#start').removeClass('layui-disabled').text('立即采集');
+            }
+        });
+
+        $('.item-shop').click(function () {
+            var _this = $(this);
+            var shop_goods_id = _this.data('id');
+            var type = _this.data('val');
+            if (!shop_goods_id) {
+                layer.msg('商品编号获取失败，请刷新重新操作');
+                return false
+            }
+            if (type == 1) {
+                var tip = "您确定要将此商品添加至小店商品吗？"
+            } else {
+                var tip = "您确定要将此商品从小店商品中删除吗？"
+            }
+            layer.confirm(tip, function () {
+                var url = "{:U('Item/editShop')}";
+                $.post(url, {shop_goods_id: shop_goods_id, type: type}, function (res) {
+                    layer.msg(res.info);
+                });
+            });
+
+            return false
+        });
+
+        $('.item-reward').click(function () {
+            $('#reward-money').val('');
+            $('#shop-goods-id').val($(this).data('id'));
+            layer.open({
+                type: 1,
+                area: ['30%', '220px'],
+                fix: false, //不固定
+                maxmin: true,
+                shadeClose: true,
+                shade: 0.4,
+                title: '添加商品至奖励库',
+                content: $('#reward-box'),
+                cancel: function () {
+                    $('#reward-box').hide();
+                }
+            });
+        });
+
+        $('#save-reward').click(function () {
+            var _this = $(this);
+            var shop_goods_id = $('#shop-goods-id').val();
+            var reward_money = $('#reward-money').val();
+            if (!shop_goods_id) {
+                layer.msg('商品编号获取失败，请关闭窗口重新操作');
+                return false
+            }
+            if (!reward_money) {
+                layer.msg('情输入商品奖励金额');
+                return false
+            }
+            var url = "{:U('Item/addReward')}";
+            _this.addClass('layui-disabled');
+            $.post(url, {shop_goods_id: shop_goods_id, reward_money: reward_money}, function (res) {
+                layer.msg(res.info);
+                if (res.status == 1) {
+                    $('.reward-' + shop_goods_id).remove();
+                    layer.closeAll();
+                } else {
+                    _this.removeClass('layui-disabled');
+                }
+            });
+            return false
+        });
+
+        // 定义一个新的复制对象
+        var ClipboardSupport = 0;
+        if (typeof Clipboard != "undefined") {
+            ClipboardSupport = 1;
+        } else {
+            ClipboardSupport = 0;
+        }
+        $('.copy-item-id').click(function () {
+            var obj = $(this);
+            if (ClipboardSupport == 0) {
+                layer.msg('浏览器版本过低，请升级或更换浏览器后重新复制');
+                obj.removeClass('default-bgcolor');
+                setTimeout(function () {
+                    obj.addClass('default-bgcolor')
+                }, 5000)
+            } else {
+                var clipboard = new Clipboard('.copy-item-id');
+                clipboard.on('success', function (e) {
+                    obj.removeClass('default-bgcolor').text('复制成功');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor').text('复制商品编号')
+                    }, 5000)
+                    e.clearSelection();
+                });
+                clipboard.on('error', function (e) {
+                    layer.msg('复制失败，请升级或更换浏览器后重新复制');
+                    obj.removeClass('default-bgcolor');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor');
+                    }, 5000);
+                    e.clearSelection();
+                });
+            }
+        });
+    </script>
+</block>

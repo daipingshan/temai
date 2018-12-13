@@ -1,0 +1,695 @@
+[ 2018-11-10T11:57:42+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+
+[ 2018-11-10T11:57:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+
+[ 2018-11-10T13:49:35+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-11-10T14:03:11+08:00 ] 127.0.0.1 /Order/testLog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2018-11-10T14:04:14+08:00 ] 127.0.0.1 /Order/testLog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2018-11-10T14:31:04+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:31:40+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:31:41+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:31:59+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:31:59+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:34:26+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+NOTIC: [2] file_put_contents(/logs/order/2018-11-10.log): failed to open stream: No such file or directory D:\www\online_team\www.sale.com\Application\Data\Controller\OrderController.class.php 第 29 行.
+
+[ 2018-11-10T14:34:44+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+
+[ 2018-11-10T14:36:29+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+
+[ 2018-11-10T14:36:30+08:00 ] 127.0.0.1 /Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+
+[ 2018-11-10T17:06:13+08:00 ] 127.0.0.1 /Article/getHighReadNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001949s ]
+
+[ 2018-11-10T17:09:15+08:00 ] 127.0.0.1 /Article/getHighReadNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 737 行.
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 737 行.
+SQL: SHOW COLUMNS FROM `ytt_high_read_article` [ RunTime:0.0913s ]
+SQL: SELECT `id`,`article_id` FROM `ytt_high_read_article` WHERE `article_id` IN ('6621791571324961293','6621042052257825284','6621276797646406157','6621032292825448967','6621380337530307086','6621728044396577284','6620956075464065543','6621366020655284743','6621393660015542791','6621328360612037128','6620960162175779342','6621260264954135053','6621751065559695885','6620923395884204557','6621511231171723783','6620880787547881988','6621463194168721934','6621650197963358723','6621616232246280718','6621373492342292996','6621683951884829187','6621274885014422024','6620878225549558275','6621332578341224973','6621791796349370884','6621238461695263245','6620904900517691918','6621387033610813966','6621406991753413127','6621238625143095822','6621616346130022915','6621788937339798030','6621615635539427853','6621693377547076110','6621417764168925703','6621455232960315911','6620938221335347719','6621361894236094979','6621645233820008967','6621420941287096835','6621032013182796292','6621051356616606212','6621383624484717060','6621831789105119747','6621419934570250759','6621777420884132356','6621304815685206541','6620939513948537352','6621309750770401799','6621822952868413959','6621616095155454471','6621674657667875332','6621688507121271299','6620965195810341390','6620940382895079950','6620940184697438734','6621056280024859143','6621110997002224142','6621260139636720136','6621631091822297607','6620945104741876237','6621342332757213710','6621630858929373703','6621000434947473923','6621331241146778120','6621397543546782211','6621049273746194958','6621616028939977219','6621701764032758276','6621380170378904071','6621238879603130883','6620961723400585742','6621265304112595460','6621713666699952644','6620939132870853128','6621391214581121540','6621292290411332099','6621046712100192776','6621630628389454344','6621644862791877124','6621615508942750211','6621462463495799309','6621469078382969351','6621362780719022599','6621615701809431044','6621361317045338637','6621630908317303310','6621871502943846926','6621685272096539149','6620923043596206600','6620982754060272135','6621290253636338190','6621052459915674126','6621630553097519619','6621006292708229645','6621271644633563661','6621630968505565704','6621353942557131278','6621375279493300750','6620956491333501448')  [ RunTime:0.1009s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10285' WHERE `id` = 107286 [ RunTime:0.0997s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10158' WHERE `id` = 106148 [ RunTime:0.0991s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10308' WHERE `id` = 106924 [ RunTime:0.1068s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10963' WHERE `id` = 106557 [ RunTime:0.0980s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10127' WHERE `id` = 106923 [ RunTime:0.1073s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10477' WHERE `id` = 106559 [ RunTime:0.1162s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10815' WHERE `id` = 106952 [ RunTime:0.1247s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10573' WHERE `id` = 106550 [ RunTime:0.1163s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10618' WHERE `id` = 106564 [ RunTime:0.1117s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='10616' WHERE `id` = 106917 [ RunTime:0.1109s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10640' WHERE `id` = 107298 [ RunTime:0.1146s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10071' WHERE `id` = 107278 [ RunTime:0.1218s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11037' WHERE `id` = 106577 [ RunTime:0.1135s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10105' WHERE `id` = 106538 [ RunTime:0.0967s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10776' WHERE `id` = 106939 [ RunTime:0.0950s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10613' WHERE `id` = 106545 [ RunTime:0.0932s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10977' WHERE `id` = 106556 [ RunTime:0.0966s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='10646' WHERE `id` = 106536 [ RunTime:0.0815s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11010' WHERE `id` = 106932 [ RunTime:0.0734s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10523' WHERE `id` = 106150 [ RunTime:0.0682s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10043' WHERE `id` = 107275 [ RunTime:0.0724s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10037' WHERE `id` = 107274 [ RunTime:0.0801s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10822' WHERE `id` = 107299 [ RunTime:0.0831s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10708' WHERE `id` = 106561 [ RunTime:0.0865s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10526' WHERE `id` = 106555 [ RunTime:0.0774s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10980' WHERE `id` = 106965 [ RunTime:0.0792s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10623' WHERE `id` = 106542 [ RunTime:0.0697s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10632' WHERE `id` = 106931 [ RunTime:0.0734s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10300' WHERE `id` = 106552 [ RunTime:0.0790s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10399' WHERE `id` = 106554 [ RunTime:0.0857s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10775' WHERE `id` = 106570 [ RunTime:0.0950s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10638' WHERE `id` = 106567 [ RunTime:0.0994s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10106' WHERE `id` = 106537 [ RunTime:0.1002s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10810' WHERE `id` = 106573 [ RunTime:0.1058s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11011' WHERE `id` = 106584 [ RunTime:0.1058s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10281' WHERE `id` = 106549 [ RunTime:0.1134s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10039' WHERE `id` = 106534 [ RunTime:0.1008s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10977' WHERE `id` = 106976 [ RunTime:0.1059s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10820' WHERE `id` = 106540 [ RunTime:0.1036s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10570' WHERE `id` = 106933 [ RunTime:0.1044s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10578' WHERE `id` = 106947 [ RunTime:0.1107s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10100' WHERE `id` = 107280 [ RunTime:0.1154s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10649' WHERE `id` = 106951 [ RunTime:0.0948s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10288' WHERE `id` = 106919 [ RunTime:0.0943s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10642' WHERE `id` = 106957 [ RunTime:0.0944s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11030' WHERE `id` = 106958 [ RunTime:0.1008s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10932' WHERE `id` = 106576 [ RunTime:0.1029s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10483' WHERE `id` = 107292 [ RunTime:0.0920s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10884' WHERE `id` = 106572 [ RunTime:0.0999s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10083' WHERE `id` = 106921 [ RunTime:0.1014s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='10271' WHERE `id` = 106918 [ RunTime:0.1029s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11032' WHERE `id` = 106983 [ RunTime:0.0946s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10749' WHERE `id` = 106566 [ RunTime:0.0928s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10055' WHERE `id` = 107276 [ RunTime:0.1065s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10557' WHERE `id` = 107293 [ RunTime:0.1146s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10348' WHERE `id` = 106936 [ RunTime:0.1142s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10818' WHERE `id` = 106962 [ RunTime:0.1218s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10099' WHERE `id` = 107279 [ RunTime:0.1135s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10672' WHERE `id` = 106948 [ RunTime:0.1192s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10351' WHERE `id` = 107288 [ RunTime:0.1125s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10465' WHERE `id` = 107291 [ RunTime:0.1048s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10567' WHERE `id` = 106943 [ RunTime:0.1036s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10514' WHERE `id` = 106934 [ RunTime:0.1079s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10471' WHERE `id` = 106928 [ RunTime:0.1047s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10877' WHERE `id` = 107300 [ RunTime:0.1076s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10160' WHERE `id` = 107283 [ RunTime:0.1134s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10877' WHERE `id` = 106949 [ RunTime:0.1169s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10135' WHERE `id` = 107282 [ RunTime:0.1151s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10873' WHERE `id` = 106970 [ RunTime:0.1063s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10458' WHERE `id` = 106944 [ RunTime:0.0877s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10900' WHERE `id` = 106971 [ RunTime:0.0906s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10719' WHERE `id` = 106960 [ RunTime:0.0820s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10601' WHERE `id` = 106953 [ RunTime:0.0966s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10261' WHERE `id` = 106930 [ RunTime:0.0877s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10410' WHERE `id` = 106938 [ RunTime:0.0865s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10984' WHERE `id` = 106975 [ RunTime:0.0718s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10827' WHERE `id` = 106967 [ RunTime:0.0814s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10645' WHERE `id` = 106956 [ RunTime:0.0823s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10932' WHERE `id` = 106972 [ RunTime:0.0814s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11012' WHERE `id` = 106978 [ RunTime:0.0801s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10638' WHERE `id` = 106954 [ RunTime:0.0811s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10837' WHERE `id` = 106966 [ RunTime:0.0932s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10502' WHERE `id` = 106950 [ RunTime:0.0981s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='10243' WHERE `id` = 107284 [ RunTime:0.1963s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10607' WHERE `id` = 106926 [ RunTime:0.1190s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10273' WHERE `id` = 107285 [ RunTime:0.1014s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10961' WHERE `id` = 107302 [ RunTime:0.0875s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10610' WHERE `id` = 107297 [ RunTime:0.0943s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10463' WHERE `id` = 107290 [ RunTime:0.1026s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10747' WHERE `id` = 106961 [ RunTime:0.0986s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10811' WHERE `id` = 106964 [ RunTime:0.1086s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='10063' WHERE `id` = 107277 [ RunTime:0.1143s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10126' WHERE `id` = 107281 [ RunTime:0.1144s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10567' WHERE `id` = 107295 [ RunTime:0.1180s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10450' WHERE `id` = 107289 [ RunTime:0.1170s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10019' WHERE `id` = 107273 [ RunTime:0.1197s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10293' WHERE `id` = 107287 [ RunTime:0.1144s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10585' WHERE `id` = 107296 [ RunTime:0.1144s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10558' WHERE `id` = 107294 [ RunTime:0.1098s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10955' WHERE `id` = 107301 [ RunTime:0.1050s ]
+SQL: SELECT `id`,`article_id` FROM `ytt_high_read_article` WHERE `article_id` IN ('6621700946927813124','6620923946948624910','6621238207646286340','6621259967229854216','6621630707858932228','6621837538401206798','6621357621158871556','6621778479903932932','6621027723630346765','6620884271538110980','6621695472203465224','6621786369008075267','6621620796991209997','6621516593455170052','6621080789255733767','6621410128472048142','6621745224173486596','6621426190282392078','6621021758180819463','6621664996784865795','6621749454301037060','6621396071509656071','6621779441825612292','6621415592832270852','6620980663329751566','6621782161101947405','6620936658646729223','6621300225128530439','6621709270956114435','6620986054570672647','6620994312224113160','6621446150081741315','6621500685655474696','6621754777317409287','6621329147908063747','6620929431441506823','6621412479438160392','6621765153803207175','6621017042591941134','6621266363698643469','6620977116802449923','6621417455845638660','6621286608303817229','6621760318672470536','6621410700268929544','6620946478674215437','6620951277524222477','6620916294642303502','6621312971123458567','6621266243435364871','6621046114667725315','6621035310790754830','6621704959215796750','6620925948067840519','6621283538459165191','6621763676141519374','6620928946877760013','6621753924514742797','6621689791693980173','6620960290823471620','6621024896312934926','6620998255234777604','6621773059277718024','6621731372077679111','6621353347741909517','6621417383108018692','6621288884812644878','6621018866749276685','6621343249606918670','6621694516992672260','6621428358557205005','6621003171097477636','6620959098542227972','6621772287727108612','6621667450234601988','6621794873596969476','6620884798275633672','6621052770164146702','6621009559341269517','6621027922440356359','6621699280627302925','6621691828729020941','6621720271059419652','6621381601433485827','6621757687212278279','6621391198852497923','6621499172321231363','6621418590954324483','6621730161849008643','6621691774869963268','6620884933776769540','6620922868437877252','6620940901453660679','6621776058997801475','6621279413440872973','6621788490004693512','6621477758700618243','6620899364543922691','6621726692735975950','6620945173822046728')  [ RunTime:0.1067s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11131' WHERE `id` = 106195 [ RunTime:0.1085s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12068' WHERE `id` = 106234 [ RunTime:0.0952s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12200' WHERE `id` = 106209 [ RunTime:0.0984s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12298' WHERE `id` = 106240 [ RunTime:0.0985s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11744' WHERE `id` = 106221 [ RunTime:0.1048s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12204' WHERE `id` = 106624 [ RunTime:0.1061s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11084' WHERE `id` = 106188 [ RunTime:0.0960s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11822' WHERE `id` = 106575 [ RunTime:0.0997s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11839' WHERE `id` = 106612 [ RunTime:0.0923s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11527' WHERE `id` = 106565 [ RunTime:0.1013s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11357' WHERE `id` = 106213 [ RunTime:0.0957s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12210' WHERE `id` = 106618 [ RunTime:0.0880s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12340' WHERE `id` = 106630 [ RunTime:0.0758s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11679' WHERE `id` = 106578 [ RunTime:0.0819s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11716' WHERE `id` = 106587 [ RunTime:0.0828s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12037' WHERE `id` = 106189 [ RunTime:0.0718s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11874' WHERE `id` = 106995 [ RunTime:0.0737s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11584' WHERE `id` = 106601 [ RunTime:0.0768s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11332' WHERE `id` = 106176 [ RunTime:0.0765s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11412' WHERE `id` = 106598 [ RunTime:0.0706s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11424' WHERE `id` = 106574 [ RunTime:0.0781s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11925' WHERE `id` = 106608 [ RunTime:0.0737s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12030' WHERE `id` = 106626 [ RunTime:0.0724s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12093' WHERE `id` = 106617 [ RunTime:0.0768s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='10',`go_detail_count`='11569' WHERE `id` = 106613 [ RunTime:0.0852s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11974' WHERE `id` = 106627 [ RunTime:0.0928s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='11233' WHERE `id` = 106582 [ RunTime:0.0959s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11904' WHERE `id` = 106579 [ RunTime:0.0988s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11128' WHERE `id` = 106596 [ RunTime:0.1053s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12093' WHERE `id` = 106955 [ RunTime:0.1116s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11772' WHERE `id` = 106609 [ RunTime:0.1170s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11766' WHERE `id` = 107317 [ RunTime:0.1122s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12087' WHERE `id` = 106563 [ RunTime:0.1157s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11200' WHERE `id` = 106546 [ RunTime:0.1056s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11097' WHERE `id` = 106592 [ RunTime:0.1017s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11100' WHERE `id` = 106593 [ RunTime:0.1119s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11765' WHERE `id` = 106619 [ RunTime:0.1161s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11582' WHERE `id` = 106594 [ RunTime:0.1086s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='12259' WHERE `id` = 106600 [ RunTime:0.1089s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11826' WHERE `id` = 106998 [ RunTime:0.1225s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11598' WHERE `id` = 106611 [ RunTime:0.1088s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='8',`go_detail_count`='11973' WHERE `id` = 106620 [ RunTime:0.0981s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11359' WHERE `id` = 106583 [ RunTime:0.1166s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11758' WHERE `id` = 106597 [ RunTime:0.1066s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11511' WHERE `id` = 106988 [ RunTime:0.1049s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11982' WHERE `id` = 106935 [ RunTime:0.0990s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11936' WHERE `id` = 107003 [ RunTime:0.0799s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11117' WHERE `id` = 106590 [ RunTime:0.0814s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12132' WHERE `id` = 107013 [ RunTime:0.0772s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12147' WHERE `id` = 106580 [ RunTime:0.0817s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='11296' WHERE `id` = 106984 [ RunTime:0.0737s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11200' WHERE `id` = 106568 [ RunTime:0.0718s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11676' WHERE `id` = 106999 [ RunTime:0.0728s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11535' WHERE `id` = 107315 [ RunTime:0.0664s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11300' WHERE `id` = 106980 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11972' WHERE `id` = 106981 [ RunTime:0.0628s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11596' WHERE `id` = 106993 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12161' WHERE `id` = 106996 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11229' WHERE `id` = 106991 [ RunTime:0.0645s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12021' WHERE `id` = 107324 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11457' WHERE `id` = 106979 [ RunTime:0.0642s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12285' WHERE `id` = 107018 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12154' WHERE `id` = 107004 [ RunTime:0.0664s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11471' WHERE `id` = 106985 [ RunTime:0.0743s ]
+
+[ 2018-11-10T17:09:56+08:00 ] 127.0.0.1 /Article/getHighReadNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 738 行.
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 738 行.
+SQL: SHOW COLUMNS FROM `ytt_high_read_article` [ RunTime:0.0646s ]
+SQL: SELECT `id`,`article_id` FROM `ytt_high_read_article` WHERE `article_id` IN ('6621791571324961293','6621042052257825284','6621276797646406157','6621032292825448967','6621380337530307086','6621728044396577284','6620956075464065543','6621366020655284743','6621393660015542791','6621328360612037128','6620960162175779342','6621260264954135053','6621751065559695885','6620923395884204557','6621511231171723783','6620880787547881988','6621463194168721934','6621650197963358723','6621616232246280718','6621373492342292996','6621683951884829187','6621274885014422024','6620878225549558275','6621332578341224973','6621791796349370884','6621238461695263245','6620904900517691918','6621387033610813966','6621406991753413127','6621238625143095822','6621616346130022915','6621788937339798030','6621615635539427853','6621693377547076110','6621417764168925703','6621455232960315911','6620938221335347719','6621361894236094979','6621645233820008967','6621420941287096835','6621032013182796292','6621051356616606212','6621383624484717060','6621831789105119747','6621419934570250759','6621777420884132356','6621304815685206541','6620939513948537352','6621309750770401799','6621822952868413959','6621616095155454471','6621674657667875332','6621688507121271299','6620965195810341390','6620940382895079950','6620940184697438734','6621056280024859143','6621110997002224142','6621260139636720136','6621631091822297607','6620945104741876237','6621342332757213710','6621630858929373703','6621000434947473923','6621331241146778120','6621397543546782211','6621049273746194958','6621616028939977219','6621701764032758276','6621380170378904071','6621238879603130883','6620961723400585742','6621265304112595460','6621713666699952644','6620939132870853128','6621391214581121540','6621292290411332099','6621046712100192776','6621630628389454344','6621644862791877124','6621615508942750211','6621462463495799309','6621469078382969351','6621362780719022599','6621615701809431044','6621361317045338637','6621630908317303310','6621871502943846926','6621685272096539149','6620923043596206600','6620982754060272135','6621290253636338190','6621052459915674126','6621630553097519619','6621006292708229645','6621271644633563661','6621630968505565704','6621353942557131278','6621375279493300750','6620956491333501448')  [ RunTime:0.0651s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10285' WHERE `id` = 107286 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10158' WHERE `id` = 106148 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10308' WHERE `id` = 106924 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10963' WHERE `id` = 106557 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10127' WHERE `id` = 106923 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10477' WHERE `id` = 106559 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10815' WHERE `id` = 106952 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10573' WHERE `id` = 106550 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10618' WHERE `id` = 106564 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='10616' WHERE `id` = 106917 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10640' WHERE `id` = 107298 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10071' WHERE `id` = 107278 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11037' WHERE `id` = 106577 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10105' WHERE `id` = 106538 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10776' WHERE `id` = 106939 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10613' WHERE `id` = 106545 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10977' WHERE `id` = 106556 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='10646' WHERE `id` = 106536 [ RunTime:0.0642s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11010' WHERE `id` = 106932 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10523' WHERE `id` = 106150 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10043' WHERE `id` = 107275 [ RunTime:0.0641s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10037' WHERE `id` = 107274 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10822' WHERE `id` = 107299 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10708' WHERE `id` = 106561 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10526' WHERE `id` = 106555 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10980' WHERE `id` = 106965 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10623' WHERE `id` = 106542 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10632' WHERE `id` = 106931 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10300' WHERE `id` = 106552 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10399' WHERE `id` = 106554 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10775' WHERE `id` = 106570 [ RunTime:0.0648s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10638' WHERE `id` = 106567 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10106' WHERE `id` = 106537 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10810' WHERE `id` = 106573 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11011' WHERE `id` = 106584 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10281' WHERE `id` = 106549 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10039' WHERE `id` = 106534 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10977' WHERE `id` = 106976 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10820' WHERE `id` = 106540 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10570' WHERE `id` = 106933 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10578' WHERE `id` = 106947 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10100' WHERE `id` = 107280 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10649' WHERE `id` = 106951 [ RunTime:0.0642s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10288' WHERE `id` = 106919 [ RunTime:0.0642s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10642' WHERE `id` = 106957 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11030' WHERE `id` = 106958 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10932' WHERE `id` = 106576 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10483' WHERE `id` = 107292 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10884' WHERE `id` = 106572 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10083' WHERE `id` = 106921 [ RunTime:0.0640s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='10271' WHERE `id` = 106918 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11032' WHERE `id` = 106983 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10749' WHERE `id` = 106566 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10055' WHERE `id` = 107276 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10557' WHERE `id` = 107293 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10348' WHERE `id` = 106936 [ RunTime:0.0640s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10818' WHERE `id` = 106962 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10099' WHERE `id` = 107279 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10672' WHERE `id` = 106948 [ RunTime:0.0652s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10351' WHERE `id` = 107288 [ RunTime:0.0680s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10465' WHERE `id` = 107291 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10567' WHERE `id` = 106943 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10514' WHERE `id` = 106934 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10471' WHERE `id` = 106928 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10877' WHERE `id` = 107300 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10160' WHERE `id` = 107283 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10877' WHERE `id` = 106949 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10135' WHERE `id` = 107282 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10873' WHERE `id` = 106970 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10458' WHERE `id` = 106944 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10900' WHERE `id` = 106971 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10719' WHERE `id` = 106960 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10601' WHERE `id` = 106953 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10261' WHERE `id` = 106930 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10410' WHERE `id` = 106938 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10984' WHERE `id` = 106975 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10827' WHERE `id` = 106967 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10645' WHERE `id` = 106956 [ RunTime:0.0692s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10932' WHERE `id` = 106972 [ RunTime:0.0644s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11012' WHERE `id` = 106978 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10638' WHERE `id` = 106954 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10837' WHERE `id` = 106966 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10502' WHERE `id` = 106950 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='10243' WHERE `id` = 107284 [ RunTime:0.0660s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10607' WHERE `id` = 106926 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10273' WHERE `id` = 107285 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='10961' WHERE `id` = 107302 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10610' WHERE `id` = 107297 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10463' WHERE `id` = 107290 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10747' WHERE `id` = 106961 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10811' WHERE `id` = 106964 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='10063' WHERE `id` = 107277 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10126' WHERE `id` = 107281 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='10567' WHERE `id` = 107295 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10450' WHERE `id` = 107289 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10019' WHERE `id` = 107273 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='10293' WHERE `id` = 107287 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10585' WHERE `id` = 107296 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10558' WHERE `id` = 107294 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='10955' WHERE `id` = 107301 [ RunTime:0.0634s ]
+SQL: SELECT `id`,`article_id` FROM `ytt_high_read_article` WHERE `article_id` IN ('6621700946927813124','6620923946948624910','6621238207646286340','6621259967229854216','6621630707858932228','6621837538401206798','6621357621158871556','6621778479903932932','6621027723630346765','6620884271538110980','6621695472203465224','6621786369008075267','6621620796991209997','6621516593455170052','6621080789255733767','6621410128472048142','6621745224173486596','6621426190282392078','6621021758180819463','6621664996784865795','6621749454301037060','6621396071509656071','6621779441825612292','6621415592832270852','6620980663329751566','6621782161101947405','6620936658646729223','6621300225128530439','6621709270956114435','6620986054570672647','6620994312224113160','6621446150081741315','6621500685655474696','6621754777317409287','6621329147908063747','6620929431441506823','6621412479438160392','6621765153803207175','6621017042591941134','6621266363698643469','6620977116802449923','6621417455845638660','6621286608303817229','6621760318672470536','6621410700268929544','6620946478674215437','6620951277524222477','6620916294642303502','6621312971123458567','6621266243435364871','6621046114667725315','6621035310790754830','6621704959215796750','6620925948067840519','6621283538459165191','6621763676141519374','6620928946877760013','6621753924514742797','6621689791693980173','6620960290823471620','6621024896312934926','6620998255234777604','6621773059277718024','6621731372077679111','6621353347741909517','6621417383108018692','6621288884812644878','6621018866749276685','6621343249606918670','6621694516992672260','6621428358557205005','6621003171097477636','6620959098542227972','6621772287727108612','6621667450234601988','6621794873596969476','6620884798275633672','6621052770164146702','6621009559341269517','6621027922440356359','6621699280627302925','6621691828729020941','6621720271059419652','6621381601433485827','6621757687212278279','6621391198852497923','6621756568092279303','6621499172321231363','6621418590954324483','6621730161849008643','6621691774869963268','6620884933776769540','6620922868437877252','6620940901453660679','6621776058997801475','6621279413440872973','6621788490004693512','6621477758700618243','6620899364543922691','6621726692735975950')  [ RunTime:0.0656s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11131' WHERE `id` = 106195 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12068' WHERE `id` = 106234 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12200' WHERE `id` = 106209 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12298' WHERE `id` = 106240 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11744' WHERE `id` = 106221 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12204' WHERE `id` = 106624 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11084' WHERE `id` = 106188 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11822' WHERE `id` = 106575 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11839' WHERE `id` = 106612 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11527' WHERE `id` = 106565 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11357' WHERE `id` = 106213 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12210' WHERE `id` = 106618 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11679' WHERE `id` = 106578 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11716' WHERE `id` = 106587 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12037' WHERE `id` = 106189 [ RunTime:0.0640s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11874' WHERE `id` = 106995 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11584' WHERE `id` = 106601 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11332' WHERE `id` = 106176 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11412' WHERE `id` = 106598 [ RunTime:0.0640s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11424' WHERE `id` = 106574 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11925' WHERE `id` = 106608 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12030' WHERE `id` = 106626 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12093' WHERE `id` = 106617 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='10',`go_detail_count`='11569' WHERE `id` = 106613 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11974' WHERE `id` = 106627 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='9',`go_detail_count`='11233' WHERE `id` = 106582 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11904' WHERE `id` = 106579 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11128' WHERE `id` = 106596 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12093' WHERE `id` = 106955 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11772' WHERE `id` = 106609 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11766' WHERE `id` = 107317 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12087' WHERE `id` = 106563 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11200' WHERE `id` = 106546 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11097' WHERE `id` = 106592 [ RunTime:0.0645s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11100' WHERE `id` = 106593 [ RunTime:0.0642s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11765' WHERE `id` = 106619 [ RunTime:0.0640s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11582' WHERE `id` = 106594 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='12259' WHERE `id` = 106600 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11826' WHERE `id` = 106998 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11598' WHERE `id` = 106611 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='8',`go_detail_count`='11973' WHERE `id` = 106620 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11359' WHERE `id` = 106583 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11758' WHERE `id` = 106597 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11511' WHERE `id` = 106988 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11982' WHERE `id` = 106935 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11936' WHERE `id` = 107003 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11117' WHERE `id` = 106590 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12132' WHERE `id` = 107013 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12147' WHERE `id` = 106580 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='11296' WHERE `id` = 106984 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11200' WHERE `id` = 106568 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11676' WHERE `id` = 106999 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11535' WHERE `id` = 107315 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11300' WHERE `id` = 106980 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11972' WHERE `id` = 106981 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11596' WHERE `id` = 106993 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12161' WHERE `id` = 106996 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11229' WHERE `id` = 106991 [ RunTime:0.0641s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12021' WHERE `id` = 107324 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='11457' WHERE `id` = 106979 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12285' WHERE `id` = 107018 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='12154' WHERE `id` = 107004 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11471' WHERE `id` = 106985 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11197' WHERE `id` = 106973 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11146' WHERE `id` = 107309 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11104' WHERE `id` = 106982 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11237' WHERE `id` = 107311 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='12048' WHERE `id` = 107326 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='11857' WHERE `id` = 107321 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='12196' WHERE `id` = 107331 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='12119' WHERE `id` = 106942 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11985' WHERE `id` = 107323 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11134' WHERE `id` = 107307 [ RunTime:0.0643s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12101' WHERE `id` = 107328 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='11046' WHERE `id` = 107304 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11785' WHERE `id` = 107318 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11375' WHERE `id` = 106989 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12121' WHERE `id` = 107329 [ RunTime:0.0632s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12327' WHERE `id` = 107333 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='12193' WHERE `id` = 107330 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11929' WHERE `id` = 106927 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11214' WHERE `id` = 107310 [ RunTime:0.0637s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='4',`go_detail_count`='11261' WHERE `id` = 107312 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11855' WHERE `id` = 107320 [ RunTime:0.0633s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='5',`go_detail_count`='11475' WHERE `id` = 106994 [ RunTime:0.0636s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11645' WHERE `id` = 107316 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11836' WHERE `id` = 107319 [ RunTime:0.0635s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='7',`go_detail_count`='11536' WHERE `id` = 106992 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12037' WHERE `id` = 107325 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='1',`go_detail_count`='11925' WHERE `id` = 107322 [ RunTime:0.0631s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12229' WHERE `id` = 107010 [ RunTime:0.0629s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11126' WHERE `id` = 107306 [ RunTime:0.0639s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11298' WHERE `id` = 107313 [ RunTime:0.0630s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11335' WHERE `id` = 107314 [ RunTime:0.0638s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='11134' WHERE `id` = 107308 [ RunTime:0.0679s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='0',`go_detail_count`='12264' WHERE `id` = 107332 [ RunTime:0.0660s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='2',`go_detail_count`='12053' WHERE `id` = 107327 [ RunTime:0.0634s ]
+SQL: UPDATE `ytt_high_read_article` SET `comments_count`='3',`go_detail_count`='11111' WHERE `id` = 107305 [ RunTime:0.0634s ]
+
+[ 2018-11-10T17:11:24+08:00 ] 127.0.0.1 /Article/getHighReadNews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 738 行.
+NOTIC: [8] Undefined index: check_str D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 738 行.
+SQL: SHOW COLUMNS FROM `ytt_high_read_article` [ RunTime:0.0617s ]
+SQL: SELECT `id`,`article_id` FROM `ytt_high_read_article` WHERE `article_id` IN ('6620955276902138375','6620958998063481351','6620963442910036487','6621006774533095939','6621284699614478851','6621322556529984004','6621322716970484238','6621326428845638158','6621334269362962958','6621335127664361987','6621353282965078541','6621370343829275150','6621370591033164295','6621370933552611848','6621372069881840141','6621372237817577998','6621372441862078983','6621372930783707662','6621373486201831949','6621374336886374925','6621374378087023107','6621374451478954499','6621375104657916420','6621376308213465608','6621376458843488775','6621376529915970055','6621376757842838020','6621377687178969604','6621380554845585927','6621395689286926852','6621397565457826308','6621400151741170179','6621407506994315783','6621417387503649284','6621658164704051715','6621658702862615054','6621667896193974787','6621669329639326211','6621674690970649095','6621680826683752964','6621693778740642318','6621695278606975492','6621695657721725444','6621696269347717635','6621744890239779336','6621784735322472964','6621788028266349059','6621788564336149000','6621793445658755592','6620898182882656782','6620904345753879043','6620906465441874439','6620906594437693955','6620911449222939144','6620916913985815053','6620917828646076942','6620918297724453379','6620920225732755971','6620929781057733124','6620931752141521415','6620937151808799239','6620937435972895246','6620938486549578247','6620939790772601348','6620941036262785540','6620941127610532360','6620944618806575629','6620947095463395854','6620947569344250382','6620951097584402951','6620956773807292941','6620959421172285966','6620997167433646599','6620999348962460174','6621001215910085127','6621012132597072392','6621012213400338958','6621012574529913357','6621012727118692872','6621014557236150788','6621019821515473415','6621019879900185095','6621020648745468424','6621022853087101447','6621023093752070659','6621024782399832579','6621034906073956871','6621036489838952973','6621040766984651268','6621043628796019214','6621044173640303107','6621045632947716621','6621047543281222158','6621078951924089348','6621124588744999428','6621247022819181070','6621258371397861901','6621278092474188301','6621280221624533518','6621282292411138567')  [ RunTime:0.0630s ]
+
+[ 2018-11-10T17:22:01+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0647s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.2144s ]
+
+[ 2018-11-10T17:22:55+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0611s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.2020s ]
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 796 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 796 行.
+
+[ 2018-11-10T17:24:08+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0632s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.2113s ]
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004123s ]
+
+[ 2018-11-10T17:26:12+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0791s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.3074s ]
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 797 行.
+
+[ 2018-11-10T17:30:01+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0697s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.2355s ]
+
+[ 2018-11-10T17:32:08+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0672s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 500   [ RunTime:0.2137s ]
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 796 行.
+NOTIC: [8] Undefined offset: 1 D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 796 行.
+
+[ 2018-11-10T17:32:35+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0619s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0731s ]
+
+[ 2018-11-10T17:38:02+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001952s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.1693s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0713s ]
+
+[ 2018-11-10T17:38:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+
+[ 2018-11-10T17:38:27+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+
+[ 2018-11-10T17:38:40+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0605s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0708s ]
+
+[ 2018-11-10T17:39:10+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0642s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0745s ]
+
+[ 2018-11-10T17:39:30+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0617s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0718s ]
+
+[ 2018-11-10T17:39:44+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0614s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0720s ]
+
+[ 2018-11-10T17:39:57+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0664s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0773s ]
+
+[ 2018-11-10T17:41:15+08:00 ] 127.0.0.1 /Article/getHighReadImg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `ytt_temai_article` [ RunTime:0.0614s ]
+SQL: SELECT `id`,`article_id`,`title`,`url`,`create_user_id`,`behot_time` FROM `ytt_temai_article` WHERE `go_detail_count` > 10000 AND `article_genre` = 1 AND `behot_time` BETWEEN 1541692800 AND 1541779199 ORDER BY behot_time desc,id desc LIMIT 10   [ RunTime:0.0717s ]
+

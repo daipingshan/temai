@@ -1,0 +1,95 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Item/orderItemsList')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <input type="text" name="time" id="time" placeholder="请选择付款时间" autocomplete="off"
+                           class="layui-input" value="{$time}">
+                </div>
+                <div class="layui-input-inline" style="width:180px">
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i>查询
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/order_item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+            , max: 1
+        });
+        flow.lazyimg();
+
+        $('.open-item').click(function () {
+            layer.open({
+                type: 1,
+                area: ['40%', '480px'],
+                fix: false, //不固定
+                maxmin: true,
+                shadeClose: true,
+                shade: 0.4,
+                title: '采集商品',
+                content: $('#item-row'),
+                cancel: function () {
+                    $('#item-row').hide();
+                }
+            });
+        });
+
+        // 定义一个新的复制对象
+        var ClipboardSupport = 0;
+        if (typeof Clipboard != "undefined") {
+            ClipboardSupport = 1;
+        } else {
+            ClipboardSupport = 0;
+        }
+        $('.copy-item-id').click(function () {
+            var obj = $(this);
+            if (ClipboardSupport == 0) {
+                layer.msg('浏览器版本过低，请升级或更换浏览器后重新复制');
+                obj.removeClass('default-bgcolor');
+                setTimeout(function () {
+                    obj.addClass('default-bgcolor')
+                }, 5000)
+            } else {
+                var clipboard = new Clipboard('.copy-item-id');
+                clipboard.on('success', function (e) {
+                    obj.removeClass('default-bgcolor').text('复制成功');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor').text('复制商品编号')
+                    }, 5000)
+                    e.clearSelection();
+                });
+                clipboard.on('error', function (e) {
+                    layer.msg('复制失败，请升级或更换浏览器后重新复制');
+                    obj.removeClass('default-bgcolor');
+                    setTimeout(function () {
+                        obj.addClass('default-bgcolor');
+                    }, 5000);
+                    e.clearSelection();
+                });
+            }
+        });
+    </script>
+</block>

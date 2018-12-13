@@ -1,0 +1,121 @@
+<extend name="Common/common"/>
+<block name="body">
+    <div class="layui-tab">
+        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+                <li
+                <eq name="type" value="month">class="layui-this"</eq>
+                ><a style="color: #fff" href="{:U('Order/myReward',array('type'=>'month'))}">当月奖励订单</a></li>
+                <li
+                <eq name="type" value="pro_month">class="layui-this"</eq>
+                ><a style="color: #fff" href="{:U('Order/myReward',array('type'=>'pro_month'))}">上月奖励订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <blockquote class="layui-elem-quote layui-quote-nm">总预估奖励：¥{$money}</blockquote>
+    <blockquote class="layui-elem-quote layui-quote-nm">总结算奖励：¥{$settle_money}</blockquote>
+    <eq name="group_id" value="1">
+        <fieldset class="layui-elem-field">
+            <legend>预估奖励排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="money_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <foreach name="money_data" item="row" key="k">
+                            <th>{$row.name}</th>
+                        </foreach>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>预估奖励</td>
+                        <volist name="money_data" id="vo">
+                            <td>{$vo.reward_money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>结算奖励排行</legend>
+            <div class="layui-field-box">
+                <table class="layui-table">
+                    <colgroup>
+                        <col>
+                        <volist name="settle_money_data" id="row">
+                            <col>
+                        </volist>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <foreach name="settle_money_data" item="row" key="k">
+                            <th>{$row.name}</th>
+                        </foreach>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>结算奖励</td>
+                        <volist name="settle_money_data" id="vo">
+                            <td>{$vo.reward_money}</td>
+                        </volist>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </eq>
+
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th width="15%">付款/完成时间</th>
+            <th>文章来源</th>
+            <th>商品信息</th>
+            <th width="8%">订单状态</th>
+            <th width="8%">收入比率</th>
+            <th width="8%">付款金额</th>
+            <th width="8%">预估收入</th>
+            <th width="8%">订单来源</th>
+            <th width="8%">奖励金额</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.pay_time}
+                    <if condition="$vo['complete_time']"><br/>{$vo.complete_time}</if>
+                </td>
+                <td><a href="{$vo.order_source}" target="_blank" style="color: #fff">{$vo.article_title}</a></td>
+                <td><a href="{$vo.commodity_info}" target="_blank" style="color: #fff">{$vo.commodity_name}</a></td>
+                <td>{$vo.order_status}</td>
+                <td>{$vo.profit_percent}</td>
+                <td>¥{$vo.order_money}</td>
+                <td><span style="color: #FFB800">¥{$vo.income}</span></td>
+                <td>{$vo.name}</td>
+                <td>¥{$vo.reward_money}</td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>

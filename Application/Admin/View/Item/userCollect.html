@@ -1,0 +1,107 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <volist name="data" id="vo">
+                    <div class="layui-row">
+                        <volist name="vo" id="row">
+                            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3 user-items">
+                                <div class="item-box">
+                                    <div class="img">
+                                        <img lay-src="{$row.img}">
+                                        <div class="intro">
+                                            <a href="{$row.url}"
+                                               target="_blank" style="color: #fff"><p>{$row.title}</p></a>
+                                        </div>
+                                        <div class="new">
+                                            <button class="layui-btn layui-btn-sm layui-btn-danger del"
+                                                    data-url="{:U('Item/delUserProduct',array('id'=>$row['id']))}"
+                                                    type="button">
+                                                删除收藏
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <a href="{:U('Sale/itemsList',array('shop_goods_id'=>$row['shop_goods_id']))}"
+                                           target="_blank">
+                                            <p class="float-box">选品：{$row.shop_goods_id}</p>
+                                        </a>
+                                        <div class="layui-row float-box">
+                                            添加时间：{$row.add_time|date="Y-m-d H:i",###}
+                                        </div>
+                                        <div class="layui-row float-box">
+                                            用户名称：{$row.user_name}
+                                        </div>
+                                        <div class="layui-row float-box">
+                                            <if condition="$group_id neq 1">
+                                                <if condition="$row['status'] eq 0">
+                                                    <button class="layui-btn default-bgcolor" type="button">
+                                                        审核中
+                                                    </button>
+                                                    <elseif condition="$row['status'] eq 1"/>
+                                                    <button class="layui-btn layui-btn-danger" type="button">
+                                                        审核失败
+                                                    </button>
+                                                    <else/>
+                                                    <button class="layui-btn" type="button">
+                                                        审核成功
+                                                    </button>
+                                                </if>
+                                                <else/>
+                                                <button class="layui-btn update-status" data-id="{$row.id}" data-val="2"
+                                                        type="button">
+                                                    审核成功
+                                                </button>
+                                                <button class="layui-btn layui-btn-danger update-status"
+                                                        data-id="{$row.id}"
+                                                        data-val="1"
+                                                        type="button">
+                                                    审核失败
+                                                </button>
+                                            </if>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    </div>
+                </volist>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        flow.lazyimg();
+        $('.del').click(function () {
+            var _this = $(this);
+            var url = $(this).data('url')
+            layer.confirm('您确定要删除该收藏商品吗？', function () {
+                $.post(url, {}, function (res) {
+                    layer.msg(res.info);
+                    if (res.status == 1) {
+                        _this.parents('.user-items').remove();
+                    }
+                })
+            })
+        })
+        $('.update-status').click(function () {
+            var _this = $(this);
+            $(this).addClass('layui-disabled');
+            var url = "{:U('Item/updateUserProductStatus')}";
+            $.post(url, {id: _this.data('id'), status: _this.data('val')}, function (res) {
+                _this.removeClass('layui-disabled');
+                layer.msg(res.info);
+                if (res.status == 1) {
+                    _this.parents('.user-items').remove();
+                }
+            })
+        })
+    </script>
+</block>

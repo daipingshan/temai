@@ -1,0 +1,38 @@
+[ 2018-10-30T10:24:15+08:00 ] 127.0.0.1 /Shop/shopItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `ytt_shop` [ RunTime:0.0798s ]
+ERR: 1054:Unknown column 'shop_id' in 'field list'
+ [ SQL语句 ] : SELECT `shop_id` FROM `ytt_shop` LIMIT 1  
+ERR: 1054:Unknown column 'shop_id' in 'field list'
+ [ SQL语句 ] : SELECT `shop_id` FROM `ytt_shop` LIMIT 1  
+
+[ 2018-10-30T10:24:15+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+
+[ 2018-10-30T10:24:26+08:00 ] 127.0.0.1 /Shop/shopItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `ytt_shop` [ RunTime:0.0614s ]
+SQL: SELECT `id` FROM `ytt_shop` LIMIT 1   [ RunTime:0.0609s ]
+
+[ 2018-10-30T10:24:39+08:00 ] 127.0.0.1 /Shop/shopItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `ytt_shop` [ RunTime:0.0614s ]
+SQL: SELECT `id`,`name` FROM `ytt_shop`  [ RunTime:0.0599s ]
+

@@ -1,0 +1,119 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Item/collect')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品ID" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_goods_id')}">
+                </div>
+                <div class="layui-input-inline" style="width:180px">
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i></button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="error_info">
+        <fieldset class="layui-elem-field">
+            <legend>错误提示</legend>
+            <div class="layui-field-box">
+                {$error_info}
+            </div>
+        </fieldset>
+    </notEmpty>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                    <div class="item-box">
+                        <div class="img">
+                            <img lay-src="{$data.figure}">
+                            <a href="{$data.sku_url}" target="_blank">
+                                <div class="intro">
+                                    <p style="color: #fff;font-size: 14px;line-height: 20px">{$data.sku_title}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-content">
+                            <div class="layui-row float-box">
+                                <div class="layui-col-xs5">
+                                    <div class="price">
+                                        <b>￥{$data.sku_price}</b>
+                                    </div>
+                                </div>
+                                <div class="layui-col-xs7">
+                                    <div class="time" style="text-align: right">
+                                        热度： <span>{$data['hotrank']}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-row float-box">
+                                <div class="layui-col-xs5">
+                                    <div class="time" style="text-align: left">
+                                        佣金比率：<span>{$data['cos_ratio']*100}%</span>
+                                    </div>
+                                </div>
+                                <div class="layui-col-xs7">
+                                    <div class="time" style="text-align: right">
+                                        预估：<span>￥{$data['cos_fee']}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-row">
+                                店铺名称：{$data.shop_name}
+                            </div>
+                            <div class="layui-row float-box">
+                                商品上线时间：{$data.create_time|date="Y-m-d H:i:s",###}
+                            </div>
+                            <div class="layui-row float-box">
+                                <a href="{:U('Sale/itemsList')}?shop_goods_id={$row['platform_sku_id']}"><p
+                                        style="color: #fff">
+                                    商品编号：{$data.platform_sku_id}</p></a>
+                            </div>
+                            <div class="layui-row float-box">
+                                <button class="layui-btn default-bgcolor add-collect"
+                                        data-id="{$data.platform_sku_id}"
+                                        data-img="{$data.figure}"
+                                        data-url="{$data.sku_url}"
+                                        data-title="{$data.sku_title}"
+                                        type="button">
+                                    加入收藏
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        flow.lazyimg();
+
+        $('.add-collect').click(function () {
+            var _this = $(this);
+            var shop_goods_id = _this.data('id');
+            var url = _this.data('url');
+            var img = _this.data('img');
+            var title = _this.data('title');
+            var post_url = "{:U('Item/insertCollect')}";
+            $.post(post_url, {shop_goods_id: shop_goods_id, url: url, img: img, title: title}, function (res) {
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        location.href = "{:U('Item/collect')}";
+                    });
+                } else {
+                    layer.msg(res.info);
+                }
+
+            });
+            return false
+        });
+    </script>
+</block>

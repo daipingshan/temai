@@ -1,0 +1,1101 @@
+[ 2018-11-01T13:53:23+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+
+[ 2018-11-01T13:53:23+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2018-11-01T13:53:23+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-11-01T13:53:25+08:00 ] 127.0.0.1 /Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `fxg_admin` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `fxg_admin` WHERE `username` = 'daipingshan' AND `password` = 'a0df1932fb37930fb0ca5d9b82e7f58b' LIMIT 1   [ RunTime:0.0608s ]
+
+[ 2018-11-01T13:53:29+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2018-11-01T13:53:31+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0618s ]
+
+[ 2018-11-01T14:17:03+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8] Undefined offset: 2 D:\www\online_team\www.sale.com\Application\Fxg\Controller\CommonController.class.php 第 144 行.
+
+[ 2018-11-01T14:17:07+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+NOTIC: [8] Undefined offset: 2 D:\www\online_team\www.sale.com\Application\Fxg\Controller\CommonController.class.php 第 144 行.
+
+[ 2018-11-01T14:17:29+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-11-01T14:20:05+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+
+[ 2018-11-01T14:20:07+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+
+[ 2018-11-01T14:20:27+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-11-01T14:20:45+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+
+[ 2018-11-01T14:37:12+08:00 ] 127.0.0.1 /index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+
+[ 2018-11-01T14:39:52+08:00 ] 127.0.0.1 /Data/getItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+ERR: 非法操作:getItem
+
+[ 2018-11-01T14:40:01+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0641s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0638s ]
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+NOTIC: [8] Undefined index: id D:\www\online_team\www.sale.com\Application\Fxg\Controller\DataController.class.php 第 46 行.
+
+[ 2018-11-01T14:40:45+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0604s ]
+
+[ 2018-11-01T14:49:28+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0641s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0630s ]
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+
+[ 2018-11-01T14:49:40+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0604s ]
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+
+[ 2018-11-01T14:49:44+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0633s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0632s ]
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+ERR: 1146:Table 'fxg.fxg_items' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fxg_items`
+
+[ 2018-11-01T14:50:02+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0675s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0671s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0683s ]
+SQL: SELECT * FROM `fxg_item` WHERE `product_id` IN ('3308792033744943824','3308052882758214245','3307965903873921237','3307965344882241661','3307964696342198407','3299900399821140006','3299175746504896039','3298613711371155981','3296178200782223657','3295862771933159536','3295859600108204797','3290672817204547635','3289547890116181185','3289547484233390090','3289547166405817216','3289546386869213427','3289320696429292248','3289320379256029851','3289319957694914906','3289319453682202048','3289319118674726226','3289318609721131915','3289317928322873799','3289317655592456918','3289316537407823578','3289315751428780125','3289314789347698418','3289314435012900056')  [ RunTime:0.0683s ]
+SQL: INSERT INTO `fxg_item` (`product_id`,`out_product_id`,`name`,`description`,`img`,`market_price`,`discount_price`,`settlement_price`,`status`,`spec_id`,`check_status`,`mobile`,`cos_ratio`,`usp`,`first_cid`,`second_cid`,`third_cid`,`pay_type`,`recommend_remark`,`extra`,`create_time`,`update_time`,`shop_id`) VALUES ('3308792033744943824','0','扶贫土蜂蜜，中蜂百花蜜，会结晶的优质蜂密全场包邮','
+<p>此蜂蜜为中办挂牌扶贫的宁陕县海棠园村的土蜂蜜。蜂箱均在1000多米海拔的高山上，蜂箱固定，一年只采一次密。宁陕县为南水北调工程水源地，全县7万人，无工业企业，土地空气无污染。<br><br>土蜂蜜又称中华蜂蜜、野生蜂蜜,是中国土身土长的蜜蜂“中华蜂”采集多种花蜜酿制而成。中蜂采集山中百花，一年割一次蜜，中蜂蜜是山中百花花蜜精华之所在，浓度比其它蜂种的蜜浓度更高，营养更全面，是蜂蜜中的珍品。而秦岭被称为我国华夏文明的龙脉，是我国地理的南北分界线，宁陕县地处秦岭南麓，辖区物种丰富，是多种名贵动植物自然保护区。故而我们的蜂蜜营养更丰富,品质更纯正，更具食用价值。</p><p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiPHi49kRgm8rOPN0VLe08EgkRoXwww1080-1920\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FlBwHXNh_Fxb374sWqHpGjku-vkywww670-456\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgA60cQsQ7fzb9eml16FCSvuQkAewww1920-1080\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmSLAfQKdL360rXhkYGtJwGXPLgcwww1440-1080\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FkWebT5pRVUhw4OkXBqZvyhdkxAPwww1440-1080\"></p><p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FogjBLmKA1gK9fJehqVWoyDI07p3www1440-1080\"></p><p></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FssowemsIWQinYvx5XlU5LwoaEC6www1280-850\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpWnWCb6DH0TmyTIrOeVJ66DNG3ewww1443-1080\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fp-kVFRYQRp8MasixEg3wvLGrKIOwww1443-1080\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FnM0optOvbqbClVCmK3PImouqGeSwww562-800\" style=\"max-width:100%;\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FnOhl8kN-o2OjVnIf5CiAEfQSIziwww800-800','100','59.9','0','0','3870370','3','18291962186','0','','9','79','742','1','秦岭腹地产出，中央特供土蜂蜜','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-10-29 09:25:57','2018-10-29 09:26:05','1'),('3308052882758214245','0','【山货】甘肃花牛苹果，原产地直发，5斤 9斤包邮','
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FriYnwoJaI9fHV1N-MFDq3x9NOslwww790-388\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmH3xU2S3tfTDKf031MpZQwtOnq5www790-270\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FivNPsMmpFCqu38GBxkjYy3xiY1awww790-558\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqRWbN-FCiridyCWTsx3zDEWwDSywww790-898\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FpS019pXpY8qyKRy5z2FtOtJWiCawww790-602\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fv7ydV8c3eBveffBt-67Y2NKOabowww790-788\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FgyZCYQIWUSh9RskG0yt5VMBjfsXwww790-599\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FnMJ771aIlKp4oSBNfQxskQyZLxRwww790-830\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fsw1Wx4FT-1VAcI7Np-t-0Ww6EhRwww790-677\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fk0dgrrDDiMYPJdUxFATo_Xo8N57www790-628\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fs12nSJh3FDqakC8hBx5VUr39dXNwww790-572\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fg31QIkeEBaPUVItI7ImcFVq8BnXwww790-808\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fqatr_OxCHb-imdWC7nm3UR396zJwww790-553\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fg30Nwt32tgyAg8FrYRY_XM41Ta7www790-516\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqJEJnzbIvZ9gmF6z_TktgBYaRt0www800-800','79','49.9','0','0','3813494','3','18291962186','0','','1303','1379','2448','1','甘肃花牛苹果，老少皆宜，软硬通吃','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-10-25 09:49:23','2018-10-31 07:59:47','1'),('3307965903873921237','0','【山货】秦岭野生大板栗，产地直发，3斤装  5斤装包邮','
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/eb55d7471902f1768e9d5dc58f3fe1ea876a7d71www790-250\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/8666ee4072a58706a30c1a7a9a39fe199d9afa6awww750-19\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/052a19b63770e42dbd096bd40d328e9322adfd11www790-472\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/295a15ede643e5ce560536a5330fd2b2a18d1bf6www790-444\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/e6e900fb6c9ad26e1f3140f3b00a315248bd1b4fwww790-562\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/4e7046fb0765df41b4a17f3bf5aeb12d83e5039bwww750-549\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/a4db313a5dc47ad37d8ed2db85c00c93bc4ee20awww790-544\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/2cfedac956a7e0c785161dcdd3bd3194f64de372www790-524\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/6d557e115762063547ed437934768129ecd167dewww790-486\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/956de59d6c01706b3a2488789822e63a439e13f0www790-500\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/347473a1d757a41474f01358b5586ddfb7bd719bwww790-538\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/18c95e87ea4b470bb0cfd2601ff2fdc93968d090www790-442\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/19195f306bd07b85c489f8699d3e6e73f96ec7d3www790-444\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/90b5ddef69226f5bea1bb1f7bf49375944f8a23bwww750-636\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/670c7c5f2ac0003ccb4a013be407d2ce0773a9f8www750-20\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/7503c7aee1f16f478d524964b799347701bb2676www790-475\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/51116f3e22184e8e056998438c88b5fe12061f54www790-679\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FotJkfsycWsXuFYpYxwTtJDUMjsIwww800-800','0','45','0','0','3811117','3','1829196218','0','','1303','1379','2471','1','秦岭野生大板栗，产地直发','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-10-24 22:34:21','2018-10-31 22:15:33','1'),('3307965344882241661','0','【山货】陕西脆甜柿子，原产地直发，5斤包邮','
+<p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FuhtFa65nOIRb5dETAKotwi9ByK9www750-632\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FvJuCzocBz31WluSq2B1Nt4BBWwFwww750-236\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqD7HP8rmL8QRXWr9MdAY2GF73Vawww750-768\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmGrb_KtybJMV02t5gZNOY7yIRB0www750-524\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqvQKY_vHMWtD3gbMgFzyPfTEerawww750-743\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FkURWHX_GfPwpH_rMQ9hQ7g3vjDNwww750-650\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtAI8IB_vfuW4_oStVNskLrWzFDNwww750-703\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmkJX-V5CzVSMueaOE-nlwOc_0AMwww720-960\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoyFsqp7MnUpuGkWqcZCKGyb8f-Fwww1080-810\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FpvTyN3csR0IOXFkemSWbPRnynA2www1080-810\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fu9P3ZlHw90sGOy5Bd0p1nGv_WrBwww750-443\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fn0uV9stWMcc0pyOwSZXVJbK5Mn4www800-800','39','29.9','0','0','3811044','3','18291962186','0','','1303','1379','2471','1','','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-10-24 22:30:00','2018-11-01 12:54:58','1'),('3307964696342198407','0','【山货】陕西特产香玲干核桃， 3斤装 5斤装包邮','
+<p></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgLobo5p6b11Ny9ffTpka1MG4Z2Hwww701-553\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FjL1bXPlZsFs3d8C9H9T0HWKFpRcwww611-545\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FozrIuRdHm7OPXCgxr2hPdyfed4Bwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FsMkyi-JNMpJ5gV9oCl6tbgm3uDEwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fq2Z-UKob5BAMO0qh_ghVyleHJ5Xwww1080-1080\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FoMdWtfFzO62df6d235xvJTXTuMpwww752-744\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FsJiHsJM4ezX3xDjHmzZrBxYLbDvwww786-693\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FmLf0NUYJspNaPgv6yqBQcrZ5iEAwww785-835\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvT8AuNealdIHVkIifNL6Piel81-www775-820\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fk8iUvZ0Uai6uKoi-DCZ3_OkIaLEwww831-662\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FodmaBLYPjLVuCRKehFs-kvFsrwRwww806-856\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmoBkN93Hu-JmgxrBV7qUZY1szFdwww800-800','0','59','0','0','3810995','3','18291962186','0','','1303','1379','2471','1','','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-10-24 22:24:58','2018-10-31 08:03:21','1'),('3299900399821140006','0','陕西合阳秦薯 5斤 9斤包邮 软糯香甜 粗粮健康食品 儿时的味道','
+<p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FnmonsCJMpxD08BNCavAkT_VroLcwww750-12082\" style=\"max-width:100%;\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FqL_5b_n6aN8zaod4DE6Jton0OQ9www600-600','29.9','19.9','0','0','2993953','3','18291962186','10','干面甜','1303','1384','2502','1','味如板栗 甜而不腻','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-09-11 11:17:48','2018-10-18 16:18:41','1'),('3299175746504896039','0','陕西合阳秦薯 5斤包邮 软糯香甜 粗粮健康食品 儿时的味道','
+<div><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FnmonsCJMpxD08BNCavAkT_VroLcwww750-12082\" style=\"max-width:100%;\"></p></div>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fh9rmYXEV1lnZNLLaTutp3qfPsuUwww800-800','0','19.9','0','1','3016471','1','18291962186','0','干面甜','1303','1384','2502','1','味如板栗 甜而不腻','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-09-07 13:33:45','2018-10-29 08:47:20','1'),('3298613711371155981','0','【扶贫】宁陕香菇500克，秦岭深山腹地干货特产，原产地直供','
+<p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FhWOj1kLgFQYE2cL_2TIuyMok9eowww997-544\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmmCRVZ3787Y3ZHEY0DffNQ-4uNpwww997-381\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtmDv5-KRT8lIu71MA9hRO4PtsM7www993-391\"></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgaTGUaYOwwOnCbKmqnpo6SkmLNwww750-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqwKJYvIe0xFZ6RHzpd3nmyFY4TQwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fq9n_02LksFq8DQDyqTww-7h-dOPwww750-671\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgYnv3hDalsPCL7Zj-LzQIyhL1Wpwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrlyE7zM5INaqNZ_0zANFDoXS0q0www750-734\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvpKQ69QR23ApNSSFBcS5bmal2EZwww750-658\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FosEXF_SjMrK8R6-uxVD6vcsZM5Uwww750-654\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjEPCPG-4CSPbM4Cbf5X4_9zdJtBwww750-503\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu3hA-W9nXAi1yoUuDtd-qlGnYJzwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgIcFY5gyVtX-szsCfM05uoS13Jowww750-749\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FifzuM6CUAA9drb_HfFfyXvTviC1www750-613\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FiF7MX6uf23Eo8HQHoQy8GO_HA6rwww750-614\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FhPO9ULePIFxQqSvJ2PJhFsFan19www750-708\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvFh2IBvP5KVT84cQDhMum_dvpQewww750-864\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fhfaoj-7HnMnAE8F811QZZhWyfqcwww750-1178\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtYX5lhclqwLfPjtmnbmN6XuI4Towww750-1361\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtO7Gk9a7j3KJo-_wrEo6Ui93U_6www750-961\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu-YTexr4_kbPrg7iuTzruKB5tz5www750-1161\" style=\"max-width:100%;\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/FspJUPurdCJJM-0eHGTA1Q0jmGGHwww800-800','75','53.8','0','0','2733300','3','13669234901','0','','1303','1384','2503','1','秦岭深山原生菌直供','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-09-04 12:51:47','2018-10-16 11:10:38','1'),('3296178200782223657','0','【扶贫】宁陕香菇500克，秦岭深山腹地干货特产，原产地直供','
+<p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FhWOj1kLgFQYE2cL_2TIuyMok9eowww997-544\" style=\"max-width:100%;\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmmCRVZ3787Y3ZHEY0DffNQ-4uNpwww997-381\" style=\"max-width:100%;\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtmDv5-KRT8lIu71MA9hRO4PtsM7www993-391\" style=\"max-width:100%;\"></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgaTGUaYOwwOnCbKmqnpo6SkmLNwww750-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqwKJYvIe0xFZ6RHzpd3nmyFY4TQwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fq9n_02LksFq8DQDyqTww-7h-dOPwww750-671\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgYnv3hDalsPCL7Zj-LzQIyhL1Wpwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrlyE7zM5INaqNZ_0zANFDoXS0q0www750-734\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvpKQ69QR23ApNSSFBcS5bmal2EZwww750-658\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FosEXF_SjMrK8R6-uxVD6vcsZM5Uwww750-654\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjEPCPG-4CSPbM4Cbf5X4_9zdJtBwww750-503\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu3hA-W9nXAi1yoUuDtd-qlGnYJzwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgIcFY5gyVtX-szsCfM05uoS13Jowww750-749\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FifzuM6CUAA9drb_HfFfyXvTviC1www750-613\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FiF7MX6uf23Eo8HQHoQy8GO_HA6rwww750-614\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FhPO9ULePIFxQqSvJ2PJhFsFan19www750-708\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FvFh2IBvP5KVT84cQDhMum_dvpQewww750-864\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fhfaoj-7HnMnAE8F811QZZhWyfqcwww750-1178\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtYX5lhclqwLfPjtmnbmN6XuI4Towww750-1361\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtO7Gk9a7j3KJo-_wrEo6Ui93U_6www750-961\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu-YTexr4_kbPrg7iuTzruKB5tz5www750-1161\" style=\"max-width:100%;\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FspJUPurdCJJM-0eHGTA1Q0jmGGHwww800-800','75','65','0','0','2733300','3','13669234901','5','','1303','1384','2503','1','秦岭深山原生菌直供','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-08-22 09:49:44','2018-10-31 08:03:15','1'),('3295862771933159536','0','陕西大荔冬枣新鲜包邮水果脆甜可口枣子2斤、3斤、4斤装','
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Ft5AebcHY0kDlW_jYLNVt8as2yBwwww750-984\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoQiSVx98hrAFoCwngl5nmbzQMAfwww750-1124\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiKO53jkjPy2HuheRPrEU7rSgo1gwww750-1623\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrI9qTnOclcq1MeWCgZd4cAepX-Dwww750-1176\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FlScAaXsnTLcjPAmlNVJB8RZe92uwww750-1108\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmjlyscWOekkxtuzJPgl2RlK4BvPwww750-1168\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FrrlcM8fKvEnlUbUKFYZjTPG59vnwww750-1092\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmFwpL_p7xIUSmnaYzNxcZFvG7s2www750-1488\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fub9NSTYOsw5d65WDD-zFkxVgCw7www750-1567\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fiep0LWOpj5X_ihVyE3WaAMCLe81www750-1064\" style=\"max-width:100%;\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FuQL7EE5ug1vlvyuHaZNIDJsVK6Vwww1024-1024','0','33.9','0','1','2663356','1','13669234901','0','','1303','1379','2471','1','G20特供，活维生素丸','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-08-20 17:01:41','2018-08-22 09:41:32','1'),('3295859600108204797','0','海棠园扶贫土蜂蜜，中共中央办公厅特供，栗战书亲临视察指导','
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FssowemsIWQinYvx5XlU5LwoaEC6www1280-850\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiPHi49kRgm8rOPN0VLe08EgkRoXwww1080-1920\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FlBwHXNh_Fxb374sWqHpGjku-vkywww670-456\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgA60cQsQ7fzb9eml16FCSvuQkAewww1920-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmSLAfQKdL360rXhkYGtJwGXPLgcwww1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FkWebT5pRVUhw4OkXBqZvyhdkxAPwww1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FogjBLmKA1gK9fJehqVWoyDI07p3www1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpWnWCb6DH0TmyTIrOeVJ66DNG3ewww1443-1080\" style=\"max-width:100%;\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FiKIhZKHKUoH5KlB8nzvn2Ueu-Lqwww1080-1080','0','68','0','1','2662771','1','13669234901','0','','9','79','742','1','秦岭腹地产出，中央特供土蜂蜜','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-08-20 16:37:04','2018-08-22 09:41:32','1'),('3290672817204547635','0','云南去青壳板栗 5斤大中果云南板栗子野生板栗','
+<p></p><h3><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i1/2153654620/TB2JRqkdosIL1JjSZPiXXXKmpXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2YjqAdjoIL1JjSZFyXXbFBpXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2OQpNbHsTMeJjSszdXXcEupXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2..urdd.LL1JjSZFEXXcVmXXa_!!2153654620.jpg?imageView2/2/w/2000\" id=\"1\"><img id=\"1\" alt=\"\" src=\"https://img30.360buyimg.com/popWaterMark/jfs/t21346/208/2113064603/62663/43c3001f/5b48501dN640e9e9e.jpg?imageView2/2/w/2000\"></h3>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FlVPY0JVsRoQxw-ybgMS_ChLVjlU.jpg','0','46','0','1','2201847','1','13669234901','5','','9','77','728','1','颗粒饱满，口感鲜嫩清香，甘甜生津！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-23 17:42:20','2018-08-22 09:41:32','1'),('3289547890116181185','0','凯特一级果芒果5斤装','
+<h4>新疆、西藏地区不发货!</h4><p><img src=\"https://img.alicdn.com/imgextra/i1/3356970560/TB2wEAnBuuSBuNjSsplXXbe8pXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3356970560/TB2LLwxBAyWBuNjy0FpXXassXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3356970560/TB2FwP3BpGWBuNjy0FbXXb4sXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3356970560/TB2la5yBGmWBuNjy1XaXXXCbXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3356970560/TB2uXrHcoz.BuNjt_j7XXX0nFXa_!!3356970560.jpg\" align=\"absmiddle\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmkMlTKXwYoCGiVpNktJC6y-LGaz.jpg','0','37','0','1','2108722','1','13669234901','5','','1303','1379','2452','1','甜过初恋！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-17 16:11:45','2018-08-22 09:41:32','1'),('3289547484233390090','0','民勤蜜瓜（金红宝）9斤装','
+<h4>新疆，西藏，内蒙，港澳台，海南，青海，拉萨不发货！</h4><p><img src=\"https://img.alicdn.com/imgextra/i2/3822824992/TB2ddJPtsyYBuNkSnfoXXcWgVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3822824992/TB2tFvhj8smBKNjSZFsXXaXSVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB24ynCjYArBKNjSZFLXXc_dVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB22WJuj.OWBKNjSZKzXXXfWFXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3822824992/TB26sK.j_qWBKNjSZFAXXanSpXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB25eKNj5MnBKNjSZFoXXbOSFXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3822824992/TB2gYpHB_JYBeNjy1zeXXahzVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3822824992/TB29jmxtwKTBuNkSne1XXaJoXXa_!!3822824992.gif\" align=\"absmiddle\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fh8SqkGBpf1mRLZMc8seCXoCqym5.jpg','0','42.9','0','1','2108512','1','13669234901','5','','1303','1379','2466','1','甜过初恋！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-17 16:08:36','2018-08-22 09:41:31','1'),('3289547166405817216','0','3斤装百香果中大果','
+<h4><span style=\"font-weight: bold;\">内蒙、西藏、新疆不发货！</span></h4><p><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2jL9iAamWBuNjy1XaXXXCbXXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i1/3991184722/TB2iOwHz1uSBuNjy1XcXXcYjFXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i2/3991184722/TB2yn3rzYGYBuNjy0FoXXciBFXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB20Cu3rOCYBuNkSnaVXXcMsVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/3991184722/TB2047Dz1SSBuNjy0FlXXbBpVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2KMfBzWSWBuNjSsrbXXa0mVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2XoPNrLuSBuNkHFqDXXXfhVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i2/3991184722/TB26C62zVGWBuNjy0FbXXb4sXXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/3991184722/TB2wpbQz3mTBuNjy1XbXXaMrVXa_!!3991184722.jpg\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fqlq_Jn4Cf1FwlnY07hP7IAxIXC1.jpg','0','39.9','0','1','2108450','1','13669234901','5','','1303','1379','2468','1','甜过初恋！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-17 16:06:08','2018-08-22 09:41:31','1'),('3289546386869213427','0','鹰嘴桃5斤装','
+<h4><span style=\"font-weight: bold;\">新疆、西藏、内蒙古、青海、宁夏、海南不发货！</span></h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3354181408/*t*b2*k5c*rb8g*x*bu*njt_h*n*x*xa*ei*f*xa_!!3354181408.jpg\"></p><h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3354181408/*t*b2*p43.*ax9*y*bu*njy0*ff*x*x*x*is*v*xa_!!3354181408.jpg\"></h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3354181408/*t*b2*r2xk*a*h*s*y*bu*nj*sspf*x*xc*z*cp*xa_!!3354181408.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3354181408/*t*b2*z*kg*z*ax*s*y*bu*nj*sspj*x*x*x73*v*xa_!!3354181408.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3354181408/*t*b2*ec*aa*av5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3354181408.jpg\"><img src=\"https://img.alicdn.com/imgextra/i4/3258591655/TB2u9g.ghuTBuNkHFNRXXc9qpXa_!!3258591655.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3258591655/TB2YXNWoMaTBuNjSszfXXXgfpXa_!!3258591655.jpg\" align=\"absmiddle\">
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FncB3p5lFRH4xU5dsuWYRcBaVQzs.jpg','0','45.9','0','1','2108298','1','13669234901','5','','1303','1379','2464','1','甜过初恋！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-17 16:00:05','2018-08-22 09:41:31','1'),('3289320696429292248','0','陕西黑布林5斤整箱黑李子','
+<h4>新疆西藏青海海南内蒙地区不发货，请慎重拍单！</h4><p></p><p></p><p></p><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b2yx*tvj*tq*w*b*k*nj*s*z*fx*x*xcp*lp*xa_!!3338578933.jpg\"></p><p></p><p></p><p></p><h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b26*nv*hj*scq*b*k*nj*s*z*fg*x*x*x_k*x*xa_!!3338578933.jpg\"></h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b23*y*xo*bo*r1*be*njy0*fm*x*xb0w*v*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3338578933/*t*b23*yxwj*s*mm*b*k*nj*s*z*t*e*x*xas*kp*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b22g*mxs*m*k*t*bu*nk*sne1*x*xa*jo*x*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3338578933/*t*b2*f7*q*u*a1u*s*bu*nj*sspl*x*xbe8p*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2*pg53j*hor*b*k*nj*s*z*fj*x*xc_*sp*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2*s2*pbj*rj*t*b*k*nj*s*z*f*d*x*xb*vg*v*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2r*fxej*jkn*b*k*nj*s*z*k*p*x*x*x6*o*f*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b2u75qch*ua*bu*njt_i*g*x*x*xlk*f*xa_!!3338578933.jpg\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FumEaXnnNuUhcIhMC3buUnyOUAF1.jpg','0','29','0','1','2087845','1','13669234901','5','','1303','1379','2464','1','酸甜黑布林，夏季开胃水果！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:48:29','2018-08-22 09:41:31','1'),('3289320379256029851','0','安岳黄柠檬1斤装','
+<h4>新疆西藏青海海南内蒙地区不发货，请慎重拍单！</h4><div id=\"description\"><div><p><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2C396llmWBuNkSndVXXcsApXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB20VCNlhuTBuNkHFNRXXc9qpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3338578933/TB2ckwxtAOWBuNjSsppXXXPgpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3338578933/TB25lAItuuSBuNjy1XcXXcYjFXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2zkgituGSBuNjSspbXXciipXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3338578933/TB25XcOtxGYBuNjy0FnXXX5lpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2pZdttSBYBeNjy0FeXXbnmFXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3338578933/TB20ksituGSBuNjSspbXXciipXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB2lidgtGmWBuNjy1XaXXXCbXXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB2Vt6OtrSYBuNjSspiXXXNzpXa_!!3338578933.jpg\" align=\"absmiddle\"></p></div></div>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fqe1TUwbiK9dB6YIKvzFN90ugWrF.jpg','0','19','0','1','2087972','1','13669234901','5','','1303','1379','2462','1','有一种酸爽叫柠檬！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:46:02','2018-08-22 09:41:31','1'),('3289319957694914906','0','蛇果水果包邮花牛苹果甘肃天水新鲜当季苹果整箱刮泥4斤','
+<h4>注意：新疆西藏内蒙海南地区不发货，请慎重拍单！<br><strong>每箱4斤左右，有的会超过4斤，有的会小于4斤，不能接受的亲勿拍，每箱保证9-12枚70-80#花牛苹果！</strong></h4><p></p><p></p><p></p><p><img src=\"https://img.alicdn.com/imgextra/i3/2514500667/TB2TrZggYSYBuNjSspiXXXNzpXa_!!2514500667.jpg\" align=\"absmiddle\"></p><p><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2ViMAg29TBuNjy0FcXXbeiFXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2VukZg1uSBuNjSsziXXbq8pXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2a0y5iTXYBeNkHFrdXXciuVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2vD1HiLuSBuNkHFqDXXXfhVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2Z9ENg29TBuNjy1zbXXXpepXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2bqgygYuWBuNjSszgXXb8jVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2514500667/TB2xP38g4WYBuNjy1zkXXXGGpXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2STwCgWSWBuNjSsrbXXa0mVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2nH7BgVGWBuNjy0FbXXb4sXXa_!!2514500667.jpg\" align=\"absmiddle\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpF-JYvSwuidZEZE5Qzb3_Y48gYV.jpg','0','25.9','0','1','2087884','1','13669234901','5','','1303','1379','2448','1','精品大果 肉质细密 浓郁香气 口感超好','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:42:45','2018-08-22 09:41:31','1'),('3289319453682202048','0','李子水果陕西黑布林新鲜5斤脆李现摘当季整箱黑李子','
+<h4>注意：新疆西藏青海海南内蒙地区不予发货！请慎重拍单！</h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b21*vp*bfr*zn*b*k*nj*s*z*fr*x*xa*r*l*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b22g*h*oicy*y*bu*nk*snfo*x*xc*wg*v*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b2yudmfr*zn*b*k*nj*s*z*f*g*x*xbt3*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3538688412/*t*b2*wwz*rihu*t*bu*nk*h*f*n*r*x*xc9qp*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3538688412/*t*b24c*i*fqwa*t*bu*nj*sszf*x*x*xgfp*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3538688412/*t*b2*g*k0*bf*a7m*b*k*nj*s*z*fy*x*xbyd*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3538688412/*t*b2p*a5*jah*ua*bu*njt_i*g*x*x*xlk*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b2*bmlzq*n*s*y*bu*nj*sspj*x*x*x73*v*xa_!!3538688412.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FkclBTY1KOTcM7S_GCJcPsBzzWKS.jpg\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FqLwkqAuCb1Jr7QirzkYGqM7PIvu.jpg','0','26','0','1','2087845','1','13669234901','5','','1303','1379','2464','1','酸甜黑布林，夏季开胃水果！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:38:51','2018-08-22 09:41:40','1'),('3289319118674726226','0','水果10斤新鲜甘肃天水花牛苹果当季整箱粉苹果大果蛇果','
+<h4>注意：新疆西藏内蒙海南地区不予发货！请慎重拍单！</h4><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fr0hzeTFGbKp_Jy8u8gKCM0tbP_F.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjuZHrmdDqEXLYQh5dAfKHMMDJ75.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fsyw5O5cx0Cb2Lf6TFqNtGLYXLS2.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fpl31D8-D0mWVoqfpz1lBJjU7UtZ.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fk6yzBcKt-nARXX3nEJnX5JfABpW.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fn87jG2-UMJw4OmaYTS7wwhV5r_y.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgQ22uCW_f3kzsICRS9qwWEVr3z.jpg\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvWhrN8UGYffBoRZWeihEyd6VM6O.jpg','0','59','0','1','2087806','1','13669234901','5','','1303','1379','2448','1','农家种植，自然生长，吃的放心！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:36:15','2018-08-22 09:41:40','1'),('3289318609721131915','0','恩施富硒土豆小土豆5斤装','
+<h4>注意：新疆西藏青海不发货，请慎重拍单！</h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3373433071/*t*b2h*y*g*p*x*pvm*j*k*jjy0*fl*x*x*x*gd*f*xa_!!3373433071.jpg\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fr5BBtXKPJxouunnvpouoy4uif-t.jpg\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FjVrT_WutMY3wpTpXRNC9af20DDS.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvUFoLNCMPvTyc7vbY-KRKZvLmWu.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FuU2UgEtK9__mlvbPotAJiZcguKj.jpg\"></p>
+','https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoTUoiyBxDNW7HCKEMCWl5wHoQOz.jpg','0','22.9','0','1','2087741','1','13669234901','5','','1303','1384','2502','1','农家种植，自然生长，吃的放心！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:32:18','2018-08-22 09:41:40','1'),('3289317928322873799','0','民勤银蒂蜜瓜','
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2mjt3q*t*x*y*be*nk*h*frd*x*xciu*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2ztkbb*uz.*bu*njt_b*x*x*xc*qmp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/2702548077/*t*b2*sci8y1y*s*bu*njy1zd*x*x*x*px*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/2702548077/*t*b2hj*f3q*t*x*y*be*nk*h*frd*x*xciu*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2kd*swy*y*s*y*bu*nj*sspi*x*x*x*nzp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2je0*rq*o*o*y*bu*nj*ss*d4*x*xb*sk*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2*oq*a0qxu*t*bu*nk*h*f*n*r*x*xc9qp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2*w3mcy29*t*bu*njy0*fc*x*xbei*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/2702548077/*t*b2*p*em4y7*o*w*bu*nj*sspp*x*x*x*pgp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b21y*k3y4*s*y*bu*nj*sspj*x*x*x73*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/2702548077/*t*b2*km1*by*v*o*w*bu*njy0*fi*x*x*x*fx*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2x*l*fhi8sm*b*k*nj*s*z*fs*x*xa*x*s*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2b*i*hzy9*b*y*be*njy0*fe*x*xbnm*f*xa_!!2702548077.jpg\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu4QOkdwJghkna5TxJhGPfk5E4xv.jpg','0','39.9','0','1','2087612','1','13669234901','5','','1303','1379','2466','1','民勤银蒂水分充足，甘甜爽口！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:27:00','2018-08-22 09:41:40','1'),('3289317655592456918','0','民勤金红宝蜜瓜6-7斤装','
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3836985681/*t*b2*bn4*a*d*l5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3836985681/*t*b2*oo*c*a*d*q*c*w*bu*njy0*fa*x*x*x*ul*x*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3836985681/*t*b2fi0wv*by*w*bu*nk*sm*f*p*x*x*xgu*v*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3836985681/*t*b2*o.u*v*d*h*s*y*bu*nj*sspf*x*xc*z*cp*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3836985681/*t*b2*tr03*d*qy*w*bu*njy0*fp*x*xass*x*xa_!!3836985681.jpg\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/FpnppCAJMoCG9r7s4WI_mpoEiRGt.jpg','0','39.9','0','1','2087612','1','13669234901','5','','1303','1379','2466','1','原生态好苹果，脆甜爽口，孕妇首选！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:24:53','2018-08-22 09:41:39','1'),('3289316537407823578','0',' 静宁一级富士苹果6斤装','
+<p><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2n3YvjmVmpuFjSZFFXXcZApXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2_kvQjilnpuFjSZFgXXbi7FXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2jhrZjmFmpuFjSZFrXXayOXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2rH_2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB28AyqdhRDOuFjSZFzXXcIipXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2E7CqdhRDOuFjSZFzXXcIipXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2FkHdjdBopuFjSZPcXXc9EpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2sRbsjbJmpuFjSZFwXXaE4VXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2T0v7jbBmpuFjSZFAXXaQ0pXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2dZn2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2gmvQjblmpuFjSZFlXXbdQXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB27F2DjhBmpuFjSZFsXXcXpFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2sJzNjiRnpuFjSZFCXXX2DXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2kA2djdBopuFjSZPcXXc9EpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2F0mBd_cCL1FjSZFPXXXZgpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2_3TTjhhmpuFjSZFyXXcLdFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2ZZD2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2Q1LNjodnpuFjSZPhXXbChpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2ndRLd1tTMeFjSZFOXXaTiVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2XdVLd1tTMeFjSZFOXXaTiVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2bg6Mjd0opuFjSZFxXXaDNVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2cDHcjkqvpuFjSZFhXXaOgXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2pnfQjhxmpuFjSZFNXXXrRXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2VqPDjctnpuFjSZFKXXalFFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2c16NjodnpuFjSZPhXXbChpXa_!!2990387015.jpg\" align=\"absmiddle\"></p>
+','https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu1p_ChYxfmLsjUxCEmROA3MC16D.jpg','0','43.9','0','1','2087269','1','13669234901','5','','1303','1379','2448','1','原生态好苹果，脆甜爽口，孕妇首选！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:16:13','2018-08-22 09:41:39','1'),('3289315751428780125','0','板栗南瓜粉糯栗面5斤装','
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FiL8d7_TbAhHa8HLSnx9YPuaY-3T.png\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/6f7d75c5740cffa331e70a411384ef9422389377\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/aab4260698f70224e7a760fe1fee19213abbd120\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d6a7573215e89305a623742ce5ead41868d90d3b\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/06c61838da1421b28bbf462d9d17af7767b71ca2\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/090bc4a1c811132d0f92750633b876b62e0f1af4\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/1599bb8a237ca7c4f5c9e0af808dc8b62d056058\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/da33523fb42a4287f43bf385d2318edfcbead3ef\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/6bb1447360265f0facd08ab520343deebfb78b68\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FkeWochCdZCdwD2yQ1IHO3x00rSn.jpg','0','29.9','0','1','2087381','1','13669234901','5','','1303','1384','2501','1','脆甜爽口，孕妇首选！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:10:07','2018-08-22 09:41:39','1'),('3289314789347698418','0','洛川红富士苹果 整箱5斤装','
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/dde6f9d02681c008f35b05371b26a561738fb347\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d1dea13918124f5482dcd14c6aa5af860823c03c\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/7aa2916b751acb71f58291fd49c3c2d5e0832f76\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/f11a586935cd7dd097f108ce5af8797bf644401f\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/0c60cbfc12eda4267b17d9f2e11df51ca1099121\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/3dc846581c89b2006c504efd7f283715aa677c55\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/416a5698ef6ca79d091a23aae50eeb4e1ed127c7\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/7c8e37ba70aaaf6fb9af33f40923dfedc3433530\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/67481f2e6813e6457e3130cb0f448237a8040ce5\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/cf6418522719f2fe3911e3c1de0b14977ea3f28e\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/5208c5577f85f605d90c5af3ebb84462a3831f6a\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/fa0a9eaf67f77dbea4405b19fc8baef077165a97\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d74cf3b0edacfa27b6aff00f5100372fcfd08a8f\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/2e98f9397663f635a54f3b85226872774ff44f7d\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FlZGNW-BxfP8bcE6FsUxn1hYnxz-.jpg','0','39.9','0','1','2087269','1','13669234901','5','','1303','1379','2448','1','脆甜爽口，孕妇首选！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 10:02:39','2018-08-22 09:41:39','1'),('3289314435012900056','0','广西百色桂七芒果大果精品5斤','
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2d46v*ek*k*w*bu*njy1zj*x*xc*oyp*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3260863826/*t*b2*b*h*w*u*e*d*j*y*be*njy1ze*x*xahz*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b269*be*ex*g*y*bu*njy0*fn*x*x*x5lp*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2*s*m5vv5*c*y*bu*nk*sna*v*x*xc*ms*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2.*srzv2u*s*bu*nk*h*fq*d*x*x*xfh*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2wnkh*e*x*o*w*bu*njy0*fi*x*x*x*fx*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3260863826/*t*b2*f1*j*o*e*ct*y*be*nj*sspk*x*xb*u8*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3260863826/*t*b21zw*c*ek*c*w*bu*njy0*fa*x*x*x*ul*x*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3260863826/*t*b2*cw*e*a*ef5*t*bu*nj*sspm*x*xa*d*r*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2q5r*a*ef5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2*x6m*tv_d*y*be*nk*sm*ly*x*x*xfn*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2*mv6ov8m*w*bu*nk*snd*v*x*xcs*ap*xa_!!3260863826.jpg\"></p>
+','https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgYmjXZLXnyyIdGmpbGBPBkTPRom.jpg','0','42.9','0','1','2087236','1','13669234901','5','','1303','1379','2452','1','脆甜爽口，孕妇首选！','{\"quality_report\":\"\",\"class_quality\":\"\"}','2018-07-16 09:59:54','2018-08-22 09:41:39','1') [ RunTime:0.2112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004230s ]
+
+[ 2018-11-01T14:51:01+08:00 ] 127.0.0.1 /Data/getItems
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `fxg_shop` [ RunTime:0.0654s ]
+SQL: SELECT * FROM `fxg_shop`  [ RunTime:0.0641s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0651s ]
+SQL: SELECT * FROM `fxg_item` WHERE `product_id` IN ('3308792033744943824','3308052882758214245','3307965903873921237','3307965344882241661','3307964696342198407','3299900399821140006','3299175746504896039','3298613711371155981','3296178200782223657','3295862771933159536','3295859600108204797','3290672817204547635','3289547890116181185','3289547484233390090','3289547166405817216','3289546386869213427','3289320696429292248','3289320379256029851','3289319957694914906','3289319453682202048','3289319118674726226','3289318609721131915','3289317928322873799','3289317655592456918','3289316537407823578','3289315751428780125','3289314789347698418','3289314435012900056')  [ RunTime:0.1927s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3308792033744943824',`out_product_id`='0',`name`='扶贫土蜂蜜，中蜂百花蜜，会结晶的优质蜂密全场包邮',`description`='
+<p>此蜂蜜为中办挂牌扶贫的宁陕县海棠园村的土蜂蜜。蜂箱均在1000多米海拔的高山上，蜂箱固定，一年只采一次密。宁陕县为南水北调工程水源地，全县7万人，无工业企业，土地空气无污染。<br><br>土蜂蜜又称中华蜂蜜、野生蜂蜜,是中国土身土长的蜜蜂“中华蜂”采集多种花蜜酿制而成。中蜂采集山中百花，一年割一次蜜，中蜂蜜是山中百花花蜜精华之所在，浓度比其它蜂种的蜜浓度更高，营养更全面，是蜂蜜中的珍品。而秦岭被称为我国华夏文明的龙脉，是我国地理的南北分界线，宁陕县地处秦岭南麓，辖区物种丰富，是多种名贵动植物自然保护区。故而我们的蜂蜜营养更丰富,品质更纯正，更具食用价值。</p><p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiPHi49kRgm8rOPN0VLe08EgkRoXwww1080-1920\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FlBwHXNh_Fxb374sWqHpGjku-vkywww670-456\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgA60cQsQ7fzb9eml16FCSvuQkAewww1920-1080\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmSLAfQKdL360rXhkYGtJwGXPLgcwww1440-1080\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FkWebT5pRVUhw4OkXBqZvyhdkxAPwww1440-1080\"></p><p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FogjBLmKA1gK9fJehqVWoyDI07p3www1440-1080\"></p><p></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FssowemsIWQinYvx5XlU5LwoaEC6www1280-850\"></p><p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpWnWCb6DH0TmyTIrOeVJ66DNG3ewww1443-1080\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fp-kVFRYQRp8MasixEg3wvLGrKIOwww1443-1080\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FnM0optOvbqbClVCmK3PImouqGeSwww562-800\" style=\"max-width:100%;\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FnOhl8kN-o2OjVnIf5CiAEfQSIziwww800-800',`market_price`='100',`discount_price`='59.9',`settlement_price`='0',`status`='0',`spec_id`='3870370',`check_status`='3',`mobile`='18291962186',`cos_ratio`='0',`usp`='',`first_cid`='9',`second_cid`='79',`third_cid`='742',`pay_type`='1',`recommend_remark`='秦岭腹地产出，中央特供土蜂蜜',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-10-29 09:25:57',`update_time`='2018-10-29 09:26:05',`shop_id`='1' WHERE `id` = 1 [ RunTime:0.0655s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3308052882758214245',`out_product_id`='0',`name`='【山货】甘肃花牛苹果，原产地直发，5斤 9斤包邮',`description`='
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FriYnwoJaI9fHV1N-MFDq3x9NOslwww790-388\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmH3xU2S3tfTDKf031MpZQwtOnq5www790-270\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FivNPsMmpFCqu38GBxkjYy3xiY1awww790-558\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqRWbN-FCiridyCWTsx3zDEWwDSywww790-898\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FpS019pXpY8qyKRy5z2FtOtJWiCawww790-602\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fv7ydV8c3eBveffBt-67Y2NKOabowww790-788\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FgyZCYQIWUSh9RskG0yt5VMBjfsXwww790-599\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FnMJ771aIlKp4oSBNfQxskQyZLxRwww790-830\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fsw1Wx4FT-1VAcI7Np-t-0Ww6EhRwww790-677\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fk0dgrrDDiMYPJdUxFATo_Xo8N57www790-628\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fs12nSJh3FDqakC8hBx5VUr39dXNwww790-572\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fg31QIkeEBaPUVItI7ImcFVq8BnXwww790-808\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fqatr_OxCHb-imdWC7nm3UR396zJwww790-553\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fg30Nwt32tgyAg8FrYRY_XM41Ta7www790-516\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqJEJnzbIvZ9gmF6z_TktgBYaRt0www800-800',`market_price`='79',`discount_price`='49.9',`settlement_price`='0',`status`='0',`spec_id`='3813494',`check_status`='3',`mobile`='18291962186',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2448',`pay_type`='1',`recommend_remark`='甘肃花牛苹果，老少皆宜，软硬通吃',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-10-25 09:49:23',`update_time`='2018-10-31 07:59:47',`shop_id`='1' WHERE `id` = 2 [ RunTime:0.0654s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3307965903873921237',`out_product_id`='0',`name`='【山货】秦岭野生大板栗，产地直发，3斤装  5斤装包邮',`description`='
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/eb55d7471902f1768e9d5dc58f3fe1ea876a7d71www790-250\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/8666ee4072a58706a30c1a7a9a39fe199d9afa6awww750-19\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/052a19b63770e42dbd096bd40d328e9322adfd11www790-472\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/295a15ede643e5ce560536a5330fd2b2a18d1bf6www790-444\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/e6e900fb6c9ad26e1f3140f3b00a315248bd1b4fwww790-562\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/4e7046fb0765df41b4a17f3bf5aeb12d83e5039bwww750-549\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/a4db313a5dc47ad37d8ed2db85c00c93bc4ee20awww790-544\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/2cfedac956a7e0c785161dcdd3bd3194f64de372www790-524\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/6d557e115762063547ed437934768129ecd167dewww790-486\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/956de59d6c01706b3a2488789822e63a439e13f0www790-500\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/347473a1d757a41474f01358b5586ddfb7bd719bwww790-538\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/18c95e87ea4b470bb0cfd2601ff2fdc93968d090www790-442\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/19195f306bd07b85c489f8699d3e6e73f96ec7d3www790-444\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/90b5ddef69226f5bea1bb1f7bf49375944f8a23bwww750-636\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/670c7c5f2ac0003ccb4a013be407d2ce0773a9f8www750-20\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/7503c7aee1f16f478d524964b799347701bb2676www790-475\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/51116f3e22184e8e056998438c88b5fe12061f54www790-679\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FotJkfsycWsXuFYpYxwTtJDUMjsIwww800-800',`market_price`='0',`discount_price`='45',`settlement_price`='0',`status`='0',`spec_id`='3811117',`check_status`='3',`mobile`='1829196218',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2471',`pay_type`='1',`recommend_remark`='秦岭野生大板栗，产地直发',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-10-24 22:34:21',`update_time`='2018-10-31 22:15:33',`shop_id`='1' WHERE `id` = 3 [ RunTime:0.0647s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3307965344882241661',`out_product_id`='0',`name`='【山货】陕西脆甜柿子，原产地直发，5斤包邮',`description`='
+<p></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FuhtFa65nOIRb5dETAKotwi9ByK9www750-632\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FvJuCzocBz31WluSq2B1Nt4BBWwFwww750-236\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FqD7HP8rmL8QRXWr9MdAY2GF73Vawww750-768\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmGrb_KtybJMV02t5gZNOY7yIRB0www750-524\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqvQKY_vHMWtD3gbMgFzyPfTEerawww750-743\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FkURWHX_GfPwpH_rMQ9hQ7g3vjDNwww750-650\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtAI8IB_vfuW4_oStVNskLrWzFDNwww750-703\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmkJX-V5CzVSMueaOE-nlwOc_0AMwww720-960\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoyFsqp7MnUpuGkWqcZCKGyb8f-Fwww1080-810\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FpvTyN3csR0IOXFkemSWbPRnynA2www1080-810\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fu9P3ZlHw90sGOy5Bd0p1nGv_WrBwww750-443\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fn0uV9stWMcc0pyOwSZXVJbK5Mn4www800-800',`market_price`='39',`discount_price`='29.9',`settlement_price`='0',`status`='0',`spec_id`='3811044',`check_status`='3',`mobile`='18291962186',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2471',`pay_type`='1',`recommend_remark`='',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-10-24 22:30:00',`update_time`='2018-11-01 12:54:58',`shop_id`='1' WHERE `id` = 4 [ RunTime:0.0648s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3307964696342198407',`out_product_id`='0',`name`='【山货】陕西特产香玲干核桃， 3斤装 5斤装包邮',`description`='
+<p></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgLobo5p6b11Ny9ffTpka1MG4Z2Hwww701-553\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FjL1bXPlZsFs3d8C9H9T0HWKFpRcwww611-545\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FozrIuRdHm7OPXCgxr2hPdyfed4Bwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FsMkyi-JNMpJ5gV9oCl6tbgm3uDEwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fq2Z-UKob5BAMO0qh_ghVyleHJ5Xwww1080-1080\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FoMdWtfFzO62df6d235xvJTXTuMpwww752-744\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FsJiHsJM4ezX3xDjHmzZrBxYLbDvwww786-693\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FmLf0NUYJspNaPgv6yqBQcrZ5iEAwww785-835\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvT8AuNealdIHVkIifNL6Piel81-www775-820\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fk8iUvZ0Uai6uKoi-DCZ3_OkIaLEwww831-662\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FodmaBLYPjLVuCRKehFs-kvFsrwRwww806-856\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmoBkN93Hu-JmgxrBV7qUZY1szFdwww800-800',`market_price`='0',`discount_price`='59',`settlement_price`='0',`status`='0',`spec_id`='3810995',`check_status`='3',`mobile`='18291962186',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2471',`pay_type`='1',`recommend_remark`='',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-10-24 22:24:58',`update_time`='2018-10-31 08:03:21',`shop_id`='1' WHERE `id` = 5 [ RunTime:0.0647s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3299900399821140006',`out_product_id`='0',`name`='陕西合阳秦薯 5斤 9斤包邮 软糯香甜 粗粮健康食品 儿时的味道',`description`='
+<p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FnmonsCJMpxD08BNCavAkT_VroLcwww750-12082\" style=\"max-width:100%;\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FqL_5b_n6aN8zaod4DE6Jton0OQ9www600-600',`market_price`='29.9',`discount_price`='19.9',`settlement_price`='0',`status`='0',`spec_id`='2993953',`check_status`='3',`mobile`='18291962186',`cos_ratio`='10',`usp`='干面甜',`first_cid`='1303',`second_cid`='1384',`third_cid`='2502',`pay_type`='1',`recommend_remark`='味如板栗 甜而不腻',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-09-11 11:17:48',`update_time`='2018-10-18 16:18:41',`shop_id`='1' WHERE `id` = 6 [ RunTime:0.0651s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3299175746504896039',`out_product_id`='0',`name`='陕西合阳秦薯 5斤包邮 软糯香甜 粗粮健康食品 儿时的味道',`description`='
+<div><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FnmonsCJMpxD08BNCavAkT_VroLcwww750-12082\" style=\"max-width:100%;\"></p></div>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fh9rmYXEV1lnZNLLaTutp3qfPsuUwww800-800',`market_price`='0',`discount_price`='19.9',`settlement_price`='0',`status`='1',`spec_id`='3016471',`check_status`='1',`mobile`='18291962186',`cos_ratio`='0',`usp`='干面甜',`first_cid`='1303',`second_cid`='1384',`third_cid`='2502',`pay_type`='1',`recommend_remark`='味如板栗 甜而不腻',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-09-07 13:33:45',`update_time`='2018-10-29 08:47:20',`shop_id`='1' WHERE `id` = 7 [ RunTime:0.0643s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3298613711371155981',`out_product_id`='0',`name`='【扶贫】宁陕香菇500克，秦岭深山腹地干货特产，原产地直供',`description`='
+<p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FhWOj1kLgFQYE2cL_2TIuyMok9eowww997-544\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmmCRVZ3787Y3ZHEY0DffNQ-4uNpwww997-381\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtmDv5-KRT8lIu71MA9hRO4PtsM7www993-391\"></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgaTGUaYOwwOnCbKmqnpo6SkmLNwww750-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqwKJYvIe0xFZ6RHzpd3nmyFY4TQwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fq9n_02LksFq8DQDyqTww-7h-dOPwww750-671\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgYnv3hDalsPCL7Zj-LzQIyhL1Wpwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrlyE7zM5INaqNZ_0zANFDoXS0q0www750-734\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvpKQ69QR23ApNSSFBcS5bmal2EZwww750-658\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FosEXF_SjMrK8R6-uxVD6vcsZM5Uwww750-654\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjEPCPG-4CSPbM4Cbf5X4_9zdJtBwww750-503\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu3hA-W9nXAi1yoUuDtd-qlGnYJzwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgIcFY5gyVtX-szsCfM05uoS13Jowww750-749\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FifzuM6CUAA9drb_HfFfyXvTviC1www750-613\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FiF7MX6uf23Eo8HQHoQy8GO_HA6rwww750-614\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FhPO9ULePIFxQqSvJ2PJhFsFan19www750-708\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvFh2IBvP5KVT84cQDhMum_dvpQewww750-864\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fhfaoj-7HnMnAE8F811QZZhWyfqcwww750-1178\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtYX5lhclqwLfPjtmnbmN6XuI4Towww750-1361\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtO7Gk9a7j3KJo-_wrEo6Ui93U_6www750-961\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu-YTexr4_kbPrg7iuTzruKB5tz5www750-1161\" style=\"max-width:100%;\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/FspJUPurdCJJM-0eHGTA1Q0jmGGHwww800-800',`market_price`='75',`discount_price`='53.8',`settlement_price`='0',`status`='0',`spec_id`='2733300',`check_status`='3',`mobile`='13669234901',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1384',`third_cid`='2503',`pay_type`='1',`recommend_remark`='秦岭深山原生菌直供',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-09-04 12:51:47',`update_time`='2018-10-16 11:10:38',`shop_id`='1' WHERE `id` = 8 [ RunTime:0.0648s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3296178200782223657',`out_product_id`='0',`name`='【扶贫】宁陕香菇500克，秦岭深山腹地干货特产，原产地直供',`description`='
+<p></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FhWOj1kLgFQYE2cL_2TIuyMok9eowww997-544\" style=\"max-width:100%;\"></p><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmmCRVZ3787Y3ZHEY0DffNQ-4uNpwww997-381\" style=\"max-width:100%;\"></p><p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtmDv5-KRT8lIu71MA9hRO4PtsM7www993-391\" style=\"max-width:100%;\"></p><p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgaTGUaYOwwOnCbKmqnpo6SkmLNwww750-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FqwKJYvIe0xFZ6RHzpd3nmyFY4TQwww800-800\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fq9n_02LksFq8DQDyqTww-7h-dOPwww750-671\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgYnv3hDalsPCL7Zj-LzQIyhL1Wpwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrlyE7zM5INaqNZ_0zANFDoXS0q0www750-734\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvpKQ69QR23ApNSSFBcS5bmal2EZwww750-658\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FosEXF_SjMrK8R6-uxVD6vcsZM5Uwww750-654\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjEPCPG-4CSPbM4Cbf5X4_9zdJtBwww750-503\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu3hA-W9nXAi1yoUuDtd-qlGnYJzwww800-800\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FgIcFY5gyVtX-szsCfM05uoS13Jowww750-749\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FifzuM6CUAA9drb_HfFfyXvTviC1www750-613\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FiF7MX6uf23Eo8HQHoQy8GO_HA6rwww750-614\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FhPO9ULePIFxQqSvJ2PJhFsFan19www750-708\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FvFh2IBvP5KVT84cQDhMum_dvpQewww750-864\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fhfaoj-7HnMnAE8F811QZZhWyfqcwww750-1178\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FtYX5lhclqwLfPjtmnbmN6XuI4Towww750-1361\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FtO7Gk9a7j3KJo-_wrEo6Ui93U_6www750-961\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu-YTexr4_kbPrg7iuTzruKB5tz5www750-1161\" style=\"max-width:100%;\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FspJUPurdCJJM-0eHGTA1Q0jmGGHwww800-800',`market_price`='75',`discount_price`='65',`settlement_price`='0',`status`='0',`spec_id`='2733300',`check_status`='3',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1384',`third_cid`='2503',`pay_type`='1',`recommend_remark`='秦岭深山原生菌直供',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-08-22 09:49:44',`update_time`='2018-10-31 08:03:15',`shop_id`='1' WHERE `id` = 9 [ RunTime:0.0655s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3295862771933159536',`out_product_id`='0',`name`='陕西大荔冬枣新鲜包邮水果脆甜可口枣子2斤、3斤、4斤装',`description`='
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Ft5AebcHY0kDlW_jYLNVt8as2yBwwww750-984\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoQiSVx98hrAFoCwngl5nmbzQMAfwww750-1124\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiKO53jkjPy2HuheRPrEU7rSgo1gwww750-1623\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrI9qTnOclcq1MeWCgZd4cAepX-Dwww750-1176\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FlScAaXsnTLcjPAmlNVJB8RZe92uwww750-1108\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmjlyscWOekkxtuzJPgl2RlK4BvPwww750-1168\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FrrlcM8fKvEnlUbUKFYZjTPG59vnwww750-1092\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmFwpL_p7xIUSmnaYzNxcZFvG7s2www750-1488\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fub9NSTYOsw5d65WDD-zFkxVgCw7www750-1567\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fiep0LWOpj5X_ihVyE3WaAMCLe81www750-1064\" style=\"max-width:100%;\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FuQL7EE5ug1vlvyuHaZNIDJsVK6Vwww1024-1024',`market_price`='0',`discount_price`='33.9',`settlement_price`='0',`status`='1',`spec_id`='2663356',`check_status`='1',`mobile`='13669234901',`cos_ratio`='0',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2471',`pay_type`='1',`recommend_remark`='G20特供，活维生素丸',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-08-20 17:01:41',`update_time`='2018-08-22 09:41:32',`shop_id`='1' WHERE `id` = 10 [ RunTime:0.0649s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3295859600108204797',`out_product_id`='0',`name`='海棠园扶贫土蜂蜜，中共中央办公厅特供，栗战书亲临视察指导',`description`='
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FssowemsIWQinYvx5XlU5LwoaEC6www1280-850\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FiPHi49kRgm8rOPN0VLe08EgkRoXwww1080-1920\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FlBwHXNh_Fxb374sWqHpGjku-vkywww670-456\" style=\"max-width:100%;\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgA60cQsQ7fzb9eml16FCSvuQkAewww1920-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FmSLAfQKdL360rXhkYGtJwGXPLgcwww1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FkWebT5pRVUhw4OkXBqZvyhdkxAPwww1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FogjBLmKA1gK9fJehqVWoyDI07p3www1440-1080\" style=\"max-width:100%;\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpWnWCb6DH0TmyTIrOeVJ66DNG3ewww1443-1080\" style=\"max-width:100%;\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FiKIhZKHKUoH5KlB8nzvn2Ueu-Lqwww1080-1080',`market_price`='0',`discount_price`='68',`settlement_price`='0',`status`='1',`spec_id`='2662771',`check_status`='1',`mobile`='13669234901',`cos_ratio`='0',`usp`='',`first_cid`='9',`second_cid`='79',`third_cid`='742',`pay_type`='1',`recommend_remark`='秦岭腹地产出，中央特供土蜂蜜',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-08-20 16:37:04',`update_time`='2018-08-22 09:41:32',`shop_id`='1' WHERE `id` = 11 [ RunTime:0.0645s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3290672817204547635',`out_product_id`='0',`name`='云南去青壳板栗 5斤大中果云南板栗子野生板栗',`description`='
+<p></p><h3><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i1/2153654620/TB2JRqkdosIL1JjSZPiXXXKmpXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2YjqAdjoIL1JjSZFyXXbFBpXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2OQpNbHsTMeJjSszdXXcEupXa_!!2153654620.jpg?imageView2/2/w/2000\"><img alt=\"\" align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/2153654620/TB2..urdd.LL1JjSZFEXXcVmXXa_!!2153654620.jpg?imageView2/2/w/2000\" id=\"1\"><img id=\"1\" alt=\"\" src=\"https://img30.360buyimg.com/popWaterMark/jfs/t21346/208/2113064603/62663/43c3001f/5b48501dN640e9e9e.jpg?imageView2/2/w/2000\"></h3>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FlVPY0JVsRoQxw-ybgMS_ChLVjlU.jpg',`market_price`='0',`discount_price`='46',`settlement_price`='0',`status`='1',`spec_id`='2201847',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='9',`second_cid`='77',`third_cid`='728',`pay_type`='1',`recommend_remark`='颗粒饱满，口感鲜嫩清香，甘甜生津！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-23 17:42:20',`update_time`='2018-08-22 09:41:32',`shop_id`='1' WHERE `id` = 12 [ RunTime:0.0650s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289547890116181185',`out_product_id`='0',`name`='凯特一级果芒果5斤装',`description`='
+<h4>新疆、西藏地区不发货!</h4><p><img src=\"https://img.alicdn.com/imgextra/i1/3356970560/TB2wEAnBuuSBuNjSsplXXbe8pXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3356970560/TB2LLwxBAyWBuNjy0FpXXassXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3356970560/TB2FwP3BpGWBuNjy0FbXXb4sXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3356970560/TB2la5yBGmWBuNjy1XaXXXCbXXa_!!3356970560.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3356970560/TB2uXrHcoz.BuNjt_j7XXX0nFXa_!!3356970560.jpg\" align=\"absmiddle\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/FmkMlTKXwYoCGiVpNktJC6y-LGaz.jpg',`market_price`='0',`discount_price`='37',`settlement_price`='0',`status`='1',`spec_id`='2108722',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2452',`pay_type`='1',`recommend_remark`='甜过初恋！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-17 16:11:45',`update_time`='2018-08-22 09:41:32',`shop_id`='1' WHERE `id` = 13 [ RunTime:0.0649s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289547484233390090',`out_product_id`='0',`name`='民勤蜜瓜（金红宝）9斤装',`description`='
+<h4>新疆，西藏，内蒙，港澳台，海南，青海，拉萨不发货！</h4><p><img src=\"https://img.alicdn.com/imgextra/i2/3822824992/TB2ddJPtsyYBuNkSnfoXXcWgVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3822824992/TB2tFvhj8smBKNjSZFsXXaXSVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB24ynCjYArBKNjSZFLXXc_dVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB22WJuj.OWBKNjSZKzXXXfWFXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3822824992/TB26sK.j_qWBKNjSZFAXXanSpXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3822824992/TB25eKNj5MnBKNjSZFoXXbOSFXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3822824992/TB2gYpHB_JYBeNjy1zeXXahzVXa_!!3822824992.gif\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3822824992/TB29jmxtwKTBuNkSne1XXaJoXXa_!!3822824992.gif\" align=\"absmiddle\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fh8SqkGBpf1mRLZMc8seCXoCqym5.jpg',`market_price`='0',`discount_price`='42.9',`settlement_price`='0',`status`='1',`spec_id`='2108512',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2466',`pay_type`='1',`recommend_remark`='甜过初恋！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-17 16:08:36',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 14 [ RunTime:0.0654s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289547166405817216',`out_product_id`='0',`name`='3斤装百香果中大果',`description`='
+<h4><span style=\"font-weight: bold;\">内蒙、西藏、新疆不发货！</span></h4><p><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2jL9iAamWBuNjy1XaXXXCbXXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i1/3991184722/TB2iOwHz1uSBuNjy1XcXXcYjFXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i2/3991184722/TB2yn3rzYGYBuNjy0FoXXciBFXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB20Cu3rOCYBuNkSnaVXXcMsVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/3991184722/TB2047Dz1SSBuNjy0FlXXbBpVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2KMfBzWSWBuNjSsrbXXa0mVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i3/3991184722/TB2XoPNrLuSBuNkHFqDXXXfhVXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i2/3991184722/TB26C62zVGWBuNjy0FbXXb4sXXa_!!3991184722.jpg\"><img align=\"absmiddle\" src=\"https://img.alicdn.com/imgextra/i4/3991184722/TB2wpbQz3mTBuNjy1XbXXaMrVXa_!!3991184722.jpg\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fqlq_Jn4Cf1FwlnY07hP7IAxIXC1.jpg',`market_price`='0',`discount_price`='39.9',`settlement_price`='0',`status`='1',`spec_id`='2108450',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2468',`pay_type`='1',`recommend_remark`='甜过初恋！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-17 16:06:08',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 15 [ RunTime:0.0648s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289546386869213427',`out_product_id`='0',`name`='鹰嘴桃5斤装',`description`='
+<h4><span style=\"font-weight: bold;\">新疆、西藏、内蒙古、青海、宁夏、海南不发货！</span></h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3354181408/*t*b2*k5c*rb8g*x*bu*njt_h*n*x*xa*ei*f*xa_!!3354181408.jpg\"></p><h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3354181408/*t*b2*p43.*ax9*y*bu*njy0*ff*x*x*x*is*v*xa_!!3354181408.jpg\"></h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3354181408/*t*b2*r2xk*a*h*s*y*bu*nj*sspf*x*xc*z*cp*xa_!!3354181408.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3354181408/*t*b2*z*kg*z*ax*s*y*bu*nj*sspj*x*x*x73*v*xa_!!3354181408.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3354181408/*t*b2*ec*aa*av5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3354181408.jpg\"><img src=\"https://img.alicdn.com/imgextra/i4/3258591655/TB2u9g.ghuTBuNkHFNRXXc9qpXa_!!3258591655.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3258591655/TB2YXNWoMaTBuNjSszfXXXgfpXa_!!3258591655.jpg\" align=\"absmiddle\">
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FncB3p5lFRH4xU5dsuWYRcBaVQzs.jpg',`market_price`='0',`discount_price`='45.9',`settlement_price`='0',`status`='1',`spec_id`='2108298',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2464',`pay_type`='1',`recommend_remark`='甜过初恋！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-17 16:00:05',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 16 [ RunTime:0.0647s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289320696429292248',`out_product_id`='0',`name`='陕西黑布林5斤整箱黑李子',`description`='
+<h4>新疆西藏青海海南内蒙地区不发货，请慎重拍单！</h4><p></p><p></p><p></p><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b2yx*tvj*tq*w*b*k*nj*s*z*fx*x*xcp*lp*xa_!!3338578933.jpg\"></p><p></p><p></p><p></p><h4><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b26*nv*hj*scq*b*k*nj*s*z*fg*x*x*x_k*x*xa_!!3338578933.jpg\"></h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b23*y*xo*bo*r1*be*njy0*fm*x*xb0w*v*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3338578933/*t*b23*yxwj*s*mm*b*k*nj*s*z*t*e*x*xas*kp*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b22g*mxs*m*k*t*bu*nk*sne1*x*xa*jo*x*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3338578933/*t*b2*f7*q*u*a1u*s*bu*nj*sspl*x*xbe8p*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2*pg53j*hor*b*k*nj*s*z*fj*x*xc_*sp*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2*s2*pbj*rj*t*b*k*nj*s*z*f*d*x*xb*vg*v*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3338578933/*t*b2r*fxej*jkn*b*k*nj*s*z*k*p*x*x*x6*o*f*xa_!!3338578933.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3338578933/*t*b2u75qch*ua*bu*njt_i*g*x*x*xlk*f*xa_!!3338578933.jpg\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FumEaXnnNuUhcIhMC3buUnyOUAF1.jpg',`market_price`='0',`discount_price`='29',`settlement_price`='0',`status`='1',`spec_id`='2087845',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2464',`pay_type`='1',`recommend_remark`='酸甜黑布林，夏季开胃水果！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:48:29',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 17 [ RunTime:0.0655s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289320379256029851',`out_product_id`='0',`name`='安岳黄柠檬1斤装',`description`='
+<h4>新疆西藏青海海南内蒙地区不发货，请慎重拍单！</h4><div id=\"description\"><div><p><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2C396llmWBuNkSndVXXcsApXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB20VCNlhuTBuNkHFNRXXc9qpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3338578933/TB2ckwxtAOWBuNjSsppXXXPgpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3338578933/TB25lAItuuSBuNjy1XcXXcYjFXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2zkgituGSBuNjSspbXXciipXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/3338578933/TB25XcOtxGYBuNjy0FnXXX5lpXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/3338578933/TB2pZdttSBYBeNjy0FeXXbnmFXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/3338578933/TB20ksituGSBuNjSspbXXciipXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB2lidgtGmWBuNjy1XaXXXCbXXa_!!3338578933.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/3338578933/TB2Vt6OtrSYBuNjSspiXXXNzpXa_!!3338578933.jpg\" align=\"absmiddle\"></p></div></div>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fqe1TUwbiK9dB6YIKvzFN90ugWrF.jpg',`market_price`='0',`discount_price`='19',`settlement_price`='0',`status`='1',`spec_id`='2087972',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2462',`pay_type`='1',`recommend_remark`='有一种酸爽叫柠檬！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:46:02',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 18 [ RunTime:0.0649s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289319957694914906',`out_product_id`='0',`name`='蛇果水果包邮花牛苹果甘肃天水新鲜当季苹果整箱刮泥4斤',`description`='
+<h4>注意：新疆西藏内蒙海南地区不发货，请慎重拍单！<br><strong>每箱4斤左右，有的会超过4斤，有的会小于4斤，不能接受的亲勿拍，每箱保证9-12枚70-80#花牛苹果！</strong></h4><p></p><p></p><p></p><p><img src=\"https://img.alicdn.com/imgextra/i3/2514500667/TB2TrZggYSYBuNjSspiXXXNzpXa_!!2514500667.jpg\" align=\"absmiddle\"></p><p><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2ViMAg29TBuNjy0FcXXbeiFXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2VukZg1uSBuNjSsziXXbq8pXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2a0y5iTXYBeNkHFrdXXciuVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2vD1HiLuSBuNkHFqDXXXfhVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2Z9ENg29TBuNjy1zbXXXpepXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2514500667/TB2bqgygYuWBuNjSszgXXb8jVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2514500667/TB2xP38g4WYBuNjy1zkXXXGGpXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2STwCgWSWBuNjSsrbXXa0mVXa_!!2514500667.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2514500667/TB2nH7BgVGWBuNjy0FbXXb4sXXa_!!2514500667.jpg\" align=\"absmiddle\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/FpF-JYvSwuidZEZE5Qzb3_Y48gYV.jpg',`market_price`='0',`discount_price`='25.9',`settlement_price`='0',`status`='1',`spec_id`='2087884',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2448',`pay_type`='1',`recommend_remark`='精品大果 肉质细密 浓郁香气 口感超好',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:42:45',`update_time`='2018-08-22 09:41:31',`shop_id`='1' WHERE `id` = 19 [ RunTime:0.0649s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289319453682202048',`out_product_id`='0',`name`='李子水果陕西黑布林新鲜5斤脆李现摘当季整箱黑李子',`description`='
+<h4>注意：新疆西藏青海海南内蒙地区不予发货！请慎重拍单！</h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b21*vp*bfr*zn*b*k*nj*s*z*fr*x*xa*r*l*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b22g*h*oicy*y*bu*nk*snfo*x*xc*wg*v*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b2yudmfr*zn*b*k*nj*s*z*f*g*x*xbt3*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3538688412/*t*b2*wwz*rihu*t*bu*nk*h*f*n*r*x*xc9qp*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3538688412/*t*b24c*i*fqwa*t*bu*nj*sszf*x*x*xgfp*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3538688412/*t*b2*g*k0*bf*a7m*b*k*nj*s*z*fy*x*xbyd*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3538688412/*t*b2p*a5*jah*ua*bu*njt_i*g*x*x*xlk*f*xa_!!3538688412.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3538688412/*t*b2*bmlzq*n*s*y*bu*nj*sspj*x*x*x73*v*xa_!!3538688412.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FkclBTY1KOTcM7S_GCJcPsBzzWKS.jpg\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FqLwkqAuCb1Jr7QirzkYGqM7PIvu.jpg',`market_price`='0',`discount_price`='26',`settlement_price`='0',`status`='1',`spec_id`='2087845',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2464',`pay_type`='1',`recommend_remark`='酸甜黑布林，夏季开胃水果！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:38:51',`update_time`='2018-08-22 09:41:40',`shop_id`='1' WHERE `id` = 20 [ RunTime:0.0655s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289319118674726226',`out_product_id`='0',`name`='水果10斤新鲜甘肃天水花牛苹果当季整箱粉苹果大果蛇果',`description`='
+<h4>注意：新疆西藏内蒙海南地区不予发货！请慎重拍单！</h4><p><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fr0hzeTFGbKp_Jy8u8gKCM0tbP_F.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FjuZHrmdDqEXLYQh5dAfKHMMDJ75.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fsyw5O5cx0Cb2Lf6TFqNtGLYXLS2.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/Fpl31D8-D0mWVoqfpz1lBJjU7UtZ.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fk6yzBcKt-nARXX3nEJnX5JfABpW.jpg\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fn87jG2-UMJw4OmaYTS7wwhV5r_y.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FrgQ22uCW_f3kzsICRS9qwWEVr3z.jpg\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FvWhrN8UGYffBoRZWeihEyd6VM6O.jpg',`market_price`='0',`discount_price`='59',`settlement_price`='0',`status`='1',`spec_id`='2087806',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2448',`pay_type`='1',`recommend_remark`='农家种植，自然生长，吃的放心！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:36:15',`update_time`='2018-08-22 09:41:40',`shop_id`='1' WHERE `id` = 21 [ RunTime:0.0648s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289318609721131915',`out_product_id`='0',`name`='恩施富硒土豆小土豆5斤装',`description`='
+<h4>注意：新疆西藏青海不发货，请慎重拍单！</h4><p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3373433071/*t*b2h*y*g*p*x*pvm*j*k*jjy0*fl*x*x*x*gd*f*xa_!!3373433071.jpg\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fr5BBtXKPJxouunnvpouoy4uif-t.jpg\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/FjVrT_WutMY3wpTpXRNC9af20DDS.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FvUFoLNCMPvTyc7vbY-KRKZvLmWu.jpg\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/FuU2UgEtK9__mlvbPotAJiZcguKj.jpg\"></p>
+',`img`='https://sf6-ttcdn-tos.pstatp.com/obj/temai/FoTUoiyBxDNW7HCKEMCWl5wHoQOz.jpg',`market_price`='0',`discount_price`='22.9',`settlement_price`='0',`status`='1',`spec_id`='2087741',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1384',`third_cid`='2502',`pay_type`='1',`recommend_remark`='农家种植，自然生长，吃的放心！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:32:18',`update_time`='2018-08-22 09:41:40',`shop_id`='1' WHERE `id` = 22 [ RunTime:0.0647s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289317928322873799',`out_product_id`='0',`name`='民勤银蒂蜜瓜',`description`='
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2mjt3q*t*x*y*be*nk*h*frd*x*xciu*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2ztkbb*uz.*bu*njt_b*x*x*xc*qmp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/2702548077/*t*b2*sci8y1y*s*bu*njy1zd*x*x*x*px*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/2702548077/*t*b2hj*f3q*t*x*y*be*nk*h*frd*x*xciu*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2kd*swy*y*s*y*bu*nj*sspi*x*x*x*nzp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2je0*rq*o*o*y*bu*nj*ss*d4*x*xb*sk*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2*oq*a0qxu*t*bu*nk*h*f*n*r*x*xc9qp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2*w3mcy29*t*bu*njy0*fc*x*xbei*f*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/2702548077/*t*b2*p*em4y7*o*w*bu*nj*sspp*x*x*x*pgp*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b21y*k3y4*s*y*bu*nj*sspj*x*x*x73*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/2702548077/*t*b2*km1*by*v*o*w*bu*njy0*fi*x*x*x*fx*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/2702548077/*t*b2x*l*fhi8sm*b*k*nj*s*z*fs*x*xa*x*s*v*xa_!!2702548077.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/2702548077/*t*b2b*i*hzy9*b*y*be*njy0*fe*x*xbnm*f*xa_!!2702548077.jpg\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/Fu4QOkdwJghkna5TxJhGPfk5E4xv.jpg',`market_price`='0',`discount_price`='39.9',`settlement_price`='0',`status`='1',`spec_id`='2087612',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2466',`pay_type`='1',`recommend_remark`='民勤银蒂水分充足，甘甜爽口！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:27:00',`update_time`='2018-08-22 09:41:40',`shop_id`='1' WHERE `id` = 23 [ RunTime:0.0651s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289317655592456918',`out_product_id`='0',`name`='民勤金红宝蜜瓜6-7斤装',`description`='
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3836985681/*t*b2*bn4*a*d*l5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3836985681/*t*b2*oo*c*a*d*q*c*w*bu*njy0*fa*x*x*x*ul*x*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3836985681/*t*b2fi0wv*by*w*bu*nk*sm*f*p*x*x*xgu*v*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3836985681/*t*b2*o.u*v*d*h*s*y*bu*nj*sspf*x*xc*z*cp*xa_!!3836985681.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3836985681/*t*b2*tr03*d*qy*w*bu*njy0*fp*x*xass*x*xa_!!3836985681.jpg\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/FpnppCAJMoCG9r7s4WI_mpoEiRGt.jpg',`market_price`='0',`discount_price`='39.9',`settlement_price`='0',`status`='1',`spec_id`='2087612',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2466',`pay_type`='1',`recommend_remark`='原生态好苹果，脆甜爽口，孕妇首选！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:24:53',`update_time`='2018-08-22 09:41:39',`shop_id`='1' WHERE `id` = 24 [ RunTime:0.0649s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289316537407823578',`out_product_id`='0',`name`=' 静宁一级富士苹果6斤装',`description`='
+<p><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2n3YvjmVmpuFjSZFFXXcZApXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2_kvQjilnpuFjSZFgXXbi7FXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2jhrZjmFmpuFjSZFrXXayOXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2rH_2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB28AyqdhRDOuFjSZFzXXcIipXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2E7CqdhRDOuFjSZFzXXcIipXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2FkHdjdBopuFjSZPcXXc9EpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2sRbsjbJmpuFjSZFwXXaE4VXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2T0v7jbBmpuFjSZFAXXaQ0pXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2dZn2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2gmvQjblmpuFjSZFlXXbdQXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB27F2DjhBmpuFjSZFsXXcXpFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i3/2990387015/TB2sJzNjiRnpuFjSZFCXXX2DXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2kA2djdBopuFjSZPcXXc9EpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2F0mBd_cCL1FjSZFPXXXZgpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2_3TTjhhmpuFjSZFyXXcLdFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2ZZD2jbxmpuFjSZJiXXXauVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2Q1LNjodnpuFjSZPhXXbChpXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2ndRLd1tTMeFjSZFOXXaTiVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2XdVLd1tTMeFjSZFOXXaTiVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2bg6Mjd0opuFjSZFxXXaDNVXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i4/2990387015/TB2cDHcjkqvpuFjSZFhXXaOgXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2pnfQjhxmpuFjSZFNXXXrRXXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i1/2990387015/TB2VqPDjctnpuFjSZFKXXalFFXa_!!2990387015.jpg\" align=\"absmiddle\"><img src=\"https://img.alicdn.com/imgextra/i2/2990387015/TB2c16NjodnpuFjSZPhXXbChpXa_!!2990387015.jpg\" align=\"absmiddle\"></p>
+',`img`='https://sf3-ttcdn-tos.pstatp.com/obj/temai/Fu1p_ChYxfmLsjUxCEmROA3MC16D.jpg',`market_price`='0',`discount_price`='43.9',`settlement_price`='0',`status`='1',`spec_id`='2087269',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2448',`pay_type`='1',`recommend_remark`='原生态好苹果，脆甜爽口，孕妇首选！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:16:13',`update_time`='2018-08-22 09:41:39',`shop_id`='1' WHERE `id` = 25 [ RunTime:0.0657s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289315751428780125',`out_product_id`='0',`name`='板栗南瓜粉糯栗面5斤装',`description`='
+<p><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/FiL8d7_TbAhHa8HLSnx9YPuaY-3T.png\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/6f7d75c5740cffa331e70a411384ef9422389377\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/aab4260698f70224e7a760fe1fee19213abbd120\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d6a7573215e89305a623742ce5ead41868d90d3b\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/06c61838da1421b28bbf462d9d17af7767b71ca2\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/090bc4a1c811132d0f92750633b876b62e0f1af4\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/1599bb8a237ca7c4f5c9e0af808dc8b62d056058\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/da33523fb42a4287f43bf385d2318edfcbead3ef\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/6bb1447360265f0facd08ab520343deebfb78b68\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FkeWochCdZCdwD2yQ1IHO3x00rSn.jpg',`market_price`='0',`discount_price`='29.9',`settlement_price`='0',`status`='1',`spec_id`='2087381',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1384',`third_cid`='2501',`pay_type`='1',`recommend_remark`='脆甜爽口，孕妇首选！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:10:07',`update_time`='2018-08-22 09:41:39',`shop_id`='1' WHERE `id` = 26 [ RunTime:0.0707s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289314789347698418',`out_product_id`='0',`name`='洛川红富士苹果 整箱5斤装',`description`='
+<p><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/dde6f9d02681c008f35b05371b26a561738fb347\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d1dea13918124f5482dcd14c6aa5af860823c03c\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/7aa2916b751acb71f58291fd49c3c2d5e0832f76\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/f11a586935cd7dd097f108ce5af8797bf644401f\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/0c60cbfc12eda4267b17d9f2e11df51ca1099121\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/3dc846581c89b2006c504efd7f283715aa677c55\"><img src=\"https://sf3-ttcdn-tos.pstatp.com/obj/temai/416a5698ef6ca79d091a23aae50eeb4e1ed127c7\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/7c8e37ba70aaaf6fb9af33f40923dfedc3433530\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/67481f2e6813e6457e3130cb0f448237a8040ce5\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/cf6418522719f2fe3911e3c1de0b14977ea3f28e\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/5208c5577f85f605d90c5af3ebb84462a3831f6a\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/fa0a9eaf67f77dbea4405b19fc8baef077165a97\"><img src=\"https://sf1-ttcdn-tos.pstatp.com/obj/temai/d74cf3b0edacfa27b6aff00f5100372fcfd08a8f\"><img src=\"https://sf6-ttcdn-tos.pstatp.com/obj/temai/2e98f9397663f635a54f3b85226872774ff44f7d\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FlZGNW-BxfP8bcE6FsUxn1hYnxz-.jpg',`market_price`='0',`discount_price`='39.9',`settlement_price`='0',`status`='1',`spec_id`='2087269',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2448',`pay_type`='1',`recommend_remark`='脆甜爽口，孕妇首选！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 10:02:39',`update_time`='2018-08-22 09:41:39',`shop_id`='1' WHERE `id` = 27 [ RunTime:0.0654s ]
+SQL: UPDATE `fxg_item` SET `product_id`='3289314435012900056',`out_product_id`='0',`name`='广西百色桂七芒果大果精品5斤',`description`='
+<p><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2d46v*ek*k*w*bu*njy1zj*x*xc*oyp*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3260863826/*t*b2*b*h*w*u*e*d*j*y*be*njy1ze*x*xahz*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b269*be*ex*g*y*bu*njy0*fn*x*x*x5lp*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2*s*m5vv5*c*y*bu*nk*sna*v*x*xc*ms*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2.*srzv2u*s*bu*nk*h*fq*d*x*x*xfh*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2wnkh*e*x*o*w*bu*njy0*fi*x*x*x*fx*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3260863826/*t*b2*f1*j*o*e*ct*y*be*nj*sspk*x*xb*u8*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i1/3260863826/*t*b21zw*c*ek*c*w*bu*njy0*fa*x*x*x*ul*x*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i2/3260863826/*t*b2*cw*e*a*ef5*t*bu*nj*sspm*x*xa*d*r*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i3/3260863826/*t*b2q5r*a*ef5*t*bu*nj*sspc*x*xbn*g*f*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2*x6m*tv_d*y*be*nk*sm*ly*x*x*xfn*v*xa_!!3260863826.jpg\"><img src=\"http://imgproxy.qingtaoke.com/imgextra/i4/3260863826/*t*b2*mv6ov8m*w*bu*nk*snd*v*x*xcs*ap*xa_!!3260863826.jpg\"></p>
+',`img`='https://sf1-ttcdn-tos.pstatp.com/obj/temai/FgYmjXZLXnyyIdGmpbGBPBkTPRom.jpg',`market_price`='0',`discount_price`='42.9',`settlement_price`='0',`status`='1',`spec_id`='2087236',`check_status`='1',`mobile`='13669234901',`cos_ratio`='5',`usp`='',`first_cid`='1303',`second_cid`='1379',`third_cid`='2452',`pay_type`='1',`recommend_remark`='脆甜爽口，孕妇首选！',`extra`='{\"quality_report\":\"\",\"class_quality\":\"\"}',`create_time`='2018-07-16 09:59:54',`update_time`='2018-08-22 09:41:39',`shop_id`='1' WHERE `id` = 28 [ RunTime:0.0655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003189s ]
+
+[ 2018-11-01T14:57:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003956s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2018-11-01T14:57:21+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2018-11-01T14:57:22+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0634s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0619s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1251s ]
+
+[ 2018-11-01T14:58:17+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-11-01T14:58:18+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0602s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1209s ]
+
+[ 2018-11-01T14:58:18+08:00 ] 127.0.0.1 /Item/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+ERR: 非法操作:undefined
+
+[ 2018-11-01T14:58:19+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-11-01T14:58:19+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0627s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0616s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1235s ]
+
+[ 2018-11-01T14:58:19+08:00 ] 127.0.0.1 /Item/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+ERR: 非法操作:undefined
+
+[ 2018-11-01T14:58:32+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-11-01T14:58:33+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0632s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1233s ]
+
+[ 2018-11-01T15:00:07+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-11-01T15:00:08+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0642s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0625s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1241s ]
+
+[ 2018-11-01T15:00:19+08:00 ] 127.0.0.1 /Item/index.html?page=2&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0641s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0628s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.1270s ]
+
+[ 2018-11-01T15:00:22+08:00 ] 127.0.0.1 /Item/index.html?page=3&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.1452s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 20,10   [ RunTime:0.1244s ]
+
+[ 2018-11-01T15:00:31+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0628s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1240s ]
+
+[ 2018-11-01T15:04:04+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000365s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined variable: order_source D:\www\online_team\www.sale.com\Application\Runtime\Cache\Fxg\2382f1374e85a23b2c8879647ca0240a.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2018-11-01T15:04:06+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0671s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0658s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1331s ]
+
+[ 2018-11-01T15:04:07+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000604s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000892s ]
+NOTIC: [8] Undefined variable: order_source D:\www\online_team\www.sale.com\Application\Runtime\Cache\Fxg\2382f1374e85a23b2c8879647ca0240a.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003505s ]
+
+[ 2018-11-01T15:04:09+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0678s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1346s ]
+
+[ 2018-11-01T15:04:20+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-11-01T15:04:21+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0619s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0606s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1215s ]
+
+[ 2018-11-01T15:04:46+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2018-11-01T15:04:47+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0676s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0671s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1349s ]
+
+[ 2018-11-01T15:05:46+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2018-11-01T15:05:48+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0648s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0632s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1272s ]
+
+[ 2018-11-01T15:05:50+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=3333&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0607s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 3333 LIMIT 1   [ RunTime:0.0603s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 3333 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0613s ]
+
+[ 2018-11-01T15:05:55+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=3333&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0630s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 3333 LIMIT 1   [ RunTime:0.0621s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 3333 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0629s ]
+
+[ 2018-11-01T15:05:58+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=3333&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0609s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 3333 LIMIT 1   [ RunTime:0.0597s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 3333 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0609s ]
+
+[ 2018-11-01T15:06:15+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002819s ]
+
+[ 2018-11-01T15:06:17+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0601s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1212s ]
+
+[ 2018-11-01T15:06:19+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000522s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002869s ]
+
+[ 2018-11-01T15:06:21+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0608s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0600s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1211s ]
+
+[ 2018-11-01T15:06:24+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0648s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 LIMIT 1   [ RunTime:0.0631s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1270s ]
+
+[ 2018-11-01T15:09:49+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&page=3&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0616s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 LIMIT 1   [ RunTime:0.0602s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 ORDER BY create_time desc LIMIT 20,10   [ RunTime:0.1214s ]
+
+[ 2018-11-01T15:21:29+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2018-11-01T15:21:30+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0627s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0621s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1246s ]
+
+[ 2018-11-01T15:21:33+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=&status=0&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0606s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0602s ]
+SQL: SELECT * FROM `fxg_item` WHERE `status` = 0 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1208s ]
+
+[ 2018-11-01T15:21:39+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=&status=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0624s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0613s ]
+SQL: SELECT * FROM `fxg_item` WHERE `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1233s ]
+
+[ 2018-11-01T15:21:52+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=&status=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0629s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0621s ]
+SQL: SELECT * FROM `fxg_item` WHERE `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1244s ]
+
+[ 2018-11-01T15:22:04+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-11-01T15:22:06+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001408s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0627s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1246s ]
+
+[ 2018-11-01T15:23:41+08:00 ] 127.0.0.1 /Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2018-11-01T15:23:42+08:00 ] 127.0.0.1 /Item/index.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0621s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` LIMIT 1   [ RunTime:0.0608s ]
+SQL: SELECT * FROM `fxg_item` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1211s ]
+
+[ 2018-11-01T15:23:46+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=&status=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0661s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0648s ]
+SQL: SELECT * FROM `fxg_item` WHERE `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1294s ]
+
+[ 2018-11-01T15:23:50+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=&status=1&page=2&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0596s ]
+SQL: SELECT * FROM `fxg_item` WHERE `status` = 1 ORDER BY create_time desc LIMIT 10,10   [ RunTime:0.1205s ]
+
+[ 2018-11-01T15:33:56+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&status=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0611s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0599s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1205s ]
+
+[ 2018-11-01T15:34:01+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&status=&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0653s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 LIMIT 1   [ RunTime:0.0607s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1305s ]
+
+[ 2018-11-01T15:52:32+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&status=&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0597s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 LIMIT 1   [ RunTime:0.0592s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1195s ]
+
+[ 2018-11-01T15:59:32+08:00 ] 127.0.0.1 /Item/index.html?item_id=&keyword=&shop_id=1&status=1&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `fxg_item` [ RunTime:0.0637s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `fxg_item` WHERE `shop_id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0622s ]
+SQL: SELECT * FROM `fxg_item` WHERE `shop_id` = 1 AND `status` = 1 ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.1240s ]
+

@@ -1,0 +1,113 @@
+<extend name="Common/common"/>
+<block name="body">
+    <xblock>
+        <button class="layui-btn save-data" data-name="" data-id="" data-title="添加小店"
+                style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">&#xe608;</i>添加小店
+        </button>
+    </xblock>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>小店名称</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.name}</td>
+                <td>
+                    <a title="编辑" href="javascript:;" class="ml-5 save-data" data-name="{$vo.name}" data-id="{$vo.id}"
+                       data-title="编辑小店" style="text-decoration:none"><i class="layui-icon"
+                                                                         style="font-size: 20px;color: #fff">&#xe642;</i></a>
+                    <a title="删除" href="javascript:;" onclick="member_del({$vo['id']})" style="text-decoration:none"><i
+                            class="layui-icon" style="font-size: 20px;color: #fff">&#xe640;</i></a>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="box">
+    <div id="box" style="display: none;padding:20px;">
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">小店名称</label>
+                <div class="layui-input-block">
+                    <input type="text" placeholder="请输入小店名称" id="shop-name" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <input type="hidden" name="id" id="shop-id"/>
+                    <button class="layui-btn" id="save" type="button">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript">
+
+        $('.save-data').click(function () {
+            var _this = $(this);
+            $('#shop-id').val(_this.data('id'));
+            $('#shop-name').val(_this.data('name'));
+            layer.open({
+                type: 1,
+                area: ['50%', '40%'],
+                fix: false, //不固定
+                maxmin: true,
+                shadeClose: true,
+                shade: 0.4,
+                title: _this.data('title'),
+                content: $('#box'),
+                cancel: function () {
+                    $('#box').hide();
+                }
+            });
+        })
+
+        $('#save').click(function () {
+            var _this = $(this);
+            var name = $('#shop-name').val();
+            var id = $('#shop-id').val();
+            if (!name) {
+                layer.msg('请输入小店名称');
+                return false;
+            }
+            _this.addClass('layui-disabled');
+            $.post("{:U('Shop/saveAccount')}", {id: id, name: name}, function (res) {
+                layer.msg(res.info);
+                if (res.status == 1) {
+                    layer.msg(res.info, function () {
+                        window.location.reload();
+                    })
+                } else {
+                    layer.msg(res.info);
+                    _this.removeClass('layui-disabled');
+                }
+            });
+        })
+
+        /*用户-删除*/
+        function member_del(id) {
+            layer.confirm('确认要删除该小店吗？', {title: "删除确认"}, function (index) {
+                $.post("{:U('Shop/deleteAccount')}", {id: id}, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+            });
+        }
+    </script>
+</block>

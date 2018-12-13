@@ -1,0 +1,574 @@
+[ 2018-10-12T15:46:38+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0686s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0676s ]
+NOTIC: [8] Undefined index: result D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1197 行.
+
+[ 2018-10-12T15:46:38+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-10-12T15:48:03+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0608s ]
+NOTIC: [8] Undefined index: result D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1199 行.
+
+[ 2018-10-12T15:48:08+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0646s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0643s ]
+NOTIC: [8] Undefined index: result D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1199 行.
+
+[ 2018-10-12T15:48:33+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0672s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0678s ]
+
+[ 2018-10-12T15:48:44+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0646s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0637s ]
+
+[ 2018-10-12T15:49:13+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0639s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0651s ]
+NOTIC: [8] Undefined index: result D:\www\online_team\www.sale.com\Application\Data\Controller\ArticleController.class.php 第 1200 行.
+
+[ 2018-10-12T15:54:52+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0687s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0677s ]
+
+[ 2018-10-12T15:55:04+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+
+[ 2018-10-12T15:55:06+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0656s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0675s ]
+
+[ 2018-10-12T15:55:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+
+[ 2018-10-12T16:01:53+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0659s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0648s ]
+
+[ 2018-10-12T16:01:55+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0646s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0646s ]
+
+[ 2018-10-12T16:02:41+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0634s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0628s ]
+
+[ 2018-10-12T16:03:08+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0683s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0677s ]
+
+[ 2018-10-12T16:03:26+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0600s ]
+
+[ 2018-10-12T16:03:45+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0616s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0612s ]
+
+[ 2018-10-12T16:04:23+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0608s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0607s ]
+
+[ 2018-10-12T16:04:28+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0642s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0634s ]
+
+[ 2018-10-12T16:05:46+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0618s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0614s ]
+
+[ 2018-10-12T16:06:17+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0672s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0668s ]
+
+[ 2018-10-12T16:07:14+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0648s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0659s ]
+
+[ 2018-10-12T16:07:24+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0656s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2018-10-12T16:07:41+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0642s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0639s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0638s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0646s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0643s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0647s ]
+
+[ 2018-10-12T16:07:53+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0619s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0615s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0612s ]
+
+[ 2018-10-12T16:08:10+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0612s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0613s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0615s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0621s ]
+
+[ 2018-10-12T16:08:19+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0639s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0639s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0638s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0638s ]
+
+[ 2018-10-12T16:08:29+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0646s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0653s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0650s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0648s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0642s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0652s ]
+
+[ 2018-10-12T16:08:37+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0648s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0654s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0649s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0639s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0643s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0641s ]
+
+[ 2018-10-12T16:32:30+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0658s ]
+
+[ 2018-10-12T16:33:12+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0654s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0655s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0649s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0657s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0651s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0649s ]
+
+[ 2018-10-12T16:33:43+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0642s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0642s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0649s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0645s ]
+
+[ 2018-10-12T16:35:31+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0605s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0606s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0606s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0607s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0609s ]
+
+[ 2018-10-12T16:36:13+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0609s ]
+
+[ 2018-10-12T16:37:41+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0609s ]
+
+[ 2018-10-12T16:38:00+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002125s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0615s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0612s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0608s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0616s ]
+
+[ 2018-10-12T16:38:08+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0649s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0652s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0650s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0655s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0650s ]
+
+[ 2018-10-12T16:38:23+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0634s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0628s ]
+
+[ 2018-10-12T16:39:16+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0694s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0675s ]
+
+[ 2018-10-12T16:39:26+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0643s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0632s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0638s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0633s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0641s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0639s ]
+
+[ 2018-10-12T16:39:32+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0646s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0653s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0646s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0644s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0641s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0640s ]
+
+[ 2018-10-12T16:39:32+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-10-12T16:41:37+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0619s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0614s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0608s ]
+
+[ 2018-10-12T16:41:40+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0650s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0649s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0642s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0647s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0649s ]
+
+[ 2018-10-12T16:44:13+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0651s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0644s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0648s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0640s ]
+
+[ 2018-10-12T16:44:16+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0609s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0612s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0606s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0615s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0609s ]
+
+[ 2018-10-12T16:44:36+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0645s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0648s ]
+
+[ 2018-10-12T17:03:55+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0626s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0623s ]
+
+[ 2018-10-12T17:04:09+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0683s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0677s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0687s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0684s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0675s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0680s ]
+
+[ 2018-10-12T18:02:17+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0617s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0623s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0619s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0609s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0618s ]
+
+[ 2018-10-12T18:02:22+08:00 ] 127.0.0.1 /Article/autoSendItem
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `ytt_dtk_goods` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `ytt_dtk_goods` WHERE `is_auto` = 0 ORDER BY id desc LIMIT 1   [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `ytt_top_line_account` [ RunTime:0.0613s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0615s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 21 LIMIT 1   [ RunTime:0.0608s ]
+SQL: SELECT `cookie` FROM `ytt_top_line_account` WHERE `id` = 23 LIMIT 1   [ RunTime:0.0615s ]
+

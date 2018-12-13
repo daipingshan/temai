@@ -1,0 +1,226 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('TopLine/shopList')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入商品关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_goods_id" placeholder="请输入商品编号" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_goods_id')}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="time" class="layui-input" placeholder="请选择时间范围" id="time"
+                           value="{$time}">
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="shop_name" placeholder="请输入店铺名称" autocomplete="off"
+                           class="layui-input" value="{:I('get.shop_name')}">
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <php>$cate = C('ARTICLE_CATE');</php>
+        <button data-id=""
+        <if condition="I('get.media_id')">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+            <else/>
+            class="layui-btn layui-btn-sm item-cate"
+        </if>
+        >全部</button>
+        <foreach name="cate" item="row" key="k">
+            <button data-id="{$k}"
+            <if condition="I('get.media_id') neq $k">class="layui-btn layui-btn-sm item-cate default-bgcolor"
+                <else/>
+                class="layui-btn layui-btn-sm item-cate"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <volist name="data" id="vo">
+                    <div class="layui-row">
+                        <volist name="vo" id="row">
+                            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                                <div class="item-box">
+                                    <div class="img">
+                                        <img src="{$row.img}">
+                                    </div>
+                                    <div class="item-content">
+                                        <a href="https://haohuo.snssdk.com/views/product/item?id={$row.shop_goods_id}"
+                                           target="_blank">
+                                            <p class="article-title">{$row.name}</p>
+                                        </a>
+                                        <div class="layui-row float-box">
+                                            <div class="layui-col-xs5">
+                                                <div class="price">
+                                                    <b>￥{$row.price}</b>
+                                                </div>
+                                            </div>
+                                            <if condition="$row['top_line_article_behot_time'] neq ''">
+                                                <div class="layui-col-xs7">
+                                                    <div class="time">
+                                                        {$row.top_line_article_behot_time|date="Y-m-d H:i",###}
+                                                    </div>
+                                                </div>
+                                            </if>
+                                        </div>
+                                        <if condition="$row['shop_name']">
+                                            <div class="layui-row">
+                                                <div class="layui-col-xs12">
+                                                    店铺名称：{$row.shop_name}
+                                                </div>
+                                            </div>
+                                        </if>
+                                        <div class="layui-row float-box">
+                                            <eq name="row.is_add" value="1">
+                                                <button class="layui-btn">已添加至选品库</button>
+                                                <else/>
+                                                <div class="layui-col-xs12">
+                                                    <button class="layui-btn default-bgcolor addItemCache"
+                                                            data-item-id="{$row.shop_goods_id}"
+                                                            data-url="{:U('addShopItemCache')}"
+                                                            data-id="{$row.id}">
+                                                        一键添加
+                                                    </button>
+                                                </div>
+                                            </eq>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </volist>
+                    </div>
+                </volist>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="box">
+    <div class="layui-row"
+         style="position: fixed;bottom: 0;z-index:11;background: rgba(0,0,0,0.6);height: 50px;width: 100%">
+        <div class="layui-col-xs3">
+            <div id="cart" style="position: relative;width: 50px;height: 40px;line-height: 40px;margin: 5px auto">
+                <i class="layui-icon temai-preview" style="color: #fff;font-size: 40px;cursor: pointer"
+                   data-url="{:U('cartShopList')}" data-title="预览文章" data-width="50%" data-height="95%">&#xe657;</i>
+                <span class="layui-badge cart-num" style="position: absolute;top:5px;right: 0">{$cart_count}</span>
+            </div>
+        </div>
+        <div class=" layui-col-xs3" style="text-align: center;line-height: 50px">
+            <button class="layui-btn temai-preview" data-title="保存文章" data-width="80%" data-height="95%"
+                    data-url="{:U('saveShopCart')}">
+                一键保存
+            </button>
+        </div>
+        <div class="layui-col-xs3" style="text-align: center;line-height: 50px">
+            <button class="layui-btn layui-btn-danger temai-preview" data-title="预览文章" data-width="50%" data-height="95%"
+                    data-url="{:U('cartShopList')}">
+                一键预览
+            </button>
+        </div>
+        <div class="layui-col-xs3" style="text-align: center;line-height: 50px">
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        form.render();
+        //日期时间范围
+        laydate.render({
+            elem: '#time'
+            , type: 'date'
+            , range: '~'
+        });
+        $('.item-cate').click(function () {
+            $('#media_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+        var is_add = true
+        $('.addItemCache').click(function () {
+            if (is_add === false) {
+                layer.msg('正在请求中...，操作太频繁，请稍后再试！');
+                return false;
+            }
+            var item_num = parseInt($('#cart .cart-num').text());
+            if (item_num >= 20) {
+                layer.msg('最多只能添加20件商品！');
+                return false;
+            }
+            var _this = $(this);
+            var item_id = _this.data('item-id');
+            var id = _this.data('id');
+            var url = _this.data('url');
+            is_add = false;
+            $.post(url, {id: id, item_id: item_id}, function (res) {
+                if (res.status == 1) {
+                    var img = _this.parents('.item-box').find('.img img');
+                    $('#cart .cart-num').text(item_num + 1);
+                    _this.parents('.float-box').html('<button class="layui-btn">添加成功</button>');
+                    flyCart(img);
+                } else {
+                    layer.msg(res.info);
+                }
+                is_add = true;
+            });
+        });
+
+        $('.temai-preview').click(function () {
+            var num = $('#cart .cart-num').text();
+            if (num == 0) {
+                layer.msg('请先添加商品');
+                return false;
+            }
+            x_admin_show($(this).data('title'), $(this).data('url'), $(this).data('width'), $(this).data('height'));
+        });
+
+        /**
+         * 飞入购物车
+         * @param imgtodrag
+         */
+        function flyCart(imgtodrag) {
+            var cart = $('#cart');
+            if (imgtodrag) {
+                var imgclone = imgtodrag.clone()
+                    .offset({
+                        top: imgtodrag.offset().top,
+                        left: imgtodrag.offset().left
+                    })
+                    .css({
+                        'opacity': '0.5',
+                        'position': 'absolute',
+                        'height': '150px',
+                        'width': '150px',
+                        'z-index': '100'
+                    })
+                    .appendTo($('body'))
+                    .animate({
+                        'top': cart.offset().top + 10,
+                        'left': cart.offset().left + 10,
+                        'width': 75,
+                        'height': 75
+                    }, 1000, 'easeInOutExpo');
+
+                imgclone.animate({
+                    'width': 0,
+                    'height': 0
+                }, function () {
+                    $(this).detach()
+                });
+            }
+        }
+    </script>
+</block>

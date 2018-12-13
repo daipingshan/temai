@@ -1,0 +1,148 @@
+<extend name="Common/common"/>
+<block name="body">
+    <form class="layui-form xbs" action="{:U('SaleArticle/index')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item" style="display: inline-block;">
+                <div class="layui-input-inline">
+                    <input type="text" name="keyword" placeholder="请输入商品关键字" autocomplete="off"
+                           class="layui-input" value="{:I('get.keyword')}">
+                </div>
+                <div class="layui-input-inline" style="width: 100px">
+                    <input type="text" name="read_num" placeholder="阅读量大于" autocomplete="off"
+                           class="layui-input" value="{:I('get.read_num')}">
+                </div>
+                <div class="layui-input-inline" style="width:100px;">
+                    <input type="number" name="create_user_id" placeholder="作者ID" autocomplete="off"
+                           class="layui-input" value="{:I('get.create_user_id')}">
+                </div>
+                <div class="layui-input-inline" style="width: 300px">
+                    <input type="text" name="time" class="layui-input" placeholder="请选择时间范围" id="time"
+                           value="{:I('get.time','','trim,urldecode')}">
+                </div>
+                <div class="layui-input-inline">
+                    <select name="sort">
+                        <option value="0">请选择排序方式</option>
+                        <option value="1"
+                        <if condition="I('get.sort') eq 1">selected</if>
+                        >阅读量从高到低</option>
+                        <option value="2"
+                        <if condition="I('get.sort') eq 2">selected</if>
+                        >评论量从高到低</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="article_genre">
+                        <option value="0">请选择平台</option>
+                        <option value="1"
+                        <if condition="I('get.article_genre') eq 1">selected</if>
+                        >图集</option>
+                        <option value="2"
+                        <if condition="I('get.article_genre') eq 2">selected</if>
+                        >专辑</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="width:80px">
+                    <input type="hidden" name="media_id" id="media_id" value="{:I('get.media_id')}">
+                    <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <xblock>
+        <php>$cate = C('ARTICLE_CATE');</php>
+        <button data-id="" class="layui-btn layui-btn-sm item-cate"
+        <if condition="I('get.media_id')">
+            style="background:rgba(0,0,0,0.4)"
+        </if>
+        >全部</button>
+        <foreach name="cate" item="row" key="k">
+            <button data-id="{$k}" class="layui-btn layui-btn-sm item-cate"
+            <if condition="I('get.media_id') neq $k">
+                style="background:rgba(0,0,0,0.4)"
+            </if>
+            >{$row}</button>
+        </foreach>
+    </xblock>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>头条标题</th>
+            <th>阅读量</th>
+            <th>评论量</th>
+            <th>分类</th>
+            <th>平台</th>
+            <th>作者ID</th>
+            <th>发布时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>
+                    <a href="https://www.toutiao.com/a{$vo.article_id}" target="_blank"
+                       style="color: #fff">{$vo.title}</a>
+                </td>
+                <td>{$vo.go_detail_count}</td>
+                <td>{$vo.comments_count}</td>
+                <td>{$cate[$vo['media_id']]}</td>
+                <td>
+                    <if condition="$vo['article_genre'] eq 1">
+                        <button class="layui-btn layui-btn-sm layui-btn-normal layui-disabled">图集</button>
+                        <else/>
+                        <button class="layui-btn layui-btn-danger layui-btn-sm layui-disabled">专辑</button>
+                    </if>
+                </td>
+                <td>
+                    <if condition="$vo['userid'] eq 1">
+                        <p style="color:red;">{$vo.create_user_id}【{$vo.num}】</p>
+                        <else/>
+                        {$vo.create_user_id}【{$vo.num}】
+                    </if>
+
+                </td>
+                <td>
+                    {$vo.behot_time|date="Y-m-d H:i:s",###}
+                </td>
+                <td>
+                    <button class="layui-btn layui-btn-sm" style="background:rgba(0,0,0,0.4)"
+                            data-url="{:U('TopLine/openArticleDetail',array('id'=>$vo['id']))}"
+                            onclick="window.open($(this).data('url'))">查看商品
+                    </button>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+    {$page}
+</block>
+<block name="js">
+    <script type="text/javascript" src="__JS_PATH__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS_PATH__/top_line_item.js"></script>
+    <script>
+        form.render();
+        //日期时间范围
+        var nowTime = new Date().valueOf();
+        var time = laydate.render({
+            elem: '#time'
+            , type: 'datetime'
+            , range: '~'
+            , max: nowTime
+        });
+        $('.item-cate').click(function () {
+            $('#media_id').val($(this).data('id'));
+            $('form[name=search]').submit();
+        });
+    </script>
+</block>

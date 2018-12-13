@@ -1,0 +1,76 @@
+<extend name="Common/common"/>
+<block name="body">
+    <xblock>
+        <button class="layui-btn" style="background-color: rgba(0,0,0,0.4)"
+                onclick="x_admin_show('添加账号','{:U(\'Sale/addAccount\')}','800','500')"><i
+                class="layui-icon">&#xe608;</i>添加账号
+        </button>
+    </xblock>
+    <table class="layui-table">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>账号名称</th>
+            <th>添加时间</th>
+            <th>修改时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="data" id="vo">
+            <tr>
+                <td>{$vo.username}</td>
+                <td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+                <td>{$vo.update_time|date="Y-m-d H:i:s",###}</td>
+                <td>
+                    <a title="编辑" href="javascript:;" data-url="{:U('Sale/updateAccount',array('id'=>$vo['id']))}"
+                       onclick="x_admin_show('编辑',$(this).data('url'),'800','500')"
+                       class="ml-5" style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe642;</i>
+                    </a>
+                    <a title="删除" href="javascript:;" onclick="member_del({$vo['id']})"
+                       style="text-decoration:none">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe640;</i>
+                    </a>
+                    <a title="查看" href="javascript:;" class="open-info"
+                       style="text-decoration:none" data-url="{:U('Sale/openInfo',array('id'=>$vo['id']))}">
+                        <i class="layui-icon" style="font-size: 20px;color: #fff">&#xe60a;</i>
+                    </a>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+    </table>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        $('.open-info').click(function () {
+            var url = $(this).data('url');
+            $.get(url, {}, function (res) {
+                layer.open({
+                    title: '账号信息',
+                    content: res.info //这里content是一个普通的String
+                });
+            })
+        })
+        /*用户-删除*/
+        function member_del(id) {
+            layer.confirm('确认要删除该账号吗？', {title: "删除确认"}, function (index) {
+                $.post("{:U('TopLine/deleteAccount')}", {id: id}, function (res) {
+                    if (res.status == 1) {
+                        layer.msg(res.info, function () {
+                            location.reload();
+                        });
+                    } else {
+                        layer.msg(res.info);
+                    }
+                });
+            });
+        }
+    </script>
+</block>

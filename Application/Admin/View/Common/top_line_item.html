@@ -1,0 +1,104 @@
+<volist name="data" id="vo">
+    <div class="layui-row">
+        <volist name="vo" id="row">
+            <div class="layui-col-xs12 layui-col-sm6 layui-col-md3">
+                <div class="item-box">
+                    <div class="img">
+                        <img lay-src="{$row.img}">
+                        <div class="intro">
+                            <p>{$row.describe_info}</p>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <a href="{$row.url}" target="_blank"><p class="item-title">{$row.title}</p></a>
+                        <if condition="$row.temai_title neq ''">
+                            <a href="{$row.temai_id}" target="_blank">
+                                <p class="article-title">{$row.temai_title}</p>
+                            </a>
+                        </if>
+
+                        <div class="layui-row float-box">
+                            <div class="layui-col-xs5">
+                                <div class="price">
+                                    <b>￥{$row.price}</b>
+                                </div>
+                            </div>
+                            <div class="layui-col-xs7">
+                                <if condition="$row.behot_time neq ''">
+                                    <div class="time">
+                                        {$row.behot_time|date="Y-m-d H:i",###}
+                                    </div>
+                                </if>
+                            </div>
+                        </div>
+                        <div class="json-callback">
+
+                        </div>
+                        <div class="layui-row float-box">
+                            <eq name="type" value="goods">
+                                <button class="layui-btn add-goods" data-title="添加机器商品"
+                                        data-url="{:U('addGoods',array('id'=>$row['id'],'type'=>$row['type']))}">
+                                    添加机器商品
+                                </button>
+                                <else/>
+                                <eq name="row.is_add" value="1">
+                                    <div class="layui-row add-box layui-hide">
+                                        <div class="layui-col-xs6">
+                                            <button class="layui-btn default-bgcolor addItemCache"
+                                                    data-id="{$row.id}"
+                                                    data-url="{:U('TopLine/addItemCache')}"
+                                                    data-val='{$row.post_data}'
+                                                    data-type="0">
+                                                一键添加
+                                            </button>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <button class="layui-btn default-bgcolor addItemCache"
+                                                    data-id="{$row.id}"
+                                                    data-url="{:U('TopLine/addItemCache')}"
+                                                    data-val='{$row.post_data}'
+                                                    data-type="1">
+                                                伪原创
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="layui-row del-box">
+                                        <button class="layui-btn layui-btn-danger del-item" data-id="{$row.id}"
+                                                data-url="{:U('TopLine/delItemCache')}">删除选品
+                                        </button>
+                                    </div>
+                                    <else/>
+                                    <div class="layui-row add-box">
+                                        <div class="layui-col-xs6">
+                                            <button class="layui-btn default-bgcolor addItemCache"
+                                                    data-id="{$row.id}"
+                                                    data-url="{:U('TopLine/addItemCache')}"
+                                                    data-val='{$row.post_data}'
+                                                    data-type="0">
+                                                一键添加
+                                            </button>
+                                        </div>
+                                        <div class="layui-col-xs6">
+                                            <button class="layui-btn default-bgcolor addItemCache"
+                                                    data-id="{$row.id}"
+                                                    data-url="{:U('TopLine/addItemCache')}"
+                                                    data-val='{$row.post_data}'
+                                                    data-type="1">
+                                                伪原创
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="layui-row del-box layui-hide">
+                                        <button class="layui-btn layui-btn-danger del-item" data-id="{$row.id}"
+                                                data-url="{:U('TopLine/delItemCache')}">删除选品
+                                        </button>
+                                    </div>
+                                </eq>
+                            </eq>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+</volist>

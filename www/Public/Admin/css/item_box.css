@@ -1,0 +1,141 @@
+.default-bgcolor {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.item-box {
+    margin: 10px auto;
+    padding: 0 0 20px 0;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.item-box:hover {
+    box-shadow: 2px 2px 12px 0 rgba(255, 255, 255, .6);
+
+}
+
+.item-box .img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.item-box .img img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.item-box .img img:hover {
+    transform: scale(1.2);
+}
+
+.item-box .img .intro {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    font-size: 12px;
+    width: 100%;
+}
+
+.item-box .img .intro p {
+    margin: 5px 10px;
+}
+
+.item-box .img .img-vice {
+    display: none;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-box .img .img_vice img {
+    width: 100%;
+}
+
+.item-box .img .new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.item-box .img .reward {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.item-box .img .shop {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
+
+.item-box .item-content {
+    padding: 5px 10px;
+}
+
+.item-box .item-content p.item-title {
+    font-size: 14px;
+    line-height: 25px;
+    height: 50px;
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+}
+
+.item-box .item-content p.article-title {
+    font-size: 12px;
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+}
+
+.item-box .item-content .float-box {
+    height: 30px;
+    margin: 5px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.item-box .item-content .float-box .price {
+    font-size: 20px;
+    text-align: left;
+}
+
+.item-box .item-content .float-box .time {
+    font-size: 14px;
+    text-align: right;
+}
+
+.item-box .item-content .float-box .left {
+    font-size: 12px;
+    text-align: left;
+}
+
+.item-box .item-content .float-box .right {
+    font-size: 12px;
+    text-align: right;
+}
+
+.item-box .item-content .float-box .center {
+    font-size: 12px;
+    text-align: center;
+}
+
+.item-box .commission-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    display: none;
+}

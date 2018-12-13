@@ -1,0 +1,56 @@
+<extend name="Common/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__CSS_PATH__/item_box.css">
+</block>
+<block name="body">
+    <form class="layui-form" action="{:U('Shop/product')}" name="search">
+        <div class="layui-form-pane">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <select name="user_id">
+                        <option value="">请选择用户</option>
+                        <foreach name="user" item="val" key="key">
+                            <option value="{$key}">{$val}</option>
+                        </foreach>
+                    </select>
+
+                </div>
+                <div class="layui-input-inline" style="width:180px">
+                    <button class="layui-btn"><i class="layui-icon">
+                        &#xe615;</i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <notEmpty name="data">
+        <xblock>
+            <div class="layui-row">
+                <include file="Common/shop_item"/>
+            </div>
+            {$page}
+        </xblock>
+    </notEmpty>
+</block>
+<block name="js">
+    <script type="text/javascript">
+        form.render();
+        flow.lazyimg();
+        $(".img").hover(function () {
+            $(this).find('.img-vice').show();
+        }, function () {
+            $(this).find('.img-vice').hide();
+        });
+        $('.update-status').click(function () {
+            var _this = $(this);
+            $(this).addClass('layui-disabled');
+            var url = "{:U('Shop/updateUserItemStatus')}";
+            $.post(url, {id: _this.data('id'), status: _this.data('val')}, function (res) {
+                _this.removeClass('layui-disabled');
+                layer.msg(res.info);
+                if (res.status == 1) {
+                    _this.parents('.user-items').remove();
+                }
+            })
+        })
+    </script>
+</block>
